@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Arikaim Arikaim\Core\Paginator\JsonPaginator | API Documentation</title>
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link rel="shortcut icon" href="../../../images/arikaim-favicon.png" />
+    </head>
+
+    <body id="class" data-name="class:Arikaim_Core_Paginator_JsonPaginator" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                   
+                <ul class="nav navbar-nav" style="margin-left:0px">                               
+                    <li>
+                        <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
+                    </li>
+                    <li><a href="index.html">API Documentation</a></li>
+                    <li><a href="#">Version 1.2.16</a></li>
+                </ul>                                                         
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core/Paginator.html">Paginator</a></li><li class="backslash">\</li><li>JsonPaginator</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            JsonPaginator
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>JsonPaginator</strong>        extends <a href="../../../Arikaim/Core/Paginator/ArrayPaginator.html"><abbr title="Arikaim\Core\Paginator\ArrayPaginator">ArrayPaginator</abbr></a>        implements
+        <a href="../../../Arikaim/Core/Paginator/PaginatorInterface.html"><abbr title="Arikaim\Core\Paginator\PaginatorInterface">PaginatorInterface</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Paginate Josn</p>                                </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>UNKNOWN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DEFAULT_PER_PAGE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CARD_VIEW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TABLE_VIEW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>GRID_VIEW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_items">
+                                        protected                                        array
+                </td>
+                <td>$items</td>
+                <td class="last">Paginator items</td>
+                <td><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#property_items"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_currentPage">
+                                        protected                                        integer
+                </td>
+                <td>$currentPage</td>
+                <td class="last">Current page</td>
+                <td><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#property_currentPage"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_lastPage">
+                                        protected                                        integer
+                </td>
+                <td>$lastPage</td>
+                <td class="last">Last page</td>
+                <td><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#property_lastPage"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_perPage">
+                                        protected                                        integer
+                </td>
+                <td>$perPage</td>
+                <td class="last">Row per page value</td>
+                <td><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#property_perPage"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_total">
+                                        protected                                        integer
+                </td>
+                <td>$total</td>
+                <td class="last">Total number of items before slice</td>
+                <td><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#property_total"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $json, integer $page, integer $perPage = Paginator::DEFAULT_PER_PAGE)
+        
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getItems">getItems</a>()
+        
+                                            <p>Return items</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getItems"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCurrentPage">getCurrentPage</a>()
+        
+                                            <p>Get current page</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getCurrentPage"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFirstItem">getFirstItem</a>()
+        
+                                            <p>Get first item</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getFirstItem"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTotalItems">getTotalItems</a>()
+        
+                                            <p>Get total items</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getTotalItems"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLastItem">getLastItem</a>()
+        
+                                            <p>Get last item</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getLastItem"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLastPage">getLastPage</a>()
+        
+                                            <p>Get last page</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getLastPage"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPerPage">getPerPage</a>()
+        
+                                            <p>Get rows per page</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getPerPage"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getItemsCount">getItemsCount</a>()
+        
+                                            <p>Return items count</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getItemsCount"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toArray">toArray</a>()
+        
+                                            <p>Convert paginator data to array</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#method_toArray"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPaginatorData">getPaginatorData</a>()
+        
+                                            <p>Get paginator data</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getPaginatorData"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Arikaim/Core/Paginator/PaginatorInterface.html"><abbr title="Arikaim\Core\Paginator\PaginatorInterface">PaginatorInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(object|array|<abbr title="Arikaim\Core\Paginator\json">json</abbr> $source, integer $page = 1, integer|null $perPage = Self::DEFAULT_PER_PAGE)
+        
+                                            <p>Create paginator</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#method_create"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sliceItems">sliceItems</a>(array $items)
+        
+                                            <p>Slice array items</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#method_sliceItems"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_calcLastPage">calcLastPage</a>()
+        
+                                            <p>Calc last page</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Paginator/Paginator.html#method_calcLastPage"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 27</div>
+        <code>                    
+    <strong>__construct</strong>(string $json, integer $page, integer $perPage = Paginator::DEFAULT_PER_PAGE)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$json</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$page</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$perPage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getItems">
+        <div class="location">in <a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getItems"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a> at         line 89</div>
+        <code>                    mixed
+    <strong>getItems</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return items</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCurrentPage">
+        <div class="location">in <a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getCurrentPage"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a> at         line 99</div>
+        <code>                    integer
+    <strong>getCurrentPage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get current page</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFirstItem">
+        <div class="location">in <a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getFirstItem"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a> at         line 116</div>
+        <code>                    mixed
+    <strong>getFirstItem</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get first item</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTotalItems">
+        <div class="location">in <a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getTotalItems"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a> at         line 126</div>
+        <code>                    integer
+    <strong>getTotalItems</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get total items</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastItem">
+        <div class="location">in <a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getLastItem"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a> at         line 136</div>
+        <code>                    mixed
+    <strong>getLastItem</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get last item</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastPage">
+        <div class="location">in <a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getLastPage"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a> at         line 146</div>
+        <code>                    integer
+    <strong>getLastPage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get last page</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPerPage">
+        <div class="location">in <a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getPerPage"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a> at         line 156</div>
+        <code>                    integer
+    <strong>getPerPage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get rows per page</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getItemsCount">
+        <div class="location">in <a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getItemsCount"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a> at         line 166</div>
+        <code>                    integer
+    <strong>getItemsCount</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return items count</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArray">
+        <div class="location">in <a href="../../../Arikaim/Core/Paginator/Paginator.html#method_toArray"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a> at         line 176</div>
+        <code>                    array
+    <strong>toArray</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert paginator data to array</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPaginatorData">
+        <div class="location">in <a href="../../../Arikaim/Core/Paginator/Paginator.html#method_getPaginatorData"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a> at         line 189</div>
+        <code>                    array
+    <strong>getPaginatorData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get paginator data</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">in <a href="../../../Arikaim/Core/Paginator/Paginator.html#method_create"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a> at         line 207</div>
+        <code>        static            <a href="../../../Arikaim/Core/Paginator/PaginatorInterface.html"><abbr title="Arikaim\Core\Paginator\PaginatorInterface">PaginatorInterface</abbr></a>
+    <strong>create</strong>(object|array|<abbr title="Arikaim\Core\Paginator\json">json</abbr> $source, integer $page = 1, integer|null $perPage = Self::DEFAULT_PER_PAGE)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create paginator</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object|array|<abbr title="Arikaim\Core\Paginator\json">json</abbr></td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$page</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$perPage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Paginator/PaginatorInterface.html"><abbr title="Arikaim\Core\Paginator\PaginatorInterface">PaginatorInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sliceItems">
+        <div class="location">in <a href="../../../Arikaim/Core/Paginator/Paginator.html#method_sliceItems"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a> at         line 247</div>
+        <code>            protected        array
+    <strong>sliceItems</strong>(array $items)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Slice array items</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$items</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_calcLastPage">
+        <div class="location">in <a href="../../../Arikaim/Core/Paginator/Paginator.html#method_calcLastPage"><abbr title="Arikaim\Core\Paginator\Paginator">Paginator</abbr></a> at         line 258</div>
+        <code>            protected        integer
+    <strong>calcLastPage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Calc last page</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

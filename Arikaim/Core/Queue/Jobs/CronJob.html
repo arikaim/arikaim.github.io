@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Arikaim Arikaim\Core\Queue\Jobs\CronJob | API Documentation</title>
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/style.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link rel="shortcut icon" href="../../../../images/arikaim-favicon.png" />
+    </head>
+
+    <body id="class" data-name="class:Arikaim_Core_Queue_Jobs_CronJob" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                   
+                <ul class="nav navbar-nav" style="margin-left:0px">                               
+                    <li>
+                        <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
+                    </li>
+                    <li><a href="index.html">API Documentation</a></li>
+                    <li><a href="#">Version 1.2.16</a></li>
+                </ul>                                                         
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/Queue.html">Queue</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/Queue/Jobs.html">Jobs</a></li><li class="backslash">\</li><li>CronJob</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            CronJob
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>CronJob</strong>        extends <a href="../../../../Arikaim/Core/Queue/Jobs/RecuringJob.html"><abbr title="Arikaim\Core\Queue\Jobs\RecuringJob">RecuringJob</abbr></a>        implements
+        <a href="../../../../Arikaim/Core/Interfaces/Job/RecuringJobInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\RecuringJobInterface">RecuringJobInterface</abbr></a>, <a href="../../../../Arikaim/Core/Interfaces/Job/JobInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\JobInterface">JobInterface</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Cron job</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_id">
+                                        protected                                        string|integer
+                </td>
+                <td>$id</td>
+                <td class="last">Unique job id</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#property_id"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_name">
+                                        protected                                        string|null
+                </td>
+                <td>$name</td>
+                <td class="last">Job name</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#property_name"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_priority">
+                                        protected                                        integer
+                </td>
+                <td>$priority</td>
+                <td class="last">Priority</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#property_priority"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_extension">
+                                        protected                                        string
+                </td>
+                <td>$extension</td>
+                <td class="last">Extension name</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#property_extension"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_interval">
+                                        protected                                        string|null
+                </td>
+                <td>$interval</td>
+                <td class="last">Recuring interval</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/RecuringJob.html#property_interval"><abbr title="Arikaim\Core\Queue\Jobs\RecuringJob">RecuringJob</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>()
+        
+                                            <p>Job code</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string|null $extension = null, string|null $name = null)
+        
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___set">__set</a>(string $name, <abbr title="Arikaim\Core\Queue\Jobs\mxied">mxied</abbr> $value)
+        
+                                            <p>Set</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method___set"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setId">setId</a>(string|integer $id)
+        
+                                            <p>Set id</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method_setId"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getId">getId</a>()
+        
+                                            <p>Get id</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method_getId"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExtensionName">getExtensionName</a>()
+        
+                                            <p>Get extension name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method_getExtensionName"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Get name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method_getName"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Interfaces\Job\number">number</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPriority">getPriority</a>()
+        
+                                            <p>Get priority</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method_getPriority"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setName">setName</a>(string $name)
+        
+                                            <p>Set name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method_setName"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPriority">setPriority</a>(integer $priority)
+        
+                                            <p>Set priority</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method_setPriority"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setExtensionName">setExtensionName</a>(string $name)
+        
+                                            <p>Set extension name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method_setExtensionName"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;integer|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNextRunDate">getNextRunDate</a>(string $interval)
+        
+                                            <p>Get next run date</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/RecuringJob.html#method_getNextRunDate"><abbr title="Arikaim\Core\Queue\Jobs\RecuringJob">RecuringJob</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDueDate">getDueDate</a>()
+        
+                                            <p>Get next run date time timestamp</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/RecuringJob.html#method_getDueDate"><abbr title="Arikaim\Core\Queue\Jobs\RecuringJob">RecuringJob</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRecuringInterval">getRecuringInterval</a>()
+        
+                                            <p>RecuringJobInterface implementation function</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/RecuringJob.html#method_getRecuringInterval"><abbr title="Arikaim\Core\Queue\Jobs\RecuringJob">RecuringJob</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRecuringInterval">setRecuringInterval</a>(mixed $interval)
+        
+                                            <p>Set recuring interval</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Queue/Jobs/RecuringJob.html#method_setRecuringInterval"><abbr title="Arikaim\Core\Queue\Jobs\RecuringJob">RecuringJob</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setInterval">setInterval</a>(string $interval)
+        
+                                            <p>Set cron expression</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isDue">isDue</a>()
+        
+                                            <p>Return true if job is due</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runEveryMinute">runEveryMinute</a>(integer|null $minutes = null)
+        
+                                            <p>Run every minute</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runEveryHour">runEveryHour</a>()
+        
+                                            <p>Run every hour</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runEveryDay">runEveryDay</a>(string|null $time = null)
+        
+                                            <p>Run every day</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runEveryWeek">runEveryWeek</a>()
+        
+                                            <p>Run every week</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runEveryMonth">runEveryMonth</a>()
+        
+                                            <p>Run every month</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runEveryYear">runEveryYear</a>()
+        
+                                            <p>Run every year</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolve">resolve</a>(integer $position, mixed $value)
+        
+                                            <p>Resolve corn expression helper</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">at         line 63</div>
+        <code>                    void
+    <strong>execute</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Job code</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 30</div>
+        <code>                    
+    <strong>__construct</strong>(string|null $extension = null, string|null $name = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___set">
+        <div class="location">in <a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method___set"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a> at         line 74</div>
+        <code>                    
+    <strong>__set</strong>(string $name, <abbr title="Arikaim\Core\Queue\Jobs\mxied">mxied</abbr> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Arikaim\Core\Queue\Jobs\mxied">mxied</abbr></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setId">
+        <div class="location">in <a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method_setId"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a> at         line 85</div>
+        <code>                    void
+    <strong>setId</strong>(string|integer $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set id</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|integer</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getId">
+        <div class="location">in <a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method_getId"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a> at         line 95</div>
+        <code>                    string
+    <strong>getId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get id</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExtensionName">
+        <div class="location">in <a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method_getExtensionName"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a> at         line 105</div>
+        <code>                    string|null
+    <strong>getExtensionName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get extension name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">in <a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method_getName"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a> at         line 115</div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPriority">
+        <div class="location">in <a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method_getPriority"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a> at         line 125</div>
+        <code>                    <abbr title="Arikaim\Core\Interfaces\Job\number">number</abbr>
+    <strong>getPriority</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get priority</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Interfaces\Job\number">number</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location">in <a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method_setName"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a> at         line 136</div>
+        <code>                    void
+    <strong>setName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set name</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPriority">
+        <div class="location">in <a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method_setPriority"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a> at         line 147</div>
+        <code>                    void
+    <strong>setPriority</strong>(integer $priority)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set priority</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setExtensionName">
+        <div class="location">in <a href="../../../../Arikaim/Core/Queue/Jobs/Job.html#method_setExtensionName"><abbr title="Arikaim\Core\Queue\Jobs\Job">Job</abbr></a> at         line 158</div>
+        <code>                    void
+    <strong>setExtensionName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set extension name</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNextRunDate">
+        <div class="location">in <a href="../../../../Arikaim/Core/Queue/Jobs/RecuringJob.html#method_getNextRunDate"><abbr title="Arikaim\Core\Queue\Jobs\RecuringJob">RecuringJob</abbr></a> at         line 50</div>
+        <code>        static            integer|false
+    <strong>getNextRunDate</strong>(string $interval)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get next run date</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$interval</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDueDate">
+        <div class="location">in <a href="../../../../Arikaim/Core/Queue/Jobs/RecuringJob.html#method_getDueDate"><abbr title="Arikaim\Core\Queue\Jobs\RecuringJob">RecuringJob</abbr></a> at         line 70</div>
+        <code>                    integer
+    <strong>getDueDate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get next run date time timestamp</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRecuringInterval">
+        <div class="location">in <a href="../../../../Arikaim/Core/Queue/Jobs/RecuringJob.html#method_getRecuringInterval"><abbr title="Arikaim\Core\Queue\Jobs\RecuringJob">RecuringJob</abbr></a> at         line 80</div>
+        <code>                    mixed
+    <strong>getRecuringInterval</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>RecuringJobInterface implementation function</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRecuringInterval">
+        <div class="location">in <a href="../../../../Arikaim/Core/Queue/Jobs/RecuringJob.html#method_setRecuringInterval"><abbr title="Arikaim\Core\Queue\Jobs\RecuringJob">RecuringJob</abbr></a> at         line 91</div>
+        <code>                    mixed
+    <strong>setRecuringInterval</strong>(mixed $interval)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set recuring interval</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$interval</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInterval">
+        <div class="location">at         line 42</div>
+        <code>                    <a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a>
+    <strong>setInterval</strong>(string $interval)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set cron expression</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$interval</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDue">
+        <div class="location">at         line 53</div>
+        <code>                    boolean
+    <strong>isDue</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if job is due</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runEveryMinute">
+        <div class="location">at         line 74</div>
+        <code>                    <a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a>
+    <strong>runEveryMinute</strong>(integer|null $minutes = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run every minute</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer|null</td>
+                <td>$minutes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runEveryHour">
+        <div class="location">at         line 85</div>
+        <code>                    <a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a>
+    <strong>runEveryHour</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run every hour</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runEveryDay">
+        <div class="location">at         line 97</div>
+        <code>                    <a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a>
+    <strong>runEveryDay</strong>(string|null $time = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run every day</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runEveryWeek">
+        <div class="location">at         line 113</div>
+        <code>                    <a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a>
+    <strong>runEveryWeek</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run every week</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runEveryMonth">
+        <div class="location">at         line 124</div>
+        <code>                    <a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a>
+    <strong>runEveryMonth</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run every month</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runEveryYear">
+        <div class="location">at         line 135</div>
+        <code>                    <a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a>
+    <strong>runEveryYear</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run every year</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolve">
+        <div class="location">at         line 148</div>
+        <code>            protected        <a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a>
+    <strong>resolve</strong>(integer $position, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve corn expression helper</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$position</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Arikaim/Core/Queue/Jobs/CronJob.html"><abbr title="Arikaim\Core\Queue\Jobs\CronJob">CronJob</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

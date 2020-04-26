@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Arikaim Arikaim\Core\Mail\Mail | API Documentation</title>
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link rel="shortcut icon" href="../../../images/arikaim-favicon.png" />
+    </head>
+
+    <body id="class" data-name="class:Arikaim_Core_Mail_Mail" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                   
+                <ul class="nav navbar-nav" style="margin-left:0px">                               
+                    <li>
+                        <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
+                    </li>
+                    <li><a href="index.html">API Documentation</a></li>
+                    <li><a href="#">Version 1.2.16</a></li>
+                </ul>                                                         
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core/Mail.html">Mail</a></li><li class="backslash">\</li><li>Mail</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Mail
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Mail</strong>        implements
+        <a href="../../../Arikaim/Core/Mail/Interfaces/MailInterface.html"><abbr title="Arikaim\Core\Mail\Interfaces\MailInterface">MailInterface</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Mail base class</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_message">
+                                        protected                                        <abbr title="Arikaim\Core\Mail\Swift_Message">Swift_Message</abbr>
+                </td>
+                <td>$message</td>
+                <td class="last">Message</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Arikaim/Core/Interfaces/MailerInterface.html"><abbr title="Arikaim\Core\Interfaces\MailerInterface">MailerInterface</abbr></a> $mailer, <a href="../../../Arikaim/Core/Interfaces/View/HtmlPageInterface.html"><abbr title="Arikaim\Core\Interfaces\View\HtmlPageInterface">HtmlPageInterface</abbr></a> $page = null)
+        
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaultFrom">setDefaultFrom</a>()
+        
+                                            <p>Set default from field</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>()
+        
+                                            <p>Create mail</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sendTo">sendTo</a>(string|array $email, string|null $name = null)
+        
+                                            <p>Send email to</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Mail/Interfaces/MailInterface.html"><abbr title="Arikaim\Core\Mail\Interfaces\MailInterface">MailInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_build">build</a>()
+        
+                                            <p>Build email</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_subject">subject</a>(string $subject)
+        
+                                            <p>Set email subject</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_attach">attach</a>(string $file)
+        
+                                            <p>Attach file</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_from">from</a>(string|array $email, string|null $name = null)
+        
+                                            <p>Set from</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_to">to</a>(string|array $email, string|null $name = null)
+        
+                                            <p>Set to</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replyTo">replyTo</a>(string|array $email, string|null $name = null)
+        
+                                            <p>Set reply to</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cc">cc</a>(string|array $email, string|null $name = null)
+        
+                                            <p>Set cc</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bcc">bcc</a>(string|array $email, string|null $name = null)
+        
+                                            <p>Set bcc</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_priority">priority</a>(integer $priority = 3)
+        
+                                            <p>Set priority</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_message">message</a>(string $message)
+        
+                                            <p>Set email body</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_contentType">contentType</a>(string $type = &quot;text/plain&quot;)
+        
+                                            <p>Set email content type</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBody">getBody</a>()
+        
+                                            <p>Return message body</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Mail\Interfaces\Swift_Message">Swift_Message</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMessage">getMessage</a>()
+        
+                                            <p>Get message instance</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadComponent">loadComponent</a>(string $componentName, array $params = [])
+        
+                                            <p>Load email message from html component</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_send">send</a>()
+        
+                                            <p>Send email</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getError">getError</a>()
+        
+                                            <p>Get error message</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 46</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Arikaim/Core/Interfaces/MailerInterface.html"><abbr title="Arikaim\Core\Interfaces\MailerInterface">MailerInterface</abbr></a> $mailer, <a href="../../../Arikaim/Core/Interfaces/View/HtmlPageInterface.html"><abbr title="Arikaim\Core\Interfaces\View\HtmlPageInterface">HtmlPageInterface</abbr></a> $page = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Interfaces/MailerInterface.html"><abbr title="Arikaim\Core\Interfaces\MailerInterface">MailerInterface</abbr></a></td>
+                <td>$mailer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Interfaces/View/HtmlPageInterface.html"><abbr title="Arikaim\Core\Interfaces\View\HtmlPageInterface">HtmlPageInterface</abbr></a></td>
+                <td>$page</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultFrom">
+        <div class="location">at         line 59</div>
+        <code>                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+    <strong>setDefaultFrom</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set default from field</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         line 75</div>
+        <code>        static            <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+    <strong>create</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create mail</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendTo">
+        <div class="location">at         line 87</div>
+        <code>        static            bool
+    <strong>sendTo</strong>(string|array $email, string|null $name = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send email to</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$email</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_build">
+        <div class="location">at         line 99</div>
+        <code>                    <a href="../../../Arikaim/Core/Mail/Interfaces/MailInterface.html"><abbr title="Arikaim\Core\Mail\Interfaces\MailInterface">MailInterface</abbr></a>
+    <strong>build</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Build email</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Mail/Interfaces/MailInterface.html"><abbr title="Arikaim\Core\Mail\Interfaces\MailInterface">MailInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_subject">
+        <div class="location">at         line 110</div>
+        <code>                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+    <strong>subject</strong>(string $subject)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set email subject</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$subject</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_attach">
+        <div class="location">at         line 123</div>
+        <code>                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+    <strong>attach</strong>(string $file)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Attach file</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_from">
+        <div class="location">at         line 138</div>
+        <code>                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+    <strong>from</strong>(string|array $email, string|null $name = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set from</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$email</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_to">
+        <div class="location">at         line 152</div>
+        <code>                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+    <strong>to</strong>(string|array $email, string|null $name = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set to</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$email</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replyTo">
+        <div class="location">at         line 166</div>
+        <code>                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+    <strong>replyTo</strong>(string|array $email, string|null $name = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set reply to</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$email</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cc">
+        <div class="location">at         line 180</div>
+        <code>                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+    <strong>cc</strong>(string|array $email, string|null $name = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set cc</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$email</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bcc">
+        <div class="location">at         line 194</div>
+        <code>                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+    <strong>bcc</strong>(string|array $email, string|null $name = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set bcc</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$email</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_priority">
+        <div class="location">at         line 207</div>
+        <code>                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+    <strong>priority</strong>(integer $priority = 3)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set priority</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_message">
+        <div class="location">at         line 220</div>
+        <code>                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+    <strong>message</strong>(string $message)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set email body</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_contentType">
+        <div class="location">at         line 232</div>
+        <code>                    <a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a>
+    <strong>contentType</strong>(string $type = &quot;text/plain&quot;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set email content type</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Mail/Mail.html"><abbr title="Arikaim\Core\Mail\Mail">Mail</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBody">
+        <div class="location">at         line 244</div>
+        <code>                    string
+    <strong>getBody</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return message body</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMessage">
+        <div class="location">at         line 254</div>
+        <code>                    <abbr title="Arikaim\Core\Mail\Interfaces\Swift_Message">Swift_Message</abbr>
+    <strong>getMessage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get message instance</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Mail\Interfaces\Swift_Message">Swift_Message</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadComponent">
+        <div class="location">at         line 266</div>
+        <code>                    object
+    <strong>loadComponent</strong>(string $componentName, array $params = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Load email message from html component</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$componentName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_send">
+        <div class="location">at         line 298</div>
+        <code>                    bool
+    <strong>send</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send email</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getError">
+        <div class="location">at         line 308</div>
+        <code>                    string
+    <strong>getError</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get error message</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
