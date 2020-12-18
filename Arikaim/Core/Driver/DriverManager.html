@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -128,7 +128,7 @@
                     <a href="../../../Arikaim/Core/Interfaces/Driver/DriverInterface.html"><abbr title="Arikaim\Core\Interfaces\Driver\DriverInterface">DriverInterface</abbr></a>|false
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_create">create</a>(string $name, array $options = [])
+                    <a href="#method_create">create</a>(string $name, array $options = [], array|null $config = null)
         
                                             <p>Create driver</p>                </div>
                 <div class="col-md-2"></div>
@@ -138,7 +138,7 @@
                     boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_install">install</a>(string|object $name, string $class = null, string|null $category = null, string|null $title = null, string|null $description = null, string|null $version = null, array $config = [], string|null $extension = null)
+                    <a href="#method_install">install</a>(string|object $name, string|null $class = null, string|null $category = null, string|null $title = null, string|null $description = null, string|null $version = null, array $config = [], string|null $extension = null)
         
                                             <p>Install driver</p>                </div>
                 <div class="col-md-2"></div>
@@ -272,9 +272,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_create">
-        <div class="location">at         line 48</div>
+        <div class="location">at         line 49</div>
         <code>                    <a href="../../../Arikaim/Core/Interfaces/Driver/DriverInterface.html"><abbr title="Arikaim\Core\Interfaces\Driver\DriverInterface">DriverInterface</abbr></a>|false
-    <strong>create</strong>(string $name, array $options = [])
+    <strong>create</strong>(string $name, array $options = [], array|null $config = null)
         </code>
     </h3>
     <div class="details">
@@ -297,6 +297,11 @@
                 <td>$options</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td>array|null</td>
+                <td>$config</td>
+                <td>Drievr config properties</td>
+            </tr>
             </table>
 
             
@@ -317,9 +322,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_install">
-        <div class="location">at         line 79</div>
+        <div class="location">at         line 82</div>
         <code>                    boolean
-    <strong>install</strong>(string|object $name, string $class = null, string|null $category = null, string|null $title = null, string|null $description = null, string|null $version = null, array $config = [], string|null $extension = null)
+    <strong>install</strong>(string|object $name, string|null $class = null, string|null $category = null, string|null $title = null, string|null $description = null, string|null $version = null, array $config = [], string|null $extension = null)
         </code>
     </h3>
     <div class="details">
@@ -338,7 +343,7 @@
                 <td>Driver name</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>string|null</td>
                 <td>$class</td>
                 <td>full class name or driver object ref</td>
             </tr>
@@ -392,7 +397,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getDriverParams">
-        <div class="location">at         line 106</div>
+        <div class="location">at         line 116</div>
         <code>            protected        array|false
     <strong>getDriverParams</strong>(string|object $driver)
         </code>
@@ -432,7 +437,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_unInstall">
-        <div class="location">at         line 139</div>
+        <div class="location">at         line 149</div>
         <code>                    boolean
     <strong>unInstall</strong>(string $name)
         </code>
@@ -472,7 +477,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_has">
-        <div class="location">at         line 150</div>
+        <div class="location">at         line 160</div>
         <code>                    boolean
     <strong>has</strong>(string $name)
         </code>
@@ -512,7 +517,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getDriver">
-        <div class="location">at         line 161</div>
+        <div class="location">at         line 171</div>
         <code>                    object|false
     <strong>getDriver</strong>(string $name)
         </code>
@@ -552,7 +557,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_saveConfig">
-        <div class="location">at         line 173</div>
+        <div class="location">at         line 183</div>
         <code>                    boolean
     <strong>saveConfig</strong>(string $name, array|object $config)
         </code>
@@ -597,7 +602,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getConfig">
-        <div class="location">at         line 186</div>
+        <div class="location">at         line 196</div>
         <code>                    <abbr title="Arikaim\Core\Interfaces\Driver\Properties">Properties</abbr>
     <strong>getConfig</strong>(string $name)
         </code>
@@ -637,7 +642,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getList">
-        <div class="location">at         line 200</div>
+        <div class="location">at         line 210</div>
         <code>                    array
     <strong>getList</strong>(string|null $category = null, integer|null $status = null)
         </code>
@@ -682,7 +687,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_enable">
-        <div class="location">at         line 211</div>
+        <div class="location">at         line 221</div>
         <code>                    boolean
     <strong>enable</strong>(string $name)
         </code>
@@ -722,7 +727,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_disable">
-        <div class="location">at         line 222</div>
+        <div class="location">at         line 232</div>
         <code>                    boolean
     <strong>disable</strong>(string $name)
         </code>

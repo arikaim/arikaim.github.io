@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -267,7 +267,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 50</div>
+        <div class="location">at         line 51</div>
         <code>                    
     <strong>__construct</strong>(<a href="../../../Arikaim/Core/Interfaces/Events/EventRegistryInterface.html"><abbr title="Arikaim\Core\Interfaces\Events\EventRegistryInterface">EventRegistryInterface</abbr></a> $eventRegistry, <a href="../../../Arikaim/Core/Interfaces/Events/SubscriberRegistryInterface.html"><abbr title="Arikaim\Core\Interfaces\Events\SubscriberRegistryInterface">SubscriberRegistryInterface</abbr></a> $subscriberRegistry)
         </code>
@@ -303,7 +303,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setEventsStatus">
-        <div class="location">at         line 64</div>
+        <div class="location">at         line 65</div>
         <code>                    boolean
     <strong>setEventsStatus</strong>(array $filter = [], integer $status)
         </code>
@@ -348,7 +348,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteEvents">
-        <div class="location">at         line 75</div>
+        <div class="location">at         line 76</div>
         <code>                    bool
     <strong>deleteEvents</strong>(array $filter)
         </code>
@@ -388,7 +388,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteSubscribers">
-        <div class="location">at         line 86</div>
+        <div class="location">at         line 87</div>
         <code>                    bool
     <strong>deleteSubscribers</strong>(array $filter)
         </code>
@@ -428,7 +428,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getEvents">
-        <div class="location">at         line 97</div>
+        <div class="location">at         line 98</div>
         <code>                    array
     <strong>getEvents</strong>(array $filter = [])
         </code>
@@ -468,7 +468,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSubscribers">
-        <div class="location">at         line 108</div>
+        <div class="location">at         line 109</div>
         <code>                    array
     <strong>getSubscribers</strong>(array $filter = [])
         </code>
@@ -508,7 +508,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_unregisterEvent">
-        <div class="location">at         line 119</div>
+        <div class="location">at         line 120</div>
         <code>                    bool
     <strong>unregisterEvent</strong>(string $eventName)
         </code>
@@ -548,7 +548,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_registerEvent">
-        <div class="location">at         line 133</div>
+        <div class="location">at         line 134</div>
         <code>                    bool
     <strong>registerEvent</strong>(string $name, string $title, string $extension = null, string $description = null)
         </code>
@@ -603,7 +603,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isCoreEvent">
-        <div class="location">at         line 149</div>
+        <div class="location">at         line 150</div>
         <code>                    boolean
     <strong>isCoreEvent</strong>(string $name)
         </code>
@@ -643,7 +643,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_registerSubscriber">
-        <div class="location">at         line 161</div>
+        <div class="location">at         line 162</div>
         <code>                    bool
     <strong>registerSubscriber</strong>(string $class, string $extension)
         </code>
@@ -688,7 +688,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_subscribe">
-        <div class="location">at         line 184</div>
+        <div class="location">at         line 185</div>
         <code>                    bool
     <strong>subscribe</strong>($eventName, $class, $extension = null, $priority = 0, $hadnlerMethod = null)
         </code>
@@ -748,7 +748,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_subscribeCallback">
-        <div class="location">at         line 197</div>
+        <div class="location">at         line 198</div>
         <code>                    void
     <strong>subscribeCallback</strong>(string $eventName, <abbr title="Arikaim\Core\Interfaces\Events\Closure">Closure</abbr> $callback, boolean $single = false)
         </code>
@@ -798,7 +798,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_dispatch">
-        <div class="location">at         line 218</div>
+        <div class="location">at         line 219</div>
         <code>                    array
     <strong>dispatch</strong>(string $eventName, array|<a href="../../../Arikaim/Core/Interfaces/Events/EventInterface.html"><abbr title="Arikaim\Core\Interfaces\Events\EventInterface">EventInterface</abbr></a> $event = [], boolean $callbackOnly = false, string|null $extension = null)
         </code>

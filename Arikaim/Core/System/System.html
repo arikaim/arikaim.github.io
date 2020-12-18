@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -144,12 +144,42 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNodeJsVersion">getNodeJsVersion</a>()
+        
+                                            <p>Get nodejs version</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     static&nbsp;array
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getSystemInfo">getSystemInfo</a>()
         
                                             <p>Get system info</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getApacheVersion">getApacheVersion</a>()
+        
+                                            <p>Get apache version</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getApacheModules">getApacheModules</a>()
+        
+                                            <p>Get apache modules</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -180,6 +210,16 @@
                     <a href="#method_getPhpExtensions">getPhpExtensions</a>()
         
                                             <p>Return php extensions list</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComposerPackages">getComposerPackages</a>()
+        
+                                            <p>Get installed composer packages</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -300,7 +340,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___call">
-        <div class="location">at         line 31</div>
+        <div class="location">at         line 33</div>
         <code>                    mixed
     <strong>__call</strong>(string $name, array $arguments)
         </code>
@@ -344,8 +384,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getNodeJsVersion">
+        <div class="location">at         line 43</div>
+        <code>        static            string
+    <strong>getNodeJsVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get nodejs version</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getSystemInfo">
-        <div class="location">at         line 41</div>
+        <div class="location">at         line 53</div>
         <code>        static            array
     <strong>getSystemInfo</strong>()
         </code>
@@ -374,8 +444,68 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getApacheVersion">
+        <div class="location">at         line 72</div>
+        <code>        static            string|false
+    <strong>getApacheVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get apache version</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getApacheModules">
+        <div class="location">at         line 82</div>
+        <code>        static            array
+    <strong>getApacheModules</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get apache modules</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_setTimeLimit">
-        <div class="location">at         line 60</div>
+        <div class="location">at         line 93</div>
         <code>        static            void
     <strong>setTimeLimit</strong>(integer $time)
         </code>
@@ -415,7 +545,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPhpVersion">
-        <div class="location">at         line 70</div>
+        <div class="location">at         line 103</div>
         <code>        static            string
     <strong>getPhpVersion</strong>()
         </code>
@@ -445,7 +575,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPhpExtensions">
-        <div class="location">at         line 80</div>
+        <div class="location">at         line 113</div>
         <code>                    array
     <strong>getPhpExtensions</strong>()
         </code>
@@ -474,8 +604,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getComposerPackages">
+        <div class="location">at         line 130</div>
+        <code>                    array
+    <strong>getComposerPackages</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get installed composer packages</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getPhpExtensionVersion">
-        <div class="location">at         line 98</div>
+        <div class="location">at         line 143</div>
         <code>        static            string
     <strong>getPhpExtensionVersion</strong>(string $phpExtensionName)
         </code>
@@ -515,7 +675,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasPhpExtension">
-        <div class="location">at         line 111</div>
+        <div class="location">at         line 156</div>
         <code>        static            boolean
     <strong>hasPhpExtension</strong>(string $phpExtensionName)
         </code>
@@ -555,7 +715,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasPdoDriver">
-        <div class="location">at         line 122</div>
+        <div class="location">at         line 167</div>
         <code>        static            boolean
     <strong>hasPdoDriver</strong>(string $driverName)
         </code>
@@ -595,7 +755,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPdoDrivers">
-        <div class="location">at         line 134</div>
+        <div class="location">at         line 179</div>
         <code>        static            array
     <strong>getPdoDrivers</strong>()
         </code>
@@ -625,7 +785,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getStreamWrappers">
-        <div class="location">at         line 144</div>
+        <div class="location">at         line 189</div>
         <code>        static            array
     <strong>getStreamWrappers</strong>()
         </code>
@@ -655,7 +815,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasStreamWrapper">
-        <div class="location">at         line 155</div>
+        <div class="location">at         line 200</div>
         <code>        static            boolean
     <strong>hasStreamWrapper</strong>(string $protocol)
         </code>
@@ -695,7 +855,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getBacktrace">
-        <div class="location">at         line 165</div>
+        <div class="location">at         line 210</div>
         <code>        static            array
     <strong>getBacktrace</strong>()
         </code>
@@ -725,7 +885,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isConsole">
-        <div class="location">at         line 175</div>
+        <div class="location">at         line 220</div>
         <code>        static            boolean
     <strong>isConsole</strong>()
         </code>
@@ -755,7 +915,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_writeLine">
-        <div class="location">at         line 187</div>
+        <div class="location">at         line 232</div>
         <code>        static            void
     <strong>writeLine</strong>(string $text, string $eof = null)
         </code>
@@ -800,7 +960,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getOS">
-        <div class="location">at         line 197</div>
+        <div class="location">at         line 242</div>
         <code>        static            integer
     <strong>getOS</strong>()
         </code>
@@ -830,7 +990,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getDefaultOutput">
-        <div class="location">at         line 220</div>
+        <div class="location">at         line 265</div>
         <code>        static            string
     <strong>getDefaultOutput</strong>()
         </code>

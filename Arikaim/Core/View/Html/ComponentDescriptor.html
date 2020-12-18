@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Arikaim Arikaim\Core\View\Html\ComponentData | API Documentation</title>
+    <title>Arikaim Arikaim\Core\View\Html\ComponentDescriptor | API Documentation</title>
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
@@ -18,7 +18,7 @@
         <link rel="shortcut icon" href="../../../../images/arikaim-favicon.png" />
     </head>
 
-    <body id="class" data-name="class:Arikaim_Core_View_Html_ComponentData" data-root-path="../../../../">
+    <body id="class" data-name="class:Arikaim_Core_View_Html_ComponentDescriptor" data-root-path="../../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -71,28 +71,28 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/View.html">View</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/View/Html.html">Html</a></li><li class="backslash">\</li><li>ComponentData</li>
+                        <li><a href="../../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/View.html">View</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/View/Html.html">Html</a></li><li class="backslash">\</li><li>ComponentDescriptor</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            ComponentData
+            ComponentDescriptor
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>ComponentData</strong>        implements
-        <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDataInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDataInterface">ComponentDataInterface</abbr></a>
+    <strong>ComponentDescriptor</strong>        implements
+        <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>
 </p>
 
         
     
 
             <div class="description">
-            <p>Html component data</p>                                </div>
+            <p>Html component descriptor</p>                                </div>
     
     
             <h2>Constants</h2>
@@ -127,7 +127,7 @@
                 </td>
             </tr>
                     <tr>
-                <td>RESOLVE_LOCATION</td>
+                <td>PRIMARY_TEMLATE</td>
                 <td class="last">
                     <p><em></em></p>
                     <p></p>
@@ -145,6 +145,14 @@
                 </td>
                 <td>$name</td>
                 <td class="last">Component name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fullName">
+                                        protected                                        string
+                </td>
+                <td>$fullName</td>
+                <td class="last">Component full name</td>
                 <td></td>
             </tr>
                     <tr>
@@ -220,14 +228,6 @@
                 <td></td>
             </tr>
                     <tr>
-                <td class="type" id="property_framework">
-                                        protected                                        string|null
-                </td>
-                <td>$framework</td>
-                <td class="last">UI framework name</td>
-                <td></td>
-            </tr>
-                    <tr>
                 <td class="type" id="property_files">
                                         protected                                        array
                 </td>
@@ -276,19 +276,27 @@
                 <td></td>
             </tr>
                     <tr>
-                <td class="type" id="property_defaultFramework">
-                                        protected                                        string
-                </td>
-                <td>$defaultFramework</td>
-                <td class="last">Default ui framework</td>
-                <td></td>
-            </tr>
-                    <tr>
                 <td class="type" id="property_selectorType">
                                         protected                                        string|null
                 </td>
                 <td>$selectorType</td>
                 <td class="last">Component name selector type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_primaryTemplate">
+                                        protected                                        string
+                </td>
+                <td>$primaryTemplate</td>
+                <td class="last">Primary template name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dataFile">
+                                        protected                                        string|null
+                </td>
+                <td>$dataFile</td>
+                <td class="last">Component data file</td>
                 <td></td>
             </tr>
             </table>
@@ -302,9 +310,29 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>($name, $basePath, $language, $optionsFile, $viewPath, $extensionsPath, $defaultFramework = &#039;fomantic&#039;)
+                    <a href="#method___construct">__construct</a>(string $name, string $basePath, string $language = &#039;en&#039;, <abbr title="Arikaim\Core\View\Html\string'null">string'null</abbr> $optionsFile = null, string|null $viewPath = null, string|null $extensionsPath = null, string|null $primaryTemplate = null)
         
                                             <p>Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDataFile">getDataFile</a>()
+        
+                                            <p>Get component data file.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPrimaryTemplate">setPrimaryTemplate</a>(string $name)
+        
+                                            <p>Set primary template name</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -334,12 +362,12 @@
                 <div class="col-md-8 type">
                     <a href="#method_getRootName">getRootName</a>()
         
-                                            <p>Gte root component name</p>                </div>
+                                            <p>Get root component name</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDataInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDataInterface">ComponentDataInterface</abbr></a>|false
+                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>|false
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_createComponent">createComponent</a>(string|null $name = null)
@@ -365,6 +393,16 @@
                     <a href="#method_getName">getName</a>()
         
                                             <p>Get component name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFullName">getFullName</a>()
+        
+                                            <p>Get component full name</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -499,7 +537,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    array
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getError">getError</a>()
@@ -522,9 +560,19 @@
                     mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getOption">getOption</a>(string $name, mixed $default = null)
+                    <a href="#method_getOption">getOption</a>(string $path, mixed $default = null)
         
                                             <p>Get option</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOption">setOption</a>(string $path, mixed $value)
+        
+                                            <p>Set option value</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -572,7 +620,7 @@
                     bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_addFiles">addFiles</a>(string $files, string $fileType)
+                    <a href="#method_addFiles">addFiles</a>(array $files, string $fileType)
         
                                             <p>Add files</p>                </div>
                 <div class="col-md-2"></div>
@@ -592,7 +640,7 @@
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_addFile">addFile</a>(string $file, string $fileType)
+                    <a href="#method_addFile">addFile</a>(array $file, string $fileType)
         
                                             <p>Add file</p>                </div>
                 <div class="col-md-2"></div>
@@ -652,6 +700,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../../Arikaim/Core/View/Html/ComponentDescriptor.html"><abbr title="Arikaim\Core\View\Html\ComponentDescriptor">ComponentDescriptor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createFromArray">createFromArray</a>(array $data)
+        
+                                            <p>Init component from array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     array
                 </div>
                 <div class="col-md-8 type">
@@ -702,23 +760,12 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    string|false
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getComponentPath">getComponentPath</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getFrameworkPath">getFrameworkPath</a>()
-        
-                                            <p>Get UI framework path</p>                </div>
+                                            <p>Get component path</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -726,9 +773,9 @@
                     string|false
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getComponentFile">getComponentFile</a>(string $fileExt = &quot;html&quot;, string $language = &quot;&quot;)
+                    <a href="#method_getComponentFile">getComponentFile</a>(string $fileExt = &#039;html&#039;, string $language = &#039;&#039;)
         
-                                            <p>Get component html file</p>                </div>
+                                            <p>Get component file</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -743,7 +790,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a>
+                    <abbr title="Arikaim\Core\View\Interfaces\Collection">Collection</abbr>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_loadProperties">loadProperties</a>()
@@ -753,7 +800,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a>
+                    array
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_loadOptions">loadOptions</a>()
@@ -776,6 +823,16 @@
                     void
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_resolveDataFile">resolveDataFile</a>()
+        
+                                            <p>Resolve component data file</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_resolvePath">resolvePath</a>()
         
                                             <p>Resolve component path</p>                </div>
@@ -789,9 +846,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 172</div>
+        <div class="location">at         line 180</div>
         <code>                    
-    <strong>__construct</strong>($name, $basePath, $language, $optionsFile, $viewPath, $extensionsPath, $defaultFramework = &#039;fomantic&#039;)
+    <strong>__construct</strong>(string $name, string $basePath, string $language = &#039;en&#039;, <abbr title="Arikaim\Core\View\Html\string'null">string'null</abbr> $optionsFile = null, string|null $viewPath = null, string|null $extensionsPath = null, string|null $primaryTemplate = null)
         </code>
     </h3>
     <div class="details">
@@ -805,38 +862,38 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$name</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$basePath</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$language</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td><abbr title="Arikaim\Core\View\Html\string'null">string'null</abbr></td>
                 <td>$optionsFile</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string|null</td>
                 <td>$viewPath</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string|null</td>
                 <td>$extensionsPath</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
-                <td>$defaultFramework</td>
+                <td>string|null</td>
+                <td>$primaryTemplate</td>
                 <td></td>
             </tr>
             </table>
@@ -849,8 +906,78 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getDataFile">
+        <div class="location">at         line 218</div>
+        <code>                    string|null
+    <strong>getDataFile</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get component data file.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPrimaryTemplate">
+        <div class="location">at         line 229</div>
+        <code>                    void
+    <strong>setPrimaryTemplate</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set primary template name</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_hasParent">
-        <div class="location">at         line 203</div>
+        <div class="location">at         line 239</div>
         <code>                    boolean
     <strong>hasParent</strong>()
         </code>
@@ -880,7 +1007,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getParentName">
-        <div class="location">at         line 218</div>
+        <div class="location">at         line 254</div>
         <code>                    string
     <strong>getParentName</strong>()
         </code>
@@ -910,7 +1037,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRootName">
-        <div class="location">at         line 232</div>
+        <div class="location">at         line 268</div>
         <code>                    string
     <strong>getRootName</strong>()
         </code>
@@ -920,7 +1047,7 @@
     
 
                     <div class="method-description">
-                                    <p>Gte root component name</p>                                                </div>
+                                    <p>Get root component name</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -940,8 +1067,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createComponent">
-        <div class="location">at         line 245</div>
-        <code>                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDataInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDataInterface">ComponentDataInterface</abbr></a>|false
+        <div class="location">at         line 281</div>
+        <code>                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>|false
     <strong>createComponent</strong>(string|null $name = null)
         </code>
     </h3>
@@ -967,7 +1094,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../../Arikaim/Core/View/Interfaces/ComponentDataInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDataInterface">ComponentDataInterface</abbr></a>|false</td>
+            <td><a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>|false</td>
             <td></td>
         </tr>
     </table>
@@ -980,7 +1107,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getBasePath">
-        <div class="location">at         line 261</div>
+        <div class="location">at         line 297</div>
         <code>                    string
     <strong>getBasePath</strong>()
         </code>
@@ -1010,7 +1137,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getName">
-        <div class="location">at         line 271</div>
+        <div class="location">at         line 307</div>
         <code>                    string
     <strong>getName</strong>()
         </code>
@@ -1039,8 +1166,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getFullName">
+        <div class="location">at         line 317</div>
+        <code>                    string
+    <strong>getFullName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get component full name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getTemplateFile">
-        <div class="location">at         line 281</div>
+        <div class="location">at         line 327</div>
         <code>                    string|false
     <strong>getTemplateFile</strong>()
         </code>
@@ -1070,7 +1227,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasError">
-        <div class="location">at         line 308</div>
+        <div class="location">at         line 354</div>
         <code>                    boolean
     <strong>hasError</strong>()
         </code>
@@ -1100,7 +1257,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasContent">
-        <div class="location">at         line 318</div>
+        <div class="location">at         line 364</div>
         <code>                    boolean
     <strong>hasContent</strong>()
         </code>
@@ -1130,7 +1287,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasProperties">
-        <div class="location">at         line 328</div>
+        <div class="location">at         line 374</div>
         <code>                    boolean
     <strong>hasProperties</strong>()
         </code>
@@ -1160,7 +1317,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasFiles">
-        <div class="location">at         line 343</div>
+        <div class="location">at         line 389</div>
         <code>                    boolean
     <strong>hasFiles</strong>(string $fileType = null)
         </code>
@@ -1200,7 +1357,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFiles">
-        <div class="location">at         line 362</div>
+        <div class="location">at         line 408</div>
         <code>                    array
     <strong>getFiles</strong>(string $fileType = null)
         </code>
@@ -1240,7 +1397,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getProperties">
-        <div class="location">at         line 377</div>
+        <div class="location">at         line 423</div>
         <code>                    void
     <strong>getProperties</strong>(array $default = [])
         </code>
@@ -1280,7 +1437,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getOptions">
-        <div class="location">at         line 387</div>
+        <div class="location">at         line 433</div>
         <code>                    array
     <strong>getOptions</strong>()
         </code>
@@ -1310,7 +1467,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPath">
-        <div class="location">at         line 397</div>
+        <div class="location">at         line 443</div>
         <code>                    string
     <strong>getPath</strong>()
         </code>
@@ -1340,7 +1497,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFullPath">
-        <div class="location">at         line 407</div>
+        <div class="location">at         line 453</div>
         <code>                    string
     <strong>getFullPath</strong>()
         </code>
@@ -1370,7 +1527,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getType">
-        <div class="location">at         line 417</div>
+        <div class="location">at         line 463</div>
         <code>                    integer
     <strong>getType</strong>()
         </code>
@@ -1400,7 +1557,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTemplateName">
-        <div class="location">at         line 427</div>
+        <div class="location">at         line 473</div>
         <code>                    string
     <strong>getTemplateName</strong>()
         </code>
@@ -1430,7 +1587,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLanguage">
-        <div class="location">at         line 437</div>
+        <div class="location">at         line 483</div>
         <code>                    string
     <strong>getLanguage</strong>()
         </code>
@@ -1460,8 +1617,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getError">
-        <div class="location">at         line 447</div>
-        <code>                    string
+        <div class="location">at         line 493</div>
+        <code>                    array
     <strong>getError</strong>()
         </code>
     </h3>
@@ -1477,7 +1634,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>array</td>
             <td></td>
         </tr>
     </table>
@@ -1490,7 +1647,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getHtmlCode">
-        <div class="location">at         line 457</div>
+        <div class="location">at         line 503</div>
         <code>                    string
     <strong>getHtmlCode</strong>()
         </code>
@@ -1520,9 +1677,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getOption">
-        <div class="location">at         line 469</div>
+        <div class="location">at         line 515</div>
         <code>                    mixed
-    <strong>getOption</strong>(string $name, mixed $default = null)
+    <strong>getOption</strong>(string $path, mixed $default = null)
         </code>
     </h3>
     <div class="details">
@@ -1537,7 +1694,7 @@
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$name</td>
+                <td>$path</td>
                 <td></td>
             </tr>
                     <tr>
@@ -1564,8 +1721,53 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_setOption">
+        <div class="location">at         line 529</div>
+        <code>                    void
+    <strong>setOption</strong>(string $path, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set option value</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_setHtmlCode">
-        <div class="location">at         line 482</div>
+        <div class="location">at         line 540</div>
         <code>                    void
     <strong>setHtmlCode</strong>(string $code)
         </code>
@@ -1605,7 +1807,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setError">
-        <div class="location">at         line 495</div>
+        <div class="location">at         line 553</div>
         <code>                    void
     <strong>setError</strong>(string $code, array $params = [], string|null $msssage = null)
         </code>
@@ -1655,7 +1857,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isValid">
-        <div class="location">at         line 509</div>
+        <div class="location">at         line 567</div>
         <code>                    boolean
     <strong>isValid</strong>()
         </code>
@@ -1685,7 +1887,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_clearContent">
-        <div class="location">at         line 525</div>
+        <div class="location">at         line 583</div>
         <code>                    void
     <strong>clearContent</strong>()
         </code>
@@ -1715,9 +1917,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addFiles">
-        <div class="location">at         line 539</div>
+        <div class="location">at         line 599</div>
         <code>                    bool
-    <strong>addFiles</strong>(string $files, string $fileType)
+    <strong>addFiles</strong>(array $files, string $fileType)
         </code>
     </h3>
     <div class="details">
@@ -1731,7 +1933,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>array</td>
                 <td>$files</td>
                 <td></td>
             </tr>
@@ -1760,7 +1962,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addComponentFile">
-        <div class="location">at         line 562</div>
+        <div class="location">at         line 618</div>
         <code>                    void
     <strong>addComponentFile</strong>(string $fileExt)
         </code>
@@ -1800,9 +2002,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addFile">
-        <div class="location">at         line 585</div>
+        <div class="location">at         line 641</div>
         <code>                    void
-    <strong>addFile</strong>(string $file, string $fileType)
+    <strong>addFile</strong>(array $file, string $fileType)
         </code>
     </h3>
     <div class="details">
@@ -1816,7 +2018,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>array</td>
                 <td>$file</td>
                 <td></td>
             </tr>
@@ -1845,7 +2047,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseName">
-        <div class="location">at         line 606</div>
+        <div class="location">at         line 657</div>
         <code>            protected        void
     <strong>parseName</strong>(string $name)
         </code>
@@ -1888,7 +2090,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPropertiesFileName">
-        <div class="location">at         line 663</div>
+        <div class="location">at         line 714</div>
         <code>                    string|false
     <strong>getPropertiesFileName</strong>()
         </code>
@@ -1918,7 +2120,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPropertiesFileName">
-        <div class="location">at         line 678</div>
+        <div class="location">at         line 725</div>
         <code>                    void
     <strong>setPropertiesFileName</strong>(string $fileName)
         </code>
@@ -1958,7 +2160,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getOptionsFileName">
-        <div class="location">at         line 688</div>
+        <div class="location">at         line 735</div>
         <code>                    string|false
     <strong>getOptionsFileName</strong>()
         </code>
@@ -1988,7 +2190,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setOptionsFileName">
-        <div class="location">at         line 703</div>
+        <div class="location">at         line 746</div>
         <code>                    void
     <strong>setOptionsFileName</strong>(string $fileName)
         </code>
@@ -2027,8 +2229,48 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_createFromArray">
+        <div class="location">at         line 757</div>
+        <code>        static            <a href="../../../../Arikaim/Core/View/Html/ComponentDescriptor.html"><abbr title="Arikaim\Core\View\Html\ComponentDescriptor">ComponentDescriptor</abbr></a>
+    <strong>createFromArray</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Init component from array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Arikaim/Core/View/Html/ComponentDescriptor.html"><abbr title="Arikaim\Core\View\Html\ComponentDescriptor">ComponentDescriptor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_toArray">
-        <div class="location">at         line 713</div>
+        <div class="location">at         line 772</div>
         <code>                    array
     <strong>toArray</strong>()
         </code>
@@ -2058,7 +2300,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTemplateUrl">
-        <div class="location">at         line 723</div>
+        <div class="location">at         line 782</div>
         <code>                    string|false
     <strong>getTemplateUrl</strong>()
         </code>
@@ -2088,7 +2330,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getUrl">
-        <div class="location">at         line 745</div>
+        <div class="location">at         line 804</div>
         <code>                    void
     <strong>getUrl</strong>()
         </code>
@@ -2118,7 +2360,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRootComponentPath">
-        <div class="location">at         line 755</div>
+        <div class="location">at         line 814</div>
         <code>                    string
     <strong>getRootComponentPath</strong>()
         </code>
@@ -2148,7 +2390,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTemplatePath">
-        <div class="location">at         line 767</div>
+        <div class="location">at         line 826</div>
         <code>        static            string|false
     <strong>getTemplatePath</strong>($template, $type, $viewPath, $extensionsPath)
         </code>
@@ -2203,8 +2445,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getComponentPath">
-        <div class="location">at         line 783</div>
-        <code>                    
+        <div class="location">at         line 847</div>
+        <code>                    string|false
     <strong>getComponentPath</strong>()
         </code>
     </h3>
@@ -2212,34 +2454,15 @@
             
     
 
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getFrameworkPath">
-        <div class="location">at         line 793</div>
-        <code>                    string
-    <strong>getFrameworkPath</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
                     <div class="method-description">
-                                    <p>Get UI framework path</p>                                                </div>
+                                    <p>Get component path</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>string|false</td>
             <td></td>
         </tr>
     </table>
@@ -2252,9 +2475,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getComponentFile">
-        <div class="location">at         line 805</div>
+        <div class="location">at         line 859</div>
         <code>                    string|false
-    <strong>getComponentFile</strong>(string $fileExt = &quot;html&quot;, string $language = &quot;&quot;)
+    <strong>getComponentFile</strong>(string $fileExt = &#039;html&#039;, string $language = &#039;&#039;)
         </code>
     </h3>
     <div class="details">
@@ -2262,7 +2485,7 @@
     
 
                     <div class="method-description">
-                                    <p>Get component html file</p>                                                </div>
+                                    <p>Get component file</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2297,7 +2520,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFileUrl">
-        <div class="location">at         line 825</div>
+        <div class="location">at         line 879</div>
         <code>                    string
     <strong>getFileUrl</strong>(string $fileName)
         </code>
@@ -2337,8 +2560,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_loadProperties">
-        <div class="location">at         line 835</div>
-        <code>                    <a href="../../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a>
+        <div class="location">at         line 889</div>
+        <code>                    <abbr title="Arikaim\Core\View\Interfaces\Collection">Collection</abbr>
     <strong>loadProperties</strong>()
         </code>
     </h3>
@@ -2354,7 +2577,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a></td>
+            <td><abbr title="Arikaim\Core\View\Interfaces\Collection">Collection</abbr></td>
             <td></td>
         </tr>
     </table>
@@ -2367,8 +2590,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_loadOptions">
-        <div class="location">at         line 845</div>
-        <code>                    <a href="../../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a>
+        <div class="location">at         line 901</div>
+        <code>                    array
     <strong>loadOptions</strong>()
         </code>
     </h3>
@@ -2384,7 +2607,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a></td>
+            <td>array</td>
             <td></td>
         </tr>
     </table>
@@ -2397,7 +2620,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getComponentFullPath">
-        <div class="location">at         line 856</div>
+        <div class="location">at         line 914</div>
         <code>                    string
     <strong>getComponentFullPath</strong>($type, $templateName = null)
         </code>
@@ -2441,8 +2664,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_resolveDataFile">
+        <div class="location">at         line 930</div>
+        <code>            protected        void
+    <strong>resolveDataFile</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve component data file</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_resolvePath">
-        <div class="location">at         line 872</div>
+        <div class="location">at         line 942</div>
         <code>            protected        void
     <strong>resolvePath</strong>()
         </code>

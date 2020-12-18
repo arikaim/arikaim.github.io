@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -124,6 +124,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCurrentLanguage">getCurrentLanguage</a>()
+        
+                                            <p>Get current language</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string|null
                 </div>
                 <div class="col-md-8 type">
@@ -150,16 +160,6 @@
                     <a href="#method_getTranslatedAttributes">getTranslatedAttributes</a>()
         
                                             <p>Get translation attributes</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getCurrentLanguage">getCurrentLanguage</a>()
-        
-                                            <p>Get current language</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -244,12 +244,22 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    <abbr title="Arikaim\Core\Db\Traits\Model">Model</abbr>|null
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_findTranslation">findTranslation</a>(string $attributeName, mixed $value)
         
                                             <p>Find Translation</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMetaTags">getMetaTags</a>(string|null $language = null)
+        
+                                            <p>Get meta tags values</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -289,8 +299,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getCurrentLanguage">
+        <div class="location">at         line 46</div>
+        <code>                    string
+    <strong>getCurrentLanguage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get current language</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_translateAttribute">
-        <div class="location">at         line 48</div>
+        <div class="location">at         line 58</div>
         <code>                    string|null
     <strong>translateAttribute</strong>(string $attribute, string $language = null)
         </code>
@@ -335,7 +375,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_translateAttributes">
-        <div class="location">at         line 66</div>
+        <div class="location">at         line 76</div>
         <code>                    boolean
     <strong>translateAttributes</strong>(string $language)
         </code>
@@ -375,7 +415,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTranslatedAttributes">
-        <div class="location">at         line 86</div>
+        <div class="location">at         line 97</div>
         <code>                    array
     <strong>getTranslatedAttributes</strong>()
         </code>
@@ -404,38 +444,8 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getCurrentLanguage">
-        <div class="location">at         line 96</div>
-        <code>                    string
-    <strong>getCurrentLanguage</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Get current language</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_getTranslationReferenceAttributeName">
-        <div class="location">at         line 106</div>
+        <div class="location">at         line 107</div>
         <code>                    string|null
     <strong>getTranslationReferenceAttributeName</strong>()
         </code>
@@ -465,7 +475,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTranslationModelClass">
-        <div class="location">at         line 116</div>
+        <div class="location">at         line 117</div>
         <code>                    string|null
     <strong>getTranslationModelClass</strong>()
         </code>
@@ -495,7 +505,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_translations">
-        <div class="location">at         line 126</div>
+        <div class="location">at         line 127</div>
         <code>                    mixed
     <strong>translations</strong>()
         </code>
@@ -525,7 +535,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTranslationsQuery">
-        <div class="location">at         line 137</div>
+        <div class="location">at         line 138</div>
         <code>                    <abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr>
     <strong>getTranslationsQuery</strong>(string|<abbr title="Arikaim\Core\Db\Traits\mull">mull</abbr> $language = null)
         </code>
@@ -565,7 +575,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_translation">
-        <div class="location">at         line 152</div>
+        <div class="location">at         line 153</div>
         <code>                    <abbr title="Arikaim\Core\Db\Traits\Model">Model</abbr>|false
     <strong>translation</strong>($language = null, $query = false)
         </code>
@@ -610,7 +620,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_saveTranslation">
-        <div class="location">at         line 170</div>
+        <div class="location">at         line 171</div>
         <code>                    <abbr title="Arikaim\Core\Db\Traits\Model">Model</abbr>
     <strong>saveTranslation</strong>(array $data, $language = null, $id = null)
         </code>
@@ -660,7 +670,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_removeTranslation">
-        <div class="location">at         line 196</div>
+        <div class="location">at         line 197</div>
         <code>                    boolean
     <strong>removeTranslation</strong>(string|integer|null $id = null, string $language = null)
         </code>
@@ -705,7 +715,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_removeTranslations">
-        <div class="location">at         line 211</div>
+        <div class="location">at         line 212</div>
         <code>                    boolean
     <strong>removeTranslations</strong>(string|integer|null $id = null)
         </code>
@@ -745,8 +755,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_findTranslation">
-        <div class="location">at         line 226</div>
-        <code>                    void
+        <div class="location">at         line 227</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Model">Model</abbr>|null
     <strong>findTranslation</strong>(string $attributeName, mixed $value)
         </code>
     </h3>
@@ -777,7 +787,47 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td><abbr title="Arikaim\Core\Db\Traits\Model">Model</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMetaTags">
+        <div class="location">at         line 242</div>
+        <code>                    array
+    <strong>getMetaTags</strong>(string|null $language = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get meta tags values</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$language</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
             <td></td>
         </tr>
     </table>

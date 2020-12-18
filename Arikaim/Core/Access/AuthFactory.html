@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Arikaim Arikaim\Core\View\Template\Template | API Documentation</title>
-            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
-        <link rel="stylesheet" type="text/css" href="../../../../css/style.css">
-        <script src="../../../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../../../js/bootstrap.min.js"></script>
-        <script src="../../../../js/typeahead.min.js"></script>
-        <script src="../../../../sami.js"></script>
+    <title>Arikaim Arikaim\Core\Access\AuthFactory | API Documentation</title>
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-        <link rel="shortcut icon" href="../../../../images/arikaim-favicon.png" />
+        <link rel="shortcut icon" href="../../../images/arikaim-favicon.png" />
     </head>
 
-    <body id="class" data-name="class:Arikaim_Core_View_Template_Template" data-root-path="../../../../">
+    <body id="class" data-name="class:Arikaim_Core_Access_AuthFactory" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
-        <form id="search-form" action="../../../../search.html" method="GET">
+        <form id="search-form" action="../../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
                    class="typeahead form-control"
@@ -52,17 +52,17 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
-                    <li><a href="../../../../classes.html">Classes</a></li>
-                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
-                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
-                    <li><a href="../../../../traits.html">Traits</a></li>
-                    <li><a href="../../../../doc-index.html">Index</a></li>
-                    <li><a href="../../../../search.html">Search</a></li>
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
                 </ul>
             </div>
         </div>
@@ -71,41 +71,76 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/View.html">View</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/View/Template.html">Template</a></li><li class="backslash">\</li><li>Template</li>
+                        <li><a href="../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core/Access.html">Access</a></li><li class="backslash">\</li><li>AuthFactory</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            Template
+            AuthFactory
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>Template</strong>
+    <strong>AuthFactory</strong>
 </p>
 
         
     
 
             <div class="description">
-            <p>Html Template</p>                                </div>
+            <p>Auth factory class.</p>                                </div>
     
     
             <h2>Constants</h2>
 
             <table class="table table-condensed">
                     <tr>
-                <td>SYSTEM_TEMPLATE_NAME</td>
+                <td>ACCESS_NAMESPACE</td>
                 <td class="last">
                     <p><em></em></p>
                     <p></p>
                 </td>
             </tr>
                     <tr>
-                <td>DEFAULT_TEMPLATE_NAME</td>
+                <td>AUTH_BASIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTH_SESSION</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTH_JWT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AUTH_TOKEN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CSRF_TOKEN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OAUTH_TOKEN</td>
                 <td class="last">
                     <p><em></em></p>
                     <p></p>
@@ -120,62 +155,52 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;array
+                    static&nbsp;object|null
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getLibraries">getLibraries</a>()
+                    <a href="#method_createProvider">createProvider</a>(string $name, <a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a> $user, array $params = [])
         
-                                            <p>Return libraries</p>                </div>
+                                            <p>Create auth provider</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;void
+                    static&nbsp;object|null
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getPrimary">getPrimary</a>($default = Self::DEFAULT_TEMPLATE_NAME)
+                    <a href="#method_createMiddleware">createMiddleware</a>(string $authName, <a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a> $user, array $options = [])
         
-                                            <p>Get primary template</p>                </div>
+                                            <p>Create auth middleware</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;void
+                    static&nbsp;int
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setPrimary">setPrimary</a>(string $templateName)
+                    <a href="#method_getTypeId">getTypeId</a>(string $name)
         
-                                            <p>Set primary template</p>                </div>
+                                            <p>Return auth type id</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;string|null
+                    static&nbsp;boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getLoader">getLoader</a>()
+                    <a href="#method_isValidAuthName">isValidAuthName</a>(string $name)
         
-                                            <p>Get template loader component name</p>                </div>
+                                            <p>Check if auth name is valid</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;array
+                    static&nbsp;null|integer
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getFrameworks">getFrameworks</a>()
+                    <a href="#method_resolveAuthType">resolveAuthType</a>(string|integer $type)
         
-                                            <p>Return UI frameworks</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;void
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setCurrentFramework">setCurrentFramework</a>(string $library)
-        
-                                            <p>Set current front end framework.</p>                </div>
+                                            <p>Resolve auth type</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -183,9 +208,9 @@
                     static&nbsp;string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getCurrentFramework">getCurrentFramework</a>()
+                    <a href="#method_getAuthName">getAuthName</a>(int $auth)
         
-                                            <p>Return current front end framework used in page</p>                </div>
+                                            <p>Return auth name</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -193,19 +218,19 @@
                     static&nbsp;string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getMacroPath">getMacroPath</a>(string $macroName, string $template)
+                    <a href="#method_getAuthMiddlewareClass">getAuthMiddlewareClass</a>(integer $id)
         
-                                            <p>Get macro path</p>                </div>
+                                            <p>Get middleware class name</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;string
+                    static&nbsp;string|false
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getSystemMacroPath">getSystemMacroPath</a>(string $macroName)
+                    <a href="#method_getAuthProviderClass">getAuthProviderClass</a>(integer $id)
         
-                                            <p>Get system macro path</p>                </div>
+                                            <p>Get auth provider class</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -215,10 +240,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_getLibraries">
-        <div class="location">at         line 27</div>
-        <code>        static            array
-    <strong>getLibraries</strong>()
+                    <h3 id="method_createProvider">
+        <div class="location">at         line 95</div>
+        <code>        static            object|null
+    <strong>createProvider</strong>(string $name, <a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a> $user, array $params = [])
         </code>
     </h3>
     <div class="details">
@@ -226,84 +251,24 @@
     
 
                     <div class="method-description">
-                                    <p>Return libraries</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getPrimary">
-        <div class="location">at         line 37</div>
-        <code>        static            void
-    <strong>getPrimary</strong>($default = Self::DEFAULT_TEMPLATE_NAME)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Get primary template</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$default</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_setPrimary">
-        <div class="location">at         line 48</div>
-        <code>        static            void
-    <strong>setPrimary</strong>(string $templateName)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Set primary template</p>                                                </div>
+                                    <p>Create auth provider</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$templateName</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
                 <td></td>
             </tr>
             </table>
@@ -313,7 +278,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td>object|null</td>
             <td></td>
         </tr>
     </table>
@@ -325,10 +290,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getLoader">
-        <div class="location">at         line 58</div>
-        <code>        static            string|null
-    <strong>getLoader</strong>()
+                    <h3 id="method_createMiddleware">
+        <div class="location">at         line 116</div>
+        <code>        static            object|null
+    <strong>createMiddleware</strong>(string $authName, <a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a> $user, array $options = [])
         </code>
     </h3>
     <div class="details">
@@ -336,75 +301,25 @@
     
 
                     <div class="method-description">
-                                    <p>Get template loader component name</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string|null</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getFrameworks">
-        <div class="location">at         line 68</div>
-        <code>        static            array
-    <strong>getFrameworks</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Return UI frameworks</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_setCurrentFramework">
-        <div class="location">at         line 79</div>
-        <code>        static            void
-    <strong>setCurrentFramework</strong>(string $library)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Set current front end framework.</p>                                                </div>
+                                    <p>Create auth middleware</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$library</td>
-                <td>UI library name</td>
+                <td>$authName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
             </tr>
             </table>
 
@@ -413,7 +328,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td>object|null</td>
             <td></td>
         </tr>
     </table>
@@ -425,10 +340,130 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getCurrentFramework">
-        <div class="location">at         line 89</div>
+                    <h3 id="method_getTypeId">
+        <div class="location">at         line 137</div>
+        <code>        static            int
+    <strong>getTypeId</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return auth type id</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isValidAuthName">
+        <div class="location">at         line 148</div>
+        <code>        static            boolean
+    <strong>isValidAuthName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if auth name is valid</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveAuthType">
+        <div class="location">at         line 159</div>
+        <code>        static            null|integer
+    <strong>resolveAuthType</strong>(string|integer $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve auth type</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|integer</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthName">
+        <div class="location">at         line 174</div>
         <code>        static            string
-    <strong>getCurrentFramework</strong>()
+    <strong>getAuthName</strong>(int $auth)
         </code>
     </h3>
     <div class="details">
@@ -436,49 +471,14 @@
     
 
                     <div class="method-description">
-                                    <p>Return current front end framework used in page</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getMacroPath">
-        <div class="location">at         line 109</div>
-        <code>        static            string
-    <strong>getMacroPath</strong>(string $macroName, string $template)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Get macro path</p>                                                </div>
+                                    <p>Return auth name</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
-                <td>$macroName</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$template</td>
+                <td>int</td>
+                <td>$auth</td>
                 <td></td>
             </tr>
             </table>
@@ -500,10 +500,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getSystemMacroPath">
-        <div class="location">at         line 120</div>
+                    <h3 id="method_getAuthMiddlewareClass">
+        <div class="location">at         line 185</div>
         <code>        static            string
-    <strong>getSystemMacroPath</strong>(string $macroName)
+    <strong>getAuthMiddlewareClass</strong>(integer $id)
         </code>
     </h3>
     <div class="details">
@@ -511,14 +511,14 @@
     
 
                     <div class="method-description">
-                                    <p>Get system macro path</p>                                                </div>
+                                    <p>Get middleware class name</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
-                <td>$macroName</td>
+                <td>integer</td>
+                <td>$id</td>
                 <td></td>
             </tr>
             </table>
@@ -529,6 +529,46 @@
                     <table class="table table-condensed">
         <tr>
             <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthProviderClass">
+        <div class="location">at         line 196</div>
+        <code>        static            string|false
+    <strong>getAuthProviderClass</strong>(integer $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get auth provider class</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|false</td>
             <td></td>
         </tr>
     </table>

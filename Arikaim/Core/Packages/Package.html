@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -141,6 +141,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Packages/PackageValidator.html"><abbr title="Arikaim\Core\Packages\PackageValidator">PackageValidator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validator">validator</a>()
+        
+                                            <p>Create package validator</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
                 </div>
                 <div class="col-md-8 type">
@@ -157,6 +167,16 @@
                     <a href="#method_getVersion">getVersion</a>()
         
                                             <p>Get Package version</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLanguages">getLanguages</a>()
+        
+                                            <p>Get suppported languages</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -241,6 +261,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_postInstall">postInstall</a>()
+        
+                                            <p>Run post install actions</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-8 type">
@@ -269,6 +299,16 @@
                                             <p>Disable package</p>                </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_savePackageProperties">savePackageProperties</a>()
+        
+                                            <p>Save package properties file</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -277,7 +317,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 49</div>
+        <div class="location">at         line 51</div>
         <code>                    
     <strong>__construct</strong>($path, <a href="../../../Arikaim/Core/Collection/Interfaces/CollectionInterface.html"><abbr title="Arikaim\Core\Collection\Interfaces\CollectionInterface">CollectionInterface</abbr></a> $properties, <a href="../../../Arikaim/Core/Packages/Interfaces/PackageRegistryInterface.html"><abbr title="Arikaim\Core\Packages\Interfaces\PackageRegistryInterface">PackageRegistryInterface</abbr></a> $packageRegistry = null)
         </code>
@@ -317,8 +357,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_validator">
+        <div class="location">at         line 64</div>
+        <code>                    <a href="../../../Arikaim/Core/Packages/PackageValidator.html"><abbr title="Arikaim\Core\Packages\PackageValidator">PackageValidator</abbr></a>
+    <strong>validator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create package validator</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Packages/PackageValidator.html"><abbr title="Arikaim\Core\Packages\PackageValidator">PackageValidator</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getPath">
-        <div class="location">at         line 62</div>
+        <div class="location">at         line 74</div>
         <code>                    string
     <strong>getPath</strong>()
         </code>
@@ -348,7 +418,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getVersion">
-        <div class="location">at         line 72</div>
+        <div class="location">at         line 84</div>
         <code>                    string
     <strong>getVersion</strong>()
         </code>
@@ -377,8 +447,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getLanguages">
+        <div class="location">at         line 94</div>
+        <code>                    array|null
+    <strong>getLanguages</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get suppported languages</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_setPrimary">
-        <div class="location">at         line 82</div>
+        <div class="location">at         line 104</div>
         <code>                    boolean
     <strong>setPrimary</strong>()
         </code>
@@ -408,7 +508,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getType">
-        <div class="location">at         line 92</div>
+        <div class="location">at         line 114</div>
         <code>                    string
     <strong>getType</strong>()
         </code>
@@ -438,7 +538,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getName">
-        <div class="location">at         line 102</div>
+        <div class="location">at         line 124</div>
         <code>                    string
     <strong>getName</strong>()
         </code>
@@ -468,7 +568,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getProperties">
-        <div class="location">at         line 113</div>
+        <div class="location">at         line 135</div>
         <code>                    <abbr title="Arikaim\Core\Packages\Interfaces\Collection">Collection</abbr>
     <strong>getProperties</strong>(boolean $full = false)
         </code>
@@ -508,7 +608,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRequire">
-        <div class="location">at         line 123</div>
+        <div class="location">at         line 145</div>
         <code>                    <abbr title="Arikaim\Core\Packages\Interfaces\CollectionInterface">CollectionInterface</abbr>
     <strong>getRequire</strong>()
         </code>
@@ -538,7 +638,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getProperty">
-        <div class="location">at         line 137</div>
+        <div class="location">at         line 159</div>
         <code>                    mixed
     <strong>getProperty</strong>(<abbr title="Arikaim\Core\Packages\srting">srting</abbr> $name, mixed $default = null)
         </code>
@@ -583,7 +683,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_validate">
-        <div class="location">at         line 147</div>
+        <div class="location">at         line 169</div>
         <code>                    bool
     <strong>validate</strong>()
         </code>
@@ -613,7 +713,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_install">
-        <div class="location">at         line 158</div>
+        <div class="location">at         line 180</div>
         <code>                    bool
     <strong>install</strong>(boolean|null $primary = null)
         </code>
@@ -652,8 +752,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_postInstall">
+        <div class="location">at         line 190</div>
+        <code>                    boolean
+    <strong>postInstall</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run post install actions</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_unInstall">
-        <div class="location">at         line 168</div>
+        <div class="location">at         line 200</div>
         <code>                    bool
     <strong>unInstall</strong>()
         </code>
@@ -683,7 +813,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_enable">
-        <div class="location">at         line 178</div>
+        <div class="location">at         line 210</div>
         <code>                    bool
     <strong>enable</strong>()
         </code>
@@ -713,7 +843,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_disable">
-        <div class="location">at         line 188</div>
+        <div class="location">at         line 220</div>
         <code>                    bool
     <strong>disable</strong>()
         </code>
@@ -724,6 +854,36 @@
 
                     <div class="method-description">
                                     <p>Disable package</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_savePackageProperties">
+        <div class="location">at         line 230</div>
+        <code>                    bool
+    <strong>savePackageProperties</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Save package properties file</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>

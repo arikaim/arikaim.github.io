@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -181,10 +181,20 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSlug">setSlug</a>(string|null $text = null)
+        
+                                            <p>Set slug field</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_slug">slug</a>(string $text)
+                    <a href="#method_createSlug">createSlug</a>(string $text, string $separator = null)
         
                                             <p>Create slug from text</p>                </div>
                 <div class="col-md-2"></div>
@@ -456,10 +466,50 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_slug">
+                    <h3 id="method_setSlug">
         <div class="location">at         line 122</div>
+        <code>                    void
+    <strong>setSlug</strong>(string|null $text = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set slug field</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createSlug">
+        <div class="location">at         line 140</div>
         <code>                    string
-    <strong>slug</strong>(string $text)
+    <strong>createSlug</strong>(string $text, string $separator = null)
         </code>
     </h3>
     <div class="details">
@@ -475,6 +525,11 @@
                     <tr>
                 <td>string</td>
                 <td>$text</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
                 <td></td>
             </tr>
             </table>
@@ -497,7 +552,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_findBySlug">
-        <div class="location">at         line 133</div>
+        <div class="location">at         line 153</div>
         <code>                    <abbr title="Arikaim\Core\Db\Traits\Model">Model</abbr>
     <strong>findBySlug</strong>(string $slug)
         </code>

@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -115,14 +115,6 @@
                 <td></td>
             </tr>
                     <tr>
-                <td class="type" id="property_debug">
-                                        protected                                        bool
-                </td>
-                <td>$debug</td>
-                <td class="last">Denug mode</td>
-                <td></td>
-            </tr>
-                    <tr>
                 <td class="type" id="property_prettyFormat">
                                         protected                                        bool
                 </td>
@@ -140,7 +132,7 @@
             </tr>
                     <tr>
                 <td class="type" id="property_response">
-                                        protected                                        <abbr title="Arikaim\Core\Http\ResponseInterface">ResponseInterface</abbr>
+                                        protected                                        <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
                 </td>
                 <td>$response</td>
                 <td class="last">Request response object</td>
@@ -157,14 +149,14 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>($debug = false, $response = null)
+                    <a href="#method___construct">__construct</a>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>|null $response = null)
         
                                             <p>Constructor</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../Arikaim/Core/Http/Response.html"><abbr title="Arikaim\Core\Http\Response">Response</abbr></a>
+                    <a href="../../../Arikaim/Core/Http/ApiResponse.html"><abbr title="Arikaim\Core\Http\ApiResponse">ApiResponse</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_useJsonPrettyformat">useJsonPrettyformat</a>()
@@ -214,7 +206,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../Arikaim/Core/Http/Response.html"><abbr title="Arikaim\Core\Http\Response">Response</abbr></a>
+                    <a href="../../../Arikaim/Core/Http/ApiResponse.html"><abbr title="Arikaim\Core\Http\ApiResponse">ApiResponse</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_withError">withError</a>(string $errorMessage, boolean $condition = true)
@@ -224,7 +216,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../Arikaim/Core/Http/Response.html"><abbr title="Arikaim\Core\Http\Response">Response</abbr></a>
+                    <a href="../../../Arikaim/Core/Http/ApiResponse.html"><abbr title="Arikaim\Core\Http\ApiResponse">ApiResponse</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_setResult">setResult</a>(mixed $data)
@@ -244,7 +236,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../Arikaim/Core/Http/Response.html"><abbr title="Arikaim\Core\Http\Response">Response</abbr></a>
+                    <a href="../../../Arikaim/Core/Http/ApiResponse.html"><abbr title="Arikaim\Core\Http\ApiResponse">ApiResponse</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_message">message</a>(string $message)
@@ -264,7 +256,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../Arikaim/Core/Http/Response.html"><abbr title="Arikaim\Core\Http\Response">Response</abbr></a>
+                    <a href="../../../Arikaim/Core/Http/ApiResponse.html"><abbr title="Arikaim\Core\Http\ApiResponse">ApiResponse</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_field">field</a>(string $name, mixed $value)
@@ -294,7 +286,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Arikaim\Core\Http\Slim\Http\Response">Response</abbr>
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getResponse">getResponse</a>(boolean $raw = false)
@@ -320,9 +312,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 67</div>
+        <div class="location">at         line 62</div>
         <code>                    
-    <strong>__construct</strong>($debug = false, $response = null)
+    <strong>__construct</strong>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>|null $response = null)
         </code>
     </h3>
     <div class="details">
@@ -336,12 +328,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
-                <td>$debug</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
+                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>|null</td>
                 <td>$response</td>
                 <td></td>
             </tr>
@@ -356,8 +343,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_useJsonPrettyformat">
-        <div class="location">at         line 85</div>
-        <code>                    <a href="../../../Arikaim/Core/Http/Response.html"><abbr title="Arikaim\Core\Http\Response">Response</abbr></a>
+        <div class="location">at         line 79</div>
+        <code>                    <a href="../../../Arikaim/Core/Http/ApiResponse.html"><abbr title="Arikaim\Core\Http\ApiResponse">ApiResponse</abbr></a>
     <strong>useJsonPrettyformat</strong>()
         </code>
     </h3>
@@ -373,7 +360,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Arikaim/Core/Http/Response.html"><abbr title="Arikaim\Core\Http\Response">Response</abbr></a></td>
+            <td><a href="../../../Arikaim/Core/Http/ApiResponse.html"><abbr title="Arikaim\Core\Http\ApiResponse">ApiResponse</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -386,7 +373,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addErrors">
-        <div class="location">at         line 97</div>
+        <div class="location">at         line 92</div>
         <code>                    void
     <strong>addErrors</strong>(array $errors)
         </code>
@@ -426,7 +413,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setErrors">
-        <div class="location">at         line 111</div>
+        <div class="location">at         line 103</div>
         <code>                    void
     <strong>setErrors</strong>(array $errors)
         </code>
@@ -466,7 +453,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_clearErrors">
-        <div class="location">at         line 121</div>
+        <div class="location">at         line 113</div>
         <code>                    void
     <strong>clearErrors</strong>()
         </code>
@@ -496,7 +483,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setError">
-        <div class="location">at         line 133</div>
+        <div class="location">at         line 125</div>
         <code>                    void
     <strong>setError</strong>(string $errorMessage, boolean $condition = true)
         </code>
@@ -541,8 +528,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_withError">
-        <div class="location">at         line 147</div>
-        <code>                    <a href="../../../Arikaim/Core/Http/Response.html"><abbr title="Arikaim\Core\Http\Response">Response</abbr></a>
+        <div class="location">at         line 139</div>
+        <code>                    <a href="../../../Arikaim/Core/Http/ApiResponse.html"><abbr title="Arikaim\Core\Http\ApiResponse">ApiResponse</abbr></a>
     <strong>withError</strong>(string $errorMessage, boolean $condition = true)
         </code>
     </h3>
@@ -573,7 +560,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Arikaim/Core/Http/Response.html"><abbr title="Arikaim\Core\Http\Response">Response</abbr></a></td>
+            <td><a href="../../../Arikaim/Core/Http/ApiResponse.html"><abbr title="Arikaim\Core\Http\ApiResponse">ApiResponse</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -586,8 +573,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setResult">
-        <div class="location">at         line 159</div>
-        <code>                    <a href="../../../Arikaim/Core/Http/Response.html"><abbr title="Arikaim\Core\Http\Response">Response</abbr></a>
+        <div class="location">at         line 152</div>
+        <code>                    <a href="../../../Arikaim/Core/Http/ApiResponse.html"><abbr title="Arikaim\Core\Http\ApiResponse">ApiResponse</abbr></a>
     <strong>setResult</strong>(mixed $data)
         </code>
     </h3>
@@ -613,7 +600,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Arikaim/Core/Http/Response.html"><abbr title="Arikaim\Core\Http\Response">Response</abbr></a></td>
+            <td><a href="../../../Arikaim/Core/Http/ApiResponse.html"><abbr title="Arikaim\Core\Http\ApiResponse">ApiResponse</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -626,7 +613,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setResponse">
-        <div class="location">at         line 173</div>
+        <div class="location">at         line 167</div>
         <code>                    mixed
     <strong>setResponse</strong>(boolean $condition, array|<a target="_blank" href="http://php.net/Closure">Closure</a> $data, string|<a target="_blank" href="http://php.net/Closure">Closure</a> $error)
         </code>
@@ -676,8 +663,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_message">
-        <div class="location">at         line 196</div>
-        <code>                    <a href="../../../Arikaim/Core/Http/Response.html"><abbr title="Arikaim\Core\Http\Response">Response</abbr></a>
+        <div class="location">at         line 190</div>
+        <code>                    <a href="../../../Arikaim/Core/Http/ApiResponse.html"><abbr title="Arikaim\Core\Http\ApiResponse">ApiResponse</abbr></a>
     <strong>message</strong>(string $message)
         </code>
     </h3>
@@ -703,7 +690,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Arikaim/Core/Http/Response.html"><abbr title="Arikaim\Core\Http\Response">Response</abbr></a></td>
+            <td><a href="../../../Arikaim/Core/Http/ApiResponse.html"><abbr title="Arikaim\Core\Http\ApiResponse">ApiResponse</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -716,7 +703,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setResultField">
-        <div class="location">at         line 208</div>
+        <div class="location">at         line 202</div>
         <code>                    void
     <strong>setResultField</strong>(string $name, mixed $value)
         </code>
@@ -761,8 +748,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_field">
-        <div class="location">at         line 220</div>
-        <code>                    <a href="../../../Arikaim/Core/Http/Response.html"><abbr title="Arikaim\Core\Http\Response">Response</abbr></a>
+        <div class="location">at         line 214</div>
+        <code>                    <a href="../../../Arikaim/Core/Http/ApiResponse.html"><abbr title="Arikaim\Core\Http\ApiResponse">ApiResponse</abbr></a>
     <strong>field</strong>(string $name, mixed $value)
         </code>
     </h3>
@@ -793,7 +780,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Arikaim/Core/Http/Response.html"><abbr title="Arikaim\Core\Http\Response">Response</abbr></a></td>
+            <td><a href="../../../Arikaim/Core/Http/ApiResponse.html"><abbr title="Arikaim\Core\Http\ApiResponse">ApiResponse</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -806,7 +793,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getErrorCount">
-        <div class="location">at         line 231</div>
+        <div class="location">at         line 226</div>
         <code>                    int
     <strong>getErrorCount</strong>()
         </code>
@@ -836,7 +823,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasError">
-        <div class="location">at         line 241</div>
+        <div class="location">at         line 236</div>
         <code>                    boolean
     <strong>hasError</strong>()
         </code>
@@ -866,8 +853,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getResponse">
-        <div class="location">at         line 253</div>
-        <code>                    <abbr title="Arikaim\Core\Http\Slim\Http\Response">Response</abbr>
+        <div class="location">at         line 248</div>
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>getResponse</strong>(boolean $raw = false)
         </code>
     </h3>
@@ -893,7 +880,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Arikaim\Core\Http\Slim\Http\Response">Response</abbr></td>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
             <td></td>
         </tr>
     </table>
@@ -906,7 +893,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getResponseJson">
-        <div class="location">at         line 267</div>
+        <div class="location">at         line 262</div>
         <code>                    string
     <strong>getResponseJson</strong>()
         </code>

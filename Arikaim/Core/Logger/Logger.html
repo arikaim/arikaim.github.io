@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -94,6 +94,18 @@
             <p>Logger</p>                                </div>
     
     
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>DEFAULT_HANDLER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
     
             <h2>Properties</h2>
 
@@ -125,9 +137,89 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(string $logsDir, <abbr title="Monolog\Handler\AbstractHandler">AbstractHandler</abbr> $handler = null, <abbr title="Monolog\Formatter\FormatterInterface">FormatterInterface</abbr> $formatter = null, string $fileName = null)
+                    <a href="#method___construct">__construct</a>(string $logsDir, bool $enabled, string|null $handlerName = Self::DEFAULT_HANDLER)
         
                                             <p>Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isValidHandlerName">isValidHandlerName</a>(string $name)
+        
+                                            <p>Return true if handler name is valid</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHandelerName">getHandelerName</a>()
+        
+                                            <p>Get handler name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHandlerNames">getHandlerNames</a>()
+        
+                                            <p>Get handler names</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Monolog\Handler\HandlerInterface">HandlerInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createHandler">createHandler</a>(string $name)
+        
+                                            <p>Create handler instance</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHandler">setHandler</a>(string $name)
+        
+                                            <p>Replace all handlers with one</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHandlers">setHandlers</a>(array $handlers)
+        
+                                            <p>Set handlers</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pushHandler">pushHandler</a>(string $name)
+        
+                                            <p>Push handler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Monolog\Handler\HandlerInterface">HandlerInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_popHandler">popHandler</a>()
+        
+                                            <p>Pop handler</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -142,20 +234,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Monolog\Formatter\FormatterInterface">FormatterInterface</abbr>
+                    array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getFrmatter">getFrmatter</a>()
-        
-                                            <p>Get formatter</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <abbr title="Monolog\Handler\AbstractHandler">AbstractHandler</abbr>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getHandler">getHandler</a>()
+                    <a href="#method_getHandlers">getHandlers</a>()
         
                                             <p>Get handler</p>                </div>
                 <div class="col-md-2"></div>
@@ -178,6 +260,16 @@
                     <a href="#method_deleteSystemLogs">deleteSystemLogs</a>()
         
                                             <p>Delete logs file</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteLogs">deleteLogs</a>(object $handler)
+        
+                                            <p>Delete logs</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -222,6 +314,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_info">info</a>(string $message, array $context = [])
+        
+                                            <p>Add info log</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <abbr title="Arikaim\Core\Logger\Monolog\Logger">Logger</abbr>
                 </div>
                 <div class="col-md-8 type">
@@ -248,9 +350,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 76</div>
+        <div class="location">at         line 73</div>
         <code>                    
-    <strong>__construct</strong>(string $logsDir, <abbr title="Monolog\Handler\AbstractHandler">AbstractHandler</abbr> $handler = null, <abbr title="Monolog\Formatter\FormatterInterface">FormatterInterface</abbr> $formatter = null, string $fileName = null)
+    <strong>__construct</strong>(string $logsDir, bool $enabled, string|null $handlerName = Self::DEFAULT_HANDLER)
         </code>
     </h3>
     <div class="details">
@@ -269,18 +371,13 @@
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Monolog\Handler\AbstractHandler">AbstractHandler</abbr></td>
-                <td>$handler</td>
+                <td>bool</td>
+                <td>$enabled</td>
                 <td></td>
             </tr>
                     <tr>
-                <td><abbr title="Monolog\Formatter\FormatterInterface">FormatterInterface</abbr></td>
-                <td>$formatter</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$fileName</td>
+                <td>string|null</td>
+                <td>$handlerName</td>
                 <td></td>
             </tr>
             </table>
@@ -293,8 +390,298 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_isValidHandlerName">
+        <div class="location">at         line 91</div>
+        <code>                    boolean
+    <strong>isValidHandlerName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if handler name is valid</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHandelerName">
+        <div class="location">at         line 101</div>
+        <code>                    string
+    <strong>getHandelerName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get handler name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHandlerNames">
+        <div class="location">at         line 109</div>
+        <code>                    
+    <strong>getHandlerNames</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get handler names</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createHandler">
+        <div class="location">at         line 121</div>
+        <code>                    <abbr title="Monolog\Handler\HandlerInterface">HandlerInterface</abbr>
+    <strong>createHandler</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create handler instance</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Monolog\Handler\HandlerInterface">HandlerInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHandler">
+        <div class="location">at         line 149</div>
+        <code>                    void
+    <strong>setHandler</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replace all handlers with one</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHandlers">
+        <div class="location">at         line 163</div>
+        <code>                    void
+    <strong>setHandlers</strong>(array $handlers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set handlers</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$handlers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pushHandler">
+        <div class="location">at         line 174</div>
+        <code>                    void
+    <strong>pushHandler</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Push handler</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_popHandler">
+        <div class="location">at         line 185</div>
+        <code>                    <abbr title="Monolog\Handler\HandlerInterface">HandlerInterface</abbr>
+    <strong>popHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pop handler</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Monolog\Handler\HandlerInterface">HandlerInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_disable">
-        <div class="location">at         line 95</div>
+        <div class="location">at         line 195</div>
         <code>                    void
     <strong>disable</strong>()
         </code>
@@ -323,40 +710,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getFrmatter">
-        <div class="location">at         line 105</div>
-        <code>                    <abbr title="Monolog\Formatter\FormatterInterface">FormatterInterface</abbr>
-    <strong>getFrmatter</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Get formatter</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><abbr title="Monolog\Formatter\FormatterInterface">FormatterInterface</abbr></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getHandler">
-        <div class="location">at         line 115</div>
-        <code>                    <abbr title="Monolog\Handler\AbstractHandler">AbstractHandler</abbr>
-    <strong>getHandler</strong>()
+                    <h3 id="method_getHandlers">
+        <div class="location">at         line 205</div>
+        <code>                    array
+    <strong>getHandlers</strong>()
         </code>
     </h3>
     <div class="details">
@@ -371,7 +728,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Monolog\Handler\AbstractHandler">AbstractHandler</abbr></td>
+            <td>array</td>
             <td></td>
         </tr>
     </table>
@@ -384,7 +741,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLogsFileName">
-        <div class="location">at         line 125</div>
+        <div class="location">at         line 215</div>
         <code>                    string
     <strong>getLogsFileName</strong>()
         </code>
@@ -414,7 +771,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteSystemLogs">
-        <div class="location">at         line 135</div>
+        <div class="location">at         line 225</div>
         <code>                    bool
     <strong>deleteSystemLogs</strong>()
         </code>
@@ -443,8 +800,48 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_deleteLogs">
+        <div class="location">at         line 240</div>
+        <code>            protected        bool
+    <strong>deleteLogs</strong>(object $handler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete logs</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_readSystemLogs">
-        <div class="location">at         line 145</div>
+        <div class="location">at         line 259</div>
         <code>                    void
     <strong>readSystemLogs</strong>()
         </code>
@@ -474,7 +871,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___call">
-        <div class="location">at         line 163</div>
+        <div class="location">at         line 277</div>
         <code>                    boolean
     <strong>__call</strong>(string $name, mixed $arguments)
         </code>
@@ -519,7 +916,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_log">
-        <div class="location">at         line 179</div>
+        <div class="location">at         line 293</div>
         <code>                    boolean
     <strong>log</strong>(string $level, string $message, array $context = [])
         </code>
@@ -569,7 +966,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_error">
-        <div class="location">at         line 191</div>
+        <div class="location">at         line 305</div>
         <code>                    boolean
     <strong>error</strong>(string $message, array $context = [])
         </code>
@@ -613,8 +1010,53 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_info">
+        <div class="location">at         line 317</div>
+        <code>                    boolean
+    <strong>info</strong>(string $message, array $context = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add info log</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getLogger">
-        <div class="location">at         line 201</div>
+        <div class="location">at         line 327</div>
         <code>                    <abbr title="Arikaim\Core\Logger\Monolog\Logger">Logger</abbr>
     <strong>getLogger</strong>()
         </code>
@@ -644,7 +1086,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setLogger">
-        <div class="location">at         line 212</div>
+        <div class="location">at         line 338</div>
         <code>                    void
     <strong>setLogger</strong>(<abbr title="Arikaim\Core\Logger\Monolog\Logger">Logger</abbr> $logger)
         </code>

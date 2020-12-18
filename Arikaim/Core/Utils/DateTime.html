@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -106,6 +106,27 @@
             </tr>
                     <tr>
                 <td>DEFAULT_TIME_FORMAT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ISO8601_FORMAT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>RFC3339_FORMAT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ISO8601ZULU_FORMAT</td>
                 <td class="last">
                     <p><em></em></p>
                     <p></p>
@@ -180,7 +201,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;<a href="../../../Arikaim/Core/Utils/DateTime.html"><abbr title="Arikaim\Core\Utils\DateTime">DateTime</abbr></a>
+                    static&nbsp;<a target="_blank" href="http://php.net/DateTime">DateTime</a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_create">create</a>(string|null $date = null, string|null $format = null)
@@ -190,7 +211,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;<a href="../../../Arikaim/Core/Utils/DateTime.html"><abbr title="Arikaim\Core\Utils\DateTime">DateTime</abbr></a>
+                    static&nbsp;<a target="_blank" href="http://php.net/DateTime">DateTime</a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getDateTime">getDateTime</a>()
@@ -206,6 +227,16 @@
                     <a href="#method_getTimestamp">getTimestamp</a>()
         
                                             <p>Get timestamp</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCurrentTimestamp">getCurrentTimestamp</a>()
+        
+                                            <p>Get current timestamp</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -351,7 +382,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;<a href="../../../Arikaim/Core/Utils/DateTime.html"><abbr title="Arikaim\Core\Utils\DateTime">DateTime</abbr></a>
+                    static&nbsp;<a target="_blank" href="http://php.net/DateTime">DateTime</a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_setDateFormat">setDateFormat</a>(string $dateFormat)
@@ -364,7 +395,7 @@
                     static&nbsp;<a href="../../../Arikaim/Core/Utils/DateTime.html"><abbr title="Arikaim\Core\Utils\DateTime">DateTime</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_modify">modify</a>(string $date_text)
+                    <a href="#method_modify">modify</a>(string $dateText)
         
                                             <p>Modify date time</p>                </div>
                 <div class="col-md-2"></div>
@@ -391,7 +422,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;<a href="../../../Arikaim/Core/Utils/DateTime.html"><abbr title="Arikaim\Core\Utils\DateTime">DateTime</abbr></a>
+                    static&nbsp;<a target="_blank" href="http://php.net/DateTime">DateTime</a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_setTimestamp">setTimestamp</a>(integer $unixTimestamp)
@@ -407,6 +438,26 @@
                     <a href="#method_getYear">getYear</a>()
         
                                             <p>Get curent year</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCurrentYear">getCurrentYear</a>()
+        
+                                            <p>Get current year</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLastDay">getLastDay</a>(integer|string $month)
+        
+                                            <p>Get last day of month</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -431,7 +482,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;string
+                    static&nbsp;int
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getHour">getHour</a>()
@@ -459,6 +510,16 @@
                                             <p>Convert current date time to string.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a target="_blank" href="http://php.net/DateTime">DateTime</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_today">today</a>(string|null $format = null)
+        
+                                            <p>Get current date</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -467,7 +528,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_setFormats">
-        <div class="location">at         line 72</div>
+        <div class="location">at         line 75</div>
         <code>        static            void
     <strong>setFormats</strong>(array $dateFormats, array $timeFormats)
         </code>
@@ -512,7 +573,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setDateFormats">
-        <div class="location">at         line 85</div>
+        <div class="location">at         line 88</div>
         <code>        static            void
     <strong>setDateFormats</strong>(array $dateFormats, string|null $defultFormat = null)
         </code>
@@ -557,7 +618,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setTimeFormats">
-        <div class="location">at         line 98</div>
+        <div class="location">at         line 101</div>
         <code>        static            void
     <strong>setTimeFormats</strong>(array $timeFormats, $defultFormat = null)
         </code>
@@ -602,7 +663,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setDefaultDateFormat">
-        <div class="location">at         line 110</div>
+        <div class="location">at         line 113</div>
         <code>        static            void
     <strong>setDefaultDateFormat</strong>(string $format)
         </code>
@@ -642,7 +703,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setDefaultTimeFormat">
-        <div class="location">at         line 121</div>
+        <div class="location">at         line 124</div>
         <code>        static            void
     <strong>setDefaultTimeFormat</strong>(string $format)
         </code>
@@ -682,7 +743,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setDateTime">
-        <div class="location">at         line 133</div>
+        <div class="location">at         line 136</div>
         <code>        static            void
     <strong>setDateTime</strong>(string|null $date = null, string|null $format = null)
         </code>
@@ -727,8 +788,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_create">
-        <div class="location">at         line 145</div>
-        <code>        static            <a href="../../../Arikaim/Core/Utils/DateTime.html"><abbr title="Arikaim\Core\Utils\DateTime">DateTime</abbr></a>
+        <div class="location">at         line 148</div>
+        <code>        static            <a target="_blank" href="http://php.net/DateTime">DateTime</a>
     <strong>create</strong>(string|null $date = null, string|null $format = null)
         </code>
     </h3>
@@ -759,7 +820,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Arikaim/Core/Utils/DateTime.html"><abbr title="Arikaim\Core\Utils\DateTime">DateTime</abbr></a></td>
+            <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
             <td></td>
         </tr>
     </table>
@@ -772,8 +833,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getDateTime">
-        <div class="location">at         line 161</div>
-        <code>        static            <a href="../../../Arikaim/Core/Utils/DateTime.html"><abbr title="Arikaim\Core\Utils\DateTime">DateTime</abbr></a>
+        <div class="location">at         line 164</div>
+        <code>        static            <a target="_blank" href="http://php.net/DateTime">DateTime</a>
     <strong>getDateTime</strong>()
         </code>
     </h3>
@@ -789,7 +850,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Arikaim/Core/Utils/DateTime.html"><abbr title="Arikaim\Core\Utils\DateTime">DateTime</abbr></a></td>
+            <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
             <td></td>
         </tr>
     </table>
@@ -802,7 +863,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTimestamp">
-        <div class="location">at         line 175</div>
+        <div class="location">at         line 178</div>
         <code>        static            integer
     <strong>getTimestamp</strong>()
         </code>
@@ -831,8 +892,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getCurrentTimestamp">
+        <div class="location">at         line 188</div>
+        <code>        static            int
+    <strong>getCurrentTimestamp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get current timestamp</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_toTimestamp">
-        <div class="location">at         line 187</div>
+        <div class="location">at         line 200</div>
         <code>        static            integer
     <strong>toTimestamp</strong>(string|null $date = null, string|null $format = null)
         </code>
@@ -877,7 +968,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getDateFormat">
-        <div class="location">at         line 198</div>
+        <div class="location">at         line 211</div>
         <code>        static            string
     <strong>getDateFormat</strong>(string|null $name = null)
         </code>
@@ -917,7 +1008,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTimeZonesList">
-        <div class="location">at         line 212</div>
+        <div class="location">at         line 225</div>
         <code>        static            
     <strong>getTimeZonesList</strong>()
         </code>
@@ -936,7 +1027,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLocation">
-        <div class="location">at         line 222</div>
+        <div class="location">at         line 235</div>
         <code>        static            string
     <strong>getLocation</strong>()
         </code>
@@ -966,7 +1057,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTimeZoneOffset">
-        <div class="location">at         line 233</div>
+        <div class="location">at         line 246</div>
         <code>        static            string
     <strong>getTimeZoneOffset</strong>(<a href="../../../Arikaim/Core/Utils/DateTime.html"><abbr title="Arikaim\Core\Utils\DateTime">DateTime</abbr></a>|null $dateTime = null)
         </code>
@@ -1006,7 +1097,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTimeZoneName">
-        <div class="location">at         line 245</div>
+        <div class="location">at         line 256</div>
         <code>        static            string
     <strong>getTimeZoneName</strong>()
         </code>
@@ -1036,7 +1127,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTimeZone">
-        <div class="location">at         line 255</div>
+        <div class="location">at         line 266</div>
         <code>        static            <a target="_blank" href="http://php.net/DateTimeZone">DateTimeZone</a>
     <strong>getTimeZone</strong>()
         </code>
@@ -1066,7 +1157,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isValidTimeZone">
-        <div class="location">at         line 270</div>
+        <div class="location">at         line 281</div>
         <code>        static            boolean
     <strong>isValidTimeZone</strong>(string $name)
         </code>
@@ -1106,7 +1197,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setTimeZone">
-        <div class="location">at         line 281</div>
+        <div class="location">at         line 291</div>
         <code>        static            void
     <strong>setTimeZone</strong>(string|null $name = null)
         </code>
@@ -1139,15 +1230,6 @@
     </table>
 
             
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
-                <td></td>
-            </tr>
-            </table>
-
             
                     </div>
     </div>
@@ -1155,7 +1237,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_dateTimeFormat">
-        <div class="location">at         line 297</div>
+        <div class="location">at         line 307</div>
         <code>        static            string
     <strong>dateTimeFormat</strong>(integer $timestamp, string|null $format = null)
         </code>
@@ -1200,7 +1282,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_timeFormat">
-        <div class="location">at         line 317</div>
+        <div class="location">at         line 327</div>
         <code>        static            string
     <strong>timeFormat</strong>(integer $timestamp, string $format = null)
         </code>
@@ -1245,7 +1327,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_dateFormat">
-        <div class="location">at         line 334</div>
+        <div class="location">at         line 344</div>
         <code>        static            string
     <strong>dateFormat</strong>(integer $timestamp, string $format = null)
         </code>
@@ -1290,7 +1372,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTimeFormat">
-        <div class="location">at         line 350</div>
+        <div class="location">at         line 360</div>
         <code>        static            string
     <strong>getTimeFormat</strong>(string $name = null)
         </code>
@@ -1330,7 +1412,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getInterval">
-        <div class="location">at         line 365</div>
+        <div class="location">at         line 375</div>
         <code>        static            array
     <strong>getInterval</strong>(string $intervalText)
         </code>
@@ -1370,8 +1452,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setDateFormat">
-        <div class="location">at         line 378</div>
-        <code>        static            <a href="../../../Arikaim/Core/Utils/DateTime.html"><abbr title="Arikaim\Core\Utils\DateTime">DateTime</abbr></a>
+        <div class="location">at         line 388</div>
+        <code>        static            <a target="_blank" href="http://php.net/DateTime">DateTime</a>
     <strong>setDateFormat</strong>(string $dateFormat)
         </code>
     </h3>
@@ -1397,7 +1479,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Arikaim/Core/Utils/DateTime.html"><abbr title="Arikaim\Core\Utils\DateTime">DateTime</abbr></a></td>
+            <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
             <td></td>
         </tr>
     </table>
@@ -1410,9 +1492,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_modify">
-        <div class="location">at         line 391</div>
+        <div class="location">at         line 401</div>
         <code>        static            <a href="../../../Arikaim/Core/Utils/DateTime.html"><abbr title="Arikaim\Core\Utils\DateTime">DateTime</abbr></a>
-    <strong>modify</strong>(string $date_text)
+    <strong>modify</strong>(string $dateText)
         </code>
     </h3>
     <div class="details">
@@ -1427,7 +1509,7 @@
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$date_text</td>
+                <td>$dateText</td>
                 <td></td>
             </tr>
             </table>
@@ -1450,7 +1532,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addInterval">
-        <div class="location">at         line 404</div>
+        <div class="location">at         line 414</div>
         <code>        static            <a href="../../../Arikaim/Core/Utils/DateTime.html"><abbr title="Arikaim\Core\Utils\DateTime">DateTime</abbr></a>
     <strong>addInterval</strong>(string $dateInterval)
         </code>
@@ -1490,7 +1572,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_subInterval">
-        <div class="location">at         line 417</div>
+        <div class="location">at         line 427</div>
         <code>        static            <a href="../../../Arikaim/Core/Utils/DateTime.html"><abbr title="Arikaim\Core\Utils\DateTime">DateTime</abbr></a>
     <strong>subInterval</strong>(string $dateInterval)
         </code>
@@ -1530,8 +1612,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setTimestamp">
-        <div class="location">at         line 430</div>
-        <code>        static            <a href="../../../Arikaim/Core/Utils/DateTime.html"><abbr title="Arikaim\Core\Utils\DateTime">DateTime</abbr></a>
+        <div class="location">at         line 440</div>
+        <code>        static            <a target="_blank" href="http://php.net/DateTime">DateTime</a>
     <strong>setTimestamp</strong>(integer $unixTimestamp)
         </code>
     </h3>
@@ -1557,7 +1639,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Arikaim/Core/Utils/DateTime.html"><abbr title="Arikaim\Core\Utils\DateTime">DateTime</abbr></a></td>
+            <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
             <td></td>
         </tr>
     </table>
@@ -1570,7 +1652,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getYear">
-        <div class="location">at         line 442</div>
+        <div class="location">at         line 452</div>
         <code>        static            string
     <strong>getYear</strong>()
         </code>
@@ -1599,8 +1681,78 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getCurrentYear">
+        <div class="location">at         line 462</div>
+        <code>        static            string
+    <strong>getCurrentYear</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get current year</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastDay">
+        <div class="location">at         line 473</div>
+        <code>        static            integer
+    <strong>getLastDay</strong>(integer|string $month)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get last day of month</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer|string</td>
+                <td>$month</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getMonth">
-        <div class="location">at         line 452</div>
+        <div class="location">at         line 485</div>
         <code>        static            string
     <strong>getMonth</strong>()
         </code>
@@ -1630,7 +1782,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getDay">
-        <div class="location">at         line 462</div>
+        <div class="location">at         line 495</div>
         <code>        static            string
     <strong>getDay</strong>()
         </code>
@@ -1660,8 +1812,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getHour">
-        <div class="location">at         line 472</div>
-        <code>        static            string
+        <div class="location">at         line 505</div>
+        <code>        static            int
     <strong>getHour</strong>()
         </code>
     </h3>
@@ -1677,7 +1829,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>int</td>
             <td></td>
         </tr>
     </table>
@@ -1690,7 +1842,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMinutes">
-        <div class="location">at         line 482</div>
+        <div class="location">at         line 515</div>
         <code>        static            integer
     <strong>getMinutes</strong>()
         </code>
@@ -1720,7 +1872,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_toString">
-        <div class="location">at         line 493</div>
+        <div class="location">at         line 526</div>
         <code>        static            string
     <strong>toString</strong>(string $format = null)
         </code>
@@ -1748,6 +1900,46 @@
                     <table class="table table-condensed">
         <tr>
             <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_today">
+        <div class="location">at         line 537</div>
+        <code>        static            <a target="_blank" href="http://php.net/DateTime">DateTime</a>
+    <strong>today</strong>(string|null $format = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get current date</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
             <td></td>
         </tr>
     </table>

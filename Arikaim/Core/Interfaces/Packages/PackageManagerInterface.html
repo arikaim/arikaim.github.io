@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -138,6 +138,16 @@
                     <a href="#method_installPackage">installPackage</a>(string $name)
         
                                             <p>Install package</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_postInstallPackage">postInstallPackage</a>(string $name)
+        
+                                            <p>Run post install actions on package</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -387,8 +397,48 @@ If cached list is empty run sacen and save new values to cache</p>              
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_unInstallPackage">
+                    <h3 id="method_postInstallPackage">
         <div class="location">at         line 49</div>
+        <code>                    void
+    <strong>postInstallPackage</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run post install actions on package</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unInstallPackage">
+        <div class="location">at         line 57</div>
         <code>                    bool
     <strong>unInstallPackage</strong>(string $name)
         </code>
@@ -428,7 +478,7 @@ If cached list is empty run sacen and save new values to cache</p>              
             </div>
                     <div class="method-item">
                     <h3 id="method_enablePackage">
-        <div class="location">at         line 57</div>
+        <div class="location">at         line 65</div>
         <code>                    bool
     <strong>enablePackage</strong>(string $name)
         </code>
@@ -468,7 +518,7 @@ If cached list is empty run sacen and save new values to cache</p>              
             </div>
                     <div class="method-item">
                     <h3 id="method_disablePackage">
-        <div class="location">at         line 65</div>
+        <div class="location">at         line 73</div>
         <code>                    bool
     <strong>disablePackage</strong>(string $name)
         </code>
@@ -508,7 +558,7 @@ If cached list is empty run sacen and save new values to cache</p>              
             </div>
                     <div class="method-item">
                     <h3 id="method_installAllPackages">
-        <div class="location">at         line 71</div>
+        <div class="location">at         line 79</div>
         <code>                    
     <strong>installAllPackages</strong>()
         </code>
@@ -529,7 +579,7 @@ If cached list is empty run sacen and save new values to cache</p>              
             </div>
                     <div class="method-item">
                     <h3 id="method_getPackages">
-        <div class="location">at         line 81</div>
+        <div class="location">at         line 89</div>
         <code>                    array
     <strong>getPackages</strong>(bool $cached = false, array $filter = null)
         </code>
@@ -575,7 +625,7 @@ If cached list is empty run sacen and save new values to cache</p>              
             </div>
                     <div class="method-item">
                     <h3 id="method_getInstalled">
-        <div class="location">at         line 90</div>
+        <div class="location">at         line 98</div>
         <code>                    array
     <strong>getInstalled</strong>(mixed|null $status = null, mixed|null $type = null)
         </code>
@@ -620,7 +670,7 @@ If cached list is empty run sacen and save new values to cache</p>              
             </div>
                     <div class="method-item">
                     <h3 id="method_createBackup">
-        <div class="location">at         line 98</div>
+        <div class="location">at         line 106</div>
         <code>                    boolean
     <strong>createBackup</strong>(string $name)
         </code>
@@ -660,7 +710,7 @@ If cached list is empty run sacen and save new values to cache</p>              
             </div>
                     <div class="method-item">
                     <h3 id="method_getRepository">
-        <div class="location">at         line 105</div>
+        <div class="location">at         line 113</div>
         <code>                    <abbr title="Arikaim\Core\Interfaces\Packages\RepositoryInterface">RepositoryInterface</abbr>
     <strong>getRepository</strong>($packageName)
         </code>

@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -167,6 +167,14 @@
             <h2>Properties</h2>
 
             <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_cacheSaveTime">
+                    static                                                            integer
+                </td>
+                <td>$cacheSaveTime</td>
+                <td class="last">Cache save time</td>
+                <td></td>
+            </tr>
                     <tr>
                 <td class="type" id="property_packageType">
                                         protected                                        string
@@ -346,9 +354,29 @@
                     bool
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_postInstallAllPackages">postInstallAllPackages</a>()
+        
+                                            <p>Run post install actions on all packages</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_installPackage">installPackage</a>(string $name)
         
                                             <p>Install package</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_postInstallPackage">postInstallPackage</a>(string $name)
+        
+                                            <p>Run post install actions on package</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -439,7 +467,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 96</div>
+        <div class="location">at         line 103</div>
         <code>                    
     <strong>__construct</strong>($packagePath, $packageType, $packageClass, <a href="../../../Arikaim/Core/Interfaces/CacheInterface.html"><abbr title="Arikaim\Core\Interfaces\CacheInterface">CacheInterface</abbr></a> $cache, <a href="../../../Arikaim/Core/Interfaces/StorageInterface.html"><abbr title="Arikaim\Core\Interfaces\StorageInterface">StorageInterface</abbr></a> $storage, <a href="../../../Arikaim/Core/Interfaces/HttpClientInterface.html"><abbr title="Arikaim\Core\Interfaces\HttpClientInterface">HttpClientInterface</abbr></a> $httpClient, <a href="../../../Arikaim/Core/Packages/Interfaces/PackageRegistryInterface.html"><abbr title="Arikaim\Core\Packages\Interfaces\PackageRegistryInterface">PackageRegistryInterface</abbr></a> $packageRegistry = null)
         </code>
@@ -500,7 +528,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPackgesRegistry">
-        <div class="location">at         line 121</div>
+        <div class="location">at         line 130</div>
         <code>                    <a href="../../../Arikaim/Core/Packages/Interfaces/PackageRegistryInterface.html"><abbr title="Arikaim\Core\Packages\Interfaces\PackageRegistryInterface">PackageRegistryInterface</abbr></a>
     <strong>getPackgesRegistry</strong>()
         </code>
@@ -530,7 +558,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createPackage">
-        <div class="location">at         line 132</div>
+        <div class="location">at         line 141</div>
         <code>                    <abbr title="Arikaim\Core\Interfaces\Packages\Arikaim\Core\Packages\Interfaces\PackageInterface">PackageInterface</abbr>
     <strong>createPackage</strong>(string $name)
         </code>
@@ -570,7 +598,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasPackage">
-        <div class="location">at         line 149</div>
+        <div class="location">at         line 158</div>
         <code>                    boolean
     <strong>hasPackage</strong>(string $name)
         </code>
@@ -610,7 +638,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRepository">
-        <div class="location">at         line 162</div>
+        <div class="location">at         line 171</div>
         <code>                    <abbr title="Arikaim\Core\Interfaces\Packages\RepositoryInterface">RepositoryInterface</abbr>
     <strong>getRepository</strong>($packageName)
         </code>
@@ -650,7 +678,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPackages">
-        <div class="location">at         line 178</div>
+        <div class="location">at         line 187</div>
         <code>                    array
     <strong>getPackages</strong>(bool $cached = false, array $filter = null)
         </code>
@@ -695,7 +723,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPath">
-        <div class="location">at         line 194</div>
+        <div class="location">at         line 203</div>
         <code>                    string
     <strong>getPath</strong>()
         </code>
@@ -725,7 +753,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_loadPackageProperties">
-        <div class="location">at         line 205</div>
+        <div class="location">at         line 214</div>
         <code>        static            <a href="../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a>
     <strong>loadPackageProperties</strong>($name, $path)
         </code>
@@ -770,7 +798,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_scan">
-        <div class="location">at         line 225</div>
+        <div class="location">at         line 234</div>
         <code>            protected        array
     <strong>scan</strong>(mixed $filter = null)
         </code>
@@ -810,7 +838,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPackageProperties">
-        <div class="location">at         line 256</div>
+        <div class="location">at         line 265</div>
         <code>                    <abbr title="Arikaim\Core\Interfaces\Packages\Collection">Collection</abbr>
     <strong>getPackageProperties</strong>($name, $full = false)
         </code>
@@ -855,7 +883,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_findPackage">
-        <div class="location">at         line 270</div>
+        <div class="location">at         line 279</div>
         <code>                    
     <strong>findPackage</strong>($param, $value)
         </code>
@@ -891,7 +919,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_installAllPackages">
-        <div class="location">at         line 288</div>
+        <div class="location">at         line 297</div>
         <code>                    
     <strong>installAllPackages</strong>()
         </code>
@@ -911,8 +939,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_postInstallAllPackages">
+        <div class="location">at         line 314</div>
+        <code>                    bool
+    <strong>postInstallAllPackages</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run post install actions on all packages</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_installPackage">
-        <div class="location">at         line 307</div>
+        <div class="location">at         line 332</div>
         <code>                    bool
     <strong>installPackage</strong>(string $name)
         </code>
@@ -951,8 +1009,48 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_postInstallPackage">
+        <div class="location">at         line 345</div>
+        <code>                    void
+    <strong>postInstallPackage</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run post install actions on package</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_unInstallPackage">
-        <div class="location">at         line 320</div>
+        <div class="location">at         line 358</div>
         <code>                    bool
     <strong>unInstallPackage</strong>(string $name)
         </code>
@@ -992,7 +1090,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_enablePackage">
-        <div class="location">at         line 333</div>
+        <div class="location">at         line 371</div>
         <code>                    bool
     <strong>enablePackage</strong>(string $name)
         </code>
@@ -1032,7 +1130,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_disablePackage">
-        <div class="location">at         line 346</div>
+        <div class="location">at         line 384</div>
         <code>                    bool
     <strong>disablePackage</strong>(string $name)
         </code>
@@ -1072,7 +1170,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getInstalled">
-        <div class="location">at         line 360</div>
+        <div class="location">at         line 398</div>
         <code>                    array
     <strong>getInstalled</strong>(mixed|null $status = null, mixed|null $type = null)
         </code>
@@ -1117,7 +1215,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createBackup">
-        <div class="location">at         line 371</div>
+        <div class="location">at         line 409</div>
         <code>                    boolean
     <strong>createBackup</strong>(string $name)
         </code>
@@ -1157,7 +1255,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createRepository">
-        <div class="location">at         line 398</div>
+        <div class="location">at         line 436</div>
         <code>                    void
     <strong>createRepository</strong>(string $repositoryUrl, boolean $private = false)
         </code>
@@ -1202,7 +1300,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createRepositoryUrl">
-        <div class="location">at         line 418</div>
+        <div class="location">at         line 456</div>
         <code>        static            string|null
     <strong>createRepositoryUrl</strong>(string $packageName, string $type)
         </code>
@@ -1247,7 +1345,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_resolveRepositoryType">
-        <div class="location">at         line 437</div>
+        <div class="location">at         line 475</div>
         <code>            protected        string|null
     <strong>resolveRepositoryType</strong>(string $repositoryUrl, boolean $private = false)
         </code>

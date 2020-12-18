@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -99,6 +99,26 @@
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHomePageRoute">getHomePageRoute</a>()
+        
+                                            <p>Get home page route</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_searchRoutes">searchRoutes</a>(string $method, int|null $type = null)
+        
+                                            <p>Get routes list for request method</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     boolean
@@ -196,8 +216,83 @@
 
             <div id="method-details">
                     <div class="method-item">
+                    <h3 id="method_getHomePageRoute">
+        <div class="location">at         line 22</div>
+        <code>                    array
+    <strong>getHomePageRoute</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get home page route</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_searchRoutes">
+        <div class="location">at         line 31</div>
+        <code>                    array
+    <strong>searchRoutes</strong>(string $method, int|null $type = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get routes list for request method</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_saveRedirectUrl">
-        <div class="location">at         line 25</div>
+        <div class="location">at         line 41</div>
         <code>                    boolean
     <strong>saveRedirectUrl</strong>(string $method, string $pattern, string $url)
         </code>
@@ -247,7 +342,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRoutes">
-        <div class="location">at         line 33</div>
+        <div class="location">at         line 49</div>
         <code>                    array
     <strong>getRoutes</strong>($filter = [])
         </code>
@@ -287,7 +382,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteRoutes">
-        <div class="location">at         line 41</div>
+        <div class="location">at         line 57</div>
         <code>                    boolean
     <strong>deleteRoutes</strong>($filter = [])
         </code>
@@ -327,7 +422,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setRoutesStatus">
-        <div class="location">at         line 50</div>
+        <div class="location">at         line 66</div>
         <code>                    boolean
     <strong>setRoutesStatus</strong>($filter = [], $status)
         </code>
@@ -372,7 +467,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addRoute">
-        <div class="location">at         line 58</div>
+        <div class="location">at         line 74</div>
         <code>                    boolean
     <strong>addRoute</strong>(array $details)
         </code>
@@ -412,7 +507,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_saveRouteOptions">
-        <div class="location">at         line 68</div>
+        <div class="location">at         line 84</div>
         <code>                    boolean
     <strong>saveRouteOptions</strong>(string $method, string $pattern, array $options)
         </code>
@@ -462,7 +557,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasRoute">
-        <div class="location">at         line 77</div>
+        <div class="location">at         line 93</div>
         <code>                    boolean
     <strong>hasRoute</strong>(string $method, string $pattern)
         </code>
@@ -507,7 +602,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteRoute">
-        <div class="location">at         line 86</div>
+        <div class="location">at         line 102</div>
         <code>                    bool
     <strong>deleteRoute</strong>(string $method, string $pattern)
         </code>
@@ -552,7 +647,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRoute">
-        <div class="location">at         line 95</div>
+        <div class="location">at         line 111</div>
         <code>                    array|false
     <strong>getRoute</strong>(string $method, string $pattern)
         </code>

@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -195,6 +195,22 @@
                 <td></td>
             </tr>
                     <tr>
+                <td class="type" id="property_USER_GROUP">
+                    static                                                            
+                </td>
+                <td>$USER_GROUP</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_PERMISSION">
+                    static                                                            
+                </td>
+                <td>$PERMISSION</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_TYPES_LIST">
                     static                                                            
                 </td>
@@ -216,6 +232,16 @@
                     <a href="#method_getOptionTypeId">getOptionTypeId</a>(string $type)
         
                                             <p>Get option type id</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTypeText">getTypeText</a>(int|null $type = null)
+        
+                                            <p>Get option type name</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -246,6 +272,26 @@
                     <a href="#method_DATE">DATE</a>()
         
                                             <p>Date time option type</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_USERGROUP">USERGROUP</a>()
+        
+                                            <p>User group option type</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_PERMISSION">PERMISSION</a>()
+        
+                                            <p>Permission option type</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -356,7 +402,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_getOptionTypeId">
-        <div class="location">at         line 57</div>
+        <div class="location">at         line 61</div>
         <code>        static            integer|null
     <strong>getOptionTypeId</strong>(string $type)
         </code>
@@ -395,8 +441,48 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getTypeText">
+        <div class="location">at         line 74</div>
+        <code>                    string|false
+    <strong>getTypeText</strong>(int|null $type = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get option type name</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|null</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_bootOptionType">
-        <div class="location">at         line 69</div>
+        <div class="location">at         line 86</div>
         <code>        static            void
     <strong>bootOptionType</strong>()
         </code>
@@ -426,7 +512,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_TIME_INTERVAL">
-        <div class="location">at         line 96</div>
+        <div class="location">at         line 113</div>
         <code>                    integer
     <strong>TIME_INTERVAL</strong>()
         </code>
@@ -456,7 +542,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_DATE">
-        <div class="location">at         line 106</div>
+        <div class="location">at         line 123</div>
         <code>                    integer
     <strong>DATE</strong>()
         </code>
@@ -485,8 +571,68 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_USERGROUP">
+        <div class="location">at         line 133</div>
+        <code>                    integer
+    <strong>USERGROUP</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>User group option type</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_PERMISSION">
+        <div class="location">at         line 143</div>
+        <code>                    integer
+    <strong>PERMISSION</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Permission option type</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_TEXT">
-        <div class="location">at         line 116</div>
+        <div class="location">at         line 153</div>
         <code>                    integer
     <strong>TEXT</strong>()
         </code>
@@ -516,7 +662,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_CHECKBOX">
-        <div class="location">at         line 126</div>
+        <div class="location">at         line 163</div>
         <code>                    integer
     <strong>CHECKBOX</strong>()
         </code>
@@ -546,7 +692,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_DROPDOWN">
-        <div class="location">at         line 136</div>
+        <div class="location">at         line 173</div>
         <code>                    integer
     <strong>DROPDOWN</strong>()
         </code>
@@ -576,7 +722,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_TEXTAREA">
-        <div class="location">at         line 146</div>
+        <div class="location">at         line 183</div>
         <code>                    integer
     <strong>TEXTAREA</strong>()
         </code>
@@ -606,7 +752,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_RELATION">
-        <div class="location">at         line 156</div>
+        <div class="location">at         line 193</div>
         <code>                    integer
     <strong>RELATION</strong>()
         </code>
@@ -636,7 +782,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_NUMBER">
-        <div class="location">at         line 166</div>
+        <div class="location">at         line 203</div>
         <code>                    integer
     <strong>NUMBER</strong>()
         </code>
@@ -666,7 +812,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_PRICE">
-        <div class="location">at         line 176</div>
+        <div class="location">at         line 213</div>
         <code>                    integer
     <strong>PRICE</strong>()
         </code>
@@ -696,7 +842,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setItemsAttribute">
-        <div class="location">at         line 187</div>
+        <div class="location">at         line 224</div>
         <code>                    void
     <strong>setItemsAttribute</strong>(array $value)
         </code>
@@ -736,7 +882,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getItemsAttribute">
-        <div class="location">at         line 198</div>
+        <div class="location">at         line 235</div>
         <code>                    array
     <strong>getItemsAttribute</strong>()
         </code>
@@ -766,7 +912,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getByKey">
-        <div class="location">at         line 209</div>
+        <div class="location">at         line 246</div>
         <code>                    mixed
     <strong>getByKey</strong>(string $key)
         </code>

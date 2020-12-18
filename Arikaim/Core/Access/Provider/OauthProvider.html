@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -109,7 +109,7 @@
             </tr>
                     <tr>
                 <td class="type" id="property_user">
-                                        protected                                        
+                                        protected                                        <a href="../../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a>|null
                 </td>
                 <td>$user</td>
                 <td class="last">Current auth user</td>
@@ -154,7 +154,7 @@
                     mixed|null
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getParam">getParam</a>(string $name)
+                    <a href="#method_getParam">getParam</a>(string $name, mixed $default = null)
         
                                             <p>Get param</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Access/Provider/AuthProvider.html#method_getParam"><abbr title="Arikaim\Core\Access\Provider\AuthProvider">AuthProvider</abbr></a></small></div>
@@ -303,9 +303,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getParam">
-        <div class="location">in <a href="../../../../Arikaim/Core/Access/Provider/AuthProvider.html#method_getParam"><abbr title="Arikaim\Core\Access\Provider\AuthProvider">AuthProvider</abbr></a> at         line 70</div>
+        <div class="location">in <a href="../../../../Arikaim/Core/Access/Provider/AuthProvider.html#method_getParam"><abbr title="Arikaim\Core\Access\Provider\AuthProvider">AuthProvider</abbr></a> at         line 71</div>
         <code>                    mixed|null
-    <strong>getParam</strong>(string $name)
+    <strong>getParam</strong>(string $name, mixed $default = null)
         </code>
     </h3>
     <div class="details">
@@ -321,6 +321,11 @@
                     <tr>
                 <td>string</td>
                 <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
                 <td></td>
             </tr>
             </table>
@@ -343,7 +348,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getProvider">
-        <div class="location">in <a href="../../../../Arikaim/Core/Access/Provider/AuthProvider.html#method_getProvider"><abbr title="Arikaim\Core\Access\Provider\AuthProvider">AuthProvider</abbr></a> at         line 80</div>
+        <div class="location">in <a href="../../../../Arikaim/Core/Access/Provider/AuthProvider.html#method_getProvider"><abbr title="Arikaim\Core\Access\Provider\AuthProvider">AuthProvider</abbr></a> at         line 81</div>
         <code>                    <a href="../../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a>
     <strong>getProvider</strong>()
         </code>
@@ -433,7 +438,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setProvider">
-        <div class="location">in <a href="../../../../Arikaim/Core/Access/Provider/AuthProvider.html#method_setProvider"><abbr title="Arikaim\Core\Access\Provider\AuthProvider">AuthProvider</abbr></a> at         line 110</div>
+        <div class="location">in <a href="../../../../Arikaim/Core/Access/Provider/AuthProvider.html#method_setProvider"><abbr title="Arikaim\Core\Access\Provider\AuthProvider">AuthProvider</abbr></a> at         line 111</div>
         <code>                    void
     <strong>setProvider</strong>(<a href="../../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a> $userProvider)
         </code>

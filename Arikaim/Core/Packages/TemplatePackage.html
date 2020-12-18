@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -106,6 +106,15 @@
                     View components trait
                 </div>
             </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    View component translations trait
+                </div>
+            </div>
             </div>
     
     
@@ -154,6 +163,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Packages/PackageValidator.html"><abbr title="Arikaim\Core\Packages\PackageValidator">PackageValidator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validator">validator</a>()
+        
+                                            <p>Create package validator</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Package.html#method_validator"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
                 </div>
                 <div class="col-md-8 type">
@@ -171,6 +190,16 @@
         
                                             <p>Get Package version</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Package.html#method_getVersion"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLanguages">getLanguages</a>()
+        
+                                            <p>Get suppported languages</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Package.html#method_getLanguages"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -254,6 +283,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_postInstall">postInstall</a>()
+        
+                                            <p>Run post install actions</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Package.html#method_postInstall"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-8 type">
@@ -284,10 +323,20 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_savePackageProperties">savePackageProperties</a>()
+        
+                                            <p>Save package properties file</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Package.html#method_savePackageProperties"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getViewPath">getViewPath</a>()
+                    <a href="#method_getViewPath">getViewPath</a>(string|null $componentsType = null)
         
                                             <p>Get view path</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getViewPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a></small></div>
@@ -317,6 +366,16 @@
                     string
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_getEmailsPath">getEmailsPath</a>()
+        
+                                            <p>Get emails components path</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getEmailsPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getMacrosPath">getMacrosPath</a>()
         
                                             <p>Get macros path</p>                </div>
@@ -337,7 +396,7 @@
                     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getPages">getPages</a>(string|null $path = null)
+                    <a href="#method_getPages">getPages</a>($parent = &#039;&#039;)
         
                                             <p>Scan directory and return pages list</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getPages"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a></small></div>
@@ -347,10 +406,140 @@
                     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getComponents">getComponents</a>(string|null $path = null)
+                    <a href="#method_getEmails">getEmails</a>($parent = &#039;&#039;)
+        
+                                            <p>Scan directory and return emails list</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getEmails"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComponentPath">getComponentPath</a>(string $componentName, string $type = &#039;components&#039;)
+        
+                                            <p>Get component path</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponentPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComponents">getComponents</a>(string $parent = &#039;&#039;, string $type = &#039;components&#039;)
         
                                             <p>Scan directory and return components list</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponents"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComponentsRecursive">getComponentsRecursive</a>(string|null $path = null)
+        
+                                            <p>Scan directory and return components list</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponentsRecursive"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComponentTranslations">getComponentTranslations</a>(string $componentName, string $type = &#039;components&#039;)
+        
+                                            <p>Get package view components translations</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_getComponentTranslations"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_readTranslation">readTranslation</a>(string $componentName, string $language, string $type = &#039;components&#039;)
+        
+                                            <p>Read language translation</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_readTranslation"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTranslationRelativeFileName">getTranslationRelativeFileName</a>(string $componentName, string $language, string $type = &#039;components&#039;)
+        
+                                            <p>Get translation relative file name path</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_getTranslationRelativeFileName"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTranslationFileName">getTranslationFileName</a>(string $componentName, string $language, string $type = &#039;components&#039;)
+        
+                                            <p>Get translation file name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_getTranslationFileName"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_saveTranslation">saveTranslation</a>(array $data, string $componentName, string $language, string $type = &#039;components&#039;)
+        
+                                            <p>Save translation</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_saveTranslation"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_readTranlationProperty">readTranlationProperty</a>(array|string $data, string $key, string $separator = &#039;_&#039;, string|null $language = null, string $type = &#039;components&#039;)
+        
+                                            <p>Get translation property value</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_readTranlationProperty"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTranslationProperty">setTranslationProperty</a>(array $data, string $key, mixed $value, string $separator = &#039;_&#039;)
+        
+                                            <p>Set translation property value</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_setTranslationProperty"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveTranslationFileName">resolveTranslationFileName</a>(string $path, string $language)
+        
+                                            <p>Resolve translation file name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_resolveTranslationFileName"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasLanguage">hasLanguage</a>(array $translations, string $language)
+        
+                                            <p>Return true if component have language</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_hasLanguage"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComponentLanguages">getComponentLanguages</a>(array $componentFiles)
+        
+                                            <p>Get component languages</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_getComponentLanguages"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -380,7 +569,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method___construct"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 49</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method___construct"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 51</div>
         <code>                    
     <strong>__construct</strong>($path, <a href="../../../Arikaim/Core/Collection/Interfaces/CollectionInterface.html"><abbr title="Arikaim\Core\Collection\Interfaces\CollectionInterface">CollectionInterface</abbr></a> $properties, <a href="../../../Arikaim/Core/Packages/Interfaces/PackageRegistryInterface.html"><abbr title="Arikaim\Core\Packages\Interfaces\PackageRegistryInterface">PackageRegistryInterface</abbr></a> $packageRegistry = null)
         </code>
@@ -420,8 +609,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_validator">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_validator"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 64</div>
+        <code>                    <a href="../../../Arikaim/Core/Packages/PackageValidator.html"><abbr title="Arikaim\Core\Packages\PackageValidator">PackageValidator</abbr></a>
+    <strong>validator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create package validator</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Packages/PackageValidator.html"><abbr title="Arikaim\Core\Packages\PackageValidator">PackageValidator</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getPath">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getPath"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 62</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getPath"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 74</div>
         <code>                    string
     <strong>getPath</strong>()
         </code>
@@ -451,7 +670,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getVersion">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getVersion"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 72</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getVersion"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 84</div>
         <code>                    string
     <strong>getVersion</strong>()
         </code>
@@ -480,8 +699,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getLanguages">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getLanguages"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 94</div>
+        <code>                    array|null
+    <strong>getLanguages</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get suppported languages</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_setPrimary">
-        <div class="location">at         line 57</div>
+        <div class="location">at         line 65</div>
         <code>                    boolean
     <strong>setPrimary</strong>()
         </code>
@@ -511,7 +760,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getType">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getType"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 92</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getType"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 114</div>
         <code>                    string
     <strong>getType</strong>()
         </code>
@@ -541,7 +790,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getName">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getName"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 102</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getName"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 124</div>
         <code>                    string
     <strong>getName</strong>()
         </code>
@@ -571,7 +820,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getProperties">
-        <div class="location">at         line 35</div>
+        <div class="location">at         line 39</div>
         <code>                    <abbr title="Arikaim\Core\Packages\Interfaces\Collection">Collection</abbr>
     <strong>getProperties</strong>(boolean $full = false)
         </code>
@@ -611,7 +860,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRequire">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getRequire"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 123</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getRequire"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 145</div>
         <code>                    <abbr title="Arikaim\Core\Packages\Interfaces\CollectionInterface">CollectionInterface</abbr>
     <strong>getRequire</strong>()
         </code>
@@ -641,7 +890,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getProperty">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getProperty"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 137</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getProperty"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 159</div>
         <code>                    mixed
     <strong>getProperty</strong>(<abbr title="Arikaim\Core\Packages\srting">srting</abbr> $name, mixed $default = null)
         </code>
@@ -686,7 +935,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_validate">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_validate"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 147</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_validate"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 169</div>
         <code>                    bool
     <strong>validate</strong>()
         </code>
@@ -716,7 +965,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_install">
-        <div class="location">at         line 70</div>
+        <div class="location">at         line 78</div>
         <code>                    bool
     <strong>install</strong>(boolean|null $primary = null)
         </code>
@@ -755,8 +1004,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_postInstall">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_postInstall"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 190</div>
+        <code>                    boolean
+    <strong>postInstall</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run post install actions</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_unInstall">
-        <div class="location">at         line 159</div>
+        <div class="location">at         line 166</div>
         <code>                    bool
     <strong>unInstall</strong>()
         </code>
@@ -786,7 +1065,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_enable">
-        <div class="location">at         line 171</div>
+        <div class="location">at         line 178</div>
         <code>                    bool
     <strong>enable</strong>()
         </code>
@@ -816,7 +1095,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_disable">
-        <div class="location">at         line 181</div>
+        <div class="location">at         line 188</div>
         <code>                    bool
     <strong>disable</strong>()
         </code>
@@ -845,10 +1124,40 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_savePackageProperties">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_savePackageProperties"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 230</div>
+        <code>                    bool
+    <strong>savePackageProperties</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Save package properties file</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getViewPath">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getViewPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 24</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getViewPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 25</div>
         <code>                    string
-    <strong>getViewPath</strong>()
+    <strong>getViewPath</strong>(string|null $componentsType = null)
         </code>
     </h3>
     <div class="details">
@@ -858,6 +1167,16 @@
                     <div class="method-description">
                                     <p>Get view path</p>                                                </div>
                 <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$componentsType</td>
+                <td></td>
+            </tr>
+            </table>
+
             
                             <h4>Return Value</h4>
 
@@ -876,7 +1195,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getComponentsPath">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponentsPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 34</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponentsPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 41</div>
         <code>                    string
     <strong>getComponentsPath</strong>()
         </code>
@@ -906,7 +1225,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPagesPath">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getPagesPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 44</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getPagesPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 51</div>
         <code>                    string
     <strong>getPagesPath</strong>()
         </code>
@@ -935,8 +1254,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getEmailsPath">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getEmailsPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 61</div>
+        <code>                    string
+    <strong>getEmailsPath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get emails components path</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getMacrosPath">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getMacrosPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 54</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getMacrosPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 71</div>
         <code>                    string
     <strong>getMacrosPath</strong>()
         </code>
@@ -966,7 +1315,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMacros">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getMacros"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 65</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getMacros"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 82</div>
         <code>                    array
     <strong>getMacros</strong>(string|null $path = null)
         </code>
@@ -1006,9 +1355,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPages">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getPages"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 92</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getPages"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 109</div>
         <code>                    array
-    <strong>getPages</strong>(string|null $path = null)
+    <strong>getPages</strong>($parent = &#039;&#039;)
         </code>
     </h3>
     <div class="details">
@@ -1022,8 +1371,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string|null</td>
-                <td>$path</td>
+                <td></td>
+                <td>$parent</td>
                 <td></td>
             </tr>
             </table>
@@ -1045,10 +1394,140 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getComponents">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponents"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 117</div>
+                    <h3 id="method_getEmails">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getEmails"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 120</div>
         <code>                    array
-    <strong>getComponents</strong>(string|null $path = null)
+    <strong>getEmails</strong>($parent = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Scan directory and return emails list</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$parent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComponentPath">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponentPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 132</div>
+        <code>                    string
+    <strong>getComponentPath</strong>(string $componentName, string $type = &#039;components&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get component path</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$componentName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComponents">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponents"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 147</div>
+        <code>                    array
+    <strong>getComponents</strong>(string $parent = &#039;&#039;, string $type = &#039;components&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Scan directory and return components list</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComponentsRecursive">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponentsRecursive"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 180</div>
+        <code>                    array
+    <strong>getComponentsRecursive</strong>(string|null $path = null)
         </code>
     </h3>
     <div class="details">
@@ -1085,8 +1564,503 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getComponentTranslations">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_getComponentTranslations"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a> at         line 39</div>
+        <code>                    array
+    <strong>getComponentTranslations</strong>(string $componentName, string $type = &#039;components&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get package view components translations</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$componentName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_readTranslation">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_readTranslation"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a> at         line 67</div>
+        <code>                    array|false
+    <strong>readTranslation</strong>(string $componentName, string $language, string $type = &#039;components&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Read language translation</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$componentName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$language</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTranslationRelativeFileName">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_getTranslationRelativeFileName"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a> at         line 82</div>
+        <code>                    string
+    <strong>getTranslationRelativeFileName</strong>(string $componentName, string $language, string $type = &#039;components&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get translation relative file name path</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$componentName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$language</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTranslationFileName">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_getTranslationFileName"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a> at         line 97</div>
+        <code>                    string
+    <strong>getTranslationFileName</strong>(string $componentName, string $language, string $type = &#039;components&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get translation file name</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$componentName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$language</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_saveTranslation">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_saveTranslation"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a> at         line 119</div>
+        <code>                    boolean
+    <strong>saveTranslation</strong>(array $data, string $componentName, string $language, string $type = &#039;components&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Save translation</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$componentName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$language</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_readTranlationProperty">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_readTranlationProperty"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a> at         line 146</div>
+        <code>                    mixed
+    <strong>readTranlationProperty</strong>(array|string $data, string $key, string $separator = &#039;_&#039;, string|null $language = null, string $type = &#039;components&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get translation property value</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$language</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTranslationProperty">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_setTranslationProperty"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a> at         line 167</div>
+        <code>                    array
+    <strong>setTranslationProperty</strong>(array $data, string $key, mixed $value, string $separator = &#039;_&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set translation property value</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveTranslationFileName">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_resolveTranslationFileName"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a> at         line 179</div>
+        <code>                    string
+    <strong>resolveTranslationFileName</strong>(string $path, string $language)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve translation file name</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$language</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasLanguage">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_hasLanguage"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a> at         line 194</div>
+        <code>                    boolean
+    <strong>hasLanguage</strong>(array $translations, string $language)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if component have language</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$translations</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$language</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComponentLanguages">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ComponentTranslations.html#method_getComponentLanguages"><abbr title="Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a> at         line 207</div>
+        <code>                    array
+    <strong>getComponentLanguages</strong>(array $componentFiles)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get component languages</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$componentFiles</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_buildAssets">
-        <div class="location">at         line 122</div>
+        <div class="location">at         line 129</div>
         <code>                    boolean
     <strong>buildAssets</strong>()
         </code>
@@ -1116,7 +2090,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRoutes">
-        <div class="location">at         line 191</div>
+        <div class="location">at         line 198</div>
         <code>                    array
     <strong>getRoutes</strong>()
         </code>

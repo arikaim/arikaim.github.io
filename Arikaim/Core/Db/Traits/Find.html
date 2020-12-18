@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -107,6 +107,36 @@
                     <a href="#method_findById">findById</a>(integer|string $id)
         
                                             <p>Find model by id or uuid</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findMultiple">findMultiple</a>(array $idList)
+        
+                                            <p>Find multiole query</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Model">Model</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLastRow">getLastRow</a>(string $field = &#039;id&#039;)
+        
+                                            <p>Get last row</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLastId">getLastId</a>()
+        
+                                            <p>Get last id</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -216,8 +246,118 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_findMultiple">
+        <div class="location">at         line 34</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr>
+    <strong>findMultiple</strong>(array $idList)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find multiole query</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$idList</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastRow">
+        <div class="location">at         line 45</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Model">Model</abbr>|null
+    <strong>getLastRow</strong>(string $field = &#039;id&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get last row</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Db\Traits\Model">Model</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastId">
+        <div class="location">at         line 55</div>
+        <code>                    integer|null
+    <strong>getLastId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get last id</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_findByColumn">
-        <div class="location">at         line 35</div>
+        <div class="location">at         line 69</div>
         <code>                    object|false
     <strong>findByColumn</strong>(<abbr title="Arikaim\Core\Db\Traits\mxied">mxied</abbr> $value, string $column = null)
         </code>
@@ -262,7 +402,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_findQuery">
-        <div class="location">at         line 49</div>
+        <div class="location">at         line 83</div>
         <code>                    object|null
     <strong>findQuery</strong>(mixed $value, string|null|array $column = null)
         </code>
@@ -307,7 +447,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_findByIdQuery">
-        <div class="location">at         line 76</div>
+        <div class="location">at         line 110</div>
         <code>                    object
     <strong>findByIdQuery</strong>(integer|string $id)
         </code>
@@ -347,7 +487,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getIdAttributeName">
-        <div class="location">at         line 87</div>
+        <div class="location">at         line 121</div>
         <code>                    void
     <strong>getIdAttributeName</strong>(integer|string $id)
         </code>
@@ -387,7 +527,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_findItems">
-        <div class="location">at         line 99</div>
+        <div class="location">at         line 134</div>
         <code>                    <abbr title="Arikaim\Core\Db\Traits\QueryBuilder">QueryBuilder</abbr>
     <strong>findItems</strong>(array $items)
         </code>
@@ -427,7 +567,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_whereIgnoreCase">
-        <div class="location">at         line 112</div>
+        <div class="location">at         line 147</div>
         <code>                    <abbr title="Arikaim\Core\Db\Traits\Query">Query</abbr>
     <strong>whereIgnoreCase</strong>(string $attribute, mixed $value, string $operator = &#039;=&#039;)
         </code>

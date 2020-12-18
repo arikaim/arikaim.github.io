@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -244,6 +244,16 @@
                     static&nbsp;string
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_getClassNamespace">getClassNamespace</a>(string $class)
+        
+                                            <p>Get class namspace</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getFullClassName">getFullClassName</a>(string $class)
         
                                             <p>Get full core class name</p>                </div>
@@ -277,6 +287,16 @@
                     <a href="#method_getExtensionControllerClass">getExtensionControllerClass</a>(string $extension, string $baseClass)
         
                                             <p>Get extension controller full class name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Arikaim\Core\Utils\Controller">Controller</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createController">createController</a>(<abbr title="Arikaim\Core\Utils\Container">Container</abbr> $container, string $baseClass, string $extension)
+        
+                                            <p>Create controller</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -597,7 +617,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createSchema">
-        <div class="location">at         line 78</div>
+        <div class="location">at         line 79</div>
         <code>        static            object|null
     <strong>createSchema</strong>(string $schemaClass, string $extension = null)
         </code>
@@ -642,7 +662,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getConstant">
-        <div class="location">at         line 93</div>
+        <div class="location">at         line 94</div>
         <code>        static            mixed
     <strong>getConstant</strong>(string $class, string $name)
         </code>
@@ -687,7 +707,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createModule">
-        <div class="location">at         line 106</div>
+        <div class="location">at         line 107</div>
         <code>        static            object|null
     <strong>createModule</strong>(string $module, string $class, array $args = null)
         </code>
@@ -737,7 +757,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createExtension">
-        <div class="location">at         line 121</div>
+        <div class="location">at         line 122</div>
         <code>        static            object|null
     <strong>createExtension</strong>(string $extension, string $class, array $args = null)
         </code>
@@ -787,7 +807,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createJob">
-        <div class="location">at         line 138</div>
+        <div class="location">at         line 139</div>
         <code>        static            object|null
     <strong>createJob</strong>($class, $extension = null, $name = null)
         </code>
@@ -837,7 +857,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getEventSubscriberClass">
-        <div class="location">at         line 156</div>
+        <div class="location">at         line 157</div>
         <code>        static            string
     <strong>getEventSubscriberClass</strong>(string $baseClass, string|null $extension = null)
         </code>
@@ -882,7 +902,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createEventSubscriber">
-        <div class="location">at         line 172</div>
+        <div class="location">at         line 173</div>
         <code>        static            object|null
     <strong>createEventSubscriber</strong>(string $baseClass, string|null $extension = null)
         </code>
@@ -926,8 +946,48 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getClassNamespace">
+        <div class="location">at         line 187</div>
+        <code>        static            string
+    <strong>getClassNamespace</strong>(string $class)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get class namspace</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getFullClassName">
-        <div class="location">at         line 186</div>
+        <div class="location">at         line 198</div>
         <code>        static            string
     <strong>getFullClassName</strong>(string $class)
         </code>
@@ -967,7 +1027,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getModuleNamespace">
-        <div class="location">at         line 197</div>
+        <div class="location">at         line 209</div>
         <code>        static            string
     <strong>getModuleNamespace</strong>(string $module)
         </code>
@@ -1007,7 +1067,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getModuleClass">
-        <div class="location">at         line 209</div>
+        <div class="location">at         line 221</div>
         <code>        static            string
     <strong>getModuleClass</strong>(string $module, string $baseClass)
         </code>
@@ -1052,7 +1112,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getExtensionControllerClass">
-        <div class="location">at         line 221</div>
+        <div class="location">at         line 233</div>
         <code>        static            string
     <strong>getExtensionControllerClass</strong>(string $extension, string $baseClass)
         </code>
@@ -1096,8 +1156,58 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_createController">
+        <div class="location">at         line 246</div>
+        <code>        static            <abbr title="Arikaim\Core\Utils\Controller">Controller</abbr>|null
+    <strong>createController</strong>(<abbr title="Arikaim\Core\Utils\Container">Container</abbr> $container, string $baseClass, string $extension)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create controller</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Arikaim\Core\Utils\Container">Container</abbr></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$baseClass</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Utils\Controller">Controller</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getExtensionControllersNamespace">
-        <div class="location">at         line 232</div>
+        <div class="location">at         line 259</div>
         <code>        static            string
     <strong>getExtensionControllersNamespace</strong>(string $extension)
         </code>
@@ -1137,7 +1247,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getExtensionEventSubscriberClass">
-        <div class="location">at         line 244</div>
+        <div class="location">at         line 271</div>
         <code>        static            string
     <strong>getExtensionEventSubscriberClass</strong>(string $baseClass, string|null $extension)
         </code>
@@ -1182,7 +1292,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getExtensionNamespace">
-        <div class="location">at         line 255</div>
+        <div class="location">at         line 282</div>
         <code>        static            string
     <strong>getExtensionNamespace</strong>(string $extension)
         </code>
@@ -1222,7 +1332,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getExtensionClassName">
-        <div class="location">at         line 267</div>
+        <div class="location">at         line 294</div>
         <code>        static            string
     <strong>getExtensionClassName</strong>(string $extension, string $baseClass)
         </code>
@@ -1267,7 +1377,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getModuleConsoleClassName">
-        <div class="location">at         line 279</div>
+        <div class="location">at         line 306</div>
         <code>        static            string
     <strong>getModuleConsoleClassName</strong>(string $module, string $baseClass)
         </code>
@@ -1312,7 +1422,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getExtensionConsoleClassName">
-        <div class="location">at         line 291</div>
+        <div class="location">at         line 318</div>
         <code>        static            string
     <strong>getExtensionConsoleClassName</strong>(string $extension, string $baseClass)
         </code>
@@ -1357,7 +1467,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFullInterfaceName">
-        <div class="location">at         line 302</div>
+        <div class="location">at         line 329</div>
         <code>        static            string
     <strong>getFullInterfaceName</strong>(string $baseName)
         </code>
@@ -1397,7 +1507,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getJobClassName">
-        <div class="location">at         line 314</div>
+        <div class="location">at         line 341</div>
         <code>        static            string
     <strong>getJobClassName</strong>(string $extension, string $class)
         </code>
@@ -1442,7 +1552,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getJobsNamespace">
-        <div class="location">at         line 325</div>
+        <div class="location">at         line 352</div>
         <code>        static            string
     <strong>getJobsNamespace</strong>(string|null $extension = null)
         </code>
@@ -1482,7 +1592,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getModelClass">
-        <div class="location">at         line 340</div>
+        <div class="location">at         line 367</div>
         <code>        static            string
     <strong>getModelClass</strong>($class, $extension = null)
         </code>
@@ -1527,7 +1637,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getExtensionModelNamespace">
-        <div class="location">at         line 355</div>
+        <div class="location">at         line 382</div>
         <code>        static            string
     <strong>getExtensionModelNamespace</strong>(string $extension)
         </code>
@@ -1567,7 +1677,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getControllerClass">
-        <div class="location">at         line 366</div>
+        <div class="location">at         line 393</div>
         <code>        static            string
     <strong>getControllerClass</strong>(string $class)
         </code>
@@ -1607,7 +1717,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getValidatorRuleClass">
-        <div class="location">at         line 377</div>
+        <div class="location">at         line 404</div>
         <code>        static            string
     <strong>getValidatorRuleClass</strong>(string $baseClass)
         </code>
@@ -1647,7 +1757,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getValidatorFiltersClass">
-        <div class="location">at         line 393</div>
+        <div class="location">at         line 420</div>
         <code>        static            string
     <strong>getValidatorFiltersClass</strong>(string $baseClass)
         </code>
@@ -1687,7 +1797,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSystemEventsNamespace">
-        <div class="location">at         line 403</div>
+        <div class="location">at         line 430</div>
         <code>        static            string
     <strong>getSystemEventsNamespace</strong>()
         </code>
@@ -1717,7 +1827,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getExtensionSubscribersNamespace">
-        <div class="location">at         line 414</div>
+        <div class="location">at         line 441</div>
         <code>        static            string
     <strong>getExtensionSubscribersNamespace</strong>(string $extension)
         </code>
@@ -1757,7 +1867,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSchemaNamespace">
-        <div class="location">at         line 425</div>
+        <div class="location">at         line 452</div>
         <code>        static            string
     <strong>getSchemaNamespace</strong>(string|null $extension = null)
         </code>
@@ -1797,7 +1907,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSchemaClass">
-        <div class="location">at         line 442</div>
+        <div class="location">at         line 468</div>
         <code>        static            string
     <strong>getSchemaClass</strong>(string $baseClass, string $extension)
         </code>

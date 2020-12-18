@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -85,7 +85,7 @@
 
     <p>    class
     <strong>Container</strong>        implements
-        <abbr title="Psr\Container\ContainerInterface">ContainerInterface</abbr>, <a target="_blank" href="http://php.net/ArrayAccess">ArrayAccess</a>
+        <abbr title="Psr\Container\ContainerInterface">ContainerInterface</abbr>, <a href="../../Arikaim/Container/ArikaimContainerInterface.html"><abbr title="Arikaim\Container\ArikaimContainerInterface">ArikaimContainerInterface</abbr></a>, <a target="_blank" href="http://php.net/ArrayAccess">ArrayAccess</a>
 </p>
 
         
@@ -128,6 +128,16 @@
                     <a href="#method_get">get</a>(string $id)
         
                                             <p>Get service from container</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_call">call</a>(string $id, string $method, array $params = [])
+        
+                                            <p>Call service method</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -228,7 +238,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 33</div>
+        <div class="location">at         line 36</div>
         <code>                    
     <strong>__construct</strong>(array $services = null)
         </code>
@@ -352,8 +362,58 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_call">
+        <div class="location">at         line 82</div>
+        <code>                    mixed|null
+    <strong>call</strong>(string $id, string $method, array $params = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Call service method</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_has">
-        <div class="location">at         line 80</div>
+        <div class="location">at         line 101</div>
         <code>                    bool
     <strong>has</strong>(string $id)
         </code>
@@ -393,7 +453,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_add">
-        <div class="location">at         line 94</div>
+        <div class="location">at         line 115</div>
         <code>                    void
     <strong>add</strong>(string $id, mixed $service, boolean $replace = false)
         </code>
@@ -452,7 +512,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_replace">
-        <div class="location">at         line 109</div>
+        <div class="location">at         line 130</div>
         <code>                    void
     <strong>replace</strong>(string $id, mixed $service)
         </code>
@@ -497,7 +557,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_remove">
-        <div class="location">at         line 120</div>
+        <div class="location">at         line 141</div>
         <code>                    void
     <strong>remove</strong>(string $id)
         </code>
@@ -537,7 +597,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getServicesList">
-        <div class="location">at         line 132</div>
+        <div class="location">at         line 153</div>
         <code>                    array
     <strong>getServicesList</strong>()
         </code>
@@ -567,7 +627,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_offsetExists">
-        <div class="location">at         line 143</div>
+        <div class="location">at         line 164</div>
         <code>                    bool
     <strong>offsetExists</strong>(string $id)
         </code>
@@ -607,7 +667,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_offsetGet">
-        <div class="location">at         line 154</div>
+        <div class="location">at         line 175</div>
         <code>                    mixed
     <strong>offsetGet</strong>(string $id)
         </code>
@@ -647,7 +707,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_offsetSet">
-        <div class="location">at         line 166</div>
+        <div class="location">at         line 187</div>
         <code>                    void
     <strong>offsetSet</strong>(string $id, mixed $service)
         </code>
@@ -692,7 +752,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_offsetUnset">
-        <div class="location">at         line 177</div>
+        <div class="location">at         line 198</div>
         <code>                    void
     <strong>offsetUnset</strong>(string $id)
         </code>

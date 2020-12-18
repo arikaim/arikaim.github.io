@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -114,7 +114,7 @@
                     boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_hasAccess">hasAccess</a>($name, $type = null, $authId = null)
+                    <a href="#method_hasAccess">hasAccess</a>(string $name, string|array $type = null, integer|null $authId = null)
         
                                             <p>Check access</p>                </div>
                 <div class="col-md-2"></div>
@@ -157,6 +157,16 @@
                     <a href="#method_getUserPermissions">getUserPermissions</a>(integer|null $authId = null)
         
                                             <p>Get user permissions list</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPermission">addPermission</a>(string $name, string|null $title = null, string|null $description = null, string|null $extension = null)
+        
+                                            <p>Add permission item.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -207,9 +217,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasAccess">
-        <div class="location">at         line 31</div>
+        <div class="location">at         line 32</div>
         <code>                    boolean
-    <strong>hasAccess</strong>($name, $type = null, $authId = null)
+    <strong>hasAccess</strong>(string $name, string|array $type = null, integer|null $authId = null)
         </code>
     </h3>
     <div class="details">
@@ -223,17 +233,17 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>Permission name</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string|array</td>
                 <td>$type</td>
-                <td></td>
+                <td>PermissionType (read,write,execute,delete)</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>integer|null</td>
                 <td>$authId</td>
                 <td></td>
             </tr>
@@ -257,7 +267,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_resolvePermissionName">
-        <div class="location">at         line 39</div>
+        <div class="location">at         line 40</div>
         <code>                    array
     <strong>resolvePermissionName</strong>(string $name)
         </code>
@@ -297,7 +307,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getControlPanelPermission">
-        <div class="location">at         line 46</div>
+        <div class="location">at         line 47</div>
         <code>                    string
     <strong>getControlPanelPermission</strong>()
         </code>
@@ -327,7 +337,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFullPermissions">
-        <div class="location">at         line 53</div>
+        <div class="location">at         line 54</div>
         <code>                    array
     <strong>getFullPermissions</strong>()
         </code>
@@ -357,7 +367,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getUserPermissions">
-        <div class="location">at         line 61</div>
+        <div class="location">at         line 62</div>
         <code>                    mixed
     <strong>getUserPermissions</strong>(integer|null $authId = null)
         </code>
@@ -385,6 +395,61 @@
                     <table class="table table-condensed">
         <tr>
             <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPermission">
+        <div class="location">at         line 73</div>
+        <code>                    boolean
+    <strong>addPermission</strong>(string $name, string|null $title = null, string|null $description = null, string|null $extension = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add permission item.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$title</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$description</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
             <td></td>
         </tr>
     </table>

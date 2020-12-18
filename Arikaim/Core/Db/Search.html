@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -104,7 +104,7 @@
                     static&nbsp;mixed|null
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getSearchValue">getSearchValue</a>(string $field, string|<abbr title="Arikaim\Core\Db\nmull">nmull</abbr> $namespace = null)
+                    <a href="#method_getSearchValue">getSearchValue</a>(string $field, string|null $namespace = null, mixed $default = null)
         
                                             <p>Return search value</p>                </div>
                 <div class="col-md-2"></div>
@@ -204,7 +204,7 @@
                     static&nbsp;<abbr title="Arikaim\Core\Db\Builder">Builder</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_applyCondition">applyCondition</a>(<abbr title="Arikaim\Core\Db\Builder">Builder</abbr>|<a href="../../../Arikaim/Core/Db/Model.html"><abbr title="Arikaim\Core\Db\Model">Model</abbr></a> $builder, array $condition, string|null $namespace = null)
+                    <a href="#method_applyCondition">applyCondition</a>(<abbr title="Arikaim\Core\Db\Builder">Builder</abbr> $builder, array $condition, string|null $namespace = null)
         
                                             <p>Apply search condition</p>                </div>
                 <div class="col-md-2"></div>
@@ -217,9 +217,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_getSearchValue">
-        <div class="location">at         line 29</div>
+        <div class="location">at         line 30</div>
         <code>        static            mixed|null
-    <strong>getSearchValue</strong>(string $field, string|<abbr title="Arikaim\Core\Db\nmull">nmull</abbr> $namespace = null)
+    <strong>getSearchValue</strong>(string $field, string|null $namespace = null, mixed $default = null)
         </code>
     </h3>
     <div class="details">
@@ -238,8 +238,13 @@
                 <td></td>
             </tr>
                     <tr>
-                <td>string|<abbr title="Arikaim\Core\Db\nmull">nmull</abbr></td>
+                <td>string|null</td>
                 <td>$namespace</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
                 <td></td>
             </tr>
             </table>
@@ -262,7 +267,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSearch">
-        <div class="location">at         line 41</div>
+        <div class="location">at         line 43</div>
         <code>        static            array
     <strong>getSearch</strong>(string|null $namespace = null)
         </code>
@@ -302,7 +307,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_clearSearch">
-        <div class="location">at         line 52</div>
+        <div class="location">at         line 54</div>
         <code>        static            void
     <strong>clearSearch</strong>(string|null $namespace = null)
         </code>
@@ -342,7 +347,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setSearch">
-        <div class="location">at         line 64</div>
+        <div class="location">at         line 66</div>
         <code>        static            void
     <strong>setSearch</strong>(array $searchData, string|null $namespace = null)
         </code>
@@ -387,7 +392,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSearchCondition">
-        <div class="location">at         line 76</div>
+        <div class="location">at         line 78</div>
         <code>        static            array|null
     <strong>getSearchCondition</strong>(string $field, string|null $namespace = null)
         </code>
@@ -432,7 +437,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSearchConditions">
-        <div class="location">at         line 88</div>
+        <div class="location">at         line 91</div>
         <code>        static            array
     <strong>getSearchConditions</strong>(string|null $namespace = null)
         </code>
@@ -472,7 +477,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteSearchCondition">
-        <div class="location">at         line 100</div>
+        <div class="location">at         line 103</div>
         <code>        static            void
     <strong>deleteSearchCondition</strong>(string $field, string|null $namespace = null)
         </code>
@@ -517,7 +522,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setSearchConditions">
-        <div class="location">at         line 114</div>
+        <div class="location">at         line 117</div>
         <code>        static            void
     <strong>setSearchConditions</strong>(array $conditions, string|null $namespace = null)
         </code>
@@ -562,7 +567,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setSearchCondition">
-        <div class="location">at         line 129</div>
+        <div class="location">at         line 132</div>
         <code>        static            void
     <strong>setSearchCondition</strong>($field, $namespace = null, $operator = null, $queryOperator = null, $searchFieldName = &#039;search_text&#039;)
         </code>
@@ -622,7 +627,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_apply">
-        <div class="location">at         line 145</div>
+        <div class="location">at         line 148</div>
         <code>        static            <abbr title="Arikaim\Core\Db\Builder">Builder</abbr>
     <strong>apply</strong>(<abbr title="Arikaim\Core\Db\Builder">Builder</abbr>|<a href="../../../Arikaim/Core/Db/Model.html"><abbr title="Arikaim\Core\Db\Model">Model</abbr></a> $builder, string|null $namespace = null)
         </code>
@@ -667,9 +672,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_applyCondition">
-        <div class="location">at         line 163</div>
+        <div class="location">at         line 166</div>
         <code>        static            <abbr title="Arikaim\Core\Db\Builder">Builder</abbr>
-    <strong>applyCondition</strong>(<abbr title="Arikaim\Core\Db\Builder">Builder</abbr>|<a href="../../../Arikaim/Core/Db/Model.html"><abbr title="Arikaim\Core\Db\Model">Model</abbr></a> $builder, array $condition, string|null $namespace = null)
+    <strong>applyCondition</strong>(<abbr title="Arikaim\Core\Db\Builder">Builder</abbr> $builder, array $condition, string|null $namespace = null)
         </code>
     </h3>
     <div class="details">
@@ -683,7 +688,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Arikaim\Core\Db\Builder">Builder</abbr>|<a href="../../../Arikaim/Core/Db/Model.html"><abbr title="Arikaim\Core\Db\Model">Model</abbr></a></td>
+                <td><abbr title="Arikaim\Core\Db\Builder">Builder</abbr></td>
                 <td>$builder</td>
                 <td></td>
             </tr>

@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -104,7 +104,7 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getViewPath">getViewPath</a>()
+                    <a href="#method_getViewPath">getViewPath</a>(string|null $componentsType = null)
         
                                             <p>Get view path</p>                </div>
                 <div class="col-md-2"></div>
@@ -134,6 +134,16 @@
                     string
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_getEmailsPath">getEmailsPath</a>()
+        
+                                            <p>Get emails components path</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getMacrosPath">getMacrosPath</a>()
         
                                             <p>Get macros path</p>                </div>
@@ -154,7 +164,7 @@
                     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getPages">getPages</a>(string|null $path = null)
+                    <a href="#method_getPages">getPages</a>($parent = &#039;&#039;)
         
                                             <p>Scan directory and return pages list</p>                </div>
                 <div class="col-md-2"></div>
@@ -164,7 +174,37 @@
                     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getComponents">getComponents</a>(string|null $path = null)
+                    <a href="#method_getEmails">getEmails</a>($parent = &#039;&#039;)
+        
+                                            <p>Scan directory and return emails list</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComponentPath">getComponentPath</a>(string $componentName, string $type = &#039;components&#039;)
+        
+                                            <p>Get component path</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComponents">getComponents</a>(string $parent = &#039;&#039;, string $type = &#039;components&#039;)
+        
+                                            <p>Scan directory and return components list</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComponentsRecursive">getComponentsRecursive</a>(string|null $path = null)
         
                                             <p>Scan directory and return components list</p>                </div>
                 <div class="col-md-2"></div>
@@ -177,9 +217,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_getViewPath">
-        <div class="location">at         line 24</div>
+        <div class="location">at         line 25</div>
         <code>                    string
-    <strong>getViewPath</strong>()
+    <strong>getViewPath</strong>(string|null $componentsType = null)
         </code>
     </h3>
     <div class="details">
@@ -189,6 +229,16 @@
                     <div class="method-description">
                                     <p>Get view path</p>                                                </div>
                 <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$componentsType</td>
+                <td></td>
+            </tr>
+            </table>
+
             
                             <h4>Return Value</h4>
 
@@ -207,7 +257,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getComponentsPath">
-        <div class="location">at         line 34</div>
+        <div class="location">at         line 41</div>
         <code>                    string
     <strong>getComponentsPath</strong>()
         </code>
@@ -237,7 +287,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPagesPath">
-        <div class="location">at         line 44</div>
+        <div class="location">at         line 51</div>
         <code>                    string
     <strong>getPagesPath</strong>()
         </code>
@@ -266,8 +316,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getEmailsPath">
+        <div class="location">at         line 61</div>
+        <code>                    string
+    <strong>getEmailsPath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get emails components path</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getMacrosPath">
-        <div class="location">at         line 54</div>
+        <div class="location">at         line 71</div>
         <code>                    string
     <strong>getMacrosPath</strong>()
         </code>
@@ -297,7 +377,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMacros">
-        <div class="location">at         line 65</div>
+        <div class="location">at         line 82</div>
         <code>                    array
     <strong>getMacros</strong>(string|null $path = null)
         </code>
@@ -337,9 +417,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPages">
-        <div class="location">at         line 92</div>
+        <div class="location">at         line 109</div>
         <code>                    array
-    <strong>getPages</strong>(string|null $path = null)
+    <strong>getPages</strong>($parent = &#039;&#039;)
         </code>
     </h3>
     <div class="details">
@@ -353,8 +433,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string|null</td>
-                <td>$path</td>
+                <td></td>
+                <td>$parent</td>
                 <td></td>
             </tr>
             </table>
@@ -376,10 +456,140 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getComponents">
-        <div class="location">at         line 117</div>
+                    <h3 id="method_getEmails">
+        <div class="location">at         line 120</div>
         <code>                    array
-    <strong>getComponents</strong>(string|null $path = null)
+    <strong>getEmails</strong>($parent = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Scan directory and return emails list</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$parent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComponentPath">
+        <div class="location">at         line 132</div>
+        <code>                    string
+    <strong>getComponentPath</strong>(string $componentName, string $type = &#039;components&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get component path</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$componentName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComponents">
+        <div class="location">at         line 147</div>
+        <code>                    array
+    <strong>getComponents</strong>(string $parent = &#039;&#039;, string $type = &#039;components&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Scan directory and return components list</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComponentsRecursive">
+        <div class="location">at         line 180</div>
+        <code>                    array
+    <strong>getComponentsRecursive</strong>(string|null $path = null)
         </code>
     </h3>
     <div class="details">

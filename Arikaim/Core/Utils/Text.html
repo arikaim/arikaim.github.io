@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -130,6 +130,56 @@
                     static&nbsp;string
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_replaceChars">replaceChars</a>(string $text)
+        
+                                            <p>Replace umlauts chars</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cleanText">cleanText</a>(string $text)
+        
+                                            <p>Clean Text</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pad">pad</a>(string $input, integer $length, string $char = &#039; &#039;, boolean $htmlSafe = true)
+        
+                                            <p>Pad a string to a certain length with another string (both side)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_padLeft">padLeft</a>(string $input, integer $length, string $char = &#039; &#039;, boolean $htmlSafe = true)
+        
+                                            <p>Pad left a string to a certain length with another string</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_padRight">padRight</a>(string $input, integer $length, string $char = &#039; &#039;, boolean $htmlSafe = true)
+        
+                                            <p>Pad right a string to a certain length with another string</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_mask">mask</a>(string $text, integer $len = 5, string $maskChar = &#039;*&#039;)
         
                                             <p>Mask text</p>                </div>
@@ -140,7 +190,17 @@
                     static&nbsp;string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_sliceText">sliceText</a>(string $text, integer $maxLength)
+                    <a href="#method_ucFirstUtf">ucFirstUtf</a>(string $text)
+        
+                                            <p>Upper case first letter for Utf8</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sliceText">sliceText</a>(string $text, integer $maxLength = 30)
         
                                             <p>Slice text</p>                </div>
                 <div class="col-md-2"></div>
@@ -215,6 +275,16 @@
                                             <p>Ceate random token</p>                </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_random">random</a>(integer $length = 10, string|null $keyspace = null)
+        
+                                            <p>Create random text</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -222,8 +292,253 @@
 
             <div id="method-details">
                     <div class="method-item">
+                    <h3 id="method_replaceChars">
+        <div class="location">at         line 27</div>
+        <code>        static            string
+    <strong>replaceChars</strong>(string $text)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replace umlauts chars</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cleanText">
+        <div class="location">at         line 59</div>
+        <code>        static            string
+    <strong>cleanText</strong>(string $text)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clean Text</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pad">
+        <div class="location">at         line 73</div>
+        <code>        static            string
+    <strong>pad</strong>(string $input, integer $length, string $char = &#039; &#039;, boolean $htmlSafe = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pad a string to a certain length with another string (both side)</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$length</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$char</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$htmlSafe</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_padLeft">
+        <div class="location">at         line 89</div>
+        <code>        static            string
+    <strong>padLeft</strong>(string $input, integer $length, string $char = &#039; &#039;, boolean $htmlSafe = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pad left a string to a certain length with another string</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$length</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$char</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$htmlSafe</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_padRight">
+        <div class="location">at         line 105</div>
+        <code>        static            string
+    <strong>padRight</strong>(string $input, integer $length, string $char = &#039; &#039;, boolean $htmlSafe = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pad right a string to a certain length with another string</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$length</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$char</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$htmlSafe</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_mask">
-        <div class="location">at         line 29</div>
+        <div class="location">at         line 120</div>
         <code>        static            string
     <strong>mask</strong>(string $text, integer $len = 5, string $maskChar = &#039;*&#039;)
         </code>
@@ -272,10 +587,50 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_sliceText">
-        <div class="location">at         line 41</div>
+                    <h3 id="method_ucFirstUtf">
+        <div class="location">at         line 131</div>
         <code>        static            string
-    <strong>sliceText</strong>(string $text, integer $maxLength)
+    <strong>ucFirstUtf</strong>(string $text)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Upper case first letter for Utf8</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sliceText">
+        <div class="location">at         line 142</div>
+        <code>        static            string
+    <strong>sliceText</strong>(string $text, integer $maxLength = 30)
         </code>
     </h3>
     <div class="details">
@@ -318,7 +673,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_tokenize">
-        <div class="location">at         line 59</div>
+        <div class="location">at         line 160</div>
         <code>        static            array
     <strong>tokenize</strong>(string|array $text, mixed ...$options)
         </code>
@@ -363,7 +718,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_transformWord">
-        <div class="location">at         line 93</div>
+        <div class="location">at         line 194</div>
         <code>        static            void
     <strong>transformWord</strong>(string $word, mixed ...$options)
         </code>
@@ -408,7 +763,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_removeSpecialChars">
-        <div class="location">at         line 122</div>
+        <div class="location">at         line 223</div>
         <code>        static            string
     <strong>removeSpecialChars</strong>(string $text, boolean $removeNumbers = false)
         </code>
@@ -453,7 +808,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_convertToTitleCase">
-        <div class="location">at         line 133</div>
+        <div class="location">at         line 234</div>
         <code>        static            string
     <strong>convertToTitleCase</strong>(string $text)
         </code>
@@ -493,7 +848,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_render">
-        <div class="location">at         line 151</div>
+        <div class="location">at         line 252</div>
         <code>        static            string
     <strong>render</strong>(string $text, array $vars = [])
         </code>
@@ -538,7 +893,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_renderMultiple">
-        <div class="location">at         line 171</div>
+        <div class="location">at         line 269</div>
         <code>        static            array
     <strong>renderMultiple</strong>(array $items, array $vars = [])
         </code>
@@ -583,7 +938,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createToken">
-        <div class="location">at         line 188</div>
+        <div class="location">at         line 286</div>
         <code>        static            string
     <strong>createToken</strong>(int $length = 22)
         </code>
@@ -601,6 +956,51 @@
                     <tr>
                 <td>int</td>
                 <td>$length</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_random">
+        <div class="location">at         line 305</div>
+        <code>        static            string
+    <strong>random</strong>(integer $length = 10, string|null $keyspace = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create random text</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$length</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$keyspace</td>
                 <td></td>
             </tr>
             </table>

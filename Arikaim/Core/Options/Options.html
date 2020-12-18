@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -108,6 +108,14 @@
                 <td><small>from&nbsp;<a href="../../../Arikaim/Core/Collection/Collection.html#property_data"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a></small></td>
             </tr>
                     <tr>
+                <td class="type" id="property_cacheSaveTime">
+                    static                                                            integer
+                </td>
+                <td>$cacheSaveTime</td>
+                <td class="last">Save cache time</td>
+                <td></td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_needReload">
                                         protected                                        boolean
                 </td>
@@ -117,7 +125,7 @@
             </tr>
                     <tr>
                 <td class="type" id="property_adapter">
-                                        protected                                        <a href="../../../Arikaim/Core/Interfaces/OptionsInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsInterface">OptionsInterface</abbr></a>
+                                        protected                                        <a href="../../../Arikaim/Core/Interfaces/OptionsStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsStorageInterface">OptionsStorageInterface</abbr></a>|null
                 </td>
                 <td>$adapter</td>
                 <td class="last">Storage adapter</td>
@@ -125,7 +133,7 @@
             </tr>
                     <tr>
                 <td class="type" id="property_cache">
-                                        protected                                        <abbr title="Arikaim\Core\Options\Doctrine\Common\Cache\Cache">Cache</abbr>
+                                        protected                                        <a href="../../../Arikaim/Core/Interfaces/CacheInterface.html"><abbr title="Arikaim\Core\Interfaces\CacheInterface">CacheInterface</abbr></a>
                 </td>
                 <td>$cache</td>
                 <td class="last">Cache</td>
@@ -142,7 +150,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../../Arikaim/Core/Interfaces/OptionsStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsStorageInterface">OptionsStorageInterface</abbr></a> $adapter, $cache = null)
+                    <a href="#method___construct">__construct</a>(<a href="../../../Arikaim/Core/Interfaces/CacheInterface.html"><abbr title="Arikaim\Core\Interfaces\CacheInterface">CacheInterface</abbr></a> $cache, <a href="../../../Arikaim/Core/Interfaces/OptionsStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsStorageInterface">OptionsStorageInterface</abbr></a> $adapter = null)
         
                                             <p>Constructor</p>                </div>
                 <div class="col-md-2"></div>
@@ -252,10 +260,10 @@
                     <a href="../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_remove">remove</a>(string $key = null, string|null $extension = null)
+                    <a href="#method_remove">remove</a>(string $key)
         
-                                            <p>Remove option(s)</p>                </div>
-                <div class="col-md-2"></div>
+                                            <p>Remove item</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Collection/Collection.html#method_remove"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -309,10 +317,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a>
+                    <abbr title="Arikaim\Core\Collection\Interfaces\Collection">Collection</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_set">set</a>(string $key, mixed $value, boolean $autoLoad = false, string $extension = null)
+                    <a href="#method_set">set</a>(string $key, mixed $value, string $extension = null)
         
                                             <p>Save option</p>                </div>
                 <div class="col-md-2"></div>
@@ -375,7 +383,7 @@
                     <a href="#method_toArray">toArray</a>()
         
                                             <p>Return collection array</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Collection/Collection.html#method_toArray"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -384,7 +392,7 @@
                 <div class="col-md-8 type">
                     <a href="#method_isEmpty">isEmpty</a>(string $key)
         
-                                            <p>Return true if key exists and value not empty in collection</p>                </div>
+                                            <p>Return true if collection item is empty</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Collection/Collection.html#method_isEmpty"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a></small></div>
             </div>
                     <div class="row">
@@ -424,7 +432,7 @@
                 <div class="col-md-8 type">
                     <a href="#method_clear">clear</a>()
         
-                                            <p>Clear collection data</p>                </div>
+                                            <p>Delete all collection items</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Collection/Collection.html#method_clear"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a></small></div>
             </div>
                     <div class="row">
@@ -434,7 +442,7 @@
                 <div class="col-md-8 type">
                     <a href="#method_copy">copy</a>()
         
-                                            <p>Clone object</p>                </div>
+                                            <p>Copy collection</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Collection/Collection.html#method_copy"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a></small></div>
             </div>
                     <div class="row">
@@ -464,7 +472,7 @@
                 <div class="col-md-8 type">
                     <a href="#method_getByPath">getByPath</a>(string $path, mixed $default = null)
         
-                                            <p>Gte value by path</p>                </div>
+                                            <p>Get value by path</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Collection/Collection.html#method_getByPath"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a></small></div>
             </div>
                     <div class="row">
@@ -492,6 +500,16 @@
                     void
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_setStorageAdapter">setStorageAdapter</a>(<a href="../../../Arikaim/Core/Interfaces/OptionsStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsStorageInterface">OptionsStorageInterface</abbr></a> $adapter)
+        
+                                            <p>Set storage adapter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_load">load</a>()
         
                                             <p>Store options in collection</p>                </div>
@@ -509,12 +527,52 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeOptions">removeOptions</a>(string $key = null, string|null $extension = null)
+        
+                                            <p>Remove option(s)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_searchOptions">searchOptions</a>(string $searchKey)
+                    <a href="#method_searchOptions">searchOptions</a>(string $searchKey, bool $compactKeys = false)
         
                                             <p>Search options</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExtensionOptions">getExtensionOptions</a>(string $extensioName)
+        
+                                            <p>Get extension options</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveOptionType">resolveOptionType</a>(mixed $value)
+        
+                                            <p>Resolve option type</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveOptions">resolveOptions</a>(array $options)
+        
+                                            <p>resolve options</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -525,9 +583,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 48</div>
+        <div class="location">at         line 59</div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../Arikaim/Core/Interfaces/OptionsStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsStorageInterface">OptionsStorageInterface</abbr></a> $adapter, $cache = null)
+    <strong>__construct</strong>(<a href="../../../Arikaim/Core/Interfaces/CacheInterface.html"><abbr title="Arikaim\Core\Interfaces\CacheInterface">CacheInterface</abbr></a> $cache, <a href="../../../Arikaim/Core/Interfaces/OptionsStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsStorageInterface">OptionsStorageInterface</abbr></a> $adapter = null)
         </code>
     </h3>
     <div class="details">
@@ -541,13 +599,13 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Arikaim/Core/Interfaces/OptionsStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsStorageInterface">OptionsStorageInterface</abbr></a></td>
-                <td>$adapter</td>
+                <td><a href="../../../Arikaim/Core/Interfaces/CacheInterface.html"><abbr title="Arikaim\Core\Interfaces\CacheInterface">CacheInterface</abbr></a></td>
+                <td>$cache</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
-                <td>$cache</td>
+                <td><a href="../../../Arikaim/Core/Interfaces/OptionsStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsStorageInterface">OptionsStorageInterface</abbr></a></td>
+                <td>$adapter</td>
                 <td></td>
             </tr>
             </table>
@@ -651,7 +709,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getIterator">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_getIterator"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 71</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_getIterator"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 72</div>
         <code>                    <abbr title="Arikaim\Core\Collection\ArrayIterator">ArrayIterator</abbr>
     <strong>getIterator</strong>()
         </code>
@@ -681,7 +739,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_has">
-        <div class="location">at         line 122</div>
+        <div class="location">at         line 143</div>
         <code>                    bool
     <strong>has</strong>(string $key)
         </code>
@@ -721,7 +779,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_offsetExists">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_offsetExists"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 93</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_offsetExists"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 94</div>
         <code>                    bool
     <strong>offsetExists</strong>(string $key)
         </code>
@@ -761,7 +819,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_union">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_union"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 104</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_union"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 105</div>
         <code>                    <a href="../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a>
     <strong>union</strong>(array $data)
         </code>
@@ -801,7 +859,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_replace">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_replace"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 116</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_replace"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 118</div>
         <code>                    <a href="../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a>
     <strong>replace</strong>(array $replacement)
         </code>
@@ -841,7 +899,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_offsetGet">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_offsetGet"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 128</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_offsetGet"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 131</div>
         <code>                    mixed
     <strong>offsetGet</strong>(string $key)
         </code>
@@ -881,7 +939,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_offsetSet">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_offsetSet"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 140</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_offsetSet"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 143</div>
         <code>                    void
     <strong>offsetSet</strong>(string $key, mixed $value)
         </code>
@@ -926,7 +984,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_offsetUnset">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_offsetUnset"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 151</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_offsetUnset"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 154</div>
         <code>                    void
     <strong>offsetUnset</strong>(string $key)
         </code>
@@ -966,9 +1024,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_remove">
-        <div class="location">at         line 154</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_remove"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 165</div>
         <code>                    <a href="../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a>
-    <strong>remove</strong>(string $key = null, string|null $extension = null)
+    <strong>remove</strong>(string $key)
         </code>
     </h3>
     <div class="details">
@@ -976,7 +1034,7 @@
     
 
                     <div class="method-description">
-                                    <p>Remove option(s)</p>                                                </div>
+                                    <p>Remove item</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -984,11 +1042,6 @@
                     <tr>
                 <td>string</td>
                 <td>$key</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string|null</td>
-                <td>$extension</td>
                 <td></td>
             </tr>
             </table>
@@ -1011,7 +1064,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_count">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_count"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 173</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_count"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 177</div>
         <code>                    integer
     <strong>count</strong>()
         </code>
@@ -1041,7 +1094,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setBooleanValue">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_setBooleanValue"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 185</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_setBooleanValue"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 189</div>
         <code>                    void
     <strong>setBooleanValue</strong>(<abbr title="Arikaim\Core\Collection\string$path">string$path</abbr> $path, integer|string $value)
         </code>
@@ -1086,7 +1139,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setValue">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_setValue"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 203</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_setValue"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 208</div>
         <code>                    void
     <strong>setValue</strong>(string $path, mixed $value)
         </code>
@@ -1131,7 +1184,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_merge">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_merge"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 216</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_merge"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 221</div>
         <code>                    void
     <strong>merge</strong>(string $key, array $data, boolean $recursive = false)
         </code>
@@ -1181,7 +1234,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_mergeItems">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_mergeItems"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 231</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_mergeItems"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 236</div>
         <code>                    void
     <strong>mergeItems</strong>(array $data, boolean $recursive = false)
         </code>
@@ -1226,9 +1279,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_set">
-        <div class="location">at         line 102</div>
-        <code>                    <a href="../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a>
-    <strong>set</strong>(string $key, mixed $value, boolean $autoLoad = false, string $extension = null)
+        <div class="location">at         line 125</div>
+        <code>                    <abbr title="Arikaim\Core\Collection\Interfaces\Collection">Collection</abbr>
+    <strong>set</strong>(string $key, mixed $value, string $extension = null)
         </code>
     </h3>
     <div class="details">
@@ -1252,11 +1305,6 @@
                 <td>Value</td>
             </tr>
                     <tr>
-                <td>boolean</td>
-                <td>$autoLoad</td>
-                <td></td>
-            </tr>
-                    <tr>
                 <td>string</td>
                 <td>$extension</td>
                 <td></td>
@@ -1268,7 +1316,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a></td>
+            <td><abbr title="Arikaim\Core\Collection\Interfaces\Collection">Collection</abbr></td>
             <td></td>
         </tr>
     </table>
@@ -1281,7 +1329,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_add">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_add"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 256</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_add"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 262</div>
         <code>                    void
     <strong>add</strong>(string $key, mixed $value)
         </code>
@@ -1326,7 +1374,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_push">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_push"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 273</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_push"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 279</div>
         <code>                    boolean
     <strong>push</strong>(string $key, mixed $value, string|null $subKey = null)
         </code>
@@ -1376,7 +1424,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_prepend">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_prepend"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 300</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_prepend"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 306</div>
         <code>                    boolean
     <strong>prepend</strong>(string $key, mixed $value, string|null $subKey = null)
         </code>
@@ -1426,7 +1474,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_withData">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_withData"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 324</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_withData"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 330</div>
         <code>                    <a href="../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a>
     <strong>withData</strong>(array $data)
         </code>
@@ -1466,7 +1514,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_slice">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_slice"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 336</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_slice"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 343</div>
         <code>                    array
     <strong>slice</strong>(array|string $keys)
         </code>
@@ -1506,7 +1554,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_toArray">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_toArray"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 346</div>
+        <div class="location">at         line 214</div>
         <code>                    array
     <strong>toArray</strong>()
         </code>
@@ -1536,7 +1584,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isEmpty">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_isEmpty"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 357</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_isEmpty"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 364</div>
         <code>                    boolean
     <strong>isEmpty</strong>(string $key)
         </code>
@@ -1546,7 +1594,7 @@
     
 
                     <div class="method-description">
-                                    <p>Return true if key exists and value not empty in collection</p>                                                </div>
+                                    <p>Return true if collection item is empty</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1576,7 +1624,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCollection">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_getCollection"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 368</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_getCollection"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 375</div>
         <code>                    <a href="../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a>
     <strong>getCollection</strong>(string $key)
         </code>
@@ -1616,7 +1664,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get">
-        <div class="location">at         line 134</div>
+        <div class="location">at         line 155</div>
         <code>                    mixed
     <strong>get</strong>(string $key, mixed $default = null)
         </code>
@@ -1661,7 +1709,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getArray">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_getArray"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 396</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_getArray"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 399</div>
         <code>                    array
     <strong>getArray</strong>(string $key, mixed $default = null)
         </code>
@@ -1706,7 +1754,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_clear">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_clear"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 407</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_clear"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 410</div>
         <code>                    void
     <strong>clear</strong>()
         </code>
@@ -1716,7 +1764,7 @@
     
 
                     <div class="method-description">
-                                    <p>Clear collection data</p>                                                </div>
+                                    <p>Delete all collection items</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1736,7 +1784,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_copy">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_copy"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 417</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_copy"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 420</div>
         <code>                    void
     <strong>copy</strong>()
         </code>
@@ -1746,7 +1794,7 @@
     
 
                     <div class="method-description">
-                                    <p>Clone object</p>                                                </div>
+                                    <p>Copy collection</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1766,7 +1814,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___get">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method___get"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 428</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method___get"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 431</div>
         <code>                    mixed
     <strong>__get</strong>(string $key)
         </code>
@@ -1806,7 +1854,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___set">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method___set"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 439</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method___set"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 442</div>
         <code>                    
     <strong>__set</strong>(string $key, mixed $value)
         </code>
@@ -1842,7 +1890,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getByPath">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_getByPath"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 451</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_getByPath"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 454</div>
         <code>                    mixed
     <strong>getByPath</strong>(string $path, mixed $default = null)
         </code>
@@ -1852,7 +1900,7 @@
     
 
                     <div class="method-description">
-                                    <p>Gte value by path</p>                                                </div>
+                                    <p>Get value by path</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1887,7 +1935,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addField">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_addField"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 464</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_addField"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 468</div>
         <code>                    bool
     <strong>addField</strong>(string $path, mixed $value)
         </code>
@@ -1932,7 +1980,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getItems">
-        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_getItems"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 482</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Collection/Collection.html#method_getItems"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a> at         line 487</div>
         <code>                    array
     <strong>getItems</strong>()
         </code>
@@ -1961,8 +2009,48 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_setStorageAdapter">
+        <div class="location">at         line 76</div>
+        <code>                    void
+    <strong>setStorageAdapter</strong>(<a href="../../../Arikaim/Core/Interfaces/OptionsStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsStorageInterface">OptionsStorageInterface</abbr></a> $adapter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set storage adapter</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Interfaces/OptionsStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsStorageInterface">OptionsStorageInterface</abbr></a></td>
+                <td>$adapter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_load">
-        <div class="location">at         line 62</div>
+        <div class="location">at         line 86</div>
         <code>                    void
     <strong>load</strong>()
         </code>
@@ -1992,7 +2080,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createOption">
-        <div class="location">at         line 83</div>
+        <div class="location">at         line 107</div>
         <code>                    boolean
     <strong>createOption</strong>(string $key, mixed $value, boolean $autoLoad = false, string|null $extension = null)
         </code>
@@ -2046,10 +2134,55 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_removeOptions">
+        <div class="location">at         line 176</div>
+        <code>                    bool
+    <strong>removeOptions</strong>(string $key = null, string|null $extension = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove option(s)</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_searchOptions">
-        <div class="location">at         line 170</div>
+        <div class="location">at         line 191</div>
         <code>                    array
-    <strong>searchOptions</strong>(string $searchKey)
+    <strong>searchOptions</strong>(string $searchKey, bool $compactKeys = false)
         </code>
     </h3>
     <div class="details">
@@ -2065,6 +2198,131 @@
                     <tr>
                 <td>string</td>
                 <td>$searchKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$compactKeys</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExtensionOptions">
+        <div class="location">at         line 204</div>
+        <code>                    mixed
+    <strong>getExtensionOptions</strong>(string $extensioName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get extension options</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$extensioName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveOptionType">
+        <div class="location">at         line 225</div>
+        <code>            protected        mixed
+    <strong>resolveOptionType</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve option type</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveOptions">
+        <div class="location">at         line 246</div>
+        <code>            protected        array
+    <strong>resolveOptions</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>resolve options</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
                 <td></td>
             </tr>
             </table>

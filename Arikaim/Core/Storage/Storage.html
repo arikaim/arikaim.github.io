@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -95,6 +95,32 @@
             <p>Storage module class</p>                                </div>
     
     
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>ROOT_FILESYSTEM_NAME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>USER_FILESYSTEM_NAME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>RECYCLE_BIN_PATH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
     
             <h2>Properties</h2>
 
@@ -105,6 +131,14 @@
                 </td>
                 <td>$systemDir</td>
                 <td class="last">System directories</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_localFilesystems">
+                                        protected                                        array
+                </td>
+                <td>$localFilesystems</td>
+                <td class="last">Local filesystem names</td>
                 <td></td>
             </tr>
             </table>
@@ -160,7 +194,17 @@
                 <div class="col-md-8 type">
                     <a href="#method_mount">mount</a>(string $name, object|string $adapter)
         
-                                            <p>Mouny filesystem</p>                </div>
+                                            <p>Mount filesystem</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mountFilesystem">mountFilesystem</a>(string $name, <abbr title="League\Flysystem\Filesystem">Filesystem</abbr> $filesystem)
+        
+                                            <p>Mount filesystem</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -178,7 +222,7 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getFuillPath">getFuillPath</a>(<abbr title="Arikaim\Core\Interfaces\tring">tring</abbr> $path = &#039;&#039;, string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_getFullPath">getFullPath</a>(string $path = &#039;&#039;, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Get full file path</p>                </div>
                 <div class="col-md-2"></div>
@@ -188,7 +232,7 @@
                     array|false
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listContents">listContents</a>(string $path = &#039;&#039;, boolean $recursive = false, string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_listContents">listContents</a>(string $path = &#039;&#039;, boolean $recursive = false, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Get directory contents</p>                </div>
                 <div class="col-md-2"></div>
@@ -198,7 +242,7 @@
                     boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_isEmpty">isEmpty</a>(string $path, string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_isEmpty">isEmpty</a>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Return true if directory is empty</p>                </div>
                 <div class="col-md-2"></div>
@@ -208,7 +252,7 @@
                     bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_write">write</a>(string $path, string $contents, array $config = [], string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_write">write</a>(string $path, string $contents, array $config = [], string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Write files</p>                </div>
                 <div class="col-md-2"></div>
@@ -218,7 +262,7 @@
                     bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_writeStream">writeStream</a>(string $path, resource $resource, array $config = [], string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_writeStream">writeStream</a>(string $path, resource $resource, array $config = [], string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Write file stream</p>                </div>
                 <div class="col-md-2"></div>
@@ -228,7 +272,7 @@
                     bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_update">update</a>(string $path, string $contents, array $config = [], string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_update">update</a>(string $path, string $contents, array $config = [], string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Update files</p>                </div>
                 <div class="col-md-2"></div>
@@ -238,7 +282,7 @@
                     bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_updateStream">updateStream</a>($path, $resource, $config = [], $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_updateStream">updateStream</a>($path, $resource, $config = [], $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Update files using a stream</p>                </div>
                 <div class="col-md-2"></div>
@@ -248,7 +292,7 @@
                     string|false
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_read">read</a>(string $path, string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_read">read</a>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Read file</p>                </div>
                 <div class="col-md-2"></div>
@@ -258,7 +302,7 @@
                     resource|false
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_readStream">readStream</a>(string $path, string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_readStream">readStream</a>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Read file as a stream</p>                </div>
                 <div class="col-md-2"></div>
@@ -268,7 +312,7 @@
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_deleteFiles">deleteFiles</a>(string $path, string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_deleteFiles">deleteFiles</a>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Delete all files in direcotry (recursive)</p>                </div>
                 <div class="col-md-2"></div>
@@ -278,7 +322,7 @@
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_moveFiles">moveFiles</a>($from, $to, $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_moveFiles">moveFiles</a>($from, $to, $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Move all files (recursive)</p>                </div>
                 <div class="col-md-2"></div>
@@ -288,7 +332,7 @@
                     boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_delete">delete</a>(string $path, string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_delete">delete</a>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Delete file from storage folder</p>                </div>
                 <div class="col-md-2"></div>
@@ -298,7 +342,7 @@
                     boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_rename">rename</a>(string $from, string $to, string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_rename">rename</a>(string $from, string $to, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Rename files</p>                </div>
                 <div class="col-md-2"></div>
@@ -308,7 +352,7 @@
                     boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_deleteDir">deleteDir</a>(string $path, string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_deleteDir">deleteDir</a>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Delete directory in storage folder</p>                </div>
                 <div class="col-md-2"></div>
@@ -318,7 +362,7 @@
                     boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_createDir">createDir</a>(string $path, string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_createDir">createDir</a>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Create directory in storage folder</p>                </div>
                 <div class="col-md-2"></div>
@@ -328,7 +372,7 @@
                     boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_has">has</a>(string $path, string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_has">has</a>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Return true if file exist</p>                </div>
                 <div class="col-md-2"></div>
@@ -338,7 +382,7 @@
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_copy">copy</a>(string $from, string $to, string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_copy">copy</a>(string $from, string $to, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Copy files</p>                </div>
                 <div class="col-md-2"></div>
@@ -348,7 +392,7 @@
                     boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_moveFile">moveFile</a>(string $from, string $to, string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_moveFile">moveFile</a>(string $from, string $to, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Move file</p>                </div>
                 <div class="col-md-2"></div>
@@ -358,7 +402,7 @@
                     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getMetadata">getMetadata</a>(string $path, string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_getMetadata">getMetadata</a>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Get file info</p>                </div>
                 <div class="col-md-2"></div>
@@ -368,7 +412,7 @@
                     boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_isDir">isDir</a>(string $path, string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_isDir">isDir</a>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Return true if file is directory</p>                </div>
                 <div class="col-md-2"></div>
@@ -378,7 +422,7 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getMimetype">getMimetype</a>(string $path, string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_getMimetype">getMimetype</a>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Get Mimetypes</p>                </div>
                 <div class="col-md-2"></div>
@@ -388,7 +432,7 @@
                     integer|false
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getSize">getSize</a>(string $path, string $fileSystemName = &#039;storage&#039;)
+                    <a href="#method_getSize">getSize</a>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         
                                             <p>Get file size</p>                </div>
                 <div class="col-md-2"></div>
@@ -418,9 +462,49 @@
                     boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_isSystemDir">isSystemDir</a>(string $path)
+                    <a href="#method_isSystemDir">isSystemDir</a>(string $path, string|null $fileSystemName = null)
         
                                             <p>Return true if path is system dir</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isLocalFilesystem">isLocalFilesystem</a>(string $name)
+        
+                                            <p>Return true if filesystem is local</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRootFilesystemName">getRootFilesystemName</a>()
+        
+                                            <p>Get root filesystem name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRecyleBinPath">getRecyleBinPath</a>()
+        
+                                            <p>Get recycle bin path</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPublicPath">getPublicPath</a>(boolean $relative = false)
+        
+                                            <p>Get pubic path</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -431,7 +515,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 42</div>
+        <div class="location">at         line 53</div>
         <code>                    
     <strong>__construct</strong>()
         </code>
@@ -452,7 +536,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_install">
-        <div class="location">at         line 53</div>
+        <div class="location">at         line 64</div>
         <code>                    boolean
     <strong>install</strong>()
         </code>
@@ -482,7 +566,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_boot">
-        <div class="location">at         line 70</div>
+        <div class="location">at         line 81</div>
         <code>                    void
     <strong>boot</strong>()
         </code>
@@ -512,7 +596,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_mountLocal">
-        <div class="location">at         line 83</div>
+        <div class="location">at         line 94</div>
         <code>                    <abbr title="League\Flysystem\MountManager">MountManager</abbr>|false
     <strong>mountLocal</strong>(string $name, string $path = null)
         </code>
@@ -557,7 +641,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_mount">
-        <div class="location">at         line 98</div>
+        <div class="location">at         line 109</div>
         <code>                    <abbr title="League\Flysystem\MountManager">MountManager</abbr>|false
     <strong>mount</strong>(string $name, object|string $adapter)
         </code>
@@ -567,7 +651,7 @@
     
 
                     <div class="method-description">
-                                    <p>Mouny filesystem</p>                                                </div>
+                                    <p>Mount filesystem</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -601,8 +685,53 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_mountFilesystem">
+        <div class="location">at         line 126</div>
+        <code>                    bool
+    <strong>mountFilesystem</strong>(string $name, <abbr title="League\Flysystem\Filesystem">Filesystem</abbr> $filesystem)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Mount filesystem</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="League\Flysystem\Filesystem">Filesystem</abbr></td>
+                <td>$filesystem</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_get">
-        <div class="location">at         line 114</div>
+        <div class="location">at         line 139</div>
         <code>                    object
     <strong>get</strong>(string $name)
         </code>
@@ -641,10 +770,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getFuillPath">
-        <div class="location">at         line 126</div>
+                    <h3 id="method_getFullPath">
+        <div class="location">at         line 151</div>
         <code>                    string
-    <strong>getFuillPath</strong>(<abbr title="Arikaim\Core\Interfaces\tring">tring</abbr> $path = &#039;&#039;, string $fileSystemName = &#039;storage&#039;)
+    <strong>getFullPath</strong>(string $path = &#039;&#039;, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -658,7 +787,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Arikaim\Core\Interfaces\tring">tring</abbr></td>
+                <td>string</td>
                 <td>$path</td>
                 <td></td>
             </tr>
@@ -687,9 +816,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_listContents">
-        <div class="location">at         line 139</div>
+        <div class="location">at         line 164</div>
         <code>                    array|false
-    <strong>listContents</strong>(string $path = &#039;&#039;, boolean $recursive = false, string $fileSystemName = &#039;storage&#039;)
+    <strong>listContents</strong>(string $path = &#039;&#039;, boolean $recursive = false, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -737,9 +866,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isEmpty">
-        <div class="location">at         line 151</div>
+        <div class="location">at         line 176</div>
         <code>                    boolean
-    <strong>isEmpty</strong>(string $path, string $fileSystemName = &#039;storage&#039;)
+    <strong>isEmpty</strong>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -782,9 +911,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_write">
-        <div class="location">at         line 167</div>
+        <div class="location">at         line 192</div>
         <code>                    bool
-    <strong>write</strong>(string $path, string $contents, array $config = [], string $fileSystemName = &#039;storage&#039;)
+    <strong>write</strong>(string $path, string $contents, array $config = [], string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -837,9 +966,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_writeStream">
-        <div class="location">at         line 185</div>
+        <div class="location">at         line 210</div>
         <code>                    bool
-    <strong>writeStream</strong>(string $path, resource $resource, array $config = [], string $fileSystemName = &#039;storage&#039;)
+    <strong>writeStream</strong>(string $path, resource $resource, array $config = [], string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -892,9 +1021,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_update">
-        <div class="location">at         line 199</div>
+        <div class="location">at         line 228</div>
         <code>                    bool
-    <strong>update</strong>(string $path, string $contents, array $config = [], string $fileSystemName = &#039;storage&#039;)
+    <strong>update</strong>(string $path, string $contents, array $config = [], string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -947,9 +1076,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_updateStream">
-        <div class="location">at         line 213</div>
+        <div class="location">at         line 242</div>
         <code>                    bool
-    <strong>updateStream</strong>($path, $resource, $config = [], $fileSystemName = &#039;storage&#039;)
+    <strong>updateStream</strong>($path, $resource, $config = [], $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -1002,9 +1131,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_read">
-        <div class="location">at         line 225</div>
+        <div class="location">at         line 254</div>
         <code>                    string|false
-    <strong>read</strong>(string $path, string $fileSystemName = &#039;storage&#039;)
+    <strong>read</strong>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -1047,9 +1176,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_readStream">
-        <div class="location">at         line 237</div>
+        <div class="location">at         line 266</div>
         <code>                    resource|false
-    <strong>readStream</strong>(string $path, string $fileSystemName = &#039;storage&#039;)
+    <strong>readStream</strong>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -1092,9 +1221,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteFiles">
-        <div class="location">at         line 249</div>
+        <div class="location">at         line 278</div>
         <code>                    void
-    <strong>deleteFiles</strong>(string $path, string $fileSystemName = &#039;storage&#039;)
+    <strong>deleteFiles</strong>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -1137,9 +1266,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_moveFiles">
-        <div class="location">at         line 273</div>
+        <div class="location">at         line 302</div>
         <code>                    void
-    <strong>moveFiles</strong>($from, $to, $fileSystemName = &#039;storage&#039;)
+    <strong>moveFiles</strong>($from, $to, $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -1187,9 +1316,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_delete">
-        <div class="location">at         line 290</div>
+        <div class="location">at         line 319</div>
         <code>                    boolean
-    <strong>delete</strong>(string $path, string $fileSystemName = &#039;storage&#039;)
+    <strong>delete</strong>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -1232,9 +1361,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_rename">
-        <div class="location">at         line 303</div>
+        <div class="location">at         line 332</div>
         <code>                    boolean
-    <strong>rename</strong>(string $from, string $to, string $fileSystemName = &#039;storage&#039;)
+    <strong>rename</strong>(string $from, string $to, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -1282,9 +1411,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteDir">
-        <div class="location">at         line 315</div>
+        <div class="location">at         line 344</div>
         <code>                    boolean
-    <strong>deleteDir</strong>(string $path, string $fileSystemName = &#039;storage&#039;)
+    <strong>deleteDir</strong>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -1327,9 +1456,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createDir">
-        <div class="location">at         line 327</div>
+        <div class="location">at         line 356</div>
         <code>                    boolean
-    <strong>createDir</strong>(string $path, string $fileSystemName = &#039;storage&#039;)
+    <strong>createDir</strong>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -1372,9 +1501,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_has">
-        <div class="location">at         line 339</div>
+        <div class="location">at         line 368</div>
         <code>                    boolean
-    <strong>has</strong>(string $path, string $fileSystemName = &#039;storage&#039;)
+    <strong>has</strong>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -1417,9 +1546,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_copy">
-        <div class="location">at         line 352</div>
+        <div class="location">at         line 381</div>
         <code>                    void
-    <strong>copy</strong>(string $from, string $to, string $fileSystemName = &#039;storage&#039;)
+    <strong>copy</strong>(string $from, string $to, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -1467,9 +1596,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_moveFile">
-        <div class="location">at         line 365</div>
+        <div class="location">at         line 394</div>
         <code>                    boolean
-    <strong>moveFile</strong>(string $from, string $to, string $fileSystemName = &#039;storage&#039;)
+    <strong>moveFile</strong>(string $from, string $to, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -1517,9 +1646,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMetadata">
-        <div class="location">at         line 382</div>
+        <div class="location">at         line 411</div>
         <code>                    array
-    <strong>getMetadata</strong>(string $path, string $fileSystemName = &#039;storage&#039;)
+    <strong>getMetadata</strong>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -1562,9 +1691,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isDir">
-        <div class="location">at         line 394</div>
+        <div class="location">at         line 423</div>
         <code>                    boolean
-    <strong>isDir</strong>(string $path, string $fileSystemName = &#039;storage&#039;)
+    <strong>isDir</strong>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -1607,9 +1736,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMimetype">
-        <div class="location">at         line 411</div>
+        <div class="location">at         line 440</div>
         <code>                    string
-    <strong>getMimetype</strong>(string $path, string $fileSystemName = &#039;storage&#039;)
+    <strong>getMimetype</strong>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -1652,9 +1781,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSize">
-        <div class="location">at         line 423</div>
+        <div class="location">at         line 452</div>
         <code>                    integer|false
-    <strong>getSize</strong>(string $path, string $fileSystemName = &#039;storage&#039;)
+    <strong>getSize</strong>(string $path, string $fileSystemName = Self::ROOT_FILESYSTEM_NAME)
         </code>
     </h3>
     <div class="details">
@@ -1697,7 +1826,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_manager">
-        <div class="location">at         line 433</div>
+        <div class="location">at         line 462</div>
         <code>                    <abbr title="League\Flysystem\MountManager">MountManager</abbr>
     <strong>manager</strong>()
         </code>
@@ -1727,7 +1856,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSystemDirectories">
-        <div class="location">at         line 443</div>
+        <div class="location">at         line 472</div>
         <code>                    array
     <strong>getSystemDirectories</strong>()
         </code>
@@ -1757,9 +1886,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isSystemDir">
-        <div class="location">at         line 454</div>
+        <div class="location">at         line 484</div>
         <code>                    boolean
-    <strong>isSystemDir</strong>(string $path)
+    <strong>isSystemDir</strong>(string $path, string|null $fileSystemName = null)
         </code>
     </h3>
     <div class="details">
@@ -1777,6 +1906,11 @@
                 <td>$path</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$fileSystemName</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -1785,6 +1919,146 @@
                     <table class="table table-condensed">
         <tr>
             <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isLocalFilesystem">
+        <div class="location">at         line 495</div>
+        <code>                    boolean
+    <strong>isLocalFilesystem</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if filesystem is local</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRootFilesystemName">
+        <div class="location">at         line 509</div>
+        <code>                    string
+    <strong>getRootFilesystemName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get root filesystem name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRecyleBinPath">
+        <div class="location">at         line 519</div>
+        <code>                    string
+    <strong>getRecyleBinPath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get recycle bin path</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPublicPath">
+        <div class="location">at         line 530</div>
+        <code>                    string
+    <strong>getPublicPath</strong>(boolean $relative = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get pubic path</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$relative</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
             <td></td>
         </tr>
     </table>

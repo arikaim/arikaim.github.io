@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -212,7 +212,7 @@
                     boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_hasAccess">hasAccess</a>($name, $type = null, $authId = null)
+                    <a href="#method_hasAccess">hasAccess</a>(string $name, string|array $type = null, integer|null $authId = null)
         
                                             <p>Check access</p>                </div>
                 <div class="col-md-2"></div>
@@ -468,7 +468,7 @@
                     <h3 id="method_hasAccess">
         <div class="location">at         line 117</div>
         <code>                    boolean
-    <strong>hasAccess</strong>($name, $type = null, $authId = null)
+    <strong>hasAccess</strong>(string $name, string|array $type = null, integer|null $authId = null)
         </code>
     </h3>
     <div class="details">
@@ -482,17 +482,17 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>Permission name</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string|array</td>
                 <td>$type</td>
-                <td></td>
+                <td>PermissionType (read,write,execute,delete)</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>integer|null</td>
                 <td>$authId</td>
                 <td></td>
             </tr>

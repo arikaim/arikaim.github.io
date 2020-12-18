@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -95,10 +95,65 @@
             <p>Cache</p>                                </div>
     
     
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>DEFAULT_DRIVER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FILESYSTEM_DRIVER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>APCU_DRIVER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ARRAY_DRIVER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VOID_DRIVER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>MEMCACHED_DRIVER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
     
             <h2>Properties</h2>
 
             <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_drivers">
+                                        protected                                        array
+                </td>
+                <td>$drivers</td>
+                <td class="last">Drivers list</td>
+                <td></td>
+            </tr>
                     <tr>
                 <td class="type" id="property_driver">
                                         protected                                        <abbr title="Arikaim\Core\Cache\Doctrine\Common\Cache\Cache">Cache</abbr>
@@ -134,9 +189,39 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>($cacheDir, $routerCacheFile, $driver = null, $status = false)
+                    <a href="#method___construct">__construct</a>(string $cacheDir, string|null $routerCacheFile, string|null $driverName = null, boolean $status = false)
         
                                             <p>Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSupportedDrivers">getSupportedDrivers</a>()
+        
+                                            <p>Get supported driver names.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isAvailable">isAvailable</a>(string $driverName)
+        
+                                            <p>Return true if driver name is avaliable</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Cache\Doctrine\Common\Cache\Cache">Cache</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createDriver">createDriver</a>(string|null $name)
+        
+                                            <p>Create cache driver</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -176,7 +261,7 @@
                 <div class="col-md-8 type">
                     <a href="#method_isDiabled">isDiabled</a>()
         
-                                            <p>Return true if cache is status</p>                </div>
+                                            <p>Return true if cache is disabled</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -191,10 +276,20 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDriverName">getDriverName</a>()
+        
+                                            <p>Get cache driver name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setDriver">setDriver</a>(<abbr title="Arikaim\Core\Cache\Doctrine\Common\Cache\Cache">Cache</abbr> $driver)
+                    <a href="#method_setDriver">setDriver</a>(<abbr title="Arikaim\Core\Cache\Doctrine\Common\Cache\Cache">Cache</abbr>|string $driver)
         
                                             <p>Set cache driver</p>                </div>
                 <div class="col-md-2"></div>
@@ -224,7 +319,7 @@
                     bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_save">save</a>(string $id, mixed $data, int $lifeTime = 0)
+                    <a href="#method_save">save</a>(string $id, mixed $data, int $lifeTime = 1)
         
                                             <p>Save cache item</p>                </div>
                 <div class="col-md-2"></div>
@@ -287,9 +382,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 66</div>
+        <div class="location">at         line 87</div>
         <code>                    
-    <strong>__construct</strong>($cacheDir, $routerCacheFile, $driver = null, $status = false)
+    <strong>__construct</strong>(string $cacheDir, string|null $routerCacheFile, string|null $driverName = null, boolean $status = false)
         </code>
     </h3>
     <div class="details">
@@ -303,22 +398,22 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$cacheDir</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string|null</td>
                 <td>$routerCacheFile</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
-                <td>$driver</td>
+                <td>string|null</td>
+                <td>$driverName</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>boolean</td>
                 <td>$status</td>
                 <td></td>
             </tr>
@@ -332,8 +427,127 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getSupportedDrivers">
+        <div class="location">at         line 100</div>
+        <code>                    array
+    <strong>getSupportedDrivers</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get supported driver names.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isAvailable">
+        <div class="location">at         line 118</div>
+        <code>                    boolean
+    <strong>isAvailable</strong>(string $driverName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if driver name is avaliable</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$driverName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createDriver">
+        <div class="location">at         line 139</div>
+        <code>                    <abbr title="Arikaim\Core\Cache\Doctrine\Common\Cache\Cache">Cache</abbr>|null
+    <strong>createDriver</strong>(string|null $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create cache driver</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Cache\Doctrine\Common\Cache\Cache">Cache</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getCacheDir">
-        <div class="location">at         line 81</div>
+        <div class="location">at         line 172</div>
         <code>                    string
     <strong>getCacheDir</strong>()
         </code>
@@ -363,7 +577,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setStatus">
-        <div class="location">at         line 92</div>
+        <div class="location">at         line 183</div>
         <code>                    void
     <strong>setStatus</strong>(boolean $status)
         </code>
@@ -403,7 +617,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getStatus">
-        <div class="location">at         line 102</div>
+        <div class="location">at         line 193</div>
         <code>                    boolean
     <strong>getStatus</strong>()
         </code>
@@ -433,7 +647,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isDiabled">
-        <div class="location">at         line 112</div>
+        <div class="location">at         line 203</div>
         <code>                    boolean
     <strong>isDiabled</strong>()
         </code>
@@ -443,7 +657,7 @@
     
 
                     <div class="method-description">
-                                    <p>Return true if cache is status</p>                                                </div>
+                                    <p>Return true if cache is disabled</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -463,7 +677,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getDriver">
-        <div class="location">at         line 122</div>
+        <div class="location">at         line 213</div>
         <code>                    <abbr title="Arikaim\Core\Cache\Doctrine\Common\Cache\Cache">Cache</abbr>
     <strong>getDriver</strong>()
         </code>
@@ -492,10 +706,40 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getDriverName">
+        <div class="location">at         line 223</div>
+        <code>                    string
+    <strong>getDriverName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get cache driver name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_setDriver">
-        <div class="location">at         line 134</div>
+        <div class="location">at         line 239</div>
         <code>                    void
-    <strong>setDriver</strong>(<abbr title="Arikaim\Core\Cache\Doctrine\Common\Cache\Cache">Cache</abbr> $driver)
+    <strong>setDriver</strong>(<abbr title="Arikaim\Core\Cache\Doctrine\Common\Cache\Cache">Cache</abbr>|string $driver)
         </code>
     </h3>
     <div class="details">
@@ -509,7 +753,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Arikaim\Core\Cache\Doctrine\Common\Cache\Cache">Cache</abbr></td>
+                <td><abbr title="Arikaim\Core\Cache\Doctrine\Common\Cache\Cache">Cache</abbr>|string</td>
                 <td>$driver</td>
                 <td></td>
             </tr>
@@ -542,7 +786,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_fetch">
-        <div class="location">at         line 149</div>
+        <div class="location">at         line 258</div>
         <code>                    mixed|false
     <strong>fetch</strong>(string $id)
         </code>
@@ -582,7 +826,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_has">
-        <div class="location">at         line 160</div>
+        <div class="location">at         line 269</div>
         <code>                    bool
     <strong>has</strong>(string $id)
         </code>
@@ -622,9 +866,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_save">
-        <div class="location">at         line 173</div>
+        <div class="location">at         line 282</div>
         <code>                    bool
-    <strong>save</strong>(string $id, mixed $data, int $lifeTime = 0)
+    <strong>save</strong>(string $id, mixed $data, int $lifeTime = 1)
         </code>
     </h3>
     <div class="details">
@@ -672,7 +916,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_delete">
-        <div class="location">at         line 184</div>
+        <div class="location">at         line 293</div>
         <code>                    bool
     <strong>delete</strong>(string $id)
         </code>
@@ -712,7 +956,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getStats">
-        <div class="location">at         line 202</div>
+        <div class="location">at         line 311</div>
         <code>                    array|null
     <strong>getStats</strong>()
         </code>
@@ -742,7 +986,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_clear">
-        <div class="location">at         line 212</div>
+        <div class="location">at         line 321</div>
         <code>                    void
     <strong>clear</strong>()
         </code>
@@ -772,7 +1016,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasRouteCache">
-        <div class="location">at         line 227</div>
+        <div class="location">at         line 334</div>
         <code>                    boolean
     <strong>hasRouteCache</strong>()
         </code>
@@ -802,7 +1046,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_clearRouteCache">
-        <div class="location">at         line 237</div>
+        <div class="location">at         line 344</div>
         <code>                    bool
     <strong>clearRouteCache</strong>()
         </code>

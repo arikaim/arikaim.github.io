@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -184,7 +184,7 @@
                     <abbr title="Arikaim\Core\Db\Traits\Options\QueryBuilder">QueryBuilder</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getOptionsQuery">getOptionsQuery</a>(integer $referenceId)
+                    <a href="#method_getOptionsQuery">getOptionsQuery</a>($referenceId, array $onlyKeys = null)
         
                                             <p>Get options query</p>                </div>
                 <div class="col-md-2"></div>
@@ -194,7 +194,7 @@
                     <a href="../../../../../Arikaim/Core/Db/Model.html"><abbr title="Arikaim\Core\Db\Model">Model</abbr></a>|null
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getOptions">getOptions</a>(integer $referenceId)
+                    <a href="#method_getOptions">getOptions</a>($referenceId, array $onlyKeys = null)
         
                                             <p>Get options list</p>                </div>
                 <div class="col-md-2"></div>
@@ -542,9 +542,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getOptionsQuery">
-        <div class="location">at         line 166</div>
+        <div class="location">at         line 168</div>
         <code>                    <abbr title="Arikaim\Core\Db\Traits\Options\QueryBuilder">QueryBuilder</abbr>
-    <strong>getOptionsQuery</strong>(integer $referenceId)
+    <strong>getOptionsQuery</strong>($referenceId, array $onlyKeys = null)
         </code>
     </h3>
     <div class="details">
@@ -558,8 +558,13 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>integer</td>
+                <td></td>
                 <td>$referenceId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$onlyKeys</td>
                 <td></td>
             </tr>
             </table>
@@ -582,9 +587,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getOptions">
-        <div class="location">at         line 177</div>
+        <div class="location">at         line 181</div>
         <code>                    <a href="../../../../../Arikaim/Core/Db/Model.html"><abbr title="Arikaim\Core\Db\Model">Model</abbr></a>|null
-    <strong>getOptions</strong>(integer $referenceId)
+    <strong>getOptions</strong>($referenceId, array $onlyKeys = null)
         </code>
     </h3>
     <div class="details">
@@ -598,8 +603,13 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>integer</td>
+                <td></td>
                 <td>$referenceId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$onlyKeys</td>
                 <td></td>
             </tr>
             </table>
@@ -622,7 +632,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasOption">
-        <div class="location">at         line 189</div>
+        <div class="location">at         line 193</div>
         <code>                    boolean
     <strong>hasOption</strong>($key, $referenceId = null)
         </code>
@@ -667,7 +677,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_saveOption">
-        <div class="location">at         line 204</div>
+        <div class="location">at         line 208</div>
         <code>                    boolean
     <strong>saveOption</strong>(integer $referenceId, string $key, mixed $value)
         </code>
@@ -717,7 +727,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_saveOptions">
-        <div class="location">at         line 227</div>
+        <div class="location">at         line 230</div>
         <code>                    boolean
     <strong>saveOptions</strong>(integer $referenceId, array $data)
         </code>

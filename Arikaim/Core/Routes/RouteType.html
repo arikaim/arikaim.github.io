@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Arikaim Arikaim\Core\Queue\QueueWorker | API Documentation</title>
+    <title>Arikaim Arikaim\Core\Routes\RouteType | API Documentation</title>
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
@@ -18,7 +18,7 @@
         <link rel="shortcut icon" href="../../../images/arikaim-favicon.png" />
     </head>
 
-    <body id="class" data-name="class:Arikaim_Core_Queue_QueueWorker" data-root-path="../../../">
+    <body id="class" data-name="class:Arikaim_Core_Routes_RouteType" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -71,48 +71,69 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core/Queue.html">Queue</a></li><li class="backslash">\</li><li>QueueWorker</li>
+                        <li><a href="../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core/Routes.html">Routes</a></li><li class="backslash">\</li><li>RouteType</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            QueueWorker
+            RouteType
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>QueueWorker</strong>
+    <strong>RouteType</strong>
 </p>
 
         
     
 
             <div class="description">
-            <p>Queue worker</p>                                </div>
+            <p>Route types</p>                                </div>
     
     
             <h2>Constants</h2>
 
             <table class="table table-condensed">
                     <tr>
-                <td>STOP</td>
+                <td>INSTALL_PAGE_URL_PATH</td>
                 <td class="last">
                     <p><em></em></p>
                     <p></p>
                 </td>
             </tr>
                     <tr>
-                <td>PAUSE</td>
+                <td>UNKNOW_TYPE</td>
                 <td class="last">
                     <p><em></em></p>
                     <p></p>
                 </td>
             </tr>
                     <tr>
-                <td>RUN</td>
+                <td>HOME_PAGE_URL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ADMIN_PAGE_URL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SYSTEM_API_URL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>API_URL</td>
                 <td class="last">
                     <p><em></em></p>
                     <p></p>
@@ -127,112 +148,82 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    static&nbsp;
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../../Arikaim/Core/Interfaces/QueueInterface.html"><abbr title="Arikaim\Core\Interfaces\QueueInterface">QueueInterface</abbr></a> $manager, <a href="../../../Arikaim/Core/Interfaces/OptionsInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsInterface">OptionsInterface</abbr></a> $options, $logger)
+                    <a href="#method_getType">getType</a>($url)
         
-                                            <p>Constructor</p>                </div>
+                                            <p>Get route type</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    static&nbsp;boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_run">run</a>()
+                    <a href="#method_isLanguageSegment">isLanguageSegment</a>(array $urlSegments)
         
-                                            <p>Run queue worker daemon</p>                </div>
+                                            <p>Return true if last url segment is language</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    static&nbsp;boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_handleSignals">handleSignals</a>(<abbr title="Arikaim\Core\Queue\ineteger">ineteger</abbr> $signo)
+                    <a href="#method_isSystemApiUrl">isSystemApiUrl</a>(string $url)
         
-                                            <p>Signal handler</p>                </div>
+                                            <p>Return true if request url is system api</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    static&nbsp;boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_checkStatus">checkStatus</a>()
+                    <a href="#method_isAdminPage">isAdminPage</a>(string $url)
         
-                                            <p>Check worker status</p>                </div>
+                                            <p>Return true if request url is admin page</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    boolean
+                    static&nbsp;boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_isRunning">isRunning</a>()
+                    <a href="#method_isApiInstallRequest">isApiInstallRequest</a>()
         
-                                            <p>Return true if worker process is running</p>                </div>
+                                            <p>Return true if request is for installation</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    integer
+                    static&nbsp;boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getPid">getPid</a>()
+                    <a href="#method_isInstallPage">isInstallPage</a>()
         
-                                            <p>Get worker process pid</p>                </div>
+                                            <p>Check for install page url</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    static&nbsp;string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_stopDaemon">stopDaemon</a>()
+                    <a href="#method_getInstallPageUrl">getInstallPageUrl</a>()
         
-                                            <p>Stop worker daemon process</p>                </div>
+                                            <p>Get install page url</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    static&nbsp;boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setPid">setPid</a>(integer|null $pid = null)
+                    <a href="#method_isValidApiRoutePattern">isValidApiRoutePattern</a>(string $pattern)
         
-                                            <p>Save worker pid in options</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    void
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_saveCommand">saveCommand</a>(string $command)
-        
-                                            <p>Save worker command</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    bool
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_runDaemon">runDaemon</a>()
-        
-                                            <p>Run daemon worker process</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    object
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getProcess">getProcess</a>()
-        
-                                            <p>Get worker process</p>                </div>
+                                            <p>Return true if api url pattern is valid</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -242,10 +233,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
-        <div class="location">at         line 59</div>
-        <code>                    
-    <strong>__construct</strong>(<a href="../../../Arikaim/Core/Interfaces/QueueInterface.html"><abbr title="Arikaim\Core\Interfaces\QueueInterface">QueueInterface</abbr></a> $manager, <a href="../../../Arikaim/Core/Interfaces/OptionsInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsInterface">OptionsInterface</abbr></a> $options, $logger)
+                    <h3 id="method_getType">
+        <div class="location">at         line 28</div>
+        <code>        static            
+    <strong>getType</strong>($url)
         </code>
     </h3>
     <div class="details">
@@ -253,24 +244,14 @@
     
 
                     <div class="method-description">
-                                    <p>Constructor</p>                                                </div>
+                                    <p>Get route type</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Arikaim/Core/Interfaces/QueueInterface.html"><abbr title="Arikaim\Core\Interfaces\QueueInterface">QueueInterface</abbr></a></td>
-                <td>$manager</td>
                 <td></td>
-            </tr>
-                    <tr>
-                <td><a href="../../../Arikaim/Core/Interfaces/OptionsInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsInterface">OptionsInterface</abbr></a></td>
-                <td>$options</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$logger</td>
+                <td>$url</td>
                 <td></td>
             </tr>
             </table>
@@ -283,10 +264,50 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_run">
+                    <h3 id="method_isLanguageSegment">
+        <div class="location">at         line 62</div>
+        <code>        static            boolean
+    <strong>isLanguageSegment</strong>(array $urlSegments)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if last url segment is language</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$urlSegments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isSystemApiUrl">
         <div class="location">at         line 73</div>
-        <code>                    void
-    <strong>run</strong>()
+        <code>        static            boolean
+    <strong>isSystemApiUrl</strong>(string $url)
         </code>
     </h3>
     <div class="details">
@@ -294,44 +315,14 @@
     
 
                     <div class="method-description">
-                                    <p>Run queue worker daemon</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_handleSignals">
-        <div class="location">at         line 102</div>
-        <code>            protected        void
-    <strong>handleSignals</strong>(<abbr title="Arikaim\Core\Queue\ineteger">ineteger</abbr> $signo)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Signal handler</p>                                                </div>
+                                    <p>Return true if request url is system api</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Arikaim\Core\Queue\ineteger">ineteger</abbr></td>
-                <td>$signo</td>
+                <td>string</td>
+                <td>$url</td>
                 <td></td>
             </tr>
             </table>
@@ -341,7 +332,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td>boolean</td>
             <td></td>
         </tr>
     </table>
@@ -353,10 +344,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_checkStatus">
-        <div class="location">at         line 125</div>
-        <code>            protected        void
-    <strong>checkStatus</strong>()
+                    <h3 id="method_isAdminPage">
+        <div class="location">at         line 86</div>
+        <code>        static            boolean
+    <strong>isAdminPage</strong>(string $url)
         </code>
     </h3>
     <div class="details">
@@ -364,14 +355,24 @@
     
 
                     <div class="method-description">
-                                    <p>Check worker status</p>                                                </div>
+                                    <p>Return true if request url is admin page</p>                                                </div>
                 <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+            </table>
+
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td>boolean</td>
             <td></td>
         </tr>
     </table>
@@ -383,10 +384,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_isRunning">
-        <div class="location">at         line 143</div>
-        <code>                    boolean
-    <strong>isRunning</strong>()
+                    <h3 id="method_isApiInstallRequest">
+        <div class="location">at         line 98</div>
+        <code>        static            boolean
+    <strong>isApiInstallRequest</strong>()
         </code>
     </h3>
     <div class="details">
@@ -394,7 +395,7 @@
     
 
                     <div class="method-description">
-                                    <p>Return true if worker process is running</p>                                                </div>
+                                    <p>Return true if request is for installation</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -413,10 +414,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getPid">
-        <div class="location">at         line 155</div>
-        <code>                    integer
-    <strong>getPid</strong>()
+                    <h3 id="method_isInstallPage">
+        <div class="location">at         line 110</div>
+        <code>        static            boolean
+    <strong>isInstallPage</strong>()
         </code>
     </h3>
     <div class="details">
@@ -424,14 +425,14 @@
     
 
                     <div class="method-description">
-                                    <p>Get worker process pid</p>                                                </div>
+                                    <p>Check for install page url</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>integer</td>
+            <td>boolean</td>
             <td></td>
         </tr>
     </table>
@@ -443,10 +444,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_stopDaemon">
-        <div class="location">at         line 167</div>
-        <code>                    void
-    <strong>stopDaemon</strong>()
+                    <h3 id="method_getInstallPageUrl">
+        <div class="location">at         line 122</div>
+        <code>        static            string
+    <strong>getInstallPageUrl</strong>()
         </code>
     </h3>
     <div class="details">
@@ -454,14 +455,14 @@
     
 
                     <div class="method-description">
-                                    <p>Stop worker daemon process</p>                                                </div>
+                                    <p>Get install page url</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td>string</td>
             <td></td>
         </tr>
     </table>
@@ -473,10 +474,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_setPid">
-        <div class="location">at         line 185</div>
-        <code>                    void
-    <strong>setPid</strong>(integer|null $pid = null)
+                    <h3 id="method_isValidApiRoutePattern">
+        <div class="location">at         line 133</div>
+        <code>        static            boolean
+    <strong>isValidApiRoutePattern</strong>(string $pattern)
         </code>
     </h3>
     <div class="details">
@@ -484,54 +485,14 @@
     
 
                     <div class="method-description">
-                                    <p>Save worker pid in options</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>integer|null</td>
-                <td>$pid</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_saveCommand">
-        <div class="location">at         line 197</div>
-        <code>                    void
-    <strong>saveCommand</strong>(string $command)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Save worker command</p>                                                </div>
+                                    <p>Return true if api url pattern is valid</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$command</td>
+                <td>$pattern</td>
                 <td></td>
             </tr>
             </table>
@@ -541,67 +502,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_runDaemon">
-        <div class="location">at         line 207</div>
-        <code>                    bool
-    <strong>runDaemon</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Run daemon worker process</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>bool</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getProcess">
-        <div class="location">at         line 228</div>
-        <code>                    object
-    <strong>getProcess</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Get worker process</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>object</td>
+            <td>boolean</td>
             <td></td>
         </tr>
     </table>

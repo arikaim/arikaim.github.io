@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -85,7 +85,7 @@
 
     <p>    class
     <strong>Authenticate</strong>        implements
-        <a href="../../../Arikaim/Core/Interfaces/Access/AuthInterface.html"><abbr title="Arikaim\Core\Interfaces\Access\AuthInterface">AuthInterface</abbr></a>, <a href="../../../Arikaim/Core/Interfaces/Access/AccessInterface.html"><abbr title="Arikaim\Core\Interfaces\Access\AccessInterface">AccessInterface</abbr></a>
+        <a href="../../../Arikaim/Core/Interfaces/Access/AuthInterface.html"><abbr title="Arikaim\Core\Interfaces\Access\AuthInterface">AuthInterface</abbr></a>
 </p>
 
         
@@ -95,60 +95,6 @@
             <p>Manage auth.</p>                                </div>
     
     
-            <h2>Constants</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td>ACCESS_NAMESPACE</td>
-                <td class="last">
-                    <p><em></em></p>
-                    <p></p>
-                </td>
-            </tr>
-                    <tr>
-                <td>AUTH_BASIC</td>
-                <td class="last">
-                    <p><em></em></p>
-                    <p></p>
-                </td>
-            </tr>
-                    <tr>
-                <td>AUTH_SESSION</td>
-                <td class="last">
-                    <p><em></em></p>
-                    <p></p>
-                </td>
-            </tr>
-                    <tr>
-                <td>AUTH_JWT</td>
-                <td class="last">
-                    <p><em></em></p>
-                    <p></p>
-                </td>
-            </tr>
-                    <tr>
-                <td>AUTH_TOKEN</td>
-                <td class="last">
-                    <p><em></em></p>
-                    <p></p>
-                </td>
-            </tr>
-                    <tr>
-                <td>CSRF_TOKEN</td>
-                <td class="last">
-                    <p><em></em></p>
-                    <p></p>
-                </td>
-            </tr>
-                    <tr>
-                <td>OAUTH_TOKEN</td>
-                <td class="last">
-                    <p><em></em></p>
-                    <p></p>
-                </td>
-            </tr>
-            </table>
-
     
     
             <h2>Methods</h2>
@@ -159,7 +105,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a> $user, <a href="../../../Arikaim/Core/Interfaces/Access/AccessInterface.html"><abbr title="Arikaim\Core\Interfaces\Access\AccessInterface">AccessInterface</abbr></a> $access, <a href="../../../Arikaim/Core/Interfaces/SystemErrorInterface.html"><abbr title="Arikaim\Core\Interfaces\SystemErrorInterface">SystemErrorInterface</abbr></a> $errorRenderer, <a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a> $provider = null)
+                    <a href="#method___construct">__construct</a>(<a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a> $user, <a href="../../../Arikaim/Core/Interfaces/Access/AccessInterface.html"><abbr title="Arikaim\Core\Interfaces\Access\AccessInterface">AccessInterface</abbr></a> $access, <a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a> $provider = null)
         
                                             <p>Constructor</p>                </div>
                 <div class="col-md-2"></div>
@@ -219,7 +165,7 @@
                     boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_hasAccess">hasAccess</a>($name, $type = null, $authId = null)
+                    <a href="#method_hasAccess">hasAccess</a>(string $name, string|array $type = null, integer|null $authId = null)
         
                                             <p>Check access</p>                </div>
                 <div class="col-md-2"></div>
@@ -356,52 +302,12 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    int
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getTypeId">getTypeId</a>(string $name)
-        
-                                            <p>Return auth type id</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    boolean
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_isValidAuthName">isValidAuthName</a>(string $name)
-        
-                                            <p>Check if auth name is valid</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
                     null|integer
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_resolveAuthType">resolveAuthType</a>(string|integer $type)
         
                                             <p>Resolve auth type</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string|null
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getAuthMiddlewareClass">getAuthMiddlewareClass</a>(integer $id)
-        
-                                            <p>Get middleware class name</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string|null
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getAuthProviderClass">getAuthProviderClass</a>(integer $id)
-        
-                                            <p>Get auth provider class</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -412,9 +318,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 76</div>
+        <div class="location">at         line 54</div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a> $user, <a href="../../../Arikaim/Core/Interfaces/Access/AccessInterface.html"><abbr title="Arikaim\Core\Interfaces\Access\AccessInterface">AccessInterface</abbr></a> $access, <a href="../../../Arikaim/Core/Interfaces/SystemErrorInterface.html"><abbr title="Arikaim\Core\Interfaces\SystemErrorInterface">SystemErrorInterface</abbr></a> $errorRenderer, <a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a> $provider = null)
+    <strong>__construct</strong>(<a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a> $user, <a href="../../../Arikaim/Core/Interfaces/Access/AccessInterface.html"><abbr title="Arikaim\Core\Interfaces\Access\AccessInterface">AccessInterface</abbr></a> $access, <a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a> $provider = null)
         </code>
     </h3>
     <div class="details">
@@ -438,11 +344,6 @@
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../../Arikaim/Core/Interfaces/SystemErrorInterface.html"><abbr title="Arikaim\Core\Interfaces\SystemErrorInterface">SystemErrorInterface</abbr></a></td>
-                <td>$errorRenderer</td>
-                <td></td>
-            </tr>
-                    <tr>
                 <td><a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a></td>
                 <td>$provider</td>
                 <td></td>
@@ -458,7 +359,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addPermission">
-        <div class="location">at         line 97</div>
+        <div class="location">at         line 73</div>
         <code>                    boolean
     <strong>addPermission</strong>(string $name, string|null $title = null, string|null $description = null, string|null $extension = null)
         </code>
@@ -513,7 +414,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFullPermissions">
-        <div class="location">at         line 107</div>
+        <div class="location">at         line 83</div>
         <code>                    array
     <strong>getFullPermissions</strong>()
         </code>
@@ -543,7 +444,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getControlPanelPermission">
-        <div class="location">at         line 117</div>
+        <div class="location">at         line 93</div>
         <code>                    string
     <strong>getControlPanelPermission</strong>()
         </code>
@@ -573,7 +474,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasControlPanelAccess">
-        <div class="location">at         line 127</div>
+        <div class="location">at         line 103</div>
         <code>                    boolean
     <strong>hasControlPanelAccess</strong>($authId = null)
         </code>
@@ -613,7 +514,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getUserPermissions">
-        <div class="location">at         line 140</div>
+        <div class="location">at         line 116</div>
         <code>                    mixed
     <strong>getUserPermissions</strong>(integer|null $authId = null)
         </code>
@@ -653,9 +554,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasAccess">
-        <div class="location">at         line 154</div>
+        <div class="location">at         line 130</div>
         <code>                    boolean
-    <strong>hasAccess</strong>($name, $type = null, $authId = null)
+    <strong>hasAccess</strong>(string $name, string|array $type = null, integer|null $authId = null)
         </code>
     </h3>
     <div class="details">
@@ -669,17 +570,17 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$name</td>
-                <td></td>
+                <td>Permission name</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string|array</td>
                 <td>$type</td>
-                <td></td>
+                <td>PermissionType (read,write,execute,delete)</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>integer|null</td>
                 <td>$authId</td>
                 <td></td>
             </tr>
@@ -703,7 +604,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_resolvePermissionName">
-        <div class="location">at         line 167</div>
+        <div class="location">at         line 143</div>
         <code>                    array
     <strong>resolvePermissionName</strong>(string $name)
         </code>
@@ -743,7 +644,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getProvider">
-        <div class="location">at         line 177</div>
+        <div class="location">at         line 153</div>
         <code>                    <abbr title="Arikaim\Core\Interfaces\Access\AuthProviderInterface">AuthProviderInterface</abbr>
     <strong>getProvider</strong>()
         </code>
@@ -773,7 +674,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setProvider">
-        <div class="location">at         line 188</div>
+        <div class="location">at         line 164</div>
         <code>                    void
     <strong>setProvider</strong>(<a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a> $provider)
         </code>
@@ -813,7 +714,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_withProvider">
-        <div class="location">at         line 201</div>
+        <div class="location">at         line 177</div>
         <code>                    <abbr title="Arikaim\Core\Interfaces\Access\AuthProviderInterface">AuthProviderInterface</abbr>
     <strong>withProvider</strong>(<abbr title="Arikaim\Core\Interfaces\Access\AuthProviderInterface">AuthProviderInterface</abbr>|string $provider, <abbr title="Arikaim\Core\Interfaces\Access\UserProviderInterface">UserProviderInterface</abbr>|null $user = null, array $params = [])
         </code>
@@ -863,7 +764,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createProvider">
-        <div class="location">at         line 219</div>
+        <div class="location">at         line 195</div>
         <code>            protected        object|null
     <strong>createProvider</strong>(string $name, <a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a> $user = null, array $params = [])
         </code>
@@ -913,7 +814,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_middleware">
-        <div class="location">at         line 236</div>
+        <div class="location">at         line 209</div>
         <code>                    object|null
     <strong>middleware</strong>(string $authName, array $options = [], <a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a> $user = null)
         </code>
@@ -963,7 +864,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_authenticate">
-        <div class="location">at         line 253</div>
+        <div class="location">at         line 222</div>
         <code>                    bool
     <strong>authenticate</strong>(array $credentials)
         </code>
@@ -1003,7 +904,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_logout">
-        <div class="location">at         line 263</div>
+        <div class="location">at         line 232</div>
         <code>                    void
     <strong>logout</strong>()
         </code>
@@ -1033,7 +934,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getUser">
-        <div class="location">at         line 273</div>
+        <div class="location">at         line 242</div>
         <code>                    <abbr title="Arikaim\Core\Interfaces\Access\UserProviderInterface">UserProviderInterface</abbr>
     <strong>getUser</strong>()
         </code>
@@ -1063,7 +964,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLoginAttempts">
-        <div class="location">at         line 283</div>
+        <div class="location">at         line 252</div>
         <code>                    integer|null
     <strong>getLoginAttempts</strong>()
         </code>
@@ -1093,7 +994,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getId">
-        <div class="location">at         line 293</div>
+        <div class="location">at         line 262</div>
         <code>                    integer|null
     <strong>getId</strong>()
         </code>
@@ -1123,7 +1024,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isLogged">
-        <div class="location">at         line 303</div>
+        <div class="location">at         line 272</div>
         <code>                    boolean
     <strong>isLogged</strong>()
         </code>
@@ -1153,7 +1054,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getAuthName">
-        <div class="location">at         line 314</div>
+        <div class="location">at         line 283</div>
         <code>                    string
     <strong>getAuthName</strong>(int $auth)
         </code>
@@ -1192,88 +1093,8 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getTypeId">
-        <div class="location">at         line 325</div>
-        <code>                    int
-    <strong>getTypeId</strong>(string $name)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Return auth type id</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$name</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>int</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_isValidAuthName">
-        <div class="location">at         line 336</div>
-        <code>                    boolean
-    <strong>isValidAuthName</strong>(string $name)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Check if auth name is valid</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$name</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>boolean</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_resolveAuthType">
-        <div class="location">at         line 347</div>
+        <div class="location">at         line 294</div>
         <code>                    null|integer
     <strong>resolveAuthType</strong>(string|integer $type)
         </code>
@@ -1301,86 +1122,6 @@
                     <table class="table table-condensed">
         <tr>
             <td>null|integer</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getAuthMiddlewareClass">
-        <div class="location">at         line 362</div>
-        <code>                    string|null
-    <strong>getAuthMiddlewareClass</strong>(integer $id)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Get middleware class name</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>integer</td>
-                <td>$id</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string|null</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getAuthProviderClass">
-        <div class="location">at         line 382</div>
-        <code>                    string|null
-    <strong>getAuthProviderClass</strong>(integer $id)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Get auth provider class</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>integer</td>
-                <td>$id</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string|null</td>
             <td></td>
         </tr>
     </table>

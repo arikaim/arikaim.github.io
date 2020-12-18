@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -99,6 +99,66 @@
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComponentFiles">getComponentFiles</a>()
+        
+                                            <p>Get components include files</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addIncludeFile">addIncludeFile</a>(array $file, string $key)
+        
+                                            <p>Add include file if not exists</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLibraryPath">getLibraryPath</a>(string $libraryName)
+        
+                                            <p>Get UI library path</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTemplatesPath">getTemplatesPath</a>()
+        
+                                            <p>Get templates path</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPrimaryTemplate">getPrimaryTemplate</a>()
+        
+                                            <p>Get primary template</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPrimaryTemplate">setPrimaryTemplate</a>(string $templateName)
+        
+                                            <p>Set primary template</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     string
@@ -189,6 +249,16 @@
                                             <p>Get twig extension</p>                </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Interfaces\View\ExtensionInterface">ExtensionInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCurrentExtension">getCurrentExtension</a>()
+        
+                                            <p>Get current extension</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -196,8 +266,223 @@
 
             <div id="method-details">
                     <div class="method-item">
+                    <h3 id="method_getComponentFiles">
+        <div class="location">at         line 22</div>
+        <code>                    array
+    <strong>getComponentFiles</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get components include files</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addIncludeFile">
+        <div class="location">at         line 31</div>
+        <code>                    void
+    <strong>addIncludeFile</strong>(array $file, string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add include file if not exists</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLibraryPath">
+        <div class="location">at         line 39</div>
+        <code>                    string
+    <strong>getLibraryPath</strong>(string $libraryName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get UI library path</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$libraryName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTemplatesPath">
+        <div class="location">at         line 46</div>
+        <code>                    string
+    <strong>getTemplatesPath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get templates path</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrimaryTemplate">
+        <div class="location">at         line 53</div>
+        <code>                    string
+    <strong>getPrimaryTemplate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get primary template</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPrimaryTemplate">
+        <div class="location">at         line 61</div>
+        <code>                    void
+    <strong>setPrimaryTemplate</strong>(string $templateName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set primary template</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$templateName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_fetch">
-        <div class="location">at         line 24</div>
+        <div class="location">at         line 70</div>
         <code>                    string
     <strong>fetch</strong>(string $template, array $params = [])
         </code>
@@ -242,7 +527,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_fetchBlock">
-        <div class="location">at         line 34</div>
+        <div class="location">at         line 80</div>
         <code>                    string
     <strong>fetchBlock</strong>(string $template, string $block, array $params = [])
         </code>
@@ -292,7 +577,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_fetchFromString">
-        <div class="location">at         line 43</div>
+        <div class="location">at         line 89</div>
         <code>                    string
     <strong>fetchFromString</strong>(string $string, array $params = [])
         </code>
@@ -337,7 +622,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getEnvironment">
-        <div class="location">at         line 50</div>
+        <div class="location">at         line 96</div>
         <code>                    <abbr title="Arikaim\Core\Interfaces\View\Twig\Environment">Environment</abbr>
     <strong>getEnvironment</strong>()
         </code>
@@ -367,7 +652,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCache">
-        <div class="location">at         line 57</div>
+        <div class="location">at         line 103</div>
         <code>                    <abbr title="Arikaim\Core\Interfaces\View\CacheInterface">CacheInterface</abbr>
     <strong>getCache</strong>()
         </code>
@@ -397,7 +682,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_properties">
-        <div class="location">at         line 64</div>
+        <div class="location">at         line 110</div>
         <code>                    <abbr title="Arikaim\Core\Interfaces\View\Collection">Collection</abbr>
     <strong>properties</strong>()
         </code>
@@ -427,7 +712,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getExtensionsPath">
-        <div class="location">at         line 71</div>
+        <div class="location">at         line 117</div>
         <code>                    string
     <strong>getExtensionsPath</strong>()
         </code>
@@ -457,7 +742,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getViewPath">
-        <div class="location">at         line 78</div>
+        <div class="location">at         line 124</div>
         <code>                    string
     <strong>getViewPath</strong>()
         </code>
@@ -487,7 +772,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getExtension">
-        <div class="location">at         line 85</div>
+        <div class="location">at         line 131</div>
         <code>                    <abbr title="Arikaim\Core\Interfaces\View\ExtensionInterface">ExtensionInterface</abbr>
     <strong>getExtension</strong>($class)
         </code>
@@ -509,6 +794,36 @@
             </tr>
             </table>
 
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Interfaces\View\ExtensionInterface">ExtensionInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCurrentExtension">
+        <div class="location">at         line 138</div>
+        <code>                    <abbr title="Arikaim\Core\Interfaces\View\ExtensionInterface">ExtensionInterface</abbr>
+    <strong>getCurrentExtension</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get current extension</p>                                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 

@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Arikaim Arikaim\Core\View\Html\EmailComponent | API Documentation</title>
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/style.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link rel="shortcut icon" href="../../../../images/arikaim-favicon.png" />
+    </head>
+
+    <body id="class" data-name="class:Arikaim_Core_View_Html_EmailComponent" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                   
+                <ul class="nav navbar-nav" style="margin-left:0px">                               
+                    <li>
+                        <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
+                    </li>
+                    <li><a href="index.html">API Documentation</a></li>
+                    <li><a href="#">Version master</a></li>
+                </ul>                                                         
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/View.html">View</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/View/Html.html">Html</a></li><li class="backslash">\</li><li>EmailComponent</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            EmailComponent
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>EmailComponent</strong>        extends <a href="../../../../Arikaim/Core/View/Html/HtmlComponent.html"><abbr title="Arikaim\Core\View\Html\HtmlComponent">HtmlComponent</abbr></a>        implements
+        <a href="../../../../Arikaim/Core/Interfaces/View/HtmlComponentInterface.html"><abbr title="Arikaim\Core\Interfaces\View\HtmlComponentInterface">HtmlComponentInterface</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Render email component</p>                                </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>NOT_VALID_COMPONENT_ERROR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ACESS_DENIED_ERROR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>NOT_FOUND_ERROR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COMPONENT_ERROR_NAME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_cacheSaveTime">
+                    static                                                            integer
+                </td>
+                <td>$cacheSaveTime</td>
+                <td class="last">Cache save time</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#property_cacheSaveTime"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_view">
+                                                                                <a href="../../../../Arikaim/Core/Interfaces/View/ViewInterface.html"><abbr title="Arikaim\Core\Interfaces\View\ViewInterface">ViewInterface</abbr></a>
+                </td>
+                <td>$view</td>
+                <td class="last">Twig view</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#property_view"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cache">
+                                        protected                                        <abbr title="Arikaim\Core\View\Html\CacheInterface">CacheInterface</abbr>
+                </td>
+                <td>$cache</td>
+                <td class="last">Cache</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#property_cache"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_params">
+                                        protected                                        array
+                </td>
+                <td>$params</td>
+                <td class="last">Component params</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#property_params"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_language">
+                                        protected                                        string
+                </td>
+                <td>$language</td>
+                <td class="last">Language</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#property_language"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_basePath">
+                                        protected                                        string
+                </td>
+                <td>$basePath</td>
+                <td class="last">Base path</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#property_basePath"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_name">
+                                        protected                                        string
+                </td>
+                <td>$name</td>
+                <td class="last">Component name</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#property_name"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_componentDescriptor">
+                                        protected                                        <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>
+                </td>
+                <td>$componentDescriptor</td>
+                <td class="last">Component data</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#property_componentDescriptor"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_optionsFile">
+                                        protected                                        string
+                </td>
+                <td>$optionsFile</td>
+                <td class="last">Options file name</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#property_optionsFile"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_currentTenplate">
+                                        protected                                        string
+                </td>
+                <td>$currentTenplate</td>
+                <td class="last">Current template name</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#property_currentTenplate"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_emailCompilers">
+                                        protected                                        array
+                </td>
+                <td>$emailCompilers</td>
+                <td class="last">Emeil compilers list</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../Arikaim/Core/Interfaces/View/ViewInterface.html"><abbr title="Arikaim\Core\Interfaces\View\ViewInterface">ViewInterface</abbr></a> $view, string $name, array $params = [], string|null $language = null, string $basePath = &#039;components&#039;, string|null $optionsFile = null, boolean $withOptions = true)
+        
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#method___construct"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCurrentTemplate">setCurrentTemplate</a>(string $name)
+        
+                                            <p>Set current template name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#method_setCurrentTemplate"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Arikaim/Core/Interfaces/View/ViewInterface.html"><abbr title="Arikaim\Core\Interfaces\View\ViewInterface">ViewInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getVeiw">getVeiw</a>()
+        
+                                            <p>Get view ref</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#method_getVeiw"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createComponentDescriptor">createComponentDescriptor</a>(string $name, string|null $language = null, boolean $withOptions = true)
+        
+                                            <p>Create component data obj</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#method_createComponentDescriptor"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetch">fetch</a>(<a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a> $component, array $params = [])
+        
+                                            <p>Fetch component</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#method_fetch"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkAuthOption">checkAuthOption</a>(<a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a> $component)
+        
+                                            <p>Check auth and permissions access</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#method_checkAuthOption"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkPermissionOption">checkPermissionOption</a>(<a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a> $component)
+        
+                                            <p>Check auth and permissions access</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#method_checkPermissionOption"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processOptions">processOptions</a>(<a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a> $component)
+        
+                                            <p>Procss component options</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#method_processOptions"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_applyIncludeOption">applyIncludeOption</a>(<a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a> $component, string $key, string $fileType)
+        
+                                            <p>Apply component include option</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#method_applyIncludeOption"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveIncludeFile">resolveIncludeFile</a>(string $includeFile, string $fileType)
+        
+                                            <p>Resolve include file</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#method_resolveIncludeFile"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComponentFiles">getComponentFiles</a>(string $name, string $fileType = null)
+        
+                                            <p>Return component files</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#method_getComponentFiles"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isValid">isValid</a>()
+        
+                                            <p>Return true if component is vlaid</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#method_isValid"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasContent">hasContent</a>()
+        
+                                            <p>Return true if component have content</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#method_hasContent"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>()
+        
+                                            <p>get component options</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/HtmlComponent.html#method_getOptions"><abbr title="Arikaim\Core\View\Html\HtmlComponent">HtmlComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_includeComponentFiles">includeComponentFiles</a>(array $files)
+        
+                                            <p>Inlcude componnent files</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#method_includeComponentFiles"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isFullName">isFullName</a>(string $name)
+        
+                                            <p>Return true if component name is full name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/Component.html#method_isFullName"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComponentData">getComponentData</a>()
+        
+                                            <p>Get component data</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/HtmlComponent.html#method_getComponentData"><abbr title="Arikaim\Core\View\Html\HtmlComponent">HtmlComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getErrorMessage">getErrorMessage</a>(string $message)
+        
+                                            <p>Rnder component error mesage</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/HtmlComponent.html#method_getErrorMessage"><abbr title="Arikaim\Core\View\Html\HtmlComponent">HtmlComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getErrorText">getErrorText</a>(string $code, string $name = &#039;&#039;)
+        
+                                            <p>Get error message</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/HtmlComponent.html#method_getErrorText"><abbr title="Arikaim\Core\View\Html\HtmlComponent">HtmlComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_load">load</a>()
+        
+                                            <p>Load component from template</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/HtmlComponent.html#method_load"><abbr title="Arikaim\Core\View\Html\HtmlComponent">HtmlComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renderComponent">renderComponent</a>(bool $withOptions = true)
+        
+                                            <p>Render component</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/HtmlComponent.html#method_renderComponent"><abbr title="Arikaim\Core\View\Html\HtmlComponent">HtmlComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renderComponentDescriptor">renderComponentDescriptor</a>(<a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a> $component, array $params = [])
+        
+                                            <p>Render email component data</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Interfaces\View\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_render">render</a>(string $name, array $params = [], string $language, boolean $withOptions = true)
+        
+                                            <p>Render component html code from template</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/HtmlComponent.html#method_render"><abbr title="Arikaim\Core\View\Html\HtmlComponent">HtmlComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProperties">getProperties</a>()
+        
+                                            <p>Get properties</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/View/Html/HtmlComponent.html#method_getProperties"><abbr title="Arikaim\Core\View\Html\HtmlComponent">HtmlComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compileCssFrameworkCode">compileCssFrameworkCode</a>(string $code, string $library)
+        
+                                            <p>Compile email code</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_readLibraryCode">readLibraryCode</a>(string $name)
+        
+                                            <p>Read UI library css code</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEmailCompillers">setEmailCompillers</a>(array $compilers)
+        
+                                            <p>Set email compilers</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/Component.html#method___construct"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a> at         line 103</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../Arikaim/Core/Interfaces/View/ViewInterface.html"><abbr title="Arikaim\Core\Interfaces\View\ViewInterface">ViewInterface</abbr></a> $view, string $name, array $params = [], string|null $language = null, string $basePath = &#039;components&#039;, string|null $optionsFile = null, boolean $withOptions = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Arikaim/Core/Interfaces/View/ViewInterface.html"><abbr title="Arikaim\Core\Interfaces\View\ViewInterface">ViewInterface</abbr></a></td>
+                <td>$view</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$language</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$basePath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$optionsFile</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$withOptions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCurrentTemplate">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/Component.html#method_setCurrentTemplate"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a> at         line 133</div>
+        <code>                    void
+    <strong>setCurrentTemplate</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set current template name</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVeiw">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/Component.html#method_getVeiw"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a> at         line 143</div>
+        <code>                    <a href="../../../../Arikaim/Core/Interfaces/View/ViewInterface.html"><abbr title="Arikaim\Core\Interfaces\View\ViewInterface">ViewInterface</abbr></a>
+    <strong>getVeiw</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get view ref</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Arikaim/Core/Interfaces/View/ViewInterface.html"><abbr title="Arikaim\Core\Interfaces\View\ViewInterface">ViewInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createComponentDescriptor">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/Component.html#method_createComponentDescriptor"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a> at         line 156</div>
+        <code>            protected        <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>
+    <strong>createComponentDescriptor</strong>(string $name, string|null $language = null, boolean $withOptions = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create component data obj</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$language</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$withOptions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetch">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/Component.html#method_fetch"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a> at         line 185</div>
+        <code>                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>
+    <strong>fetch</strong>(<a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a> $component, array $params = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Fetch component</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a></td>
+                <td>$component</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkAuthOption">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/Component.html#method_checkAuthOption"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a> at         line 205</div>
+        <code>                    boolean|null
+    <strong>checkAuthOption</strong>(<a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a> $component)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check auth and permissions access</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a></td>
+                <td>$component</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkPermissionOption">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/Component.html#method_checkPermissionOption"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a> at         line 221</div>
+        <code>                    boolean|null
+    <strong>checkPermissionOption</strong>(<a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a> $component)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check auth and permissions access</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a></td>
+                <td>$component</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processOptions">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/Component.html#method_processOptions"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a> at         line 237</div>
+        <code>                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>
+    <strong>processOptions</strong>(<a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a> $component)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Procss component options</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a></td>
+                <td>$component</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_applyIncludeOption">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/Component.html#method_applyIncludeOption"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a> at         line 275</div>
+        <code>            protected        <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>
+    <strong>applyIncludeOption</strong>(<a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a> $component, string $key, string $fileType)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Apply component include option</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a></td>
+                <td>$component</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fileType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveIncludeFile">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/Component.html#method_resolveIncludeFile"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a> at         line 298</div>
+        <code>            protected        array
+    <strong>resolveIncludeFile</strong>(string $includeFile, string $fileType)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve include file</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$includeFile</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fileType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComponentFiles">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/Component.html#method_getComponentFiles"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a> at         line 320</div>
+        <code>                    array
+    <strong>getComponentFiles</strong>(string $name, string $fileType = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return component files</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fileType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isValid">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/Component.html#method_isValid"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a> at         line 353</div>
+        <code>                    boolean
+    <strong>isValid</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if component is vlaid</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasContent">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/Component.html#method_hasContent"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a> at         line 363</div>
+        <code>                    boolean
+    <strong>hasContent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if component have content</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/HtmlComponent.html#method_getOptions"><abbr title="Arikaim\Core\View\Html\HtmlComponent">HtmlComponent</abbr></a> at         line 194</div>
+        <code>                    array|null
+    <strong>getOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get component options</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_includeComponentFiles">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/Component.html#method_includeComponentFiles"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a> at         line 386</div>
+        <code>                    void
+    <strong>includeComponentFiles</strong>(array $files)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Inlcude componnent files</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$files</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isFullName">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/Component.html#method_isFullName"><abbr title="Arikaim\Core\View\Html\Component">Component</abbr></a> at         line 401</div>
+        <code>        static            boolean
+    <strong>isFullName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if component name is full name</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComponentData">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/HtmlComponent.html#method_getComponentData"><abbr title="Arikaim\Core\View\Html\HtmlComponent">HtmlComponent</abbr></a> at         line 44</div>
+        <code>                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>
+    <strong>getComponentData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get component data</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getErrorMessage">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/HtmlComponent.html#method_getErrorMessage"><abbr title="Arikaim\Core\View\Html\HtmlComponent">HtmlComponent</abbr></a> at         line 55</div>
+        <code>                    string
+    <strong>getErrorMessage</strong>(string $message)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Rnder component error mesage</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getErrorText">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/HtmlComponent.html#method_getErrorText"><abbr title="Arikaim\Core\View\Html\HtmlComponent">HtmlComponent</abbr></a> at         line 69</div>
+        <code>                    string
+    <strong>getErrorText</strong>(string $code, string $name = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get error message</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$code</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_load">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/HtmlComponent.html#method_load"><abbr title="Arikaim\Core\View\Html\HtmlComponent">HtmlComponent</abbr></a> at         line 81</div>
+        <code>                    string
+    <strong>load</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Load component from template</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderComponent">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/HtmlComponent.html#method_renderComponent"><abbr title="Arikaim\Core\View\Html\HtmlComponent">HtmlComponent</abbr></a> at         line 99</div>
+        <code>                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>
+    <strong>renderComponent</strong>(bool $withOptions = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Render component</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$withOptions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderComponentDescriptor">
+        <div class="location">at         line 41</div>
+        <code>                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a>
+    <strong>renderComponentDescriptor</strong>(<a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a> $component, array $params = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Render email component data</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a></td>
+                <td>$component</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Arikaim/Core/View/Interfaces/ComponentDescriptorInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_render">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/HtmlComponent.html#method_render"><abbr title="Arikaim\Core\View\Html\HtmlComponent">HtmlComponent</abbr></a> at         line 171</div>
+        <code>                    <abbr title="Arikaim\Core\Interfaces\View\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr>
+    <strong>render</strong>(string $name, array $params = [], string $language, boolean $withOptions = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Render component html code from template</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$language</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$withOptions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Interfaces\View\ComponentDescriptorInterface">ComponentDescriptorInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProperties">
+        <div class="location">in <a href="../../../../Arikaim/Core/View/Html/HtmlComponent.html#method_getProperties"><abbr title="Arikaim\Core\View\Html\HtmlComponent">HtmlComponent</abbr></a> at         line 184</div>
+        <code>                    array
+    <strong>getProperties</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get properties</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compileCssFrameworkCode">
+        <div class="location">at         line 88</div>
+        <code>                    string
+    <strong>compileCssFrameworkCode</strong>(string $code, string $library)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Compile email code</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$code</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$library</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_readLibraryCode">
+        <div class="location">at         line 112</div>
+        <code>                    array
+    <strong>readLibraryCode</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Read UI library css code</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEmailCompillers">
+        <div class="location">at         line 132</div>
+        <code>                    void
+    <strong>setEmailCompillers</strong>(array $compilers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set email compilers</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$compilers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

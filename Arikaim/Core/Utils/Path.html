@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -221,6 +221,16 @@
                     static&nbsp;string
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_getMacroPath">getMacroPath</a>(string $macroName, string $template)
+        
+                                            <p>Get macro path</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getRelativePath">getRelativePath</a>(string $fullPath)
         
                                             <p>Return relative path from full path</p>                </div>
@@ -296,6 +306,16 @@
                                             <p>Return current script path</p>                </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPath">addPath</a>(string $path, string $add)
+        
+                                            <p>Add path</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -303,8 +323,53 @@
 
             <div id="method-details">
                     <div class="method-item">
+                    <h3 id="method_getMacroPath">
+        <div class="location">at         line 41</div>
+        <code>        static            string
+    <strong>getMacroPath</strong>(string $macroName, string $template)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get macro path</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$macroName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$template</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getRelativePath">
-        <div class="location">at         line 40</div>
+        <div class="location">at         line 52</div>
         <code>        static            string
     <strong>getRelativePath</strong>(string $fullPath)
         </code>
@@ -344,7 +409,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setAppPath">
-        <div class="location">at         line 51</div>
+        <div class="location">at         line 63</div>
         <code>        static            void
     <strong>setAppPath</strong>(string $path)
         </code>
@@ -384,7 +449,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getModulePath">
-        <div class="location">at         line 64</div>
+        <div class="location">at         line 76</div>
         <code>        static            string
     <strong>getModulePath</strong>(string $name)
         </code>
@@ -424,7 +489,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLibraryThemesPath">
-        <div class="location">at         line 75</div>
+        <div class="location">at         line 87</div>
         <code>        static            string
     <strong>getLibraryThemesPath</strong>(string $library)
         </code>
@@ -464,7 +529,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLibraryFilePath">
-        <div class="location">at         line 87</div>
+        <div class="location">at         line 99</div>
         <code>        static            string
     <strong>getLibraryFilePath</strong>(string $library, string $fileName)
         </code>
@@ -509,7 +574,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLibraryPath">
-        <div class="location">at         line 98</div>
+        <div class="location">at         line 110</div>
         <code>        static            string
     <strong>getLibraryPath</strong>(string $library)
         </code>
@@ -549,7 +614,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getExtensionMacrosRelativePath">
-        <div class="location">at         line 109</div>
+        <div class="location">at         line 121</div>
         <code>        static            string
     <strong>getExtensionMacrosRelativePath</strong>(string $extension)
         </code>
@@ -589,7 +654,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getScriptPath">
-        <div class="location">at         line 119</div>
+        <div class="location">at         line 131</div>
         <code>        static            string
     <strong>getScriptPath</strong>()
         </code>
@@ -601,6 +666,51 @@
                     <div class="method-description">
                                     <p>Return current script path</p>                                                </div>
                 <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPath">
+        <div class="location">at         line 143</div>
+        <code>        static            string
+    <strong>addPath</strong>(string $path, string $add)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add path</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$add</td>
+                <td></td>
+            </tr>
+            </table>
+
             
                             <h4>Return Value</h4>
 

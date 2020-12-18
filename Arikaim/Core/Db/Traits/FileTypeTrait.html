@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Arikaim Arikaim\Core\View\Interfaces\ComponentDataInterface | API Documentation</title>
+    <title>Arikaim Arikaim\Core\Db\Traits\FileTypeTrait | API Documentation</title>
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
@@ -18,7 +18,7 @@
         <link rel="shortcut icon" href="../../../../images/arikaim-favicon.png" />
     </head>
 
-    <body id="class" data-name="class:Arikaim_Core_View_Interfaces_ComponentDataInterface" data-root-path="../../../../">
+    <body id="class" data-name="class:Arikaim_Core_Db_Traits_FileTypeTrait" data-root-path="../../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -70,28 +70,28 @@
 
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
-                <li><span class="label label-default">interface</span></li>
-                        <li><a href="../../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/View.html">View</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/View/Interfaces.html">Interfaces</a></li><li class="backslash">\</li><li>ComponentDataInterface</li>
+                <li><span class="label label-default">trait</span></li>
+                        <li><a href="../../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/Db.html">Db</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/Db/Traits.html">Traits</a></li><li class="backslash">\</li><li>FileTypeTrait</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            ComponentDataInterface
+            FileTypeTrait
                 
         </h1>
     </div>
 
-    <p>    interface
-    <strong>ComponentDataInterface</strong>
+    <p>    trait
+    <strong>FileTypeTrait</strong>
 </p>
 
         
     
 
             <div class="description">
-            <p>Html component data interface</p>                                </div>
+            <p>File type trait</p>                                </div>
     
     
     
@@ -101,52 +101,12 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    boolean
+                    <abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr>|false
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_hasError">hasError</a>()
+                    <a href="#method_scopeFileTypeQuery">scopeFileTypeQuery</a>(<abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr> $query, string $type)
         
-                                            <p>Return true if component have error</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    boolean
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_hasContent">hasContent</a>()
-        
-                                            <p>Return true if component is not empty</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getFiles">getFiles</a>(string $fileType = null)
-        
-                                            <p>Return component files</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    void
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getProperties">getProperties</a>()
-        
-                                            <p>Get properties</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getOptions">getOptions</a>()
-        
-                                            <p>Get options</p>                </div>
+                                            <p>File type scope</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -154,49 +114,19 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getName">getName</a>()
+                    <a href="#method_getMimeTypeColumnName">getMimeTypeColumnName</a>()
         
-                                            <p>Get name</p>                </div>
+                                            <p>Get default column name</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    integer
+                    string|null
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getType">getType</a>()
+                    <a href="#method_getMimeTypeColumnValue">getMimeTypeColumnValue</a>()
         
-                                            <p>Get component type</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    boolean
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_isValid">isValid</a>()
-        
-                                            <p>Check if component is valid</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getHtmlCode">getHtmlCode</a>()
-        
-                                            <p>Get component html code</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    void
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getUrl">getUrl</a>()
-        
-                                            <p>Undocumented function</p>                </div>
+                                            <p>Get file mime type value</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -204,19 +134,109 @@
                     boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_hasParent">hasParent</a>()
+                    <a href="#method_isFileType">isFileType</a>(string $type)
         
-                                            <p>Return true if component has parent component</p>                </div>
+                                            <p>Return true if file have mime type</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDataInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDataInterface">ComponentDataInterface</abbr></a>|false
+                    string|false
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_createComponent">createComponent</a>(string|null $name = null)
+                    <a href="#method_getFileType">getFileType</a>()
         
-                                            <p>Create component</p>                </div>
+                                            <p>Get file type</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isZip">isZip</a>()
+        
+                                            <p>Return true if file type is zip</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isImage">isImage</a>()
+        
+                                            <p>Return true if file is image</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isDirectory">isDirectory</a>()
+        
+                                            <p>Return true if file type is directory</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isVideo">isVideo</a>()
+        
+                                            <p>Return true if file is video</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isAudio">isAudio</a>()
+        
+                                            <p>Return true if file is audio</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isApplication">isApplication</a>()
+        
+                                            <p>Return true if file is application</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isText">isText</a>()
+        
+                                            <p>Return true if file is text</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isFont">isFont</a>()
+        
+                                            <p>Return true if file is font</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isPdf">isPdf</a>()
+        
+                                            <p>Return true if file is pdf</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -226,10 +246,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_hasError">
-        <div class="location">at         line 22</div>
-        <code>                    boolean
-    <strong>hasError</strong>()
+                    <h3 id="method_scopeFileTypeQuery">
+        <div class="location">at         line 26</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr>|false
+    <strong>scopeFileTypeQuery</strong>(<abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr> $query, string $type)
         </code>
     </h3>
     <div class="details">
@@ -237,74 +257,19 @@
     
 
                     <div class="method-description">
-                                    <p>Return true if component have error</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>boolean</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_hasContent">
-        <div class="location">at         line 29</div>
-        <code>                    boolean
-    <strong>hasContent</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Return true if component is not empty</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>boolean</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getFiles">
-        <div class="location">at         line 37</div>
-        <code>                    array
-    <strong>getFiles</strong>(string $fileType = null)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Return component files</p>                                                </div>
+                                    <p>File type scope</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
+                <td><abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
                 <td>string</td>
-                <td>$fileType</td>
+                <td>$type</td>
                 <td></td>
             </tr>
             </table>
@@ -314,7 +279,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>array</td>
+            <td><abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr>|false</td>
             <td></td>
         </tr>
     </table>
@@ -326,70 +291,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getProperties">
+                    <h3 id="method_getMimeTypeColumnName">
         <div class="location">at         line 44</div>
-        <code>                    void
-    <strong>getProperties</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Get properties</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getOptions">
-        <div class="location">at         line 51</div>
-        <code>                    array
-    <strong>getOptions</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Get options</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getName">
-        <div class="location">at         line 58</div>
         <code>                    string
-    <strong>getName</strong>()
+    <strong>getMimeTypeColumnName</strong>()
         </code>
     </h3>
     <div class="details">
@@ -397,7 +302,7 @@
     
 
                     <div class="method-description">
-                                    <p>Get name</p>                                                </div>
+                                    <p>Get default column name</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -416,10 +321,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getType">
-        <div class="location">at         line 65</div>
-        <code>                    integer
-    <strong>getType</strong>()
+                    <h3 id="method_getMimeTypeColumnValue">
+        <div class="location">at         line 54</div>
+        <code>                    string|null
+    <strong>getMimeTypeColumnValue</strong>()
         </code>
     </h3>
     <div class="details">
@@ -427,14 +332,14 @@
     
 
                     <div class="method-description">
-                                    <p>Get component type</p>                                                </div>
+                                    <p>Get file mime type value</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>integer</td>
+            <td>string|null</td>
             <td></td>
         </tr>
     </table>
@@ -446,10 +351,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_isValid">
-        <div class="location">at         line 72</div>
+                    <h3 id="method_isFileType">
+        <div class="location">at         line 67</div>
         <code>                    boolean
-    <strong>isValid</strong>()
+    <strong>isFileType</strong>(string $type)
         </code>
     </h3>
     <div class="details">
@@ -457,135 +362,15 @@
     
 
                     <div class="method-description">
-                                    <p>Check if component is valid</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>boolean</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getHtmlCode">
-        <div class="location">at         line 79</div>
-        <code>                    string
-    <strong>getHtmlCode</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Get component html code</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getUrl">
-        <div class="location">at         line 86</div>
-        <code>                    void
-    <strong>getUrl</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Undocumented function</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_hasParent">
-        <div class="location">at         line 93</div>
-        <code>                    boolean
-    <strong>hasParent</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Return true if component has parent component</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>boolean</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_createComponent">
-        <div class="location">at         line 101</div>
-        <code>                    <a href="../../../../Arikaim/Core/View/Interfaces/ComponentDataInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDataInterface">ComponentDataInterface</abbr></a>|false
-    <strong>createComponent</strong>(string|null $name = null)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Create component</p>                                                </div>
+                                    <p>Return true if file have mime type</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string|null</td>
-                <td>$name</td>
-                <td>If name is null parent component name is used</td>
+                <td>string</td>
+                <td>$type</td>
+                <td>one from: image,video,audio,application,text,pdd,font</td>
             </tr>
             </table>
 
@@ -594,7 +379,307 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../../Arikaim/Core/View/Interfaces/ComponentDataInterface.html"><abbr title="Arikaim\Core\View\Interfaces\ComponentDataInterface">ComponentDataInterface</abbr></a>|false</td>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFileType">
+        <div class="location">at         line 77</div>
+        <code>                    string|false
+    <strong>getFileType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get file type</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isZip">
+        <div class="location">at         line 87</div>
+        <code>                    boolean
+    <strong>isZip</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if file type is zip</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isImage">
+        <div class="location">at         line 97</div>
+        <code>                    boolean
+    <strong>isImage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if file is image</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDirectory">
+        <div class="location">at         line 107</div>
+        <code>                    boolean
+    <strong>isDirectory</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if file type is directory</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isVideo">
+        <div class="location">at         line 117</div>
+        <code>                    boolean
+    <strong>isVideo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if file is video</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isAudio">
+        <div class="location">at         line 127</div>
+        <code>                    boolean
+    <strong>isAudio</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if file is audio</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isApplication">
+        <div class="location">at         line 137</div>
+        <code>                    boolean
+    <strong>isApplication</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if file is application</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isText">
+        <div class="location">at         line 147</div>
+        <code>                    boolean
+    <strong>isText</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if file is text</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isFont">
+        <div class="location">at         line 157</div>
+        <code>                    boolean
+    <strong>isFont</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if file is font</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isPdf">
+        <div class="location">at         line 167</div>
+        <code>                    boolean
+    <strong>isPdf</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if file is pdf</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
             <td></td>
         </tr>
     </table>

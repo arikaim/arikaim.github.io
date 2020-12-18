@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -175,6 +175,16 @@
                     void
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_addOptionalOption">addOptionalOption</a>(string $name, string $description = &#039;&#039;, mixed $default = null)
+        
+                                            <p>Add optional option</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_execute">execute</a>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
         
                                             <p>Run console command</p>                </div>
@@ -215,7 +225,7 @@
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_showError">showError</a>(string $message, string $label = &quot;Error:&quot;)
+                    <a href="#method_showError">showError</a>(string $message, string $label = &#039;Error:&#039;)
         
                                             <p>Show error message</p>                </div>
                 <div class="col-md-2"></div>
@@ -238,7 +248,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 43</div>
+        <div class="location">at         line 44</div>
         <code>                    
     <strong>__construct</strong>(string|null $name = null, string|null $description = null)
         </code>
@@ -274,7 +284,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_executeCommand">
-        <div class="location">at         line 62</div>
+        <div class="location">at         line 63</div>
         <code>    abstract        protected        mixed
     <strong>executeCommand</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
         </code>
@@ -319,7 +329,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_run">
-        <div class="location">at         line 71</div>
+        <div class="location">at         line 72</div>
         <code>                    void
     <strong>run</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
         </code>
@@ -364,7 +374,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addRequiredArgument">
-        <div class="location">at         line 86</div>
+        <div class="location">at         line 87</div>
         <code>                    void
     <strong>addRequiredArgument</strong>(string $name, string $description = &#039;&#039;, bool $default = null)
         </code>
@@ -414,7 +424,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addOptionalArgument">
-        <div class="location">at         line 99</div>
+        <div class="location">at         line 100</div>
         <code>                    void
     <strong>addOptionalArgument</strong>(string $name, string $description = &#039;&#039;, bool $default = null)
         </code>
@@ -463,8 +473,58 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_addOptionalOption">
+        <div class="location">at         line 113</div>
+        <code>                    void
+    <strong>addOptionalOption</strong>(string $name, string $description = &#039;&#039;, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add optional option</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$description</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_execute">
-        <div class="location">at         line 111</div>
+        <div class="location">at         line 125</div>
         <code>            protected        void
     <strong>execute</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
         </code>
@@ -509,7 +569,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setDefault">
-        <div class="location">at         line 122</div>
+        <div class="location">at         line 136</div>
         <code>                    void
     <strong>setDefault</strong>(boolean $default = true)
         </code>
@@ -549,7 +609,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isDefault">
-        <div class="location">at         line 132</div>
+        <div class="location">at         line 146</div>
         <code>                    boolean
     <strong>isDefault</strong>()
         </code>
@@ -579,7 +639,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_showTitle">
-        <div class="location">at         line 143</div>
+        <div class="location">at         line 157</div>
         <code>                    void
     <strong>showTitle</strong>(string $title)
         </code>
@@ -619,9 +679,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_showError">
-        <div class="location">at         line 157</div>
+        <div class="location">at         line 171</div>
         <code>                    void
-    <strong>showError</strong>(string $message, string $label = &quot;Error:&quot;)
+    <strong>showError</strong>(string $message, string $label = &#039;Error:&#039;)
         </code>
     </h3>
     <div class="details">
@@ -664,7 +724,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_showCompleted">
-        <div class="location">at         line 170</div>
+        <div class="location">at         line 184</div>
         <code>                    void
     <strong>showCompleted</strong>(string $label = null)
         </code>

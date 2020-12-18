@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -104,6 +104,16 @@
                     string
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_getFileUploadMessage">getFileUploadMessage</a>()
+        
+                                            <p>Get file upload message name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getUplaodFieldName">getUplaodFieldName</a>()
         
                                             <p>Get field name</p>                </div>
@@ -124,7 +134,7 @@
                     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_uploadFiles">uploadFiles</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, string $path = &#039;&#039;, boolean $relative = true)
+                    <a href="#method_uploadFiles">uploadFiles</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, string $path = &#039;&#039;, boolean $relative = true, boolean $moveFile = true)
         
                                             <p>Upload file(s)</p>                </div>
                 <div class="col-md-2"></div>
@@ -136,8 +146,38 @@
 
             <div id="method-details">
                     <div class="method-item">
+                    <h3 id="method_getFileUploadMessage">
+        <div class="location">at         line 25</div>
+        <code>            protected        string
+    <strong>getFileUploadMessage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get file upload message name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getUplaodFieldName">
-        <div class="location">at         line 24</div>
+        <div class="location">at         line 35</div>
         <code>                    string
     <strong>getUplaodFieldName</strong>()
         </code>
@@ -167,7 +207,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_uploadController">
-        <div class="location">at         line 37</div>
+        <div class="location">at         line 48</div>
         <code>                    <abbr title="Arikaim\Core\Controllers\Traits\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>uploadController</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, <abbr title="Arikaim\Core\Controllers\Traits\Validator">Validator</abbr> $data)
         </code>
@@ -217,9 +257,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_uploadFiles">
-        <div class="location">at         line 62</div>
+        <div class="location">at         line 74</div>
         <code>                    array
-    <strong>uploadFiles</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, string $path = &#039;&#039;, boolean $relative = true)
+    <strong>uploadFiles</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, string $path = &#039;&#039;, boolean $relative = true, boolean $moveFile = true)
         </code>
     </h3>
     <div class="details">
@@ -245,6 +285,11 @@
                     <tr>
                 <td>boolean</td>
                 <td>$relative</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$moveFile</td>
                 <td></td>
             </tr>
             </table>

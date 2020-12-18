@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -95,6 +95,18 @@
             <p>Markdown node</p>                                </div>
     
     
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>TWIG_EXTENSION_CLASS</td>
+                <td class="last">
+                    <p><em>Twig extension class</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
     
     
             <h2>Methods</h2>
@@ -105,7 +117,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Twig\Node\Node">Node</abbr> $body, array $params = [], integer $line = 0, string $tag = &#039;md&#039;)
+                    <a href="#method___construct">__construct</a>(<abbr title="Twig\Node\Node">Node</abbr> $body, $params = [], $line = 0, $tag = &#039;md&#039;, $twigExtensionClass = null)
         
                                             <p>Constructor</p>                </div>
                 <div class="col-md-2"></div>
@@ -128,9 +140,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 29</div>
+        <div class="location">at         line 34</div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Twig\Node\Node">Node</abbr> $body, array $params = [], integer $line = 0, string $tag = &#039;md&#039;)
+    <strong>__construct</strong>(<abbr title="Twig\Node\Node">Node</abbr> $body, $params = [], $line = 0, $tag = &#039;md&#039;, $twigExtensionClass = null)
         </code>
     </h3>
     <div class="details">
@@ -149,18 +161,23 @@
                 <td></td>
             </tr>
                     <tr>
-                <td>array</td>
+                <td></td>
                 <td>$params</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>integer</td>
+                <td></td>
                 <td>$line</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td></td>
                 <td>$tag</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$twigExtensionClass</td>
                 <td></td>
             </tr>
             </table>
@@ -174,7 +191,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_compile">
-        <div class="location">at         line 40</div>
+        <div class="location">at         line 47</div>
         <code>                    void
     <strong>compile</strong>(<abbr title="Twig\Compiler">Compiler</abbr> $compiler)
         </code>

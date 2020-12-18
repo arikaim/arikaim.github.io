@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Arikaim Arikaim\Core\Db\Traits\EntityPermissions | API Documentation</title>
-            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
-        <link rel="stylesheet" type="text/css" href="../../../../css/style.css">
-        <script src="../../../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../../../js/bootstrap.min.js"></script>
-        <script src="../../../../js/typeahead.min.js"></script>
-        <script src="../../../../sami.js"></script>
+    <title>Arikaim Arikaim\Core\Utils\TimePeriod | API Documentation</title>
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-        <link rel="shortcut icon" href="../../../../images/arikaim-favicon.png" />
+        <link rel="shortcut icon" href="../../../images/arikaim-favicon.png" />
     </head>
 
-    <body id="class" data-name="class:Arikaim_Core_Db_Traits_EntityPermissions" data-root-path="../../../../">
+    <body id="class" data-name="class:Arikaim_Core_Utils_TimePeriod" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
-        <form id="search-form" action="../../../../search.html" method="GET">
+        <form id="search-form" action="../../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
                    class="typeahead form-control"
@@ -52,17 +52,17 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
-                    <li><a href="../../../../classes.html">Classes</a></li>
-                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
-                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
-                    <li><a href="../../../../traits.html">Traits</a></li>
-                    <li><a href="../../../../doc-index.html">Index</a></li>
-                    <li><a href="../../../../search.html">Search</a></li>
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
                 </ul>
             </div>
         </div>
@@ -70,28 +70,28 @@
 
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
-                <li><span class="label label-default">trait</span></li>
-                        <li><a href="../../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/Db.html">Db</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/Db/Traits.html">Traits</a></li><li class="backslash">\</li><li>EntityPermissions</li>
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core/Utils.html">Utils</a></li><li class="backslash">\</li><li>TimePeriod</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            EntityPermissions
+            TimePeriod
                 
         </h1>
     </div>
 
-    <p>    trait
-    <strong>EntityPermissions</strong>
+    <p>    class
+    <strong>TimePeriod</strong>
 </p>
 
         
     
 
             <div class="description">
-            <p>Entity permissions</p>                                </div>
+            <p>Time periods</p>                                </div>
     
     
     
@@ -101,82 +101,72 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    static&nbsp;bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_entity">entity</a>()
+                    <a href="#method_isToday">isToday</a>(int $timestamp)
         
-                                            <p>Get entity relation</p>                </div>
+                                            <p>Check if timestamp is today</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    static&nbsp;bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_permission">permission</a>()
+                    <a href="#method_isYear">isYear</a>(int $timestamp, int|null $year = null)
         
-                                            <p>Get permission relation</p>                </div>
+                                            <p>Check if timestamp is in year</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    static&nbsp;bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getNameAttribute">getNameAttribute</a>()
+                    <a href="#method_isMonth">isMonth</a>(int $timestamp, int|null $month = null, int|null $year = null)
         
-                                            <p>Get permission name attribute</p>                </div>
+                                            <p>Check if timestamp is in month</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    static&nbsp;array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_related">related</a>()
+                    <a href="#method_getYearPeriod">getYearPeriod</a>(int|null $year = null)
         
-                                            <p>Morphed model</p>                </div>
+                                            <p>Get month period</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    boolean
+                    static&nbsp;array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_deleteUserPermission">deleteUserPermission</a>(integer $entityId, integer $userId)
+                    <a href="#method_getMonthPeriod">getMonthPeriod</a>(int|null $month = null, int|null $year = null)
         
-                                            <p>Delete user permission</p>                </div>
+                                            <p>Get month period</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Arikaim\Core\Db\Traits\Model">Model</abbr>|false
+                    static&nbsp;array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_addUserPermission">addUserPermission</a>(integer $entityId, integer $userId, array $permissions)
+                    <a href="#method_getDayPeriod">getDayPeriod</a>(int|null $day = null, int|null $month = null, int|null $year = null)
         
-                                            <p>Add user permission</p>                </div>
+                                            <p>Get day period</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Arikaim\Core\Db\Traits\Model">Model</abbr>
+                    static&nbsp;array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getPermission">getPermission</a>(integer $entityId, integer $id, string $type = &#039;user&#039;)
+                    <a href="#method_getPeriod">getPeriod</a>(string $fromDate, string $toDate)
         
-                                            <p>Get permission model</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getPermissionsQuery">getPermissionsQuery</a>(<abbr title="Arikaim\Core\Db\Traits\ineteger">ineteger</abbr> $entityId)
-        
-                                            <p>Get permissions query</p>                </div>
+                                            <p>Get period</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -186,10 +176,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_entity">
-        <div class="location">at         line 24</div>
-        <code>                    mixed
-    <strong>entity</strong>()
+                    <h3 id="method_isToday">
+        <div class="location">at         line 25</div>
+        <code>        static            bool
+    <strong>isToday</strong>(int $timestamp)
         </code>
     </h3>
     <div class="details">
@@ -197,139 +187,14 @@
     
 
                     <div class="method-description">
-                                    <p>Get entity relation</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_permission">
-        <div class="location">at         line 34</div>
-        <code>                    mixed
-    <strong>permission</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Get permission relation</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getNameAttribute">
-        <div class="location">at         line 44</div>
-        <code>                    string
-    <strong>getNameAttribute</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Get permission name attribute</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_related">
-        <div class="location">at         line 56</div>
-        <code>                    void
-    <strong>related</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Morphed model</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_deleteUserPermission">
-        <div class="location">at         line 69</div>
-        <code>                    boolean
-    <strong>deleteUserPermission</strong>(integer $entityId, integer $userId)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Delete user permission</p>                                                </div>
+                                    <p>Check if timestamp is today</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>integer</td>
-                <td>$entityId</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>integer</td>
-                <td>$userId</td>
+                <td>int</td>
+                <td>$timestamp</td>
                 <td></td>
             </tr>
             </table>
@@ -339,7 +204,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>boolean</td>
+            <td>bool</td>
             <td></td>
         </tr>
     </table>
@@ -351,10 +216,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_addUserPermission">
-        <div class="location">at         line 84</div>
-        <code>                    <abbr title="Arikaim\Core\Db\Traits\Model">Model</abbr>|false
-    <strong>addUserPermission</strong>(integer $entityId, integer $userId, array $permissions)
+                    <h3 id="method_isYear">
+        <div class="location">at         line 39</div>
+        <code>        static            bool
+    <strong>isYear</strong>(int $timestamp, int|null $year = null)
         </code>
     </h3>
     <div class="details">
@@ -362,24 +227,19 @@
     
 
                     <div class="method-description">
-                                    <p>Add user permission</p>                                                </div>
+                                    <p>Check if timestamp is in year</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>integer</td>
-                <td>$entityId</td>
+                <td>int</td>
+                <td>$timestamp</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>integer</td>
-                <td>$userId</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$permissions</td>
+                <td>int|null</td>
+                <td>$year</td>
                 <td></td>
             </tr>
             </table>
@@ -389,7 +249,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Arikaim\Core\Db\Traits\Model">Model</abbr>|false</td>
+            <td>bool</td>
             <td></td>
         </tr>
     </table>
@@ -401,10 +261,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getPermission">
-        <div class="location">at         line 107</div>
-        <code>                    <abbr title="Arikaim\Core\Db\Traits\Model">Model</abbr>
-    <strong>getPermission</strong>(integer $entityId, integer $id, string $type = &#039;user&#039;)
+                    <h3 id="method_isMonth">
+        <div class="location">at         line 55</div>
+        <code>        static            bool
+    <strong>isMonth</strong>(int $timestamp, int|null $month = null, int|null $year = null)
         </code>
     </h3>
     <div class="details">
@@ -412,24 +272,204 @@
     
 
                     <div class="method-description">
-                                    <p>Get permission model</p>                                                </div>
+                                    <p>Check if timestamp is in month</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>integer</td>
-                <td>$entityId</td>
+                <td>int</td>
+                <td>$timestamp</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>integer</td>
-                <td>$id</td>
+                <td>int|null</td>
+                <td>$month</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$year</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getYearPeriod">
+        <div class="location">at         line 68</div>
+        <code>        static            array
+    <strong>getYearPeriod</strong>(int|null $year = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get month period</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|null</td>
+                <td>$year</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMonthPeriod">
+        <div class="location">at         line 82</div>
+        <code>        static            array
+    <strong>getMonthPeriod</strong>(int|null $month = null, int|null $year = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get month period</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|null</td>
+                <td>$month</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$year</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDayPeriod">
+        <div class="location">at         line 101</div>
+        <code>        static            array
+    <strong>getDayPeriod</strong>(int|null $day = null, int|null $month = null, int|null $year = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get day period</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|null</td>
+                <td>$day</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$month</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$year</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPeriod">
+        <div class="location">at         line 119</div>
+        <code>        static            array
+    <strong>getPeriod</strong>(string $fromDate, string $toDate)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get period</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fromDate</td>
                 <td></td>
             </tr>
                     <tr>
                 <td>string</td>
-                <td>$type</td>
+                <td>$toDate</td>
                 <td></td>
             </tr>
             </table>
@@ -439,47 +479,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Arikaim\Core\Db\Traits\Model">Model</abbr></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getPermissionsQuery">
-        <div class="location">at         line 123</div>
-        <code>                    <abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr>
-    <strong>getPermissionsQuery</strong>(<abbr title="Arikaim\Core\Db\Traits\ineteger">ineteger</abbr> $entityId)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Get permissions query</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Arikaim\Core\Db\Traits\ineteger">ineteger</abbr></td>
-                <td>$entityId</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr></td>
+            <td>array</td>
             <td></td>
         </tr>
     </table>

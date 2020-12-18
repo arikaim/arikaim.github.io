@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -99,6 +99,46 @@
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_recursiveCount">recursiveCount</a>(array $array)
+        
+                                            <p>Recursive array count</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_arrayAppend">arrayAppend</a>(array $array, array $append)
+        
+                                            <p>Append values from append array to array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_uniqueMultidimensional">uniqueMultidimensional</a>(array $array)
+        
+                                            <p>Unique multidimensional array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_arrayInsert">arrayInsert</a>(array $array, array $insert)
+        
+                                            <p>Recursive insert array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     static&nbsp;array
@@ -164,7 +204,7 @@
                     static&nbsp;array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_merge">merge</a>(array $array1, array $array2, string $prevKey = &quot;&quot;, string $fullKey = &quot;&quot;)
+                    <a href="#method_merge">merge</a>(array $array1, array $array2, string $prevKey = &#039;&#039;, string $fullKey = &#039;&#039;)
         
                                             <p>Merge arrays</p>                </div>
                 <div class="col-md-2"></div>
@@ -184,7 +224,7 @@
                     static&nbsp;array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_toArray">toArray</a>(<abbr title="Arikaim\Core\Collection\string$text">string$text</abbr> $text, string $separator = null)
+                    <a href="#method_toArray">toArray</a>(string $text, string $separator = null)
         
                                             <p>Convert text to array</p>                </div>
                 <div class="col-md-2"></div>
@@ -266,8 +306,178 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_unique">
+                    <h3 id="method_recursiveCount">
         <div class="location">at         line 23</div>
+        <code>        static            integer
+    <strong>recursiveCount</strong>(array $array)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Recursive array count</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_arrayAppend">
+        <div class="location">at         line 44</div>
+        <code>        static            array
+    <strong>arrayAppend</strong>(array $array, array $append)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Append values from append array to array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$append</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_uniqueMultidimensional">
+        <div class="location">at         line 62</div>
+        <code>        static            array
+    <strong>uniqueMultidimensional</strong>(array $array)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unique multidimensional array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_arrayInsert">
+        <div class="location">at         line 77</div>
+        <code>        static            array
+    <strong>arrayInsert</strong>(array $array, array $insert)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Recursive insert array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$insert</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unique">
+        <div class="location">at         line 98</div>
         <code>        static            array
     <strong>unique</strong>(array $array)
         </code>
@@ -307,7 +517,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setValue">
-        <div class="location">at         line 36</div>
+        <div class="location">at         line 112</div>
         <code>        static            array
     <strong>setValue</strong>(array $array, string $path, mixed $value, string $separator = &#039;/&#039;)
         </code>
@@ -362,7 +572,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isAssociative">
-        <div class="location">at         line 60</div>
+        <div class="location">at         line 137</div>
         <code>        static            boolean
     <strong>isAssociative</strong>(array $array)
         </code>
@@ -402,7 +612,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getDefaultValue">
-        <div class="location">at         line 77</div>
+        <div class="location">at         line 154</div>
         <code>        static            mixed
     <strong>getDefaultValue</strong>(array $array, string $key, mixed $default = null)
         </code>
@@ -452,7 +662,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getValue">
-        <div class="location">at         line 90</div>
+        <div class="location">at         line 167</div>
         <code>        static            mixed
     <strong>getValue</strong>(array $array, string $path, string $separator = &#039;/&#039;)
         </code>
@@ -502,7 +712,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getValues">
-        <div class="location">at         line 111</div>
+        <div class="location">at         line 189</div>
         <code>        static            mixed
     <strong>getValues</strong>(array $array, string $keySearch)
         </code>
@@ -547,9 +757,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_merge">
-        <div class="location">at         line 134</div>
+        <div class="location">at         line 213</div>
         <code>        static            array
-    <strong>merge</strong>(array $array1, array $array2, string $prevKey = &quot;&quot;, string $fullKey = &quot;&quot;)
+    <strong>merge</strong>(array $array1, array $array2, string $prevKey = &#039;&#039;, string $fullKey = &#039;&#039;)
         </code>
     </h3>
     <div class="details">
@@ -602,7 +812,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_toPath">
-        <div class="location">at         line 163</div>
+        <div class="location">at         line 243</div>
         <code>        static            string
     <strong>toPath</strong>(array $array)
         </code>
@@ -642,9 +852,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_toArray">
-        <div class="location">at         line 185</div>
+        <div class="location">at         line 265</div>
         <code>        static            array
-    <strong>toArray</strong>(<abbr title="Arikaim\Core\Collection\string$text">string$text</abbr> $text, string $separator = null)
+    <strong>toArray</strong>(string $text, string $separator = null)
         </code>
     </h3>
     <div class="details">
@@ -658,7 +868,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Arikaim\Core\Collection\string$text">string$text</abbr></td>
+                <td>string</td>
                 <td>$text</td>
                 <td></td>
             </tr>
@@ -687,7 +897,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_toString">
-        <div class="location">at         line 202</div>
+        <div class="location">at         line 283</div>
         <code>        static            string
     <strong>toString</strong>(array $array, string $separator = null)
         </code>
@@ -732,7 +942,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_convertToArray">
-        <div class="location">at         line 217</div>
+        <div class="location">at         line 299</div>
         <code>        static            array
     <strong>convertToArray</strong>(object $object)
         </code>
@@ -772,7 +982,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_haveSubItems">
-        <div class="location">at         line 237</div>
+        <div class="location">at         line 319</div>
         <code>        static            bool
     <strong>haveSubItems</strong>(array $array)
         </code>
@@ -812,7 +1022,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setDefault">
-        <div class="location">at         line 259</div>
+        <div class="location">at         line 342</div>
         <code>        static            array
     <strong>setDefault</strong>(array $array, string $key, mixed $value)
         </code>
@@ -862,7 +1072,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sliceByKeys">
-        <div class="location">at         line 275</div>
+        <div class="location">at         line 358</div>
         <code>        static            array
     <strong>sliceByKeys</strong>(array $array, array|string $keys = null)
         </code>
@@ -907,7 +1117,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_removeEmpty">
-        <div class="location">at         line 288</div>
+        <div class="location">at         line 372</div>
         <code>        static            array
     <strong>removeEmpty</strong>(array $array)
         </code>
@@ -947,7 +1157,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_arrayColumns">
-        <div class="location">at         line 302</div>
+        <div class="location">at         line 386</div>
         <code>        static            array
     <strong>arrayColumns</strong>(array $data, array $keys)
         </code>

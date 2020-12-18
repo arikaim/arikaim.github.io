@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -99,11 +99,11 @@
 
             <table class="table table-condensed">
                     <tr>
-                <td class="type" id="property_default_pdo_options">
+                <td class="type" id="property_pdoOptions">
                                         protected                                        array
                 </td>
-                <td>$default_pdo_options</td>
-                <td class="last">Default PDO options</td>
+                <td>$pdoOptions</td>
+                <td class="last">PDO options</td>
                 <td></td>
             </tr>
                     <tr>
@@ -112,6 +112,14 @@
                 </td>
                 <td>$config</td>
                 <td class="last">Database config</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_hasError">
+                                        protected                                        boolean
+                </td>
+                <td>$hasError</td>
+                <td class="last">Has db error</td>
                 <td></td>
             </tr>
             </table>
@@ -128,6 +136,16 @@
                     <a href="#method___construct">__construct</a>(array $config, array|null $relations = null)
         
                                             <p>Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDatabaseName">getDatabaseName</a>()
+        
+                                            <p>Get database name</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -152,6 +170,26 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initConnection">initConnection</a>($config, $name = &#039;default&#039;)
+        
+                                            <p>Init db connection</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasError">hasError</a>()
+        
+                                            <p>Return true if has db error</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     object
                 </div>
                 <div class="col-md-8 type">
@@ -168,6 +206,16 @@
                     <a href="#method_has">has</a>(string $databaseName)
         
                                             <p>Check if database exist</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRowFormat">getRowFormat</a>(string $tableName)
+        
+                                            <p>Get row format</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -222,16 +270,6 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    boolean
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_initConnection">initConnection</a>(array $config)
-        
-                                            <p>Init db connection</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
                     array
                 </div>
                 <div class="col-md-8 type">
@@ -248,7 +286,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 57</div>
+        <div class="location">at         line 64</div>
         <code>                    
     <strong>__construct</strong>(array $config, array|null $relations = null)
         </code>
@@ -283,8 +321,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getDatabaseName">
+        <div class="location">at         line 85</div>
+        <code>                    string|false
+    <strong>getDatabaseName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get database name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getRelationsMap">
-        <div class="location">at         line 73</div>
+        <div class="location">at         line 95</div>
         <code>                    array
     <strong>getRelationsMap</strong>()
         </code>
@@ -314,7 +382,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_init">
-        <div class="location">at         line 84</div>
+        <div class="location">at         line 106</div>
         <code>                    boolean
     <strong>init</strong>(array $config)
         </code>
@@ -353,8 +421,83 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_initConnection">
+        <div class="location">at         line 144</div>
+        <code>                    boolean
+    <strong>initConnection</strong>($config, $name = &#039;default&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Init db connection</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasError">
+        <div class="location">at         line 178</div>
+        <code>                    boolean
+    <strong>hasError</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if has db error</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getCapsule">
-        <div class="location">at         line 106</div>
+        <div class="location">at         line 188</div>
         <code>                    object
     <strong>getCapsule</strong>()
         </code>
@@ -384,7 +527,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_has">
-        <div class="location">at         line 117</div>
+        <div class="location">at         line 199</div>
         <code>                    boolean
     <strong>has</strong>(string $databaseName)
         </code>
@@ -423,8 +566,48 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getRowFormat">
+        <div class="location">at         line 224</div>
+        <code>                    string|false
+    <strong>getRowFormat</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get row format</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_isValidConnection">
-        <div class="location">at         line 135</div>
+        <div class="location">at         line 250</div>
         <code>                    boolean
     <strong>isValidConnection</strong>(string|null $name = null)
         </code>
@@ -464,7 +647,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isValidPdoConnection">
-        <div class="location">at         line 155</div>
+        <div class="location">at         line 272</div>
         <code>                    boolean
     <strong>isValidPdoConnection</strong>(array $config = null)
         </code>
@@ -504,7 +687,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createDb">
-        <div class="location">at         line 177</div>
+        <div class="location">at         line 298</div>
         <code>                    boolean
     <strong>createDb</strong>($databaseName, $charset = null, $collation = null)
         </code>
@@ -554,7 +737,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_checkConnection">
-        <div class="location">at         line 201</div>
+        <div class="location">at         line 329</div>
         <code>        static            boolean
     <strong>checkConnection</strong>(object $connection)
         </code>
@@ -594,7 +777,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_testConnection">
-        <div class="location">at         line 217</div>
+        <div class="location">at         line 350</div>
         <code>                    bool
     <strong>testConnection</strong>(array $config)
         </code>
@@ -633,48 +816,8 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_initConnection">
-        <div class="location">at         line 235</div>
-        <code>                    boolean
-    <strong>initConnection</strong>(array $config)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Init db connection</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array</td>
-                <td>$config</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>boolean</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_getInfo">
-        <div class="location">at         line 270</div>
+        <div class="location">at         line 389</div>
         <code>                    array
     <strong>getInfo</strong>()
         </code>

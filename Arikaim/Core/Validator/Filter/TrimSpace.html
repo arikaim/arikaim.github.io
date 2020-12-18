@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Arikaim Arikaim\Core\Controllers\Traits\EntytyPermissions | API Documentation</title>
+    <title>Arikaim Arikaim\Core\Validator\Filter\TrimSpace | API Documentation</title>
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
@@ -18,7 +18,7 @@
         <link rel="shortcut icon" href="../../../../images/arikaim-favicon.png" />
     </head>
 
-    <body id="class" data-name="class:Arikaim_Core_Controllers_Traits_EntytyPermissions" data-root-path="../../../../">
+    <body id="class" data-name="class:Arikaim_Core_Validator_Filter_TrimSpace" data-root-path="../../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -70,54 +70,87 @@
 
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
-                <li><span class="label label-default">trait</span></li>
-                        <li><a href="../../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/Controllers.html">Controllers</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/Controllers/Traits.html">Traits</a></li><li class="backslash">\</li><li>EntytyPermissions</li>
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/Validator.html">Validator</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/Validator/Filter.html">Filter</a></li><li class="backslash">\</li><li>TrimSpace</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            EntytyPermissions
+            TrimSpace
                 
         </h1>
     </div>
 
-    <p>    trait
-    <strong>EntytyPermissions</strong>
+    <p>    class
+    <strong>TrimSpace</strong>        extends <a href="../../../../Arikaim/Core/Validator/Filter.html"><abbr title="Arikaim\Core\Validator\Filter">Filter</abbr></a>
 </p>
 
         
     
 
             <div class="description">
-            <p>Entity permissions trait</p>                                </div>
+            <p>TrimSpace filter</p>                                </div>
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_params">
+                                        protected                                        array
+                </td>
+                <td>$params</td>
+                <td class="last">Filter params</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/Validator/Filter.html#property_params"><abbr title="Arikaim\Core\Validator\Filter">Filter</abbr></a></small></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Arikaim\Core\Controllers\Traits\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                    integer
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_addUserPermissionController">addUserPermissionController</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, <abbr title="Arikaim\Core\Controllers\Traits\Validator">Validator</abbr> $data)
+                    <a href="#method_getType">getType</a>()
         
-                                            <p>Add user permission</p>                </div>
+                                            <p>Return filter type</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Arikaim\Core\Controllers\Traits\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_deletePermissionController">deletePermissionController</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, <abbr title="Arikaim\Core\Controllers\Traits\Validator">Validator</abbr> $data)
+                    <a href="#method___construct">__construct</a>(array $params = [])
         
-                                            <p>Delete permission</p>                </div>
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Validator/Filter.html#method___construct"><abbr title="Arikaim\Core\Validator\Filter">Filter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filterValue">filterValue</a>(mixed $value)
+        
+                                            <p>Filter value, return filtered value</p>                </div>
                 <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processFilter">processFilter</a>(mixed $value)
+        
+                                            <p>Process filter</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Validator/Filter.html#method_processFilter"><abbr title="Arikaim\Core\Validator\Filter">Filter</abbr></a></small></div>
             </div>
             </div>
 
@@ -126,10 +159,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_addUserPermissionController">
-        <div class="location">at         line 27</div>
-        <code>                    <abbr title="Arikaim\Core\Controllers\Traits\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
-    <strong>addUserPermissionController</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, <abbr title="Arikaim\Core\Controllers\Traits\Validator">Validator</abbr> $data)
+                    <h3 id="method_getType">
+        <div class="location">at         line 35</div>
+        <code>                    integer
+    <strong>getType</strong>()
         </code>
     </h3>
     <div class="details">
@@ -137,34 +170,14 @@
     
 
                     <div class="method-description">
-                                    <p>Add user permission</p>                                                </div>
+                                    <p>Return filter type</p>                                                </div>
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
-                <td>$request</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
-                <td>$response</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><abbr title="Arikaim\Core\Controllers\Traits\Validator">Validator</abbr></td>
-                <td>$data</td>
-                <td></td>
-            </tr>
-            </table>
-
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Arikaim\Core\Controllers\Traits\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td>integer</td>
             <td></td>
         </tr>
     </table>
@@ -176,10 +189,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_deletePermissionController">
-        <div class="location">at         line 60</div>
-        <code>                    <abbr title="Arikaim\Core\Controllers\Traits\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
-    <strong>deletePermissionController</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, <abbr title="Arikaim\Core\Controllers\Traits\Validator">Validator</abbr> $data)
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../../Arikaim/Core/Validator/Filter.html#method___construct"><abbr title="Arikaim\Core\Validator\Filter">Filter</abbr></a> at         line 38</div>
+        <code>                    
+    <strong>__construct</strong>(array $params = [])
         </code>
     </h3>
     <div class="details">
@@ -187,24 +200,45 @@
     
 
                     <div class="method-description">
-                                    <p>Delete permission</p>                                                </div>
+                                    <p>Constructor</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
-                <td>$request</td>
+                <td>array</td>
+                <td>$params</td>
                 <td></td>
             </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterValue">
+        <div class="location">at         line 25</div>
+        <code>                    mixed
+    <strong>filterValue</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Filter value, return filtered value</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
-                <td>$response</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><abbr title="Arikaim\Core\Controllers\Traits\Validator">Validator</abbr></td>
-                <td>$data</td>
+                <td>mixed</td>
+                <td>$value</td>
                 <td></td>
             </tr>
             </table>
@@ -214,7 +248,47 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Arikaim\Core\Controllers\Traits\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processFilter">
+        <div class="location">in <a href="../../../../Arikaim/Core/Validator/Filter.html#method_processFilter"><abbr title="Arikaim\Core\Validator\Filter">Filter</abbr></a> at         line 60</div>
+        <code>                    mixed
+    <strong>processFilter</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Process filter</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
             <td></td>
         </tr>
     </table>

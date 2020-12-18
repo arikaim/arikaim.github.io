@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -114,7 +114,7 @@
                     static&nbsp;<abbr title="Arikaim\Core\Http\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>|boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_add">add</a>(string $name, string $value, <abbr title="Arikaim\Core\Http\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>|null $response = null, integer $expire = 360, string $domain = &#039;&#039;)
+                    <a href="#method_add">add</a>(string $name, string $value, <abbr title="Arikaim\Core\Http\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>|null $response = null, integer $expire = 360, string $domain = &#039;&#039;, string|null $sameSite = null)
         
                                             <p>Add cookie</p>                </div>
                 <div class="col-md-2"></div>
@@ -207,9 +207,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_add">
-        <div class="location">at         line 47</div>
+        <div class="location">at         line 52</div>
         <code>        static            <abbr title="Arikaim\Core\Http\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>|boolean
-    <strong>add</strong>(string $name, string $value, <abbr title="Arikaim\Core\Http\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>|null $response = null, integer $expire = 360, string $domain = &#039;&#039;)
+    <strong>add</strong>(string $name, string $value, <abbr title="Arikaim\Core\Http\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>|null $response = null, integer $expire = 360, string $domain = &#039;&#039;, string|null $sameSite = null)
         </code>
     </h3>
     <div class="details">
@@ -247,6 +247,11 @@
                 <td>$domain</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$sameSite</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -267,7 +272,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get">
-        <div class="location">at         line 69</div>
+        <div class="location">at         line 79</div>
         <code>        static            mixed
     <strong>get</strong>(string $name, <abbr title="Arikaim\Core\Http\Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>|null $request = null, mixed $default = null)
         </code>
@@ -317,7 +322,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getAgeParam">
-        <div class="location">at         line 82</div>
+        <div class="location">at         line 92</div>
         <code>        static    protected        string
     <strong>getAgeParam</strong>(integer $minutes)
         </code>
@@ -357,7 +362,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getExpireParam">
-        <div class="location">at         line 93</div>
+        <div class="location">at         line 103</div>
         <code>        static    protected        void
     <strong>getExpireParam</strong>(integer $minutes)
         </code>

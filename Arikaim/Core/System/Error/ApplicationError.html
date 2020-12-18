@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -84,8 +84,8 @@
     </div>
 
     <p>    class
-    <strong>ApplicationError</strong>        extends <a href="../../../../Arikaim/Core/System/Error/PhpError.html"><abbr title="Arikaim\Core\System\Error\PhpError">PhpError</abbr></a>        implements
-        <abbr title="Slim\Interfaces\ErrorHandlerInterface">ErrorHandlerInterface</abbr>
+    <strong>ApplicationError</strong>        implements
+        <a href="../../../../Arikaim/Core/System/Error/ErrorHandlerInterface.html"><abbr title="Arikaim\Core\System\Error\ErrorHandlerInterface">ErrorHandlerInterface</abbr></a>
 </p>
 
         
@@ -100,51 +100,19 @@
 
             <table class="table table-condensed">
                     <tr>
-                <td class="type" id="property_displayErrorDetails">
-                                        protected                                        boolean
-                </td>
-                <td>$displayErrorDetails</td>
-                <td class="last">Show error details</td>
-                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/System/Error/PhpError.html#property_displayErrorDetails"><abbr title="Arikaim\Core\System\Error\PhpError">PhpError</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_displayErrorTrace">
-                                        protected                                        boolean
-                </td>
-                <td>$displayErrorTrace</td>
-                <td class="last">Show error trace</td>
-                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/System/Error/PhpError.html#property_displayErrorTrace"><abbr title="Arikaim\Core\System\Error\PhpError">PhpError</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_logErrors">
-                                        protected                                        boolean
-                </td>
-                <td>$logErrors</td>
-                <td class="last">Log errors</td>
-                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/System/Error/PhpError.html#property_logErrors"><abbr title="Arikaim\Core\System\Error\PhpError">PhpError</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_logErrorDetails">
-                                        protected                                        boolean
-                </td>
-                <td>$logErrorDetails</td>
-                <td class="last">Log error details</td>
-                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/System/Error/PhpError.html#property_logErrorDetails"><abbr title="Arikaim\Core\System\Error\PhpError">PhpError</abbr></a></small></td>
-            </tr>
-                    <tr>
                 <td class="type" id="property_htmlRenderer">
                                         protected                                        <a href="../../../../Arikaim/Core/System/Error/ErrorRendererInterface.html"><abbr title="Arikaim\Core\System\Error\ErrorRendererInterface">ErrorRendererInterface</abbr></a>
                 </td>
                 <td>$htmlRenderer</td>
                 <td class="last">Html renderer</td>
-                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/System/Error/PhpError.html#property_htmlRenderer"><abbr title="Arikaim\Core\System\Error\PhpError">PhpError</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
-                <td class="type" id="property_response">
-                                        protected                                        <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                <td class="type" id="property_jsonRenderer">
+                                        protected                                        <a href="../../../../Arikaim/Core/System/Error/ErrorRendererInterface.html"><abbr title="Arikaim\Core\System\Error\ErrorRendererInterface">ErrorRendererInterface</abbr></a>
                 </td>
-                <td>$response</td>
-                <td class="last">Response</td>
+                <td>$jsonRenderer</td>
+                <td class="last">Json renderer</td>
                 <td></td>
             </tr>
             </table>
@@ -158,7 +126,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, <a href="../../../../Arikaim/Core/System/Error/ErrorRendererInterface.html"><abbr title="Arikaim\Core\System\Error\ErrorRendererInterface">ErrorRendererInterface</abbr></a> $htmlRenderer = null, boolean $displayErrorDetails = true, boolean $displayErrorTrace = true)
+                    <a href="#method___construct">__construct</a>(<a href="../../../../Arikaim/Core/System/Error/ErrorRendererInterface.html"><abbr title="Arikaim\Core\System\Error\ErrorRendererInterface">ErrorRendererInterface</abbr></a> $htmlRenderer)
         
                                             <p>Constructor</p>                </div>
                 <div class="col-md-2"></div>
@@ -168,59 +136,9 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_renderError">renderError</a>(<abbr title="Arikaim\Core\System\Error\ServerRequestInterface">ServerRequestInterface</abbr> $request, <a target="_blank" href="http://php.net/Throwable">Throwable</a> $exception, bool $displayDetails = true, bool $logErrors = true, bool $logErrorDetails = true)
+                    <a href="#method_renderError">renderError</a>(<a target="_blank" href="http://php.net/Throwable">Throwable</a> $exception, string $renderType)
         
                                             <p>Render error</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/System/Error/PhpError.html#method_renderError"><abbr title="Arikaim\Core\System\Error\PhpError">PhpError</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;array
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_toArray">toArray</a>(<a target="_blank" href="http://php.net/Throwable">Throwable</a>|array $error)
-        
-                                            <p>Convert error to array</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/System/Error/PhpError.html#method_toArray"><abbr title="Arikaim\Core\System\Error\PhpError">PhpError</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;string
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getJsonError">getJsonError</a>()
-        
-                                            <p>Get JSON error message</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/System/Error/PhpError.html#method_getJsonError"><abbr title="Arikaim\Core\System\Error\PhpError">PhpError</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;string
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getErrorTypeText">getErrorTypeText</a>(integer $type)
-        
-                                            <p>Get error type</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/System/Error/PhpError.html#method_getErrorTypeText"><abbr title="Arikaim\Core\System\Error\PhpError">PhpError</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;void
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getPosixError">getPosixError</a>()
-        
-                                            <p>Get posix error</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/System/Error/PhpError.html#method_getPosixError"><abbr title="Arikaim\Core\System\Error\PhpError">PhpError</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method___invoke">__invoke</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <a target="_blank" href="http://php.net/Throwable">Throwable</a> $exception, bool $displayDetails, bool $logErrors, bool $logErrorDetails)
-        
-                                            <p>Invoke error handler</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -231,9 +149,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 39</div>
+        <div class="location">at         line 43</div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, <a href="../../../../Arikaim/Core/System/Error/ErrorRendererInterface.html"><abbr title="Arikaim\Core\System\Error\ErrorRendererInterface">ErrorRendererInterface</abbr></a> $htmlRenderer = null, boolean $displayErrorDetails = true, boolean $displayErrorTrace = true)
+    <strong>__construct</strong>(<a href="../../../../Arikaim/Core/System/Error/ErrorRendererInterface.html"><abbr title="Arikaim\Core\System\Error\ErrorRendererInterface">ErrorRendererInterface</abbr></a> $htmlRenderer)
         </code>
     </h3>
     <div class="details">
@@ -247,23 +165,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
-                <td>$response</td>
-                <td></td>
-            </tr>
-                    <tr>
                 <td><a href="../../../../Arikaim/Core/System/Error/ErrorRendererInterface.html"><abbr title="Arikaim\Core\System\Error\ErrorRendererInterface">ErrorRendererInterface</abbr></a></td>
                 <td>$htmlRenderer</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>boolean</td>
-                <td>$displayErrorDetails</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>boolean</td>
-                <td>$displayErrorTrace</td>
                 <td></td>
             </tr>
             </table>
@@ -277,9 +180,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_renderError">
-        <div class="location">in <a href="../../../../Arikaim/Core/System/Error/PhpError.html#method_renderError"><abbr title="Arikaim\Core\System\Error\PhpError">PhpError</abbr></a> at         line 83</div>
+        <div class="location">at         line 56</div>
         <code>                    string
-    <strong>renderError</strong>(<abbr title="Arikaim\Core\System\Error\ServerRequestInterface">ServerRequestInterface</abbr> $request, <a target="_blank" href="http://php.net/Throwable">Throwable</a> $exception, bool $displayDetails = true, bool $logErrors = true, bool $logErrorDetails = true)
+    <strong>renderError</strong>(<a target="_blank" href="http://php.net/Throwable">Throwable</a> $exception, string $renderType)
         </code>
     </h3>
     <div class="details">
@@ -293,28 +196,13 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Arikaim\Core\System\Error\ServerRequestInterface">ServerRequestInterface</abbr></td>
-                <td>$request</td>
-                <td>The most recent Request object</td>
-            </tr>
-                    <tr>
                 <td><a target="_blank" href="http://php.net/Throwable">Throwable</a></td>
                 <td>$exception</td>
                 <td>The caught Throwable object</td>
             </tr>
                     <tr>
-                <td>bool</td>
-                <td>$displayDetails</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>bool</td>
-                <td>$logErrors</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>bool</td>
-                <td>$logErrorDetails</td>
+                <td>string</td>
+                <td>$renderType</td>
                 <td></td>
             </tr>
             </table>
@@ -325,206 +213,6 @@
                     <table class="table table-condensed">
         <tr>
             <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_toArray">
-        <div class="location">in <a href="../../../../Arikaim/Core/System/Error/PhpError.html#method_toArray"><abbr title="Arikaim\Core\System\Error\PhpError">PhpError</abbr></a> at         line 106</div>
-        <code>        static            array
-    <strong>toArray</strong>(<a target="_blank" href="http://php.net/Throwable">Throwable</a>|array $error)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Convert error to array</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/Throwable">Throwable</a>|array</td>
-                <td>$error</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getJsonError">
-        <div class="location">in <a href="../../../../Arikaim/Core/System/Error/PhpError.html#method_getJsonError"><abbr title="Arikaim\Core\System\Error\PhpError">PhpError</abbr></a> at         line 137</div>
-        <code>        static            string
-    <strong>getJsonError</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Get JSON error message</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getErrorTypeText">
-        <div class="location">in <a href="../../../../Arikaim/Core/System/Error/PhpError.html#method_getErrorTypeText"><abbr title="Arikaim\Core\System\Error\PhpError">PhpError</abbr></a> at         line 172</div>
-        <code>        static            string
-    <strong>getErrorTypeText</strong>(integer $type)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Get error type</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>integer</td>
-                <td>$type</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getPosixError">
-        <div class="location">in <a href="../../../../Arikaim/Core/System/Error/PhpError.html#method_getPosixError"><abbr title="Arikaim\Core\System\Error\PhpError">PhpError</abbr></a> at         line 190</div>
-        <code>        static            void
-    <strong>getPosixError</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Get posix error</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method___invoke">
-        <div class="location">at         line 56</div>
-        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
-    <strong>__invoke</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <a target="_blank" href="http://php.net/Throwable">Throwable</a> $exception, bool $displayDetails, bool $logErrors, bool $logErrorDetails)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Invoke error handler</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
-                <td>$request</td>
-                <td>The most recent Request object</td>
-            </tr>
-                    <tr>
-                <td><a target="_blank" href="http://php.net/Throwable">Throwable</a></td>
-                <td>$exception</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>bool</td>
-                <td>$displayDetails</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>bool</td>
-                <td>$logErrors</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>bool</td>
-                <td>$logErrorDetails</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
             <td></td>
         </tr>
     </table>

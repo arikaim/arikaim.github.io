@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -174,6 +174,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Packages/PackageValidator.html"><abbr title="Arikaim\Core\Packages\PackageValidator">PackageValidator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validator">validator</a>()
+        
+                                            <p>Create package validator</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Package.html#method_validator"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
                 </div>
                 <div class="col-md-8 type">
@@ -191,6 +201,16 @@
         
                                             <p>Get Package version</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Package.html#method_getVersion"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLanguages">getLanguages</a>()
+        
+                                            <p>Get suppported languages</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Package.html#method_getLanguages"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -274,6 +294,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_postInstall">postInstall</a>()
+        
+                                            <p>Run post install actions</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-8 type">
@@ -304,10 +334,20 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_savePackageProperties">savePackageProperties</a>()
+        
+                                            <p>Save package properties file</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Package.html#method_savePackageProperties"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getViewPath">getViewPath</a>()
+                    <a href="#method_getViewPath">getViewPath</a>(string|null $componentsType = null)
         
                                             <p>Get view path</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getViewPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a></small></div>
@@ -337,6 +377,16 @@
                     string
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_getEmailsPath">getEmailsPath</a>()
+        
+                                            <p>Get emails components path</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getEmailsPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getMacrosPath">getMacrosPath</a>()
         
                                             <p>Get macros path</p>                </div>
@@ -357,7 +407,7 @@
                     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getPages">getPages</a>(string|null $path = null)
+                    <a href="#method_getPages">getPages</a>($parent = &#039;&#039;)
         
                                             <p>Scan directory and return pages list</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getPages"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a></small></div>
@@ -367,10 +417,40 @@
                     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getComponents">getComponents</a>(string|null $path = null)
+                    <a href="#method_getEmails">getEmails</a>($parent = &#039;&#039;)
+        
+                                            <p>Scan directory and return emails list</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getEmails"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComponentPath">getComponentPath</a>(string $componentName, string $type = &#039;components&#039;)
+        
+                                            <p>Get component path</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponentPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComponents">getComponents</a>(string $parent = &#039;&#039;, string $type = &#039;components&#039;)
         
                                             <p>Scan directory and return components list</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponents"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComponentsRecursive">getComponentsRecursive</a>(string|null $path = null)
+        
+                                            <p>Scan directory and return components list</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponentsRecursive"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -470,7 +550,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method___construct"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 49</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method___construct"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 51</div>
         <code>                    
     <strong>__construct</strong>($path, <a href="../../../Arikaim/Core/Collection/Interfaces/CollectionInterface.html"><abbr title="Arikaim\Core\Collection\Interfaces\CollectionInterface">CollectionInterface</abbr></a> $properties, <a href="../../../Arikaim/Core/Packages/Interfaces/PackageRegistryInterface.html"><abbr title="Arikaim\Core\Packages\Interfaces\PackageRegistryInterface">PackageRegistryInterface</abbr></a> $packageRegistry = null)
         </code>
@@ -510,8 +590,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_validator">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_validator"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 64</div>
+        <code>                    <a href="../../../Arikaim/Core/Packages/PackageValidator.html"><abbr title="Arikaim\Core\Packages\PackageValidator">PackageValidator</abbr></a>
+    <strong>validator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create package validator</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Packages/PackageValidator.html"><abbr title="Arikaim\Core\Packages\PackageValidator">PackageValidator</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getPath">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getPath"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 62</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getPath"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 74</div>
         <code>                    string
     <strong>getPath</strong>()
         </code>
@@ -541,7 +651,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getVersion">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getVersion"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 72</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getVersion"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 84</div>
         <code>                    string
     <strong>getVersion</strong>()
         </code>
@@ -570,8 +680,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getLanguages">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getLanguages"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 94</div>
+        <code>                    array|null
+    <strong>getLanguages</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get suppported languages</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_setPrimary">
-        <div class="location">at         line 76</div>
+        <div class="location">at         line 77</div>
         <code>                    boolean
     <strong>setPrimary</strong>()
         </code>
@@ -601,7 +741,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getType">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getType"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 92</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getType"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 114</div>
         <code>                    string
     <strong>getType</strong>()
         </code>
@@ -631,7 +771,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getName">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getName"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 102</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getName"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 124</div>
         <code>                    string
     <strong>getName</strong>()
         </code>
@@ -701,7 +841,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRequire">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getRequire"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 123</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getRequire"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 145</div>
         <code>                    <abbr title="Arikaim\Core\Packages\Interfaces\CollectionInterface">CollectionInterface</abbr>
     <strong>getRequire</strong>()
         </code>
@@ -731,7 +871,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getProperty">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getProperty"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 137</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_getProperty"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 159</div>
         <code>                    mixed
     <strong>getProperty</strong>(<abbr title="Arikaim\Core\Packages\srting">srting</abbr> $name, mixed $default = null)
         </code>
@@ -776,7 +916,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_validate">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_validate"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 147</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_validate"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 169</div>
         <code>                    bool
     <strong>validate</strong>()
         </code>
@@ -806,7 +946,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_install">
-        <div class="location">at         line 177</div>
+        <div class="location">at         line 178</div>
         <code>                    bool
     <strong>install</strong>(boolean|null $primary = null)
         </code>
@@ -845,8 +985,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_postInstall">
+        <div class="location">at         line 226</div>
+        <code>                    boolean
+    <strong>postInstall</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run post install actions</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_unInstall">
-        <div class="location">at         line 225</div>
+        <div class="location">at         line 246</div>
         <code>                    bool
     <strong>unInstall</strong>()
         </code>
@@ -876,7 +1046,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_enable">
-        <div class="location">at         line 258</div>
+        <div class="location">at         line 279</div>
         <code>                    bool
     <strong>enable</strong>()
         </code>
@@ -906,7 +1076,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_disable">
-        <div class="location">at         line 277</div>
+        <div class="location">at         line 298</div>
         <code>                    bool
     <strong>disable</strong>()
         </code>
@@ -935,10 +1105,40 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_savePackageProperties">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Package.html#method_savePackageProperties"><abbr title="Arikaim\Core\Packages\Package">Package</abbr></a> at         line 230</div>
+        <code>                    bool
+    <strong>savePackageProperties</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Save package properties file</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getViewPath">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getViewPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 24</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getViewPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 25</div>
         <code>                    string
-    <strong>getViewPath</strong>()
+    <strong>getViewPath</strong>(string|null $componentsType = null)
         </code>
     </h3>
     <div class="details">
@@ -948,6 +1148,16 @@
                     <div class="method-description">
                                     <p>Get view path</p>                                                </div>
                 <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$componentsType</td>
+                <td></td>
+            </tr>
+            </table>
+
             
                             <h4>Return Value</h4>
 
@@ -966,7 +1176,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getComponentsPath">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponentsPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 34</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponentsPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 41</div>
         <code>                    string
     <strong>getComponentsPath</strong>()
         </code>
@@ -996,7 +1206,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPagesPath">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getPagesPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 44</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getPagesPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 51</div>
         <code>                    string
     <strong>getPagesPath</strong>()
         </code>
@@ -1025,8 +1235,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getEmailsPath">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getEmailsPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 61</div>
+        <code>                    string
+    <strong>getEmailsPath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get emails components path</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getMacrosPath">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getMacrosPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 54</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getMacrosPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 71</div>
         <code>                    string
     <strong>getMacrosPath</strong>()
         </code>
@@ -1056,7 +1296,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMacros">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getMacros"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 65</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getMacros"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 82</div>
         <code>                    array
     <strong>getMacros</strong>(string|null $path = null)
         </code>
@@ -1096,9 +1336,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPages">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getPages"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 92</div>
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getPages"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 109</div>
         <code>                    array
-    <strong>getPages</strong>(string|null $path = null)
+    <strong>getPages</strong>($parent = &#039;&#039;)
         </code>
     </h3>
     <div class="details">
@@ -1112,8 +1352,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string|null</td>
-                <td>$path</td>
+                <td></td>
+                <td>$parent</td>
                 <td></td>
             </tr>
             </table>
@@ -1135,10 +1375,140 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getComponents">
-        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponents"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 117</div>
+                    <h3 id="method_getEmails">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getEmails"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 120</div>
         <code>                    array
-    <strong>getComponents</strong>(string|null $path = null)
+    <strong>getEmails</strong>($parent = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Scan directory and return emails list</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$parent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComponentPath">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponentPath"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 132</div>
+        <code>                    string
+    <strong>getComponentPath</strong>(string $componentName, string $type = &#039;components&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get component path</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$componentName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComponents">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponents"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 147</div>
+        <code>                    array
+    <strong>getComponents</strong>(string $parent = &#039;&#039;, string $type = &#039;components&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Scan directory and return components list</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComponentsRecursive">
+        <div class="location">in <a href="../../../Arikaim/Core/Packages/Traits/ViewComponents.html#method_getComponentsRecursive"><abbr title="Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a> at         line 180</div>
+        <code>                    array
+    <strong>getComponentsRecursive</strong>(string|null $path = null)
         </code>
     </h3>
     <div class="details">
@@ -1176,7 +1546,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getExtensionJobs">
-        <div class="location">at         line 88</div>
+        <div class="location">at         line 89</div>
         <code>                    array
     <strong>getExtensionJobs</strong>()
         </code>
@@ -1206,7 +1576,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getConsoleCommands">
-        <div class="location">at         line 119</div>
+        <div class="location">at         line 120</div>
         <code>                    array
     <strong>getConsoleCommands</strong>()
         </code>
@@ -1236,7 +1606,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getModels">
-        <div class="location">at         line 144</div>
+        <div class="location">at         line 145</div>
         <code>                    array
     <strong>getModels</strong>()
         </code>
@@ -1266,7 +1636,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_registerEventsSubscribers">
-        <div class="location">at         line 296</div>
+        <div class="location">at         line 317</div>
         <code>                    integer
     <strong>registerEventsSubscribers</strong>()
         </code>
@@ -1296,7 +1666,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTypeId">
-        <div class="location">at         line 324</div>
+        <div class="location">at         line 345</div>
         <code>                    integer|false
     <strong>getTypeId</strong>(string|integer $typeName)
         </code>
@@ -1336,7 +1706,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getJobsPath">
-        <div class="location">at         line 334</div>
+        <div class="location">at         line 355</div>
         <code>                    string
     <strong>getJobsPath</strong>()
         </code>
@@ -1366,7 +1736,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getModelsSchemaPath">
-        <div class="location">at         line 344</div>
+        <div class="location">at         line 365</div>
         <code>                    string
     <strong>getModelsSchemaPath</strong>()
         </code>
@@ -1396,7 +1766,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getModelsPath">
-        <div class="location">at         line 354</div>
+        <div class="location">at         line 375</div>
         <code>                    string
     <strong>getModelsPath</strong>()
         </code>
@@ -1426,7 +1796,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSubscribersPath">
-        <div class="location">at         line 364</div>
+        <div class="location">at         line 385</div>
         <code>                    string
     <strong>getSubscribersPath</strong>()
         </code>

@@ -18,7 +18,7 @@
         <link rel="shortcut icon" href="../../../../images/arikaim-favicon.png" />
     </head>
 
-    <body id="class" data-name="class:Arikaim_Core_Db_Traits_Permissions" data-root-path="../../../../">
+    <body id="namespace" data-name="namespace:Arikaim_Core_Db_Traits_Permissions" data-root-path="../../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -68,185 +68,52 @@
         </div>
     </nav>
 
-                        <div class="namespace-breadcrumbs">
-            <ol class="breadcrumb">
-                <li><span class="label label-default">trait</span></li>
-                        <li><a href="../../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/Db.html">Db</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/Db/Traits.html">Traits</a></li><li class="backslash">\</li><li>Permissions</li>
-            </ol>
-        </div>
-                <div id="page-content">
+                <div class="namespace-breadcrumbs">
+        <ol class="breadcrumb">
+            <li><span class="label label-default">Namespace</span></li>
+                    <li><a href="../../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/Db.html">Db</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/Db/Traits.html">Traits</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/Db/Traits/Permissions.html">Permissions</a></li><li class="backslash">\</li>
+        </ol>
+    </div>
+            <div id="page-content">
                 
     <div class="page-header">
-        <h1>
-            Permissions
-                
-        </h1>
+        <h1>Arikaim\Core\Db\Traits\Permissions</h1>
     </div>
 
-    <p>    trait
-    <strong>Permissions</strong>
-</p>
-
+    
+            <h2>Classes</h2>
         
-    
-
-            <div class="description">
-            <p>Permissions</p>                                </div>
-    
-    
-    
-    
-            <h2>Methods</h2>
-
-            <div class="container-fluid underlined">
+    <div class="container-fluid underlined">
                     <div class="row">
-                <div class="col-md-2 type">
-                    boolean
+                <div class="col-md-6">
+                                            <a href="../../../../Arikaim/Core/Db/Traits/Permissions/EntityPermissions.html"><abbr title="Arikaim\Core\Db\Traits\Permissions\EntityPermissions">EntityPermissions</abbr></a>
+                                            
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_hasPermission">hasPermission</a>(string $name)
-        
-                                            <p>Return true if have permission</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-6">
+                    Entity permissions
+                </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type">
-                    boolean
+                <div class="col-md-6">
+                                            <a href="../../../../Arikaim/Core/Db/Traits/Permissions/EntityPermissionsRelation.html"><abbr title="Arikaim\Core\Db\Traits\Permissions\EntityPermissionsRelation">EntityPermissionsRelation</abbr></a>
+                                            
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_hasFull">hasFull</a>()
-        
-                                            <p>Return true if have all permissions</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-6">
+                    Entity permissions relation
+                </div>
             </div>
                     <div class="row">
-                <div class="col-md-2 type">
-                    array
+                <div class="col-md-6">
+                                            <a href="../../../../Arikaim/Core/Db/Traits/Permissions/Permissions.html"><abbr title="Arikaim\Core\Db\Traits\Permissions\Permissions">Permissions</abbr></a>
+                                            
                 </div>
-                <div class="col-md-8 type">
-                    <a href="#method_resolvePermissions">resolvePermissions</a>(array|string $access)
-        
-                                            <p>Resolve permissions array</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-6">
+                    Permissions
+                </div>
             </div>
             </div>
-
-
-        <h2>Details</h2>
-
-            <div id="method-details">
-                    <div class="method-item">
-                    <h3 id="method_hasPermission">
-        <div class="location">at         line 25</div>
-        <code>                    boolean
-    <strong>hasPermission</strong>(string $name)
-        </code>
-    </h3>
-    <div class="details">
-            
     
-
-                    <div class="method-description">
-                                    <p>Return true if have permission</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$name</td>
-                <td>valid values read|write|delete|execute</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>boolean</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_hasFull">
-        <div class="location">at         line 39</div>
-        <code>                    boolean
-    <strong>hasFull</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
     
-
-                    <div class="method-description">
-                                    <p>Return true if have all permissions</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>boolean</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_resolvePermissions">
-        <div class="location">at         line 56</div>
-        <code>                    array
-    <strong>resolvePermissions</strong>(array|string $access)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Resolve permissions array</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array|string</td>
-                <td>$access</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-            </div>
-
     
             </div>
                 <div id="footer">

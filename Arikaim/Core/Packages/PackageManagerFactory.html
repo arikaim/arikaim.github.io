@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -138,6 +138,16 @@
                     <a href="#method_getPackagePath">getPackagePath</a>(string $packageType)
         
                                             <p>Get package path</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPackageDescriptorFileName">getPackageDescriptorFileName</a>(string $packageType, string $packageName)
+        
+                                            <p>Get package descriptor file name</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -348,8 +358,53 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getPackageDescriptorFileName">
+        <div class="location">at         line 153</div>
+        <code>        static            string
+    <strong>getPackageDescriptorFileName</strong>(string $packageType, string $packageName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get package descriptor file name</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageType</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getPackageClass">
-        <div class="location">at         line 152</div>
+        <div class="location">at         line 166</div>
         <code>        static            string|null
     <strong>getPackageClass</strong>(string $packageType)
         </code>
@@ -389,7 +444,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPackagePath">
-        <div class="location">at         line 164</div>
+        <div class="location">at         line 178</div>
         <code>        static            void
     <strong>setPackagePath</strong>(string $packageType, string $path)
         </code>
@@ -434,7 +489,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPackageClass">
-        <div class="location">at         line 176</div>
+        <div class="location">at         line 190</div>
         <code>        static            void
     <strong>setPackageClass</strong>(string $packageType, string $class)
         </code>
@@ -479,7 +534,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPackageRegistryClass">
-        <div class="location">at         line 188</div>
+        <div class="location">at         line 202</div>
         <code>        static            void
     <strong>setPackageRegistryClass</strong>(string $packageType, string $class)
         </code>

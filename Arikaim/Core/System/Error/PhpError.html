@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -95,75 +95,10 @@
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_displayErrorDetails">
-                                        protected                                        boolean
-                </td>
-                <td>$displayErrorDetails</td>
-                <td class="last">Show error details</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_displayErrorTrace">
-                                        protected                                        boolean
-                </td>
-                <td>$displayErrorTrace</td>
-                <td class="last">Show error trace</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_logErrors">
-                                        protected                                        boolean
-                </td>
-                <td>$logErrors</td>
-                <td class="last">Log errors</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_logErrorDetails">
-                                        protected                                        boolean
-                </td>
-                <td>$logErrorDetails</td>
-                <td class="last">Log error details</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_htmlRenderer">
-                                        protected                                        <a href="../../../../Arikaim/Core/System/Error/ErrorRendererInterface.html"><abbr title="Arikaim\Core\System\Error\ErrorRendererInterface">ErrorRendererInterface</abbr></a>
-                </td>
-                <td>$htmlRenderer</td>
-                <td class="last">Html renderer</td>
-                <td></td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../../../Arikaim/Core/System/Error/ErrorRendererInterface.html"><abbr title="Arikaim\Core\System\Error\ErrorRendererInterface">ErrorRendererInterface</abbr></a> $htmlRenderer = null, boolean $displayErrorDetails = true, boolean $displayErrorTrace = true)
-        
-                                            <p>Constructor</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_renderError">renderError</a>(<abbr title="Arikaim\Core\System\Error\ServerRequestInterface">ServerRequestInterface</abbr> $request, <a target="_blank" href="http://php.net/Throwable">Throwable</a> $exception, bool $displayDetails = true, bool $logErrors = true, bool $logErrorDetails = true)
-        
-                                            <p>Render error</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     static&nbsp;array
@@ -211,109 +146,8 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
-        <div class="location">at         line 66</div>
-        <code>                    
-    <strong>__construct</strong>(<a href="../../../../Arikaim/Core/System/Error/ErrorRendererInterface.html"><abbr title="Arikaim\Core\System\Error\ErrorRendererInterface">ErrorRendererInterface</abbr></a> $htmlRenderer = null, boolean $displayErrorDetails = true, boolean $displayErrorTrace = true)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Constructor</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../../Arikaim/Core/System/Error/ErrorRendererInterface.html"><abbr title="Arikaim\Core\System\Error\ErrorRendererInterface">ErrorRendererInterface</abbr></a></td>
-                <td>$htmlRenderer</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>boolean</td>
-                <td>$displayErrorDetails</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>boolean</td>
-                <td>$displayErrorTrace</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_renderError">
-        <div class="location">at         line 83</div>
-        <code>                    string
-    <strong>renderError</strong>(<abbr title="Arikaim\Core\System\Error\ServerRequestInterface">ServerRequestInterface</abbr> $request, <a target="_blank" href="http://php.net/Throwable">Throwable</a> $exception, bool $displayDetails = true, bool $logErrors = true, bool $logErrorDetails = true)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Render error</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Arikaim\Core\System\Error\ServerRequestInterface">ServerRequestInterface</abbr></td>
-                <td>$request</td>
-                <td>The most recent Request object</td>
-            </tr>
-                    <tr>
-                <td><a target="_blank" href="http://php.net/Throwable">Throwable</a></td>
-                <td>$exception</td>
-                <td>The caught Throwable object</td>
-            </tr>
-                    <tr>
-                <td>bool</td>
-                <td>$displayDetails</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>bool</td>
-                <td>$logErrors</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>bool</td>
-                <td>$logErrorDetails</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_toArray">
-        <div class="location">at         line 106</div>
+        <div class="location">at         line 25</div>
         <code>        static            array
     <strong>toArray</strong>(<a target="_blank" href="http://php.net/Throwable">Throwable</a>|array $error)
         </code>
@@ -353,7 +187,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getJsonError">
-        <div class="location">at         line 137</div>
+        <div class="location">at         line 56</div>
         <code>        static            string
     <strong>getJsonError</strong>()
         </code>
@@ -383,7 +217,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getErrorTypeText">
-        <div class="location">at         line 172</div>
+        <div class="location">at         line 91</div>
         <code>        static            string
     <strong>getErrorTypeText</strong>(integer $type)
         </code>
@@ -423,7 +257,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPosixError">
-        <div class="location">at         line 190</div>
+        <div class="location">at         line 109</div>
         <code>        static            void
     <strong>getPosixError</strong>()
         </code>

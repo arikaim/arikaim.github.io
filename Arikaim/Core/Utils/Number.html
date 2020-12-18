@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -101,6 +101,13 @@
                 <td>DEFAULT_FORMAT</td>
                 <td class="last">
                     <p><em>Default format values</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>BOOLEAN_TEXT_VALUES</td>
+                <td class="last">
+                    <p><em>Text values which may convert to boolean</em></p>
                     <p></p>
                 </td>
             </tr>
@@ -224,6 +231,36 @@
                                             <p>Get number fraction</p>                </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isBoolean">isBoolean</a>(string $text)
+        
+                                            <p>Return true if text is boolean value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toBoolean">toBoolean</a>($text)
+        
+                                            <p>Convert text to bool value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toNumber">toNumber</a>(mixed $number)
+        
+                                            <p>Type cast to int, foat, bool</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -232,7 +269,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_format">
-        <div class="location">at         line 48</div>
+        <div class="location">at         line 53</div>
         <code>        static            integer|float
     <strong>format</strong>(integer|float $number, string|null|array $formatName = null)
         </code>
@@ -277,7 +314,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_resolveFormat">
-        <div class="location">at         line 61</div>
+        <div class="location">at         line 66</div>
         <code>        static            array
     <strong>resolveFormat</strong>(string|array|null $format)
         </code>
@@ -317,7 +354,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setFormats">
-        <div class="location">at         line 81</div>
+        <div class="location">at         line 86</div>
         <code>        static            void
     <strong>setFormats</strong>(array $items, array|null $default = null)
         </code>
@@ -362,7 +399,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setFormat">
-        <div class="location">at         line 96</div>
+        <div class="location">at         line 101</div>
         <code>        static            void
     <strong>setFormat</strong>(mixed $format)
         </code>
@@ -402,7 +439,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFormat">
-        <div class="location">at         line 107</div>
+        <div class="location">at         line 112</div>
         <code>        static            array
     <strong>getFormat</strong>(string|null $name = null)
         </code>
@@ -442,7 +479,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isNumber">
-        <div class="location">at         line 122</div>
+        <div class="location">at         line 127</div>
         <code>        static            boolean
     <strong>isNumber</strong>(mixed $variable)
         </code>
@@ -482,7 +519,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isFloat">
-        <div class="location">at         line 133</div>
+        <div class="location">at         line 138</div>
         <code>        static            boolean
     <strong>isFloat</strong>(mixed $variable)
         </code>
@@ -522,7 +559,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getNumericValue">
-        <div class="location">at         line 144</div>
+        <div class="location">at         line 149</div>
         <code>        static            integer|float
     <strong>getNumericValue</strong>(mixed $value)
         </code>
@@ -562,7 +599,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getInteger">
-        <div class="location">at         line 155</div>
+        <div class="location">at         line 160</div>
         <code>        static            integer
     <strong>getInteger</strong>(mixed $value)
         </code>
@@ -602,7 +639,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFraction">
-        <div class="location">at         line 166</div>
+        <div class="location">at         line 171</div>
         <code>        static            float
     <strong>getFraction</strong>(mixed $value)
         </code>
@@ -630,6 +667,126 @@
                     <table class="table table-condensed">
         <tr>
             <td>float</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isBoolean">
+        <div class="location">at         line 182</div>
+        <code>        static            boolean
+    <strong>isBoolean</strong>(string $text)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if text is boolean value</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toBoolean">
+        <div class="location">at         line 195</div>
+        <code>        static            bool
+    <strong>toBoolean</strong>($text)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert text to bool value</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toNumber">
+        <div class="location">at         line 208</div>
+        <code>        static            mixed
+    <strong>toNumber</strong>(mixed $number)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Type cast to int, foat, bool</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$number</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
             <td></td>
         </tr>
     </table>

@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -148,6 +148,14 @@ Change default status column name in model:
                 <td class="last">Suspended</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td class="type" id="property_statusText">
+                                        protected                                        array
+                </td>
+                <td>$statusText</td>
+                <td class="last">Status text</td>
+                <td></td>
+            </tr>
             </table>
 
     
@@ -206,6 +214,16 @@ Change default status column name in model:
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_scopeStatusQuery">scopeStatusQuery</a>(<abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr> $query, mixed $items)
+        
+                                            <p>Status scope</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
                 </div>
                 <div class="col-md-8 type">
@@ -216,12 +234,32 @@ Change default status column name in model:
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    integer|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveStatusText">resolveStatusText</a>(string $status)
+        
+                                            <p>Resolve status id</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getActive">getActive</a>()
         
                                             <p>Return active model query builder</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_scopeActiveQuery">scopeActiveQuery</a>(<abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr> $query)
+        
+                                            <p>Active status scope</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -411,8 +449,53 @@ Change default status column name in model:
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_scopeStatusQuery">
+        <div class="location">at         line 120</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr>
+    <strong>scopeStatusQuery</strong>(<abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr> $query, mixed $items)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Status scope</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$items</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getStatusColumn">
-        <div class="location">at         line 104</div>
+        <div class="location">at         line 135</div>
         <code>                    string
     <strong>getStatusColumn</strong>()
         </code>
@@ -441,9 +524,49 @@ Change default status column name in model:
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_resolveStatusText">
+        <div class="location">at         line 146</div>
+        <code>                    integer|false
+    <strong>resolveStatusText</strong>(string $status)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve status id</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getActive">
-        <div class="location">at         line 114</div>
-        <code>                    void
+        <div class="location">at         line 160</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr>
     <strong>getActive</strong>()
         </code>
     </h3>
@@ -459,7 +582,47 @@ Change default status column name in model:
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td><abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopeActiveQuery">
+        <div class="location">at         line 176</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr>
+    <strong>scopeActiveQuery</strong>(<abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr> $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Active status scope</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Db\Traits\Builder">Builder</abbr></td>
             <td></td>
         </tr>
     </table>
@@ -472,7 +635,7 @@ Change default status column name in model:
             </div>
                     <div class="method-item">
                     <h3 id="method_getDisabled">
-        <div class="location">at         line 130</div>
+        <div class="location">at         line 186</div>
         <code>                    void
     <strong>getDisabled</strong>()
         </code>
@@ -502,7 +665,7 @@ Change default status column name in model:
             </div>
                     <div class="method-item">
                     <h3 id="method_setStatus">
-        <div class="location">at         line 141</div>
+        <div class="location">at         line 197</div>
         <code>                    bool
     <strong>setStatus</strong>(integer|string|null $status = null)
         </code>
@@ -542,7 +705,7 @@ Change default status column name in model:
             </div>
                     <div class="method-item">
                     <h3 id="method_resolveStatusValue">
-        <div class="location">at         line 155</div>
+        <div class="location">at         line 211</div>
         <code>                    integer
     <strong>resolveStatusValue</strong>(integer|null|string $status = null)
         </code>

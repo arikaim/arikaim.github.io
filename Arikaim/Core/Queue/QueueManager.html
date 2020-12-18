@@ -52,7 +52,7 @@
                         <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
                     </li>
                     <li><a href="index.html">API Documentation</a></li>
-                    <li><a href="#">Version 1.2.16</a></li>
+                    <li><a href="#">Version master</a></li>
                 </ul>                                                         
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
@@ -107,22 +107,6 @@
                 <td class="last">Queue storage driver</td>
                 <td></td>
             </tr>
-                    <tr>
-                <td class="type" id="property_eventDispatcher">
-                                        protected                                        <a href="../../../Arikaim/Core/Interfaces/Events/EventDispatcherInterface.html"><abbr title="Arikaim\Core\Interfaces\Events\EventDispatcherInterface">EventDispatcherInterface</abbr></a>
-                </td>
-                <td>$eventDispatcher</td>
-                <td class="last">Event Dispatcher</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_options">
-                                        protected                                        <a href="../../../Arikaim/Core/Interfaces/OptionsInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsInterface">OptionsInterface</abbr></a>
-                </td>
-                <td>$options</td>
-                <td class="last">Options</td>
-                <td></td>
-            </tr>
             </table>
 
     
@@ -134,7 +118,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../../Arikaim/Core/Interfaces/Job/QueueStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\QueueStorageInterface">QueueStorageInterface</abbr></a> $driver, <a href="../../../Arikaim/Core/Interfaces/Events/EventDispatcherInterface.html"><abbr title="Arikaim\Core\Interfaces\Events\EventDispatcherInterface">EventDispatcherInterface</abbr></a> $eventDispatcher, <a href="../../../Arikaim/Core/Interfaces/OptionsInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsInterface">OptionsInterface</abbr></a> $options)
+                    <a href="#method___construct">__construct</a>(<a href="../../../Arikaim/Core/Interfaces/Job/QueueStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\QueueStorageInterface">QueueStorageInterface</abbr></a> $driver)
         
                                             <p>Constructor</p>                </div>
                 <div class="col-md-2"></div>
@@ -147,16 +131,6 @@
                     <a href="#method_createScheduler">createScheduler</a>()
         
                                             <p>Create cron scheduler</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    object
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_createWorker">createWorker</a>()
-        
-                                            <p>Create queue worker</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -264,7 +238,7 @@
                     bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_addJob">addJob</a>(<a href="../../../Arikaim/Core/Interfaces/Job/JobInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\JobInterface">JobInterface</abbr></a> $job, string|null $extension = null)
+                    <a href="#method_addJob">addJob</a>(<a href="../../../Arikaim/Core/Interfaces/Job/JobInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\JobInterface">JobInterface</abbr></a> $job, string|null $extension = null, bool $disabled = false)
         
                                             <p>Add job</p>                </div>
                 <div class="col-md-2"></div>
@@ -309,16 +283,6 @@
                                             <p>Run job</p>                </div>
                 <div class="col-md-2"></div>
             </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getQueueWorkerInfo">getQueueWorkerInfo</a>()
-        
-                                            <p>Get worker process info</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
             </div>
 
 
@@ -327,9 +291,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 56</div>
+        <div class="location">at         line 37</div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../Arikaim/Core/Interfaces/Job/QueueStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\QueueStorageInterface">QueueStorageInterface</abbr></a> $driver, <a href="../../../Arikaim/Core/Interfaces/Events/EventDispatcherInterface.html"><abbr title="Arikaim\Core\Interfaces\Events\EventDispatcherInterface">EventDispatcherInterface</abbr></a> $eventDispatcher, <a href="../../../Arikaim/Core/Interfaces/OptionsInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsInterface">OptionsInterface</abbr></a> $options)
+    <strong>__construct</strong>(<a href="../../../Arikaim/Core/Interfaces/Job/QueueStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\QueueStorageInterface">QueueStorageInterface</abbr></a> $driver)
         </code>
     </h3>
     <div class="details">
@@ -347,16 +311,6 @@
                 <td>$driver</td>
                 <td></td>
             </tr>
-                    <tr>
-                <td><a href="../../../Arikaim/Core/Interfaces/Events/EventDispatcherInterface.html"><abbr title="Arikaim\Core\Interfaces\Events\EventDispatcherInterface">EventDispatcherInterface</abbr></a></td>
-                <td>$eventDispatcher</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><a href="../../../Arikaim/Core/Interfaces/OptionsInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsInterface">OptionsInterface</abbr></a></td>
-                <td>$options</td>
-                <td></td>
-            </tr>
             </table>
 
             
@@ -368,7 +322,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createScheduler">
-        <div class="location">at         line 68</div>
+        <div class="location">at         line 47</div>
         <code>                    object
     <strong>createScheduler</strong>()
         </code>
@@ -397,38 +351,8 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_createWorker">
-        <div class="location">at         line 78</div>
-        <code>                    object
-    <strong>createWorker</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Create queue worker</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>object</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_setDriver">
-        <div class="location">at         line 89</div>
+        <div class="location">at         line 58</div>
         <code>                    void
     <strong>setDriver</strong>(<a href="../../../Arikaim/Core/Interfaces/Job/QueueStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\QueueStorageInterface">QueueStorageInterface</abbr></a> $driver)
         </code>
@@ -468,7 +392,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getStorageDriver">
-        <div class="location">at         line 99</div>
+        <div class="location">at         line 68</div>
         <code>                    <a href="../../../Arikaim/Core/Interfaces/Job/QueueStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\QueueStorageInterface">QueueStorageInterface</abbr></a>
     <strong>getStorageDriver</strong>()
         </code>
@@ -498,7 +422,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_has">
-        <div class="location">at         line 110</div>
+        <div class="location">at         line 79</div>
         <code>                    boolean
     <strong>has</strong>(mixed $id)
         </code>
@@ -538,7 +462,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteJobs">
-        <div class="location">at         line 121</div>
+        <div class="location">at         line 90</div>
         <code>                    boolean
     <strong>deleteJobs</strong>(array $filter = [])
         </code>
@@ -578,7 +502,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_create">
-        <div class="location">at         line 132</div>
+        <div class="location">at         line 101</div>
         <code>                    <a href="../../../Arikaim/Core/Interfaces/Job/JobInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\JobInterface">JobInterface</abbr></a>|false
     <strong>create</strong>(string|integer $name)
         </code>
@@ -618,7 +542,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createJobFromArray">
-        <div class="location">at         line 146</div>
+        <div class="location">at         line 115</div>
         <code>                    object|null
     <strong>createJobFromArray</strong>(array $data, string|null $class = null)
         </code>
@@ -663,7 +587,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getJob">
-        <div class="location">at         line 170</div>
+        <div class="location">at         line 137</div>
         <code>                    array|false
     <strong>getJob</strong>(string|integer $id)
         </code>
@@ -703,7 +627,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRecuringJobs">
-        <div class="location">at         line 181</div>
+        <div class="location">at         line 148</div>
         <code>                    array
     <strong>getRecuringJobs</strong>(string|null $extension = null)
         </code>
@@ -743,7 +667,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getJobs">
-        <div class="location">at         line 197</div>
+        <div class="location">at         line 164</div>
         <code>                    array
     <strong>getJobs</strong>(array $filter = [])
         </code>
@@ -783,7 +707,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getJobsDue">
-        <div class="location">at         line 207</div>
+        <div class="location">at         line 174</div>
         <code>                    array
     <strong>getJobsDue</strong>()
         </code>
@@ -813,9 +737,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addJob">
-        <div class="location">at         line 219</div>
+        <div class="location">at         line 187</div>
         <code>                    bool
-    <strong>addJob</strong>(<a href="../../../Arikaim/Core/Interfaces/Job/JobInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\JobInterface">JobInterface</abbr></a> $job, string|null $extension = null)
+    <strong>addJob</strong>(<a href="../../../Arikaim/Core/Interfaces/Job/JobInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\JobInterface">JobInterface</abbr></a> $job, string|null $extension = null, bool $disabled = false)
         </code>
     </h3>
     <div class="details">
@@ -838,6 +762,11 @@
                 <td>$extension</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$disabled</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -858,7 +787,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteJob">
-        <div class="location">at         line 241</div>
+        <div class="location">at         line 209</div>
         <code>                    bool
     <strong>deleteJob</strong>(string|integer $id)
         </code>
@@ -898,7 +827,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_clear">
-        <div class="location">at         line 251</div>
+        <div class="location">at         line 219</div>
         <code>                    boolean
     <strong>clear</strong>()
         </code>
@@ -928,7 +857,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getNext">
-        <div class="location">at         line 261</div>
+        <div class="location">at         line 229</div>
         <code>                    <a href="../../../Arikaim/Core/Interfaces/Job/JobInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\JobInterface">JobInterface</abbr></a>|null
     <strong>getNext</strong>()
         </code>
@@ -958,7 +887,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_executeJob">
-        <div class="location">at         line 277</div>
+        <div class="location">at         line 245</div>
         <code>                    boolean
     <strong>executeJob</strong>(<a href="../../../Arikaim/Core/Interfaces/Job/JobInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\JobInterface">JobInterface</abbr></a>|string|integer $job)
         </code>
@@ -986,36 +915,6 @@
                     <table class="table table-condensed">
         <tr>
             <td>boolean</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getQueueWorkerInfo">
-        <div class="location">at         line 308</div>
-        <code>                    array
-    <strong>getQueueWorkerInfo</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Get worker process info</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
             <td></td>
         </tr>
     </table>
