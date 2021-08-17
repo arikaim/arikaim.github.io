@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Arikaim Arikaim\Core\App\Commands\Queue\CronCommand | API Documentation</title>
+            <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/sami.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/style.css">
+        <script src="../../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../../js/typeahead.min.js"></script>
+        <script src="../../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link rel="shortcut icon" href="../../../../../images/arikaim-favicon.png" />
+    </head>
+
+    <body id="class" data-name="class:Arikaim_Core_App_Commands_Queue_CronCommand" data-root-path="../../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                   
+                <ul class="nav navbar-nav" style="margin-left:0px">                               
+                    <li>
+                        <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
+                    </li>
+                    <li><a href="index.html">API Documentation</a></li>
+                    <li><a href="#">Version master</a></li>
+                </ul>                                                         
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../../../Arikaim/Core/App.html">App</a></li><li class="backslash">\</li><li><a href="../../../../../Arikaim/Core/App/Commands.html">Commands</a></li><li class="backslash">\</li><li><a href="../../../../../Arikaim/Core/App/Commands/Queue.html">Queue</a></li><li class="backslash">\</li><li>CronCommand</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            CronCommand
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>CronCommand</strong>        extends <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Process cron jobs</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_style">
+                                        protected                                        <abbr title="Symfony\Component\Console\Style\SymfonyStyle">SymfonyStyle</abbr>
+                </td>
+                <td>$style</td>
+                <td class="last">Style obj reference</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#property_style"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_default">
+                                        protected                                        bool
+                </td>
+                <td>$default</td>
+                <td class="last">Set to true for default command</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#property_default"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_table">
+                                        protected                                        <abbr title="Arikaim\Core\Console\Symfony\Component\Console\Helper\Table">Table</abbr>
+                </td>
+                <td>$table</td>
+                <td class="last">Table output</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#property_table"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dispatcher">
+                                        protected                                        <abbr title="Arikaim\Core\Console\EventDispatcher">EventDispatcher</abbr>
+                </td>
+                <td>$dispatcher</td>
+                <td class="last">Event dispatcher</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#property_dispatcher"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_outputType">
+                                        protected                                        string|null
+                </td>
+                <td>$outputType</td>
+                <td class="last">Output type</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#property_outputType"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_result">
+                                        protected                                        array
+                </td>
+                <td>$result</td>
+                <td class="last">Command result data</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#property_result"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string|null $name = null, string|null $description = null)
+        
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method___construct"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOutputType">setOutputType</a>(string|null $outputType)
+        
+                                            <p>Set output type</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_setOutputType"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResult">getResult</a>()
+        
+                                            <p>Get execution result</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_getResult"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isConsoleOutput">isConsoleOutput</a>()
+        
+                                            <p>Return true if output is to console</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_isConsoleOutput"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDispatcher">setDispatcher</a>(object $dispatcher)
+        
+                                            <p>Set event dispatcher</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_setDispatcher"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_executeCommand">executeCommand</a>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        
+                                            <p>Run command</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_run">run</a>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        
+                                            <p>Run method wrapper</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_run"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addRequiredArgument">addRequiredArgument</a>(string $name, string $description = &#039;&#039;, mixed|null $default = null)
+        
+                                            <p>Add required argument</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_addRequiredArgument"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addOptionalArgument">addOptionalArgument</a>(string $name, string $description = &#039;&#039;, mixed|null $default = null)
+        
+                                            <p>Add optional argument</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_addOptionalArgument"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addOptionalOption">addOptionalOption</a>(string $name, string $description = &#039;&#039;, mixed|null $default = null)
+        
+                                            <p>Add optional option</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_addOptionalOption"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        
+                                            <p>Run console command</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_execute"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Console\Symfony\Component\Console\Helper\Table">Table</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_table">table</a>()
+        
+                                            <p>Get table obj</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_table"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefault">setDefault</a>(bool $default = true)
+        
+                                            <p>Set command as default</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_setDefault"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isDefault">isDefault</a>()
+        
+                                            <p>Return true if command is default.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_isDefault"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_showTitle">showTitle</a>(string|null $title = null, string $space = &#039; &#039;)
+        
+                                            <p>Show command title</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_showTitle"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_showError">showError</a>(string $message, string $label = &#039;Error:&#039;, string $space = &#039; &#039;)
+        
+                                            <p>Show error message</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_showError"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_showErrors">showErrors</a>(string|array $errors, string $label = &#039;Error:&#039;, string $space = &#039; &#039;)
+        
+                                            <p>Show multipel errors</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_showErrors"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_showErrorDetails">showErrorDetails</a>(string|array $details, string $space = &#039; &#039;)
+        
+                                            <p>Show error details</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_showErrorDetails"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkMark">checkMark</a>(string $space = &#039; &#039;)
+        
+                                            <p>Show CHECK MARK</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_checkMark"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_newLine">newLine</a>()
+        
+                                            <p>New line</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_newLine"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_showCompleted">showCompleted</a>(string|null $label = null, string $space = &#039; &#039;)
+        
+                                            <p>Show 'done' message</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_showCompleted"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeField">writeField</a>(string $label, mixed $value, string $color = &#039;cyan&#039;, string $space = &#039; &#039;)
+        
+                                            <p>Write field</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_writeField"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeFieldLn">writeFieldLn</a>(string $label, mixed $value, string $color = &#039;cyan&#039;, string $space = &#039; &#039;)
+        
+                                            <p>Write field</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_writeFieldLn"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeLn">writeLn</a>(string $text, string $space = &#039; &#039;, string|null $color = null)
+        
+                                            <p>Write line</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_writeLn"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_configure">configure</a>()
+        
+                                            <p>Configure command</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runJobs">runJobs</a>(array $jobs)
+        
+                                            <p>Run jobs due</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method___construct"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 77</div>
+        <code>                    
+    <strong>__construct</strong>(string|null $name = null, string|null $description = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$description</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOutputType">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_setOutputType"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 97</div>
+        <code>                    void
+    <strong>setOutputType</strong>(string|null $outputType)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set output type</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$outputType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResult">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_getResult"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 107</div>
+        <code>                    array
+    <strong>getResult</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get execution result</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isConsoleOutput">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_isConsoleOutput"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 117</div>
+        <code>                    boolean
+    <strong>isConsoleOutput</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if output is to console</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDispatcher">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_setDispatcher"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 128</div>
+        <code>                    void
+    <strong>setDispatcher</strong>(object $dispatcher)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set event dispatcher</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$dispatcher</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeCommand">
+        <div class="location">at         line 45</div>
+        <code>            protected        mixed
+    <strong>executeCommand</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run command</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_run">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_run"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 149</div>
+        <code>                    mixed
+    <strong>run</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run method wrapper</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addRequiredArgument">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_addRequiredArgument"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 175</div>
+        <code>                    void
+    <strong>addRequiredArgument</strong>(string $name, string $description = &#039;&#039;, mixed|null $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add required argument</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$description</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed|null</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addOptionalArgument">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_addOptionalArgument"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 188</div>
+        <code>                    void
+    <strong>addOptionalArgument</strong>(string $name, string $description = &#039;&#039;, mixed|null $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add optional argument</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$description</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed|null</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addOptionalOption">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_addOptionalOption"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 201</div>
+        <code>                    void
+    <strong>addOptionalOption</strong>(string $name, string $description = &#039;&#039;, mixed|null $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add optional option</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$description</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed|null</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_execute"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 213</div>
+        <code>            protected        mixed
+    <strong>execute</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run console command</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_table">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_table"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 225</div>
+        <code>                    <abbr title="Arikaim\Core\Console\Symfony\Component\Console\Helper\Table">Table</abbr>
+    <strong>table</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get table obj</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Console\Symfony\Component\Console\Helper\Table">Table</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefault">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_setDefault"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 236</div>
+        <code>                    void
+    <strong>setDefault</strong>(bool $default = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set command as default</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDefault">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_isDefault"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 246</div>
+        <code>                    bool
+    <strong>isDefault</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if command is default.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_showTitle">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_showTitle"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 258</div>
+        <code>                    void
+    <strong>showTitle</strong>(string|null $title = null, string $space = &#039; &#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Show command title</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$title</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$space</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_showError">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_showError"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 281</div>
+        <code>                    void
+    <strong>showError</strong>(string $message, string $label = &#039;Error:&#039;, string $space = &#039; &#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Show error message</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$label</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$space</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_showErrors">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_showErrors"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 296</div>
+        <code>                    void
+    <strong>showErrors</strong>(string|array $errors, string $label = &#039;Error:&#039;, string $space = &#039; &#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Show multipel errors</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$errors</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$label</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$space</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_showErrorDetails">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_showErrorDetails"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 315</div>
+        <code>                    void
+    <strong>showErrorDetails</strong>(string|array $details, string $space = &#039; &#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Show error details</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$details</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$space</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkMark">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_checkMark"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 333</div>
+        <code>                    void
+    <strong>checkMark</strong>(string $space = &#039; &#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Show CHECK MARK</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$space</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_newLine">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_newLine"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 343</div>
+        <code>                    void
+    <strong>newLine</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>New line</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_showCompleted">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_showCompleted"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 355</div>
+        <code>                    void
+    <strong>showCompleted</strong>(string|null $label = null, string $space = &#039; &#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Show 'done' message</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$label</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$space</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeField">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_writeField"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 372</div>
+        <code>                    void
+    <strong>writeField</strong>(string $label, mixed $value, string $color = &#039;cyan&#039;, string $space = &#039; &#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Write field</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$label</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$color</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$space</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeFieldLn">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_writeFieldLn"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 389</div>
+        <code>                    void
+    <strong>writeFieldLn</strong>(string $label, mixed $value, string $color = &#039;cyan&#039;, string $space = &#039; &#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Write field</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$label</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$color</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$space</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeLn">
+        <div class="location">in <a href="../../../../../Arikaim/Core/Console/ConsoleCommand.html#method_writeLn"><abbr title="Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a> at         line 403</div>
+        <code>                    void
+    <strong>writeLn</strong>(string $text, string $space = &#039; &#039;, string|null $color = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Write line</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$space</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$color</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_configure">
+        <div class="location">at         line 32</div>
+        <code>            protected        void
+    <strong>configure</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Configure command</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runJobs">
+        <div class="location">at         line 73</div>
+        <code>            protected        int
+    <strong>runJobs</strong>(array $jobs)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run jobs due</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$jobs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

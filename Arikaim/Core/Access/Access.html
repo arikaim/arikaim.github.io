@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Arikaim Arikaim\Core\Access\Access | API Documentation</title>
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link rel="shortcut icon" href="../../../images/arikaim-favicon.png" />
+    </head>
+
+    <body id="class" data-name="class:Arikaim_Core_Access_Access" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                   
+                <ul class="nav navbar-nav" style="margin-left:0px">                               
+                    <li>
+                        <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
+                    </li>
+                    <li><a href="index.html">API Documentation</a></li>
+                    <li><a href="#">Version master</a></li>
+                </ul>                                                         
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core/Access.html">Access</a></li><li class="backslash">\</li><li>Access</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Access
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Access</strong>        implements
+        <a href="../../../Arikaim/Core/Interfaces/Access/AccessInterface.html"><abbr title="Arikaim\Core\Interfaces\Access\AccessInterface">AccessInterface</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Manage permissions.</p>                                </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>DEFAULT_AUTH_PROVIDER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Arikaim/Core/Access/Interfaces/PermissionsInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\PermissionsInterface">PermissionsInterface</abbr></a> $adapter, <a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a> $user, <a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a>|null $provider = null, array $providerOptions = [])
+        
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_authenticate">authenticate</a>(array $credentials)
+        
+                                            <p>Auth user</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_middleware">middleware</a>(string $authName, array $options = [], <a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a>|null $user = null)
+        
+                                            <p>Create auth middleware</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_requireProvider">requireProvider</a>(<a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a>|string $provider, <a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a>|null $user = null, array $params = [])
+        
+                                            <p>Set provider if is null</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withProvider">withProvider</a>(<a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a>|string $provider, <a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a>|null $user = null, array $params = [])
+        
+                                            <p>Change auth provider</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createProvider">createProvider</a>(string $name, <a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a>|null $user = null, array|null $params = null)
+        
+                                            <p>Create auth provider</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setProvider">setProvider</a>(<a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a> $provider)
+        
+                                            <p>Set auth provider</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProvider">getProvider</a>()
+        
+                                            <p>Return auth provider</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFullPermissions">getFullPermissions</a>()
+        
+                                            <p>Full Permissions</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getControlPanelPermission">getControlPanelPermission</a>()
+        
+                                            <p>Control panel permission name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAdapter">setAdapter</a>(<a href="../../../Arikaim/Core/Access/Interfaces/PermissionsInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\PermissionsInterface">PermissionsInterface</abbr></a> $adapter)
+        
+                                            <p>Set permissions adapter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Access/Interfaces/PermissionsInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\PermissionsInterface">PermissionsInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAdapter">getAdapter</a>()
+        
+                                            <p>Get permissions adapter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasControlPanelAccess">hasControlPanelAccess</a>(integer|null $authId = null)
+        
+                                            <p>Check if current loged user have control panel access</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasAccess">hasAccess</a>(string|int $name, string|array|null $type = null, integer|null $authId = null)
+        
+                                            <p>Check access</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUserPermissions">getUserPermissions</a>(integer|null $authId = null)
+        
+                                            <p>Get user permissions</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPermission">addPermission</a>(string $name, string|null $title = null, string|null $description = null, string|null $extension = null)
+        
+                                            <p>Add permission item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolvePermissionName">resolvePermissionName</a>(string $name)
+        
+                                            <p>Resolve permission full name  name:type</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolvePermissionType">resolvePermissionType</a>(string|array $type)
+        
+                                            <p>Resolve permission type</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_logout">logout</a>()
+        
+                                            <p>Logout</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUser">getUser</a>()
+        
+                                            <p>Get logged user</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLoginAttempts">getLoginAttempts</a>()
+        
+                                            <p>Get login attempts</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|integer|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getId">getId</a>()
+        
+                                            <p>Get auth id</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isLogged">isLogged</a>()
+        
+                                            <p>Return true if user is logged</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAuthName">getAuthName</a>(int $auth)
+        
+                                            <p>Return auth name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAuthNames">getAuthNames</a>(mixed $auth)
+        
+                                            <p>Get auth names</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|integer|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveAuthType">resolveAuthType</a>(string|integer $type)
+        
+                                            <p>Resolve auth type</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 59</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Arikaim/Core/Access/Interfaces/PermissionsInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\PermissionsInterface">PermissionsInterface</abbr></a> $adapter, <a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a> $user, <a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a>|null $provider = null, array $providerOptions = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Access/Interfaces/PermissionsInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\PermissionsInterface">PermissionsInterface</abbr></a></td>
+                <td>$adapter</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a>|null</td>
+                <td>$provider</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$providerOptions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_authenticate">
+        <div class="location">at         line 78</div>
+        <code>                    bool
+    <strong>authenticate</strong>(array $credentials)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Auth user</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$credentials</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_middleware">
+        <div class="location">at         line 91</div>
+        <code>                    object|null
+    <strong>middleware</strong>(string $authName, array $options = [], <a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a>|null $user = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create auth middleware</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$authName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a>|null</td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_requireProvider">
+        <div class="location">at         line 106</div>
+        <code>                    <a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a>
+    <strong>requireProvider</strong>(<a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a>|string $provider, <a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a>|null $user = null, array $params = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set provider if is null</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a>|string</td>
+                <td>$provider</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a>|null</td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withProvider">
+        <div class="location">at         line 123</div>
+        <code>                    <a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a>
+    <strong>withProvider</strong>(<a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a>|string $provider, <a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a>|null $user = null, array $params = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Change auth provider</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a>|string</td>
+                <td>$provider</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a>|null</td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createProvider">
+        <div class="location">at         line 141</div>
+        <code>                    object|null
+    <strong>createProvider</strong>(string $name, <a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a>|null $user = null, array|null $params = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create auth provider</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a>|null</td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|null</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setProvider">
+        <div class="location">at         line 155</div>
+        <code>                    void
+    <strong>setProvider</strong>(<a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a> $provider)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set auth provider</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a></td>
+                <td>$provider</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProvider">
+        <div class="location">at         line 165</div>
+        <code>                    <a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a>|null
+    <strong>getProvider</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return auth provider</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFullPermissions">
+        <div class="location">at         line 175</div>
+        <code>                    array
+    <strong>getFullPermissions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Full Permissions</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getControlPanelPermission">
+        <div class="location">at         line 185</div>
+        <code>                    string
+    <strong>getControlPanelPermission</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Control panel permission name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAdapter">
+        <div class="location">at         line 196</div>
+        <code>                    void
+    <strong>setAdapter</strong>(<a href="../../../Arikaim/Core/Access/Interfaces/PermissionsInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\PermissionsInterface">PermissionsInterface</abbr></a> $adapter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set permissions adapter</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Access/Interfaces/PermissionsInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\PermissionsInterface">PermissionsInterface</abbr></a></td>
+                <td>$adapter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAdapter">
+        <div class="location">at         line 206</div>
+        <code>                    <a href="../../../Arikaim/Core/Access/Interfaces/PermissionsInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\PermissionsInterface">PermissionsInterface</abbr></a>
+    <strong>getAdapter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get permissions adapter</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Access/Interfaces/PermissionsInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\PermissionsInterface">PermissionsInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasControlPanelAccess">
+        <div class="location">at         line 217</div>
+        <code>                    bool
+    <strong>hasControlPanelAccess</strong>(integer|null $authId = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if current loged user have control panel access</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer|null</td>
+                <td>$authId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasAccess">
+        <div class="location">at         line 235</div>
+        <code>                    bool
+    <strong>hasAccess</strong>(string|int $name, string|array|null $type = null, integer|null $authId = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check access</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|int</td>
+                <td>$name</td>
+                <td>Permission name</td>
+            </tr>
+                    <tr>
+                <td>string|array|null</td>
+                <td>$type</td>
+                <td>PermissionType (read,write,execute,delete)</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$authId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUserPermissions">
+        <div class="location">at         line 258</div>
+        <code>                    mixed
+    <strong>getUserPermissions</strong>(integer|null $authId = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get user permissions</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer|null</td>
+                <td>$authId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPermission">
+        <div class="location">at         line 274</div>
+        <code>                    bool
+    <strong>addPermission</strong>(string $name, string|null $title = null, string|null $description = null, string|null $extension = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add permission item.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$title</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$description</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolvePermissionName">
+        <div class="location">at         line 285</div>
+        <code>                    array
+    <strong>resolvePermissionName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve permission full name  name:type</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolvePermissionType">
+        <div class="location">at         line 304</div>
+        <code>            protected        array|null
+    <strong>resolvePermissionType</strong>(string|array $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve permission type</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_logout">
+        <div class="location">at         line 322</div>
+        <code>                    void
+    <strong>logout</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Logout</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUser">
+        <div class="location">at         line 334</div>
+        <code>                    array|null
+    <strong>getUser</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get logged user</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLoginAttempts">
+        <div class="location">at         line 344</div>
+        <code>                    int|null
+    <strong>getLoginAttempts</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get login attempts</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getId">
+        <div class="location">at         line 354</div>
+        <code>                    null|integer|string
+    <strong>getId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get auth id</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|integer|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isLogged">
+        <div class="location">at         line 368</div>
+        <code>                    bool
+    <strong>isLogged</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if user is logged</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthName">
+        <div class="location">at         line 379</div>
+        <code>                    string|null
+    <strong>getAuthName</strong>(int $auth)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return auth name</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$auth</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthNames">
+        <div class="location">at         line 390</div>
+        <code>                    array
+    <strong>getAuthNames</strong>(mixed $auth)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get auth names</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$auth</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveAuthType">
+        <div class="location">at         line 407</div>
+        <code>                    null|integer|string
+    <strong>resolveAuthType</strong>(string|integer $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve auth type</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|integer</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|integer|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

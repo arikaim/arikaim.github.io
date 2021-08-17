@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Arikaim Arikaim\Core\Packages\PackageManager | API Documentation</title>
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link rel="shortcut icon" href="../../../images/arikaim-favicon.png" />
+    </head>
+
+    <body id="class" data-name="class:Arikaim_Core_Packages_PackageManager" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                   
+                <ul class="nav navbar-nav" style="margin-left:0px">                               
+                    <li>
+                        <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
+                    </li>
+                    <li><a href="index.html">API Documentation</a></li>
+                    <li><a href="#">Version master</a></li>
+                </ul>                                                         
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core/Packages.html">Packages</a></li><li class="backslash">\</li><li>PackageManager</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            PackageManager
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>PackageManager</strong>        implements
+        <a href="../../../Arikaim/Core/Interfaces/Packages/PackageManagerInterface.html"><abbr title="Arikaim\Core\Interfaces\Packages\PackageManagerInterface">PackageManagerInterface</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Package managers base class</p>                                </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>EXTENSION_PACKAGE</td>
+                <td class="last">
+                    <p><em>Package type</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TEMPLATE_PACKAGE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>MODULE_PACKAGE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LIBRARY_PACKAGE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COMPOSER_PACKAGE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COMPONENTS_LIBRARY_PACKAGE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>GITHUB_REPOSITORY</td>
+                <td class="last">
+                    <p><em>Repository type</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>GITHUB_PRIVATE_REPOSITORY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ARIKAIM_REPOSITORY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>COMPOSER_REPOSITORY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_cacheSaveTime">
+                    static                                                            integer
+                </td>
+                <td>$cacheSaveTime</td>
+                <td class="last">Cache save time</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_packageType">
+                                        protected                                        string
+                </td>
+                <td>$packageType</td>
+                <td class="last">Package type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_path">
+                                        protected                                        string
+                </td>
+                <td>$path</td>
+                <td class="last">Path to packages</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cache">
+                                        protected                                        <a href="../../../Arikaim/Core/Interfaces/CacheInterface.html"><abbr title="Arikaim\Core\Interfaces\CacheInterface">CacheInterface</abbr></a>
+                </td>
+                <td>$cache</td>
+                <td class="last">Cache</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_storage">
+                                        protected                                        <a href="../../../Arikaim/Core/Interfaces/StorageInterface.html"><abbr title="Arikaim\Core\Interfaces\StorageInterface">StorageInterface</abbr></a>
+                </td>
+                <td>$storage</td>
+                <td class="last">Local Storage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_httpClient">
+                                        protected                                        <a href="../../../Arikaim/Core/Interfaces/HttpClientInterface.html"><abbr title="Arikaim\Core\Interfaces\HttpClientInterface">HttpClientInterface</abbr></a>
+                </td>
+                <td>$httpClient</td>
+                <td class="last">Http client</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_packageRegistry">
+                                        protected                                        <a href="../../../Arikaim/Core/Packages/Interfaces/PackageRegistryInterface.html"><abbr title="Arikaim\Core\Packages\Interfaces\PackageRegistryInterface">PackageRegistryInterface</abbr></a>
+                </td>
+                <td>$packageRegistry</td>
+                <td class="last">Package Registry</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $packagePath, string $packageType, string $packageClass, <a href="../../../Arikaim/Core/Interfaces/CacheInterface.html"><abbr title="Arikaim\Core\Interfaces\CacheInterface">CacheInterface</abbr></a> $cache, <a href="../../../Arikaim/Core/Interfaces/StorageInterface.html"><abbr title="Arikaim\Core\Interfaces\StorageInterface">StorageInterface</abbr></a> $storage, <a href="../../../Arikaim/Core/Interfaces/HttpClientInterface.html"><abbr title="Arikaim\Core\Interfaces\HttpClientInterface">HttpClientInterface</abbr></a> $httpClient, <a href="../../../Arikaim/Core/Packages/Interfaces/PackageRegistryInterface.html"><abbr title="Arikaim\Core\Packages\Interfaces\PackageRegistryInterface">PackageRegistryInterface</abbr></a>|null $packageRegistry = null)
+        
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Arikaim/Core/Packages/Interfaces/PackageRegistryInterface.html"><abbr title="Arikaim\Core\Packages\Interfaces\PackageRegistryInterface">PackageRegistryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPackgesRegistry">getPackgesRegistry</a>()
+        
+                                            <p>Get packages registry</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Interfaces\Packages\Arikaim\Core\Packages\Interfaces\PackageInterface">PackageInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createPackage">createPackage</a>(string $name)
+        
+                                            <p>Create package</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasPackage">hasPackage</a>(string $name)
+        
+                                            <p>Return tru if package exists</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Interfaces\Packages\RepositoryInterface">RepositoryInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRepository">getRepository</a>(string $packageName, string|null $accessKey = null)
+        
+                                            <p>Get package repository</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPackages">getPackages</a>(bool $cached = false, mixed $filter = null)
+        
+                                            <p>Get packages list</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPath">getPath</a>()
+        
+                                            <p>Return packages path</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadPackageProperties">loadPackageProperties</a>(string $name, string|null $path, string|null $packageType = null)
+        
+                                            <p>Load package properties file</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_scan">scan</a>(array|null $filter = null)
+        
+                                            <p>Explore packages root directory</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Interfaces\Packages\Collection">Collection</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPackageProperties">getPackageProperties</a>(string $name, bool $full = false)
+        
+                                            <p>Get package properties</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Interfaces\Packages\PackageInterface">PackageInterface</abbr>|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findPackage">findPackage</a>(string $param, mixed $value)
+        
+                                            <p>Find package</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sortPackages">sortPackages</a>(array $packages)
+        
+                                            <p>Sort packages by 'install-order' property</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_installAllPackages">installAllPackages</a>(<a target="_blank" href="http://php.net/Closure">Closure</a>|null $onProgress = null, <a target="_blank" href="http://php.net/Closure">Closure</a>|null $onProgressError = null, bool $skipErrors = true)
+        
+                                            <p>Install all packages</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_postInstallAllPackages">postInstallAllPackages</a>()
+        
+                                            <p>Run post install actions on all packages</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_installPackage">installPackage</a>(string $name)
+        
+                                            <p>Install package</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_postInstallPackage">postInstallPackage</a>(string $name)
+        
+                                            <p>Run post install actions on package</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unInstallPackage">unInstallPackage</a>(string $name)
+        
+                                            <p>Uninstall package</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enablePackage">enablePackage</a>(string $name)
+        
+                                            <p>Enable package</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disablePackage">disablePackage</a>(string $name)
+        
+                                            <p>Disable package</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInstalled">getInstalled</a>(mixed|null $status = null, mixed|null $type = null)
+        
+                                            <p>Get installed packages.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createBackup">createBackup</a>(string $name)
+        
+                                            <p>Create zip arhive with package files and save to storage/backup/</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createRepository">createRepository</a>(string $repositoryUrl, string|null $accessKey = null, string|null $type = null)
+        
+                                            <p>Create repository driver</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createRepositoryUrl">createRepositoryUrl</a>(string $packageName, string|null $type)
+        
+                                            <p>Create repository url</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveRepositoryType">resolveRepositoryType</a>(string $repositoryUrl)
+        
+                                            <p>Resolve package repository type</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 111</div>
+        <code>                    
+    <strong>__construct</strong>(string $packagePath, string $packageType, string $packageClass, <a href="../../../Arikaim/Core/Interfaces/CacheInterface.html"><abbr title="Arikaim\Core\Interfaces\CacheInterface">CacheInterface</abbr></a> $cache, <a href="../../../Arikaim/Core/Interfaces/StorageInterface.html"><abbr title="Arikaim\Core\Interfaces\StorageInterface">StorageInterface</abbr></a> $storage, <a href="../../../Arikaim/Core/Interfaces/HttpClientInterface.html"><abbr title="Arikaim\Core\Interfaces\HttpClientInterface">HttpClientInterface</abbr></a> $httpClient, <a href="../../../Arikaim/Core/Packages/Interfaces/PackageRegistryInterface.html"><abbr title="Arikaim\Core\Packages\Interfaces\PackageRegistryInterface">PackageRegistryInterface</abbr></a>|null $packageRegistry = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packagePath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$packageType</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$packageClass</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Interfaces/CacheInterface.html"><abbr title="Arikaim\Core\Interfaces\CacheInterface">CacheInterface</abbr></a></td>
+                <td>$cache</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Interfaces/StorageInterface.html"><abbr title="Arikaim\Core\Interfaces\StorageInterface">StorageInterface</abbr></a></td>
+                <td>$storage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Interfaces/HttpClientInterface.html"><abbr title="Arikaim\Core\Interfaces\HttpClientInterface">HttpClientInterface</abbr></a></td>
+                <td>$httpClient</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Packages/Interfaces/PackageRegistryInterface.html"><abbr title="Arikaim\Core\Packages\Interfaces\PackageRegistryInterface">PackageRegistryInterface</abbr></a>|null</td>
+                <td>$packageRegistry</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPackgesRegistry">
+        <div class="location">at         line 135</div>
+        <code>                    <a href="../../../Arikaim/Core/Packages/Interfaces/PackageRegistryInterface.html"><abbr title="Arikaim\Core\Packages\Interfaces\PackageRegistryInterface">PackageRegistryInterface</abbr></a>
+    <strong>getPackgesRegistry</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get packages registry</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Packages/Interfaces/PackageRegistryInterface.html"><abbr title="Arikaim\Core\Packages\Interfaces\PackageRegistryInterface">PackageRegistryInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createPackage">
+        <div class="location">at         line 146</div>
+        <code>                    <abbr title="Arikaim\Core\Interfaces\Packages\Arikaim\Core\Packages\Interfaces\PackageInterface">PackageInterface</abbr>
+    <strong>createPackage</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create package</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Interfaces\Packages\Arikaim\Core\Packages\Interfaces\PackageInterface">PackageInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasPackage">
+        <div class="location">at         line 167</div>
+        <code>                    bool
+    <strong>hasPackage</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return tru if package exists</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRepository">
+        <div class="location">at         line 181</div>
+        <code>                    <abbr title="Arikaim\Core\Interfaces\Packages\RepositoryInterface">RepositoryInterface</abbr>
+    <strong>getRepository</strong>(string $packageName, string|null $accessKey = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get package repository</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$accessKey</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Interfaces\Packages\RepositoryInterface">RepositoryInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPackages">
+        <div class="location">at         line 197</div>
+        <code>                    mixed
+    <strong>getPackages</strong>(bool $cached = false, mixed $filter = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get packages list</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$cached</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$filter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPath">
+        <div class="location">at         line 213</div>
+        <code>                    string
+    <strong>getPath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return packages path</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadPackageProperties">
+        <div class="location">at         line 226</div>
+        <code>        static            <a href="../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a>
+    <strong>loadPackageProperties</strong>(string $name, string|null $path, string|null $packageType = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Load package properties file</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$packageType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Arikaim/Core/Collection/Collection.html"><abbr title="Arikaim\Core\Collection\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scan">
+        <div class="location">at         line 252</div>
+        <code>            protected        array
+    <strong>scan</strong>(array|null $filter = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Explore packages root directory</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|null</td>
+                <td>$filter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPackageProperties">
+        <div class="location">at         line 292</div>
+        <code>                    <abbr title="Arikaim\Core\Interfaces\Packages\Collection">Collection</abbr>|null
+    <strong>getPackageProperties</strong>(string $name, bool $full = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get package properties</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$full</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Interfaces\Packages\Collection">Collection</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findPackage">
+        <div class="location">at         line 306</div>
+        <code>                    <abbr title="Arikaim\Core\Interfaces\Packages\PackageInterface">PackageInterface</abbr>|false
+    <strong>findPackage</strong>(string $param, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find package</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$param</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Interfaces\Packages\PackageInterface">PackageInterface</abbr>|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sortPackages">
+        <div class="location">at         line 325</div>
+        <code>                    array
+    <strong>sortPackages</strong>(array $packages)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sort packages by 'install-order' property</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$packages</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_installAllPackages">
+        <div class="location">at         line 356</div>
+        <code>                    
+    <strong>installAllPackages</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a>|null $onProgress = null, <a target="_blank" href="http://php.net/Closure">Closure</a>|null $onProgressError = null, bool $skipErrors = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Install all packages</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a>|null</td>
+                <td>$onProgress</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a>|null</td>
+                <td>$onProgressError</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$skipErrors</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_postInstallAllPackages">
+        <div class="location">at         line 385</div>
+        <code>                    bool
+    <strong>postInstallAllPackages</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run post install actions on all packages</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_installPackage">
+        <div class="location">at         line 404</div>
+        <code>                    bool
+    <strong>installPackage</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Install package</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_postInstallPackage">
+        <div class="location">at         line 417</div>
+        <code>                    mixed
+    <strong>postInstallPackage</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run post install actions on package</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unInstallPackage">
+        <div class="location">at         line 430</div>
+        <code>                    bool
+    <strong>unInstallPackage</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Uninstall package</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enablePackage">
+        <div class="location">at         line 443</div>
+        <code>                    bool
+    <strong>enablePackage</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Enable package</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disablePackage">
+        <div class="location">at         line 456</div>
+        <code>                    bool
+    <strong>disablePackage</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Disable package</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInstalled">
+        <div class="location">at         line 470</div>
+        <code>                    array
+    <strong>getInstalled</strong>(mixed|null $status = null, mixed|null $type = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get installed packages.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed|null</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed|null</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createBackup">
+        <div class="location">at         line 481</div>
+        <code>                    bool
+    <strong>createBackup</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create zip arhive with package files and save to storage/backup/</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createRepository">
+        <div class="location">at         line 520</div>
+        <code>                    mixed
+    <strong>createRepository</strong>(string $repositoryUrl, string|null $accessKey = null, string|null $type = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create repository driver</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repositoryUrl</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$accessKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createRepositoryUrl">
+        <div class="location">at         line 560</div>
+        <code>        static            string|null
+    <strong>createRepositoryUrl</strong>(string $packageName, string|null $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create repository url</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$packageName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveRepositoryType">
+        <div class="location">at         line 582</div>
+        <code>            protected        string|null
+    <strong>resolveRepositoryType</strong>(string $repositoryUrl)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve package repository type</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repositoryUrl</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

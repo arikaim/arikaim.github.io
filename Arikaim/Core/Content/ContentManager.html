@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Arikaim Arikaim\Core\Content\ContentManager | API Documentation</title>
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link rel="shortcut icon" href="../../../images/arikaim-favicon.png" />
+    </head>
+
+    <body id="class" data-name="class:Arikaim_Core_Content_ContentManager" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                   
+                <ul class="nav navbar-nav" style="margin-left:0px">                               
+                    <li>
+                        <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
+                    </li>
+                    <li><a href="index.html">API Documentation</a></li>
+                    <li><a href="#">Version master</a></li>
+                </ul>                                                         
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core/Content.html">Content</a></li><li class="backslash">\</li><li>ContentManager</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ContentManager
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ContentManager</strong>        implements
+        <a href="../../../Arikaim/Core/Interfaces/Content/ContentManagerInterface.html"><abbr title="Arikaim\Core\Interfaces\Content\ContentManagerInterface">ContentManagerInterface</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Content providers registry manager</p>                                </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Php Config file loader and writer
+                </div>
+            </div>
+            </div>
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>PROVIDERS_FILE_NAME</td>
+                <td class="last">
+                    <p><em>Default providers config file name</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_comments">
+                                        protected                                        array
+                </td>
+                <td>$comments</td>
+                <td class="last">Config array comments</td>
+                <td><small>from&nbsp;<a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html#property_comments"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_contentProviders">
+                                        protected                                        array|null
+                </td>
+                <td>$contentProviders</td>
+                <td class="last">Content providers</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_contentTypeRegistry">
+                                        protected                                        null
+                </td>
+                <td>$contentTypeRegistry</td>
+                <td class="last">Content type registry</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_include">include</a>(string $fileName)
+        
+                                            <p>Include config file</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html#method_include"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_includePhpArray">includePhpArray</a>(string $fileName)
+        
+                                            <p>Include php array</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html#method_includePhpArray"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setComment">setComment</a>(string $comment, string $key)
+        
+                                            <p>Set array key comment</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html#method_setComment"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCommentsText">getCommentsText</a>(string $key)
+        
+                                            <p>Get array imtem comment as text</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html#method_getCommentsText"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exportArray">exportArray</a>(array $data, string $arrayKey, int $currentTab = 1, int $endTab = 1)
+        
+                                            <p>Export array as text</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html#method_exportArray"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exportItem">exportItem</a>(string $key, mixed $value, int $maxTabs)
+        
+                                            <p>Export item as text</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html#method_exportItem"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exportConfig">exportConfig</a>(array $data)
+        
+                                            <p>Export config as text</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html#method_exportConfig"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_saveConfigFile">saveConfigFile</a>(string $fileName, array $data)
+        
+                                            <p>Save config file</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html#method_saveConfigFile"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string|null $providersFileName = null)
+        
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasContentType">hasContentType</a>(string $name)
+        
+                                            <p>Return true if content typ eexists</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Content\Arikaim\Core\Interfaces\Content\ContentProviderInterface">ContentProviderInterface</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_type">type</a>(string $name, string|null $providerName = null)
+        
+                                            <p>Get content type from registry</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeRegistry">typeRegistry</a>()
+        
+                                            <p>Get content type registry</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createItem">createItem</a>(mixed $data, string $contentType)
+        
+                                            <p>Create content item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_load">load</a>(bool $reload = false)
+        
+                                            <p>Load content providers and content types</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProviders">getProviders</a>(string|null $category = null, string|null $contentType = null)
+        
+                                            <p>Get content providers list</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Interfaces\Content\Arikaim\Core\Interfaces\Content\ContentProviderInterface">ContentProviderInterface</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_provider">provider</a>(string $name)
+        
+                                            <p>Get content provider</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasProvider">hasProvider</a>(string $name)
+        
+                                            <p>Check if provider exists</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerProvider">registerProvider</a>(object|string $provider)
+        
+                                            <p>Register content provider</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unRegisterProvider">unRegisterProvider</a>(string $name)
+        
+                                            <p>Unregister content provider</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveProviderDetails">resolveProviderDetails</a>(<a href="../../../Arikaim/Core/Interfaces/Content/ContentProviderInterface.html"><abbr title="Arikaim\Core\Interfaces\Content\ContentProviderInterface">ContentProviderInterface</abbr></a> $provider)
+        
+                                            <p>Resolve provider edetails</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_include">
+        <div class="location">in <a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html#method_include"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a> at         line 33</div>
+        <code>                    array|null
+    <strong>include</strong>(string $fileName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Include config file</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fileName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_includePhpArray">
+        <div class="location">in <a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html#method_includePhpArray"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a> at         line 44</div>
+        <code>                    array|null
+    <strong>includePhpArray</strong>(string $fileName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Include php array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fileName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setComment">
+        <div class="location">in <a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html#method_setComment"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a> at         line 62</div>
+        <code>            protected        void
+    <strong>setComment</strong>(string $comment, string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set array key comment</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$comment</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCommentsText">
+        <div class="location">in <a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html#method_getCommentsText"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a> at         line 73</div>
+        <code>            protected        string
+    <strong>getCommentsText</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get array imtem comment as text</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exportArray">
+        <div class="location">in <a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html#method_exportArray"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a> at         line 100</div>
+        <code>            protected        string
+    <strong>exportArray</strong>(array $data, string $arrayKey, int $currentTab = 1, int $endTab = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Export array as text</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$arrayKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$currentTab</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$endTab</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exportItem">
+        <div class="location">in <a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html#method_exportItem"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a> at         line 144</div>
+        <code>            protected        string
+    <strong>exportItem</strong>(string $key, mixed $value, int $maxTabs)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Export item as text</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$maxTabs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exportConfig">
+        <div class="location">in <a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html#method_exportConfig"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a> at         line 158</div>
+        <code>            protected        string
+    <strong>exportConfig</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Export config as text</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_saveConfigFile">
+        <div class="location">in <a href="../../../Arikaim/Core/System/Traits/PhpConfigFile.html#method_saveConfigFile"><abbr title="Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a> at         line 245</div>
+        <code>                    bool
+    <strong>saveConfigFile</strong>(string $fileName, array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Save config file</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fileName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 59</div>
+        <code>                    
+    <strong>__construct</strong>(string|null $providersFileName = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$providersFileName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasContentType">
+        <div class="location">at         line 70</div>
+        <code>                    bool
+    <strong>hasContentType</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if content typ eexists</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_type">
+        <div class="location">at         line 81</div>
+        <code>                    <abbr title="Arikaim\Core\Content\Arikaim\Core\Interfaces\Content\ContentProviderInterface">ContentProviderInterface</abbr>|null
+    <strong>type</strong>(string $name, string|null $providerName = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get content type from registry</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$providerName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Content\Arikaim\Core\Interfaces\Content\ContentProviderInterface">ContentProviderInterface</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeRegistry">
+        <div class="location">at         line 107</div>
+        <code>                    object
+    <strong>typeRegistry</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get content type registry</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createItem">
+        <div class="location">at         line 123</div>
+        <code>                    mixed
+    <strong>createItem</strong>(mixed $data, string $contentType)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create content item</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$contentType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_load">
+        <div class="location">at         line 147</div>
+        <code>                    void
+    <strong>load</strong>(bool $reload = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Load content providers and content types</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$reload</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProviders">
+        <div class="location">at         line 161</div>
+        <code>                    array
+    <strong>getProviders</strong>(string|null $category = null, string|null $contentType = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get content providers list</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$category</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$contentType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_provider">
+        <div class="location">at         line 184</div>
+        <code>                    <abbr title="Arikaim\Core\Interfaces\Content\Arikaim\Core\Interfaces\Content\ContentProviderInterface">ContentProviderInterface</abbr>|null
+    <strong>provider</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get content provider</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Interfaces\Content\Arikaim\Core\Interfaces\Content\ContentProviderInterface">ContentProviderInterface</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasProvider">
+        <div class="location">at         line 204</div>
+        <code>                    bool
+    <strong>hasProvider</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if provider exists</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerProvider">
+        <div class="location">at         line 215</div>
+        <code>                    bool
+    <strong>registerProvider</strong>(object|string $provider)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Register content provider</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object|string</td>
+                <td>$provider</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unRegisterProvider">
+        <div class="location">at         line 244</div>
+        <code>                    bool
+    <strong>unRegisterProvider</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unregister content provider</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveProviderDetails">
+        <div class="location">at         line 264</div>
+        <code>            protected        array
+    <strong>resolveProviderDetails</strong>(<a href="../../../Arikaim/Core/Interfaces/Content/ContentProviderInterface.html"><abbr title="Arikaim\Core\Interfaces\Content\ContentProviderInterface">ContentProviderInterface</abbr></a> $provider)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve provider edetails</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Arikaim/Core/Interfaces/Content/ContentProviderInterface.html"><abbr title="Arikaim\Core\Interfaces\Content\ContentProviderInterface">ContentProviderInterface</abbr></a></td>
+                <td>$provider</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

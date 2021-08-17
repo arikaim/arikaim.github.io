@@ -1,0 +1,2526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Arikaim Arikaim\Core\View\Html\Component\JsComponent | API Documentation</title>
+            <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/sami.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/style.css">
+        <script src="../../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../../js/typeahead.min.js"></script>
+        <script src="../../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link rel="shortcut icon" href="../../../../../images/arikaim-favicon.png" />
+    </head>
+
+    <body id="class" data-name="class:Arikaim_Core_View_Html_Component_JsComponent" data-root-path="../../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                   
+                <ul class="nav navbar-nav" style="margin-left:0px">                               
+                    <li>
+                        <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
+                    </li>
+                    <li><a href="index.html">API Documentation</a></li>
+                    <li><a href="#">Version master</a></li>
+                </ul>                                                         
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../../../Arikaim/Core/View.html">View</a></li><li class="backslash">\</li><li><a href="../../../../../Arikaim/Core/View/Html.html">Html</a></li><li class="backslash">\</li><li><a href="../../../../../Arikaim/Core/View/Html/Component.html">Component</a></li><li class="backslash">\</li><li>JsComponent</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            JsComponent
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>JsComponent</strong>        extends <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a>        implements
+        <a href="../../../../../Arikaim/Core/Interfaces/View/HtmlComponentInterface.html"><abbr title="Arikaim\Core\Interfaces\View\HtmlComponentInterface">HtmlComponentInterface</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Js file component</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_name">
+                                        protected                                        string
+                </td>
+                <td>$name</td>
+                <td class="last">Component name</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_name"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fullName">
+                                        protected                                        string
+                </td>
+                <td>$fullName</td>
+                <td class="last">Component full name</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_fullName"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_templateName">
+                                        protected                                        string
+                </td>
+                <td>$templateName</td>
+                <td class="last">Template, extension or components library name</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_templateName"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_templateUrl">
+                                        protected                                        string
+                </td>
+                <td>$templateUrl</td>
+                <td class="last">Template url</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_templateUrl"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_path">
+                                        protected                                        string
+                </td>
+                <td>$path</td>
+                <td class="last">Component path</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_path"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_location">
+                                        protected                                        integer
+                </td>
+                <td>$location</td>
+                <td class="last">Component Location</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_location"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fullPath">
+                                        protected                                        string
+                </td>
+                <td>$fullPath</td>
+                <td class="last">Component full path</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_fullPath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_filePath">
+                                        protected                                        string
+                </td>
+                <td>$filePath</td>
+                <td class="last">File path</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_filePath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_language">
+                                        protected                                        string
+                </td>
+                <td>$language</td>
+                <td class="last">Language code</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_language"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_htmlCode">
+                                        protected                                        string
+                </td>
+                <td>$htmlCode</td>
+                <td class="last">Html code</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_htmlCode"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_error">
+                                        protected                                        string|null
+                </td>
+                <td>$error</td>
+                <td class="last">Component error code</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_error"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_basePath">
+                                        protected                                        string
+                </td>
+                <td>$basePath</td>
+                <td class="last">Base path</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_basePath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_files">
+                                        protected                                        array
+                </td>
+                <td>$files</td>
+                <td class="last">Component files</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_files"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_viewPath">
+                                        protected                                        string
+                </td>
+                <td>$viewPath</td>
+                <td class="last">View path</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_viewPath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_extensionsPath">
+                                        protected                                        string
+                </td>
+                <td>$extensionsPath</td>
+                <td class="last">Extensions path</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_extensionsPath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_primaryTemplate">
+                                        protected                                        string
+                </td>
+                <td>$primaryTemplate</td>
+                <td class="last">Primary template name</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_primaryTemplate"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_componentType">
+                                        protected                                        string
+                </td>
+                <td>$componentType</td>
+                <td class="last">Component type</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_componentType"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_context">
+                                        protected                                        array
+                </td>
+                <td>$context</td>
+                <td class="last">Component context used in render</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_context"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_hasHtmlContent">
+                                        protected                                        
+                </td>
+                <td>$hasHtmlContent</td>
+                <td class="last">Return true if compoent has html file</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_hasHtmlContent"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_htmlFileName">
+                                        protected                                        string|null
+                </td>
+                <td>$htmlFileName</td>
+                <td class="last">Html file name</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_htmlFileName"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_url">
+                                        protected                                        string
+                </td>
+                <td>$url</td>
+                <td class="last">Component url</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_url"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_includedComponents">
+                                        protected                                        array
+                </td>
+                <td>$includedComponents</td>
+                <td class="last">Included compoents</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_includedComponents"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_options">
+                                        protected                                        array
+                </td>
+                <td>$options</td>
+                <td class="last">Options</td>
+                <td><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#property_options"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $name, string $language, string $viewPath, string $extensionsPath, string $primaryTemplate)
+        
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_init">init</a>()
+        
+                                            <p>Init component</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>()
+        
+                                            <p>Get options</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getOptions"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolve">resolve</a>(array $params = [])
+        
+                                            <p>Render component data</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isValid">isValid</a>()
+        
+                                            <p>Return true if component is valid</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addIncludedComponent">addIncludedComponent</a>(string $name, string $type)
+        
+                                            <p>Add included component</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_addIncludedComponent"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIncludedComponents">getIncludedComponents</a>()
+        
+                                            <p>Get included components</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getIncludedComponents"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(string $name, string $language)
+        
+                                            <p>Create component</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_create"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getContext">getContext</a>()
+        
+                                            <p>Get context</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getContext"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setContext">setContext</a>(array $context)
+        
+                                            <p>Set context</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_setContext"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mergeContext">mergeContext</a>(array $data)
+        
+                                            <p>Merge context</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_mergeContext"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mergeRecursiveContext">mergeRecursiveContext</a>(array $data)
+        
+                                            <p>Merge recursive context</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_mergeRecursiveContext"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIncludeFile">getIncludeFile</a>(string $fileType)
+        
+                                            <p>Get include file url</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getIncludeFile"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPrimaryTemplate">setPrimaryTemplate</a>(string $name)
+        
+                                            <p>Set primary template name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_setPrimaryTemplate"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPrimaryTemplate">getPrimaryTemplate</a>()
+        
+                                            <p>Get primary template</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getPrimaryTemplate"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasParent">hasParent</a>()
+        
+                                            <p>Return true if component has child</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_hasParent"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBasePath">getBasePath</a>()
+        
+                                            <p>Return base path</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getBasePath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Get component name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getName"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFullName">getFullName</a>()
+        
+                                            <p>Get component full name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getFullName"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTemplateFile">getTemplateFile</a>()
+        
+                                            <p>Get template file</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getTemplateFile"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasError">hasError</a>()
+        
+                                            <p>Return true if have error</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_hasError"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasContent">hasContent</a>()
+        
+                                            <p>Return true if component have html content</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_hasContent"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveHtmlContent">resolveHtmlContent</a>()
+        
+                                            <p>Resolev html content</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_resolveHtmlContent"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasFiles">hasFiles</a>(string|null $fileType = null)
+        
+                                            <p>Return true if component have files</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_hasFiles"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFiles">getFiles</a>(string|null $fileType = null)
+        
+                                            <p>Return files</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getFiles"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPath">getPath</a>()
+        
+                                            <p>Get path</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getPath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFullPath">getFullPath</a>()
+        
+                                            <p>Get full path</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getFullPath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComponentType">getComponentType</a>()
+        
+                                            <p>Get component type</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getComponentType"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setComponentType">setComponentType</a>(string $type)
+        
+                                            <p>Set component type</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_setComponentType"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLocation">getLocation</a>()
+        
+                                            <p>Get location</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getLocation"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTemplateName">getTemplateName</a>()
+        
+                                            <p>Get template or extension name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getTemplateName"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLanguage">getLanguage</a>()
+        
+                                            <p>Get language</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getLanguage"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getError">getError</a>()
+        
+                                            <p>Get error</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getError"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHtmlCode">getHtmlCode</a>()
+        
+                                            <p>Get html code</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getHtmlCode"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHtmlCode">setHtmlCode</a>(string $code)
+        
+                                            <p>Set html code</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_setHtmlCode"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setError">setError</a>(string $code)
+        
+                                            <p>Set error</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_setError"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearContent">clearContent</a>()
+        
+                                            <p>Clear content</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_clearContent"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addComponentFile">addComponentFile</a>(string $fileExt)
+        
+                                            <p>Add component file</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_addComponentFile"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addFile">addFile</a>(array $file, string $fileType)
+        
+                                            <p>Add file</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_addFile"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseName">parseName</a>(string $name)
+        
+                                            <p>Parse component name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_parseName"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toArray">toArray</a>()
+        
+                                            <p>Convert to array</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_toArray"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_url">url</a>()
+        
+                                            <p>Get url</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_url"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRootPath">getRootPath</a>(bool $relative = false)
+        
+                                            <p>Get root componetn path</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getRootPath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTemplatePath">getTemplatePath</a>(string $template, int $location)
+        
+                                            <p>Get template path</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getTemplatePath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComponentFile">getComponentFile</a>(string $fileExt)
+        
+                                            <p>Get component file</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getComponentFile"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFileUrl">getFileUrl</a>(string $fileName)
+        
+                                            <p>Convert file path to url</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getFileUrl"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComponentFullPath">getComponentFullPath</a>(int $location, string $templateName)
+        
+                                            <p>Get component full path</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getComponentFullPath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolvePath">resolvePath</a>()
+        
+                                            <p>Resolve component path</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_resolvePath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTemplateUrl">getTemplateUrl</a>()
+        
+                                            <p>Get template url</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getTemplateUrl"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 29</div>
+        <code>                    
+    <strong>__construct</strong>(string $name, string $language, string $viewPath, string $extensionsPath, string $primaryTemplate)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$language</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$viewPath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$extensionsPath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$primaryTemplate</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_init">
+        <div class="location">at         line 49</div>
+        <code>                    void
+    <strong>init</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Init component</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getOptions"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 237</div>
+        <code>                    array
+    <strong>getOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get options</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolve">
+        <div class="location">at         line 62</div>
+        <code>                    bool
+    <strong>resolve</strong>(array $params = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Render component data</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isValid">
+        <div class="location">at         line 39</div>
+        <code>                    bool
+    <strong>isValid</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if component is valid</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addIncludedComponent">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_addIncludedComponent"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 270</div>
+        <code>                    void
+    <strong>addIncludedComponent</strong>(string $name, string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add included component</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIncludedComponents">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getIncludedComponents"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 286</div>
+        <code>                    array
+    <strong>getIncludedComponents</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get included components</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_create"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 298</div>
+        <code>                    mixed
+    <strong>create</strong>(string $name, string $language)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create component</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$language</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContext">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getContext"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 315</div>
+        <code>                    array
+    <strong>getContext</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get context</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContext">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_setContext"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 326</div>
+        <code>                    void
+    <strong>setContext</strong>(array $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set context</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mergeContext">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_mergeContext"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 337</div>
+        <code>                    void
+    <strong>mergeContext</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Merge context</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mergeRecursiveContext">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_mergeRecursiveContext"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 348</div>
+        <code>                    void
+    <strong>mergeRecursiveContext</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Merge recursive context</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIncludeFile">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getIncludeFile"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 359</div>
+        <code>                    string|null
+    <strong>getIncludeFile</strong>(string $fileType)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get include file url</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fileType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPrimaryTemplate">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_setPrimaryTemplate"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 372</div>
+        <code>                    void
+    <strong>setPrimaryTemplate</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set primary template name</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrimaryTemplate">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getPrimaryTemplate"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 382</div>
+        <code>                    string
+    <strong>getPrimaryTemplate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get primary template</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasParent">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_hasParent"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 392</div>
+        <code>                    bool
+    <strong>hasParent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if component has child</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBasePath">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getBasePath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 407</div>
+        <code>                    string
+    <strong>getBasePath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return base path</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getName"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 417</div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get component name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFullName">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getFullName"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 427</div>
+        <code>                    string|null
+    <strong>getFullName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get component full name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTemplateFile">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getTemplateFile"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 438</div>
+        <code>                    string|null
+    <strong>getTemplateFile</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get template file</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasError">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_hasError"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 448</div>
+        <code>                    bool
+    <strong>hasError</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if have error</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasContent">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_hasContent"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 458</div>
+        <code>                    bool
+    <strong>hasContent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if component have html content</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveHtmlContent">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_resolveHtmlContent"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 468</div>
+        <code>            protected        void
+    <strong>resolveHtmlContent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolev html content</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasFiles">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_hasFiles"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 479</div>
+        <code>                    bool
+    <strong>hasFiles</strong>(string|null $fileType = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return true if component have files</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$fileType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFiles">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getFiles"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 498</div>
+        <code>                    array
+    <strong>getFiles</strong>(string|null $fileType = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return files</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$fileType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPath">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getPath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 508</div>
+        <code>                    string|null
+    <strong>getPath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get path</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFullPath">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getFullPath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 518</div>
+        <code>                    string
+    <strong>getFullPath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get full path</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComponentType">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getComponentType"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 528</div>
+        <code>                    string
+    <strong>getComponentType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get component type</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setComponentType">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_setComponentType"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 539</div>
+        <code>                    void
+    <strong>setComponentType</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set component type</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLocation">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getLocation"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 549</div>
+        <code>                    int
+    <strong>getLocation</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get location</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTemplateName">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getTemplateName"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 559</div>
+        <code>                    string|null
+    <strong>getTemplateName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get template or extension name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLanguage">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getLanguage"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 569</div>
+        <code>                    string
+    <strong>getLanguage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get language</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getError">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getError"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 579</div>
+        <code>                    string|null
+    <strong>getError</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get error</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHtmlCode">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getHtmlCode"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 589</div>
+        <code>                    string
+    <strong>getHtmlCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get html code</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHtmlCode">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_setHtmlCode"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 600</div>
+        <code>                    void
+    <strong>setHtmlCode</strong>(string $code)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set html code</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$code</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setError">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_setError"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 611</div>
+        <code>                    void
+    <strong>setError</strong>(string $code)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set error</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$code</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearContent">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_clearContent"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 621</div>
+        <code>                    void
+    <strong>clearContent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear content</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addComponentFile">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_addComponentFile"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 636</div>
+        <code>                    mixed
+    <strong>addComponentFile</strong>(string $fileExt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add component file</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fileExt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addFile">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_addFile"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 662</div>
+        <code>                    void
+    <strong>addFile</strong>(array $file, string $fileType)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add file</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fileType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseName">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_parseName"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 675</div>
+        <code>            protected        void
+    <strong>parseName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parse component name</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArray">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_toArray"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 733</div>
+        <code>                    array
+    <strong>toArray</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert to array</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_url">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_url"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 743</div>
+        <code>                    string
+    <strong>url</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get url</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRootPath">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getRootPath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 754</div>
+        <code>                    string
+    <strong>getRootPath</strong>(bool $relative = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get root componetn path</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$relative</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTemplatePath">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getTemplatePath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 771</div>
+        <code>                    string
+    <strong>getTemplatePath</strong>(string $template, int $location)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get template path</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$template</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$location</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComponentFile">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getComponentFile"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 791</div>
+        <code>                    string|false
+    <strong>getComponentFile</strong>(string $fileExt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get component file</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fileExt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFileUrl">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getFileUrl"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 804</div>
+        <code>                    string
+    <strong>getFileUrl</strong>(string $fileName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert file path to url</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fileName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComponentFullPath">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getComponentFullPath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 815</div>
+        <code>                    string
+    <strong>getComponentFullPath</strong>(int $location, string $templateName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get component full path</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$location</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$templateName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolvePath">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_resolvePath"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 828</div>
+        <code>            protected        void
+    <strong>resolvePath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve component path</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTemplateUrl">
+        <div class="location">in <a href="../../../../../Arikaim/Core/View/Html/Component/BaseComponent.html#method_getTemplateUrl"><abbr title="Arikaim\Core\View\Html\Component\BaseComponent">BaseComponent</abbr></a> at         line 864</div>
+        <code>                    string
+    <strong>getTemplateUrl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get template url</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

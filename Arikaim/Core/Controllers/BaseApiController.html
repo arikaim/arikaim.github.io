@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Arikaim Arikaim\Core\Controllers\BaseApiController | API Documentation</title>
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link rel="shortcut icon" href="../../../images/arikaim-favicon.png" />
+    </head>
+
+    <body id="class" data-name="class:Arikaim_Core_Controllers_BaseApiController" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                   
+                <ul class="nav navbar-nav" style="margin-left:0px">                               
+                    <li>
+                        <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
+                    </li>
+                    <li><a href="index.html">API Documentation</a></li>
+                    <li><a href="#">Version master</a></li>
+                </ul>                                                         
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../Arikaim/Core/Controllers.html">Controllers</a></li><li class="backslash">\</li><li>BaseApiController</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            BaseApiController
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>BaseApiController</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>BaseApiController class</p>                                </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Controller trait
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    ApiResponse trait
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_extensionName">
+                                        protected                                        string|null
+                </td>
+                <td>$extensionName</td>
+                <td class="last">Extension name</td>
+                <td><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#property_extensionName"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_container">
+                                        protected                                        <abbr title="Arikaim\Core\Controllers\Traits\Base\Container">Container</abbr>|null
+                </td>
+                <td>$container</td>
+                <td class="last">Container</td>
+                <td><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#property_container"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pageName">
+                                        protected                                        string|null
+                </td>
+                <td>$pageName</td>
+                <td class="last">Page name</td>
+                <td><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#property_pageName"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_params">
+                                        protected                                        array
+                </td>
+                <td>$params</td>
+                <td class="last">Controller params</td>
+                <td><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#property_params"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_result">
+                                        protected                                        array
+                </td>
+                <td>$result</td>
+                <td class="last">Response result</td>
+                <td><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#property_result"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_prettyFormat">
+                                        protected                                        bool
+                </td>
+                <td>$prettyFormat</td>
+                <td class="last">pretty format json</td>
+                <td><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#property_prettyFormat"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRouteUrl">getRouteUrl</a>(string|null $routeName, string|null $extension, array $params = [], string|null $language = null, bool $relative = false)
+        
+                                            <p>Get page url</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getRouteUrl"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPageUrl">getPageUrl</a>(string $path = &#039;&#039;, bool $relative = false, string|null $language = null)
+        
+                                            <p>Get page url</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getPageUrl"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParams">getParams</a>()
+        
+                                            <p>Get params</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getParams"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParam">getParam</a>(string $key, mixed|null $default = null)
+        
+                                            <p>Get param</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getParam"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveRouteParams">resolveRouteParams</a>(<abbr title="Arikaim\Core\Controllers\Traits\Base\Request">Request</abbr> $request)
+        
+                                            <p>Resolve route params</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_resolveRouteParams"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPageName">getPageName</a>()
+        
+                                            <p>Get page name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getPageName"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setExtensionName">setExtensionName</a>(string|null $name)
+        
+                                            <p>Set extension name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_setExtensionName"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExtensionName">getExtensionName</a>()
+        
+                                            <p>Get extension name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getExtensionName"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(string $id)
+        
+                                            <p>Get item from container</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_get"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_has">has</a>(string $id)
+        
+                                            <p>Return tru if container item esist</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_has"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Controllers\Traits\Base\Container">Container</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getContainer">getContainer</a>()
+        
+                                            <p>Get container</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getContainer"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_logInfo">logInfo</a>(string $message, array $context = [])
+        
+                                            <p>Log message</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_logInfo"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestParams">getRequestParams</a>(<abbr title="Arikaim\Core\Controllers\Traits\Base\Request">Request</abbr> $request)
+        
+                                            <p>Get request params</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getRequestParams"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getQueryParam">getQueryParam</a>(<abbr title="Arikaim\Core\Controllers\Traits\Base\ServerRequestInterface">ServerRequestInterface</abbr> $request, string $name, mixed $default = null)
+        
+                                            <p>Get query param</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getQueryParam"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveRequestParams">resolveRequestParams</a>(<abbr title="Arikaim\Core\Controllers\Traits\Base\Request">Request</abbr> $request, array $paramsKeys)
+        
+                                            <p>Resolve params</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_resolveRequestParams"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUrl">getUrl</a>(<abbr title="Arikaim\Core\Controllers\Traits\Base\ServerRequestInterface">ServerRequestInterface</abbr> $request, bool $relative = false)
+        
+                                            <p>Get url</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getUrl"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getError">getError</a>(string $errorCode, array $params = [])
+        
+                                            <p>Get error</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getError"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_logError">logError</a>(string $message, array $context = [])
+        
+                                            <p>Log error</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_logError"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Controllers\Traits\Base\ResponseInterface">ResponseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResponse">getResponse</a>(bool $raw = false)
+        
+                                            <p>Return response</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_getResponse"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Controllers\Traits\Base\ApiController">ApiController</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_message">message</a>(string $name)
+        
+                                            <p>Add message to response, first find in messages array if not found display name value as message</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_message"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Controllers\Traits\Base\Self">Self</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_field">field</a>(string $name, mixed $value)
+        
+                                            <p>Set result field</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_field"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Controllers\Traits\Base\Self">Self</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_useJsonPrettyformat">useJsonPrettyformat</a>()
+        
+                                            <p>Set json pretty format to true</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_useJsonPrettyformat"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setResponse">setResponse</a>(bool $condition, array|string|<abbr title="Arikaim\Core\Controllers\Traits\Base\Closure">Closure</abbr> $data, string|string|<abbr title="Arikaim\Core\Controllers\Traits\Base\Closure">Closure</abbr> $error)
+        
+                                            <p>Set response</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_setResponse"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Controllers\Traits\Base\Self">Self</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setResult">setResult</a>(mixed $data)
+        
+                                            <p>Set response result</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_setResult"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearResult">clearResult</a>()
+        
+                                            <p>Clear result</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_clearResult"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setResultField">setResultField</a>(string $name, mixed $value)
+        
+                                            <p>Set field to result array</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_setResultField"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setResultFields">setResultFields</a>(array $values, string|null $filedName = null)
+        
+                                            <p>Set result filelds</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_setResultFields"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResponseJson">getResponseJson</a>(bool $raw = false)
+        
+                                            <p>Return json</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_getResponseJson"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Arikaim\Core\Controllers\Container">Container</abbr> $container = null)
+        
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_init">init</a>()
+        
+                                            <p>Init controller, override this method in child classes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getRouteUrl">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getRouteUrl"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 59</div>
+        <code>                    string|false
+    <strong>getRouteUrl</strong>(string|null $routeName, string|null $extension, array $params = [], string|null $language = null, bool $relative = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get page url</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$routeName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$language</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$relative</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPageUrl">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getPageUrl"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 88</div>
+        <code>                    string
+    <strong>getPageUrl</strong>(string $path = &#039;&#039;, bool $relative = false, string|null $language = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get page url</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$relative</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$language</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParams">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getParams"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 98</div>
+        <code>                    array
+    <strong>getParams</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get params</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParam">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getParam"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 110</div>
+        <code>                    mixed|null
+    <strong>getParam</strong>(string $key, mixed|null $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get param</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed|null</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveRouteParams">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_resolveRouteParams"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 121</div>
+        <code>            protected        bool
+    <strong>resolveRouteParams</strong>(<abbr title="Arikaim\Core\Controllers\Traits\Base\Request">Request</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve route params</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Arikaim\Core\Controllers\Traits\Base\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPageName">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getPageName"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 146</div>
+        <code>                    string|null
+    <strong>getPageName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get page name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setExtensionName">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_setExtensionName"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 157</div>
+        <code>                    void
+    <strong>setExtensionName</strong>(string|null $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set extension name</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExtensionName">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getExtensionName"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 167</div>
+        <code>                    string|null
+    <strong>getExtensionName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get extension name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_get"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 178</div>
+        <code>                    mixed
+    <strong>get</strong>(string $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get item from container</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_has">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_has"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 194</div>
+        <code>                    bool
+    <strong>has</strong>(string $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return tru if container item esist</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContainer">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getContainer"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 204</div>
+        <code>                    <abbr title="Arikaim\Core\Controllers\Traits\Base\Container">Container</abbr>
+    <strong>getContainer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get container</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Controllers\Traits\Base\Container">Container</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_logInfo">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_logInfo"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 216</div>
+        <code>                    bool
+    <strong>logInfo</strong>(string $message, array $context = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Log message</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestParams">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getRequestParams"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 227</div>
+        <code>                    array
+    <strong>getRequestParams</strong>(<abbr title="Arikaim\Core\Controllers\Traits\Base\Request">Request</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get request params</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Arikaim\Core\Controllers\Traits\Base\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getQueryParam">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getQueryParam"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 244</div>
+        <code>                    mixed
+    <strong>getQueryParam</strong>(<abbr title="Arikaim\Core\Controllers\Traits\Base\ServerRequestInterface">ServerRequestInterface</abbr> $request, string $name, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get query param</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Arikaim\Core\Controllers\Traits\Base\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveRequestParams">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_resolveRequestParams"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 258</div>
+        <code>                    array
+    <strong>resolveRequestParams</strong>(<abbr title="Arikaim\Core\Controllers\Traits\Base\Request">Request</abbr> $request, array $paramsKeys)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve params</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Arikaim\Core\Controllers\Traits\Base\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$paramsKeys</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUrl">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getUrl"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 275</div>
+        <code>                    string
+    <strong>getUrl</strong>(<abbr title="Arikaim\Core\Controllers\Traits\Base\ServerRequestInterface">ServerRequestInterface</abbr> $request, bool $relative = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get url</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Arikaim\Core\Controllers\Traits\Base\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$relative</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getError">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_getError"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 289</div>
+        <code>                    string|null
+    <strong>getError</strong>(string $errorCode, array $params = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get error</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$errorCode</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_logError">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/BaseController.html#method_logError"><abbr title="Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a> at         line 303</div>
+        <code>                    bool
+    <strong>logError</strong>(string $message, array $context = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Log error</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResponse">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_getResponse"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a> at         line 37</div>
+        <code>                    <abbr title="Arikaim\Core\Controllers\Traits\Base\ResponseInterface">ResponseInterface</abbr>
+    <strong>getResponse</strong>(bool $raw = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return response</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$raw</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Controllers\Traits\Base\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_message">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_message"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a> at         line 55</div>
+        <code>                    <abbr title="Arikaim\Core\Controllers\Traits\Base\ApiController">ApiController</abbr>
+    <strong>message</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add message to response, first find in messages array if not found display name value as message</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiController">ApiController</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_field">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_field"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a> at         line 72</div>
+        <code>                    <abbr title="Arikaim\Core\Controllers\Traits\Base\Self">Self</abbr>
+    <strong>field</strong>(string $name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set result field</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Controllers\Traits\Base\Self">Self</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_useJsonPrettyformat">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_useJsonPrettyformat"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a> at         line 84</div>
+        <code>                    <abbr title="Arikaim\Core\Controllers\Traits\Base\Self">Self</abbr>
+    <strong>useJsonPrettyformat</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set json pretty format to true</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Controllers\Traits\Base\Self">Self</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setResponse">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_setResponse"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a> at         line 99</div>
+        <code>                    mixed
+    <strong>setResponse</strong>(bool $condition, array|string|<abbr title="Arikaim\Core\Controllers\Traits\Base\Closure">Closure</abbr> $data, string|string|<abbr title="Arikaim\Core\Controllers\Traits\Base\Closure">Closure</abbr> $error)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set response</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$condition</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|string|<abbr title="Arikaim\Core\Controllers\Traits\Base\Closure">Closure</abbr></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|string|<abbr title="Arikaim\Core\Controllers\Traits\Base\Closure">Closure</abbr></td>
+                <td>$error</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setResult">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_setResult"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a> at         line 124</div>
+        <code>                    <abbr title="Arikaim\Core\Controllers\Traits\Base\Self">Self</abbr>
+    <strong>setResult</strong>(mixed $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set response result</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Controllers\Traits\Base\Self">Self</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearResult">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_clearResult"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a> at         line 136</div>
+        <code>                    void
+    <strong>clearResult</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear result</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setResultField">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_setResultField"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a> at         line 153</div>
+        <code>                    void
+    <strong>setResultField</strong>(string $name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set field to result array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setResultFields">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_setResultFields"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a> at         line 165</div>
+        <code>                    void
+    <strong>setResultFields</strong>(array $values, string|null $filedName = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set result filelds</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$filedName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResponseJson">
+        <div class="location">in <a href="../../../Arikaim/Core/Controllers/Traits/Base/ApiResponse.html#method_getResponseJson"><abbr title="Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a> at         line 182</div>
+        <code>                    string
+    <strong>getResponseJson</strong>(bool $raw = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return json</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$raw</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 29</div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Arikaim\Core\Controllers\Container">Container</abbr> $container = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Arikaim\Core\Controllers\Container">Container</abbr></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_init">
+        <div class="location">at         line 42</div>
+        <code>                    void
+    <strong>init</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Init controller, override this method in child classes</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Arikaim Interfaces | API Documentation</title>
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link rel="shortcut icon" href="images/arikaim-favicon.png" />
+    </head>
+
+    <body id="interfaces" data-name="" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                   
+                <ul class="nav navbar-nav" style="margin-left:0px">                               
+                    <li>
+                        <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
+                    </li>
+                    <li><a href="index.html">API Documentation</a></li>
+                    <li><a href="#">Version master</a></li>
+                </ul>                                                         
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                            <li><a href="namespaces.html">Namespaces</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div id="page-content">
+                    <div class="page-header">
+        <h1>Interfaces</h1>
+    </div>
+
+    
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Container/ArikaimContainerInterface.html"><abbr title="Arikaim\Container\ArikaimContainerInterface">ArikaimContainerInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Arikaim container interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Access/Interfaces/AuthProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AuthProviderInterface">AuthProviderInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Auth provider interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Access/Interfaces/AutoTokensInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\AutoTokensInterface">AutoTokensInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Auth tokens interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Access/Interfaces/PermissionsInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\PermissionsInterface">PermissionsInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Permissions interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Access/Interfaces/UserProviderInterface.html"><abbr title="Arikaim\Core\Access\Interfaces\UserProviderInterface">UserProviderInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    User auth interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Collection/Interfaces/CollectionInterface.html"><abbr title="Arikaim\Core\Collection\Interfaces\CollectionInterface">CollectionInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Collection interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Collection/Interfaces/FeedsInterface.html"><abbr title="Arikaim\Core\Collection\Interfaces\FeedsInterface">FeedsInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Feeds Collection interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Collection/Interfaces/PropertiesInterface.html"><abbr title="Arikaim\Core\Collection\Interfaces\PropertiesInterface">PropertiesInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Properties collection interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Collection/Interfaces/PropertyInterface.html"><abbr title="Arikaim\Core\Collection\Interfaces\PropertyInterface">PropertyInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Property interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Controllers/ControlPanelApiInterface.html"><abbr title="Arikaim\Core\Controllers\ControlPanelApiInterface">ControlPanelApiInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Control Panel Api interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Db/Interfaces/BlueprintPrototypeInterface.html"><abbr title="Arikaim\Core\Db\Interfaces\BlueprintPrototypeInterface">BlueprintPrototypeInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Db Column prototype interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Db/Interfaces/OptionTypeInterface.html"><abbr title="Arikaim\Core\Db\Interfaces\OptionTypeInterface">OptionTypeInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Db option type interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Http/Interfaces/HttpClientAdapterInterface.html"><abbr title="Arikaim\Core\Http\Interfaces\HttpClientAdapterInterface">HttpClientAdapterInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Http Client Interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Access/AccessInterface.html"><abbr title="Arikaim\Core\Interfaces\Access\AccessInterface">AccessInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Auth interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Access/AuthInterface.html"><abbr title="Arikaim\Core\Interfaces\Access\AuthInterface">AuthInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Auth interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Access/RequirePermissionInterface.html"><abbr title="Arikaim\Core\Interfaces\Access\RequirePermissionInterface">RequirePermissionInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Require Permission interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/CacheInterface.html"><abbr title="Arikaim\Core\Interfaces\CacheInterface">CacheInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Cache interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/ConfigPropertiesInterface.html"><abbr title="Arikaim\Core\Interfaces\ConfigPropertiesInterface">ConfigPropertiesInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Properties config interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Content/ActionInterface.html"><abbr title="Arikaim\Core\Interfaces\Content\ActionInterface">ActionInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Content type action interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Content/ContentItemInterface.html"><abbr title="Arikaim\Core\Interfaces\Content\ContentItemInterface">ContentItemInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Content item interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Content/ContentManagerInterface.html"><abbr title="Arikaim\Core\Interfaces\Content\ContentManagerInterface">ContentManagerInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Content manager interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Content/ContentProviderInterface.html"><abbr title="Arikaim\Core\Interfaces\Content\ContentProviderInterface">ContentProviderInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Content provider interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Content/ContentTypeInterface.html"><abbr title="Arikaim\Core\Interfaces\Content\ContentTypeInterface">ContentTypeInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Content type interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Content/FieldInterface.html"><abbr title="Arikaim\Core\Interfaces\Content\FieldInterface">FieldInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Field interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Driver/DriverInterface.html"><abbr title="Arikaim\Core\Interfaces\Driver\DriverInterface">DriverInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Driver interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Driver/DriverManagerInterface.html"><abbr title="Arikaim\Core\Interfaces\Driver\DriverManagerInterface">DriverManagerInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Driver Manager Interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Driver/DriverRegistryInterface.html"><abbr title="Arikaim\Core\Interfaces\Driver\DriverRegistryInterface">DriverRegistryInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Driver Registry Interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/EmailCompilerInterface.html"><abbr title="Arikaim\Core\Interfaces\EmailCompilerInterface">EmailCompilerInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Compile email markup code interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Events/EventDispatcherInterface.html"><abbr title="Arikaim\Core\Interfaces\Events\EventDispatcherInterface">EventDispatcherInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Event Dispatcher Interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Events/EventInterface.html"><abbr title="Arikaim\Core\Interfaces\Events\EventInterface">EventInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Event interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Events/EventListenerInterface.html"><abbr title="Arikaim\Core\Interfaces\Events\EventListenerInterface">EventListenerInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Event listener interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Events/EventLogInterface.html"><abbr title="Arikaim\Core\Interfaces\Events\EventLogInterface">EventLogInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Event log interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Events/EventRegistryInterface.html"><abbr title="Arikaim\Core\Interfaces\Events\EventRegistryInterface">EventRegistryInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Event Registry Interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Events/EventSubscriberInterface.html"><abbr title="Arikaim\Core\Interfaces\Events\EventSubscriberInterface">EventSubscriberInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Event subscriber interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Events/SubscriberRegistryInterface.html"><abbr title="Arikaim\Core\Interfaces\Events\SubscriberRegistryInterface">SubscriberRegistryInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Subscriber Registry Interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/ExtensionInterface.html"><abbr title="Arikaim\Core\Interfaces\ExtensionInterface">ExtensionInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Extension interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/HttpClientInterface.html"><abbr title="Arikaim\Core\Interfaces\HttpClientInterface">HttpClientInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Http Client Interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Job/JobInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\JobInterface">JobInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Job interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Job/JobLogInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\JobLogInterface">JobLogInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Job log interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Job/JobProgressInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\JobProgressInterface">JobProgressInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Job progress interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Job/QueueStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\QueueStorageInterface">QueueStorageInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Job recuring interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Job/RecurringJobInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\RecurringJobInterface">RecurringJobInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Job recurring interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Job/SaveJobConfigInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\SaveJobConfigInterface">SaveJobConfigInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Save job config interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Job/ScheduledJobInterface.html"><abbr title="Arikaim\Core\Interfaces\Job\ScheduledJobInterface">ScheduledJobInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Scheduled job interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/LoggableInterface.html"><abbr title="Arikaim\Core\Interfaces\LoggableInterface">LoggableInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Loggable interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/LoggerInterface.html"><abbr title="Arikaim\Core\Interfaces\LoggerInterface">LoggerInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Logger interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/MailerInterface.html"><abbr title="Arikaim\Core\Interfaces\MailerInterface">MailerInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Mail interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/ModuleInterface.html"><abbr title="Arikaim\Core\Interfaces\ModuleInterface">ModuleInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Module interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/OptionsInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsInterface">OptionsInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Options interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/OptionsStorageInterface.html"><abbr title="Arikaim\Core\Interfaces\OptionsStorageInterface">OptionsStorageInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Options interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Packages/PackageFactoryInterface.html"><abbr title="Arikaim\Core\Interfaces\Packages\PackageFactoryInterface">PackageFactoryInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Package factory interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Packages/PackageManagerFactoryInterface.html"><abbr title="Arikaim\Core\Interfaces\Packages\PackageManagerFactoryInterface">PackageManagerFactoryInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Package factory interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/Packages/PackageManagerInterface.html"><abbr title="Arikaim\Core\Interfaces\Packages\PackageManagerInterface">PackageManagerInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Package manager interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/QueueInterface.html"><abbr title="Arikaim\Core\Interfaces\QueueInterface">QueueInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Queue interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/RoutesInterface.html"><abbr title="Arikaim\Core\Interfaces\RoutesInterface">RoutesInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Routes interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/StorageInterface.html"><abbr title="Arikaim\Core\Interfaces\StorageInterface">StorageInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Storage interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/SystemErrorInterface.html"><abbr title="Arikaim\Core\Interfaces\SystemErrorInterface">SystemErrorInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Extension interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/View/ComponentDataInterface.html"><abbr title="Arikaim\Core\Interfaces\View\ComponentDataInterface">ComponentDataInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Extension interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/View/ComponentInterface.html"><abbr title="Arikaim\Core\Interfaces\View\ComponentInterface">ComponentInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    View component interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/View/EmailViewInterface.html"><abbr title="Arikaim\Core\Interfaces\View\EmailViewInterface">EmailViewInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Extension interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/View/HtmlComponentInterface.html"><abbr title="Arikaim\Core\Interfaces\View\HtmlComponentInterface">HtmlComponentInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Extension interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/View/HtmlPageInterface.html"><abbr title="Arikaim\Core\Interfaces\View\HtmlPageInterface">HtmlPageInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Extension interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/View/RequireAccessInterface.html"><abbr title="Arikaim\Core\Interfaces\View\RequireAccessInterface">RequireAccessInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Require access interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/View/ViewInterface.html"><abbr title="Arikaim\Core\Interfaces\View\ViewInterface">ViewInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    View interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/WorkerInterface.html"><abbr title="Arikaim\Core\Interfaces\WorkerInterface">WorkerInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Queue worker interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Interfaces/WorkerManagerInterface.html"><abbr title="Arikaim\Core\Interfaces\WorkerManagerInterface">WorkerManagerInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Queue worker manager interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Mail/Interfaces/MailInterface.html"><abbr title="Arikaim\Core\Mail\Interfaces\MailInterface">MailInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Mail interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Mail/Interfaces/MailerDriverInterface.html"><abbr title="Arikaim\Core\Mail\Interfaces\MailerDriverInterface">MailerDriverInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Mailer driver interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Packages/Interfaces/PackageInterface.html"><abbr title="Arikaim\Core\Packages\Interfaces\PackageInterface">PackageInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Package interface, all packages type should impelement it.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Packages/Interfaces/PackageRegistryInterface.html"><abbr title="Arikaim\Core\Packages\Interfaces\PackageRegistryInterface">PackageRegistryInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Package Registry Interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Packages/Interfaces/RepositoryInterface.html"><abbr title="Arikaim\Core\Packages\Interfaces\RepositoryInterface">RepositoryInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Repositorydriver interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Packages/Interfaces/ViewComponentsInterface.html"><abbr title="Arikaim\Core\Packages\Interfaces\ViewComponentsInterface">ViewComponentsInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Package view components interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Paginator/PaginatorInterface.html"><abbr title="Arikaim\Core\Paginator\PaginatorInterface">PaginatorInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Paginator interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Routes/RoutesStorageInterface.html"><abbr title="Arikaim\Core\Routes\RoutesStorageInterface">RoutesStorageInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Routes storage interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Service/ServiceInterface.html"><abbr title="Arikaim\Core\Service\ServiceInterface">ServiceInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Service interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Storage/StorageDriverInterface.html"><abbr title="Arikaim\Core\Storage\StorageDriverInterface">StorageDriverInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Storage driver interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/System/Error/ErrorHandlerInterface.html"><abbr title="Arikaim\Core\System\Error\ErrorHandlerInterface">ErrorHandlerInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Error handler interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/System/Error/ErrorRendererInterface.html"><abbr title="Arikaim\Core\System\Error\ErrorRendererInterface">ErrorRendererInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Error renderer interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Validator/Interfaces/FilterInterface.html"><abbr title="Arikaim\Core\Validator\Interfaces\FilterInterface">FilterInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Variable filter interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Arikaim/Core/Validator/Interfaces/RuleInterface.html"><abbr title="Arikaim\Core\Validator\Interfaces\RuleInterface">RuleInterface</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Validation rule interface
+                </div>
+            </div>
+            </div>
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

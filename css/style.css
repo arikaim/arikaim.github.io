@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Monoton';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Monoton'), local('Monoton-Regular'), url(https://fonts.gstatic.com/s/monoton/v9/5h1aiZUrOngCibe4TkHLRw.ttf) format('truetype');
+}
+.page-title {
+    font-family: 'Monoton' !important;
+    font-weight: 200!important;
+    font-size: 23px!important;
+    color: #000000!important;
+}
+.page-title a {
+    color: #000000!important;
+}

@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Arikaim Arikaim\Core\Content\Type\ArrayContentType | API Documentation</title>
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/style.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link rel="shortcut icon" href="../../../../images/arikaim-favicon.png" />
+    </head>
+
+    <body id="class" data-name="class:Arikaim_Core_Content_Type_ArrayContentType" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                   
+                <ul class="nav navbar-nav" style="margin-left:0px">                               
+                    <li>
+                        <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
+                    </li>
+                    <li><a href="index.html">API Documentation</a></li>
+                    <li><a href="#">Version master</a></li>
+                </ul>                                                         
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/Content.html">Content</a></li><li class="backslash">\</li><li><a href="../../../../Arikaim/Core/Content/Type.html">Type</a></li><li class="backslash">\</li><li>ArrayContentType</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ArrayContentType
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ArrayContentType</strong>        extends <a href="../../../../Arikaim/Core/Content/Type/ContentType.html"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Array content type class</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_fields">
+                                        protected                                        array
+                </td>
+                <td>$fields</td>
+                <td class="last">Content fields</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#property_fields"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_actionHandlers">
+                                        protected                                        array
+                </td>
+                <td>$actionHandlers</td>
+                <td class="last">Set action handlers</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#property_actionHandlers"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_name">
+                                        protected                                        string
+                </td>
+                <td>$name</td>
+                <td class="last">Content type name</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#property_name"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_title">
+                                        protected                                        string|null
+                </td>
+                <td>$title</td>
+                <td class="last">Content type title</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#property_title"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_category">
+                                        protected                                        string|null
+                </td>
+                <td>$category</td>
+                <td class="last">Category</td>
+                <td><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#property_category"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_define">define</a>()
+        
+                                            <p>Define email content type</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method___construct"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getClass">getClass</a>()
+        
+                                            <p>Get class name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_getClass"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setActionHandlers">setActionHandlers</a>(array $handlers)
+        
+                                            <p>Set action handlers</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_setActionHandlers"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getActionHandlers">getActionHandlers</a>()
+        
+                                            <p>Get action handlers list</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_getActionHandlers"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCategory">getCategory</a>()
+        
+                                            <p>Get content type category</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_getCategory"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Get content type name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_getName"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTitle">getTitle</a>()
+        
+                                            <p>Get content type title</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_getTitle"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getActions">getActions</a>()
+        
+                                            <p>Resolve action handlers (create array with actions object)</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_getActions"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFields">getFields</a>()
+        
+                                            <p>Get content type fields</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_getFields"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Interfaces\Content\Arikaim\Core\Interfaces\Content\FieldInterface">FieldInterface</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getField">getField</a>(string $name)
+        
+                                            <p>Get field</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_getField"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTitle">setTitle</a>(string $title)
+        
+                                            <p>Set title</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_setTitle"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addField">addField</a>(string $name, string $type, string|null $title = null)
+        
+                                            <p>Add field</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_addField"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addActionHandler">addActionHandler</a>(string $class)
+        
+                                            <p>Add action class</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_addActionHandler"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setName">setName</a>(string $name)
+        
+                                            <p>Set name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_setName"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCategory">setCategory</a>(string|null $category)
+        
+                                            <p>Set category</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_setCategory"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_define">
+        <div class="location">at         line 24</div>
+        <code>            protected        void
+    <strong>define</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Define email content type</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method___construct"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a> at         line 66</div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClass">
+        <div class="location">in <a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_getClass"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a> at         line 74</div>
+        <code>                    string
+    <strong>getClass</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get class name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setActionHandlers">
+        <div class="location">in <a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_setActionHandlers"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a> at         line 85</div>
+        <code>                    void
+    <strong>setActionHandlers</strong>(array $handlers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set action handlers</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$handlers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getActionHandlers">
+        <div class="location">in <a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_getActionHandlers"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a> at         line 95</div>
+        <code>                    array
+    <strong>getActionHandlers</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get action handlers list</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCategory">
+        <div class="location">in <a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_getCategory"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a> at         line 105</div>
+        <code>                    string|null
+    <strong>getCategory</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get content type category</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">in <a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_getName"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a> at         line 115</div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get content type name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTitle">
+        <div class="location">in <a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_getTitle"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a> at         line 125</div>
+        <code>                    string|null
+    <strong>getTitle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get content type title</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getActions">
+        <div class="location">in <a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_getActions"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a> at         line 135</div>
+        <code>                    array
+    <strong>getActions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve action handlers (create array with actions object)</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFields">
+        <div class="location">in <a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_getFields"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a> at         line 151</div>
+        <code>                    array
+    <strong>getFields</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get content type fields</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getField">
+        <div class="location">in <a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_getField"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a> at         line 162</div>
+        <code>                    <abbr title="Arikaim\Core\Interfaces\Content\Arikaim\Core\Interfaces\Content\FieldInterface">FieldInterface</abbr>|null
+    <strong>getField</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get field</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Interfaces\Content\Arikaim\Core\Interfaces\Content\FieldInterface">FieldInterface</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTitle">
+        <div class="location">in <a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_setTitle"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a> at         line 173</div>
+        <code>                    void
+    <strong>setTitle</strong>(string $title)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set title</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$title</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addField">
+        <div class="location">in <a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_addField"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a> at         line 186</div>
+        <code>            protected        void
+    <strong>addField</strong>(string $name, string $type, string|null $title = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add field</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$title</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addActionHandler">
+        <div class="location">in <a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_addActionHandler"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a> at         line 199</div>
+        <code>            protected        void
+    <strong>addActionHandler</strong>(string $class)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add action class</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location">in <a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_setName"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a> at         line 212</div>
+        <code>            protected        void
+    <strong>setName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set name</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCategory">
+        <div class="location">in <a href="../../../../Arikaim/Core/Content/Type/ContentType.html#method_setCategory"><abbr title="Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a> at         line 223</div>
+        <code>            protected        void
+    <strong>setCategory</strong>(string|null $category)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set category</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$category</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

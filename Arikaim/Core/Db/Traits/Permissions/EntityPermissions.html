@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Arikaim Arikaim\Core\Db\Traits\Permissions\EntityPermissions | API Documentation</title>
+            <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/sami.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/style.css">
+        <script src="../../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../../js/typeahead.min.js"></script>
+        <script src="../../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link rel="shortcut icon" href="../../../../../images/arikaim-favicon.png" />
+    </head>
+
+    <body id="class" data-name="class:Arikaim_Core_Db_Traits_Permissions_EntityPermissions" data-root-path="../../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                   
+                <ul class="nav navbar-nav" style="margin-left:0px">                               
+                    <li>
+                        <a class="page-title float-left" href="http://arikaim.com/">Arikaim</a>
+                    </li>
+                    <li><a href="index.html">API Documentation</a></li>
+                    <li><a href="#">Version master</a></li>
+                </ul>                                                         
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">trait</span></li>
+                        <li><a href="../../../../../Arikaim.html">Arikaim</a></li><li class="backslash">\</li><li><a href="../../../../../Arikaim/Core.html">Core</a></li><li class="backslash">\</li><li><a href="../../../../../Arikaim/Core/Db.html">Db</a></li><li class="backslash">\</li><li><a href="../../../../../Arikaim/Core/Db/Traits.html">Traits</a></li><li class="backslash">\</li><li><a href="../../../../../Arikaim/Core/Db/Traits/Permissions.html">Permissions</a></li><li class="backslash">\</li><li>EntityPermissions</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            EntityPermissions
+                
+        </h1>
+    </div>
+
+    <p>    trait
+    <strong>EntityPermissions</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Entity permissions</p>                                </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Relation">Relation</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_entity">entity</a>()
+        
+                                            <p>Get entity relation</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Relation">Relation</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_permission">permission</a>()
+        
+                                            <p>Get permission relation</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNameAttribute">getNameAttribute</a>()
+        
+                                            <p>Get permission name attribute</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Relation">Relation</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_related">related</a>()
+        
+                                            <p>Morphed models</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteUserPermission">deleteUserPermission</a>(integer $entityId, integer $userId)
+        
+                                            <p>Delete user permission</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteGroupPermission">deleteGroupPermission</a>(integer $entityId, integer $groupId)
+        
+                                            <p>Delete group permission</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr>|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addUserPermission">addUserPermission</a>(integer $entityId, integer $userId, array $permissions, integer|null $permissionId = null)
+        
+                                            <p>Add user permission</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr>|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addGroupPermission">addGroupPermission</a>(integer $entityId, integer $groupId, array $permissions, integer|null $permissionId = null)
+        
+                                            <p>Add group permission</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr>|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPermission">addPermission</a>(integer $entityId, integer $userId, array $permissions, string $type = &#039;user&#039;, integer|null $permissionId = null)
+        
+                                            <p>Add permission</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPublicPermission">addPublicPermission</a>(integer $entityId, array $permissions)
+        
+                                            <p>Add public permission</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPublicPermission">getPublicPermission</a>(integer $entityId)
+        
+                                            <p>Get public permission</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deletePublicPermission">deletePublicPermission</a>(integer $entityId)
+        
+                                            <p>Delete public permissions</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPermission">getPermission</a>(integer $entityId, integer $id, string $type = &#039;user&#039;)
+        
+                                            <p>Get permission model</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPermissionsQuery">getPermissionsQuery</a>(int $entityId, string|null $type = null)
+        
+                                            <p>Get permissions query</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_scopePermissionsForUser">scopePermissionsForUser</a>(<abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr> $query, int $userId)
+        
+                                            <p>Query for all permissions for user</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_scopeUserPermissions">scopeUserPermissions</a>(<abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr> $query)
+        
+                                            <p>Get user permissions query</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_scopeGroupPermissions">scopeGroupPermissions</a>(<abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr> $query)
+        
+                                            <p>Get group permissions query</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_entity">
+        <div class="location">at         line 25</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Relation">Relation</abbr>|null
+    <strong>entity</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get entity relation</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Db\Traits\Permissions\Relation">Relation</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_permission">
+        <div class="location">at         line 35</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Relation">Relation</abbr>|null
+    <strong>permission</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get permission relation</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Db\Traits\Permissions\Relation">Relation</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNameAttribute">
+        <div class="location">at         line 45</div>
+        <code>                    string
+    <strong>getNameAttribute</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get permission name attribute</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_related">
+        <div class="location">at         line 57</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Relation">Relation</abbr>|null
+    <strong>related</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Morphed models</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Db\Traits\Permissions\Relation">Relation</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteUserPermission">
+        <div class="location">at         line 69</div>
+        <code>                    bool
+    <strong>deleteUserPermission</strong>(integer $entityId, integer $userId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete user permission</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$entityId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$userId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteGroupPermission">
+        <div class="location">at         line 83</div>
+        <code>                    bool
+    <strong>deleteGroupPermission</strong>(integer $entityId, integer $groupId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete group permission</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$entityId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$groupId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addUserPermission">
+        <div class="location">at         line 99</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr>|false
+    <strong>addUserPermission</strong>(integer $entityId, integer $userId, array $permissions, integer|null $permissionId = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add user permission</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$entityId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$userId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$permissions</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$permissionId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr>|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addGroupPermission">
+        <div class="location">at         line 113</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr>|false
+    <strong>addGroupPermission</strong>(integer $entityId, integer $groupId, array $permissions, integer|null $permissionId = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add group permission</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$entityId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$groupId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$permissions</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$permissionId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr>|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPermission">
+        <div class="location">at         line 128</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr>|false
+    <strong>addPermission</strong>(integer $entityId, integer $userId, array $permissions, string $type = &#039;user&#039;, integer|null $permissionId = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add permission</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$entityId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$userId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$permissions</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>(user or gorup)</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$permissionId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr>|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPublicPermission">
+        <div class="location">at         line 151</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr>
+    <strong>addPublicPermission</strong>(integer $entityId, array $permissions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add public permission</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$entityId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$permissions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPublicPermission">
+        <div class="location">at         line 171</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr>|null
+    <strong>getPublicPermission</strong>(integer $entityId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get public permission</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$entityId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deletePublicPermission">
+        <div class="location">at         line 187</div>
+        <code>                    bool
+    <strong>deletePublicPermission</strong>(integer $entityId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete public permissions</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$entityId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPermission">
+        <div class="location">at         line 202</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr>|null
+    <strong>getPermission</strong>(integer $entityId, integer $id, string $type = &#039;user&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get permission model</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$entityId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Db\Traits\Permissions\Model">Model</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPermissionsQuery">
+        <div class="location">at         line 219</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr>
+    <strong>getPermissionsQuery</strong>(int $entityId, string|null $type = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get permissions query</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$entityId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopePermissionsForUser">
+        <div class="location">at         line 236</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr>
+    <strong>scopePermissionsForUser</strong>(<abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr> $query, int $userId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Query for all permissions for user</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$userId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopeUserPermissions">
+        <div class="location">at         line 263</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr>
+    <strong>scopeUserPermissions</strong>(<abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr> $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get user permissions query</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopeGroupPermissions">
+        <div class="location">at         line 274</div>
+        <code>                    <abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr>
+    <strong>scopeGroupPermissions</strong>(<abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr> $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get group permissions query</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Arikaim\Core\Db\Traits\Permissions\Builder">Builder</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
