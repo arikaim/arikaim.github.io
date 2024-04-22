@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>Arikaim CMS</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Arikaim CMS</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/arikaim.html" class="">Arikaim</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/arikaim-container.html" class="">Container</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/arikaim-core.html" class="">Core</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/arikaim-installer.html" class="">Installer</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Access.html" class="">Access</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Actions.html" class="">Actions</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Cache.html" class="">Cache</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/CoreAPI.html" class="">CoreAPI</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/View.html" class="">View</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                        <section>
+        
+        <h2 class="phpdocumentor-content__title">Files</h2>
+                                            <h3>A</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-content-providers-abstractcontentprovider.html"><abbr title="vendor/arikaim/content-providers/AbstractContentProvider.php">AbstractContentProvider.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-collection-abstractdescriptor.html"><abbr title="vendor/arikaim/collection/AbstractDescriptor.php">AbstractDescriptor.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-server-abstractserver.html"><abbr title="vendor/arikaim/server/AbstractServer.php">AbstractServer.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-access.html"><abbr title="vendor/arikaim/access/Access.php">Access.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-traits-access.html"><abbr title="vendor/arikaim/view/Traits/Access.php">Access.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-access-accessinterface.html"><abbr title="vendor/arikaim/interfaces/Access/AccessInterface.php">AccessInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-accesstoken.html"><abbr title="vendor/arikaim/controllers/Traits/AccessToken.php">AccessToken.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-accesstokens.html"><abbr title="vendor/arikaim/core/Models/AccessTokens.php">AccessTokens.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-schema-accesstokensschema.html"><abbr title="vendor/arikaim/core/Models/Schema/AccessTokensSchema.php">AccessTokensSchema.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-actions-action.html"><abbr title="vendor/arikaim/actions/Action.php">Action.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-content-providers-type-action.html"><abbr title="vendor/arikaim/content-providers/Type/Action.php">Action.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-actions-actioninterface.html"><abbr title="vendor/arikaim/actions/ActionInterface.php">ActionInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-content-actioninterface.html"><abbr title="vendor/arikaim/interfaces/Content/ActionInterface.php">ActionInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-actions-actionnotfound.html"><abbr title="vendor/arikaim/actions/ActionNotFound.php">ActionNotFound.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-actions-actionpropertiesdescriptor.html"><abbr title="vendor/arikaim/actions/ActionPropertiesDescriptor.php">ActionPropertiesDescriptor.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-actions-actions.html"><abbr title="vendor/arikaim/actions/Actions.php">Actions.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-traits-actions.html"><abbr title="vendor/arikaim/packages/Traits/Actions.php">Actions.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-adminresetcommand.html"><abbr title="vendor/arikaim/core-app/Commands/AdminResetCommand.php">AdminResetCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-admintwigextension.html"><abbr title="vendor/arikaim/core-app/AdminTwigExtension.php">AdminTwigExtension.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-cache-drivers-apcucache.html"><abbr title="vendor/arikaim/cache/Drivers/ApcuCache.php">ApcuCache.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-apicontroller.html"><abbr title="vendor/arikaim/controllers/ApiController.php">ApiController.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-apipaginator.html"><abbr title="vendor/arikaim/controllers/Traits/ApiPaginator.php">ApiPaginator.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-base-apiresponse.html"><abbr title="vendor/arikaim/controllers/Traits/Base/ApiResponse.php">ApiResponse.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-http-apiresponse.html"><abbr title="vendor/arikaim/http/ApiResponse.php">ApiResponse.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-appcontainer.html"><abbr title="vendor/arikaim/core-app/AppContainer.php">AppContainer.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-console-application.html"><abbr title="vendor/arikaim/console/Application.php">Application.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-framework-application.html"><abbr title="vendor/arikaim/framework/Application.php">Application.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-system-error-applicationerror.html"><abbr title="vendor/arikaim/system/Error/ApplicationError.php">ApplicationError.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-arikaim.html"><abbr title="vendor/arikaim/core/Arikaim.php">Arikaim.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-component-arikaimcomponent.html"><abbr title="vendor/arikaim/view/Html/Component/ArikaimComponent.php">ArikaimComponent.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-container-arikaimcontainerinterface.html"><abbr title="vendor/arikaim/container/ArikaimContainerInterface.php">ArikaimContainerInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-installer-arikaiminstaller.html"><abbr title="vendor/arikaim/installer/ArikaimInstaller.php">ArikaimInstaller.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-repository-arikaimrepository.html"><abbr title="vendor/arikaim/packages/Repository/ArikaimRepository.php">ArikaimRepository.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-framework-router-arikaimrouter.html"><abbr title="vendor/arikaim/framework/Router/ArikaimRouter.php">ArikaimRouter.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-server-arikaimserverfactory.html"><abbr title="vendor/arikaim/server/ArikaimServerFactory.php">ArikaimServerFactory.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-arikaimstore.html"><abbr title="vendor/arikaim/core-app/ArikaimStore.php">ArikaimStore.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-content-providers-type-arraycontenttype.html"><abbr title="vendor/arikaim/content-providers/Type/ArrayContentType.php">ArrayContentType.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-paginator-arraypaginator.html"><abbr title="vendor/arikaim/paginator/ArrayPaginator.php">ArrayPaginator.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-collection-arrays.html"><abbr title="vendor/arikaim/collection/Arrays.php">Arrays.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-traits-auth.html"><abbr title="vendor/arikaim/access/Traits/Auth.php">Auth.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-authfactory.html"><abbr title="vendor/arikaim/access/AuthFactory.php">AuthFactory.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-access-authinterface.html"><abbr title="vendor/arikaim/interfaces/Access/AuthInterface.php">AuthInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-middleware-authmiddleware.html"><abbr title="vendor/arikaim/access/Middleware/AuthMiddleware.php">AuthMiddleware.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-provider-authprovider.html"><abbr title="vendor/arikaim/access/Provider/AuthProvider.php">AuthProvider.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-interfaces-authproviderinterface.html"><abbr title="vendor/arikaim/access/Interfaces/AuthProviderInterface.php">AuthProviderInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-interfaces-authtokensinterface.html"><abbr title="vendor/arikaim/access/Interfaces/AuthTokensInterface.php">AuthTokensInterface.php</abbr></a></li>
+                        </ul>
+                                                        <h3>B</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-controllers-baseapicontroller.html"><abbr title="vendor/arikaim/controllers/BaseApiController.php">BaseApiController.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-component-basecomponent.html"><abbr title="vendor/arikaim/view/Html/Component/BaseComponent.php">BaseComponent.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-base-basecontroller.html"><abbr title="vendor/arikaim/controllers/Traits/Base/BaseController.php">BaseController.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-provider-basicauthprovider.html"><abbr title="vendor/arikaim/access/Provider/BasicAuthProvider.php">BasicAuthProvider.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-interfaces-blueprintprototypeinterface.html"><abbr title="vendor/arikaim/db/Interfaces/BlueprintPrototypeInterface.php">BlueprintPrototypeInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-framework-middleware-bodyparsingmiddleware.html"><abbr title="vendor/arikaim/framework/Middleware/BodyParsingMiddleware.php">BodyParsingMiddleware.php</abbr></a></li>
+                        </ul>
+                                                        <h3>C</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-cache-cache.html"><abbr title="vendor/arikaim/cache/Cache.php">Cache.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-cache.html"><abbr title="vendor/arikaim/core-api/Cache.php">Cache.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-cacheinterface.html"><abbr title="vendor/arikaim/interfaces/CacheInterface.php">CacheInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-template-tags-cachenode.html"><abbr title="vendor/arikaim/view/Template/Tags/CacheNode.php">CacheNode.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-template-tags-cachetagparser.html"><abbr title="vendor/arikaim/view/Template/Tags/CacheTagParser.php">CacheTagParser.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-captcha.html"><abbr title="vendor/arikaim/controllers/Traits/Captcha.php">Captcha.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-checklist.html"><abbr title="vendor/arikaim/validator/Rule/CheckList.php">CheckList.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-system-classloader.html"><abbr title="vendor/arikaim/system/ClassLoader.php">ClassLoader.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-cache-clearcommand.html"><abbr title="vendor/arikaim/core-app/Commands/Cache/ClearCommand.php">ClearCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-clearenvcommand.html"><abbr title="vendor/arikaim/core-app/Commands/ClearEnvCommand.php">ClearEnvCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-clearlogscommand.html"><abbr title="vendor/arikaim/core-app/Commands/ClearLogsCommand.php">ClearLogsCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-utils-clientip.html"><abbr title="vendor/arikaim/utils/ClientIp.php">ClientIp.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-framework-middleware-clientipmiddleware.html"><abbr title="vendor/arikaim/framework/Middleware/ClientIpMiddleware.php">ClientIpMiddleware.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-collection-collection.html"><abbr title="vendor/arikaim/collection/Collection.php">Collection.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-collection-interfaces-collectioninterface.html"><abbr title="vendor/arikaim/collection/Interfaces/CollectionInterface.php">CollectionInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-ui-component.html"><abbr title="vendor/arikaim/core-api/Ui/Component.php">Component.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-view-componentdatainterface.html"><abbr title="vendor/arikaim/interfaces/View/ComponentDataInterface.php">ComponentDataInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-component-traits-componenteditor.html"><abbr title="vendor/arikaim/view/Html/Component/Traits/ComponentEditor.php">ComponentEditor.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-componentfactory.html"><abbr title="vendor/arikaim/view/ComponentFactory.php">ComponentFactory.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-view-componentinterface.html"><abbr title="vendor/arikaim/interfaces/View/ComponentInterface.php">ComponentInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-template-tags-componentnode.html"><abbr title="vendor/arikaim/view/Template/Tags/ComponentNode.php">ComponentNode.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-template-tags-componenttagparser.html"><abbr title="vendor/arikaim/view/Template/Tags/ComponentTagParser.php">ComponentTagParser.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-traits-componenttranslations.html"><abbr title="vendor/arikaim/packages/Traits/ComponentTranslations.php">ComponentTranslations.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-componentslibrarypackage.html"><abbr title="vendor/arikaim/packages/ComponentsLibraryPackage.php">ComponentsLibraryPackage.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-composer.html"><abbr title="vendor/arikaim/packages/Composer.php">Composer.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-composercommand.html"><abbr title="vendor/arikaim/core-app/Commands/ComposerCommand.php">ComposerCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-installer-composerevents.html"><abbr title="vendor/arikaim/installer/ComposerEvents.php">ComposerEvents.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-composerpackage.html"><abbr title="vendor/arikaim/packages/ComposerPackage.php">ComposerPackage.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-repository-composerrepository.html"><abbr title="vendor/arikaim/packages/Repository/ComposerRepository.php">ComposerRepository.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-system-config.html"><abbr title="vendor/arikaim/system/Config.php">Config.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-collection-traits-configproperties.html"><abbr title="vendor/arikaim/collection/Traits/ConfigProperties.php">ConfigProperties.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-console-configproperties.html"><abbr title="vendor/arikaim/console/ConfigProperties.php">ConfigProperties.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-configpropertiesinterface.html"><abbr title="vendor/arikaim/interfaces/ConfigPropertiesInterface.php">ConfigPropertiesInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-console.html"><abbr title="vendor/arikaim/core-app/Console.php">Console.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-console-consolecommand.html"><abbr title="vendor/arikaim/console/ConsoleCommand.php">ConsoleCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-traits-consolecommands.html"><abbr title="vendor/arikaim/packages/Traits/ConsoleCommands.php">ConsoleCommands.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-console-consolehelper.html"><abbr title="vendor/arikaim/console/ConsoleHelper.php">ConsoleHelper.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-container-container.html"><abbr title="vendor/arikaim/container/Container.php">Container.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-content-providers-contentitem.html"><abbr title="vendor/arikaim/content-providers/ContentItem.php">ContentItem.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-content-contentiteminterface.html"><abbr title="vendor/arikaim/interfaces/Content/ContentItemInterface.php">ContentItemInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-content-providers-contentmanager.html"><abbr title="vendor/arikaim/content-providers/ContentManager.php">ContentManager.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-content-contentmanagerinterface.html"><abbr title="vendor/arikaim/interfaces/Content/ContentManagerInterface.php">ContentManagerInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-content-providers-traits-contentprovider.html"><abbr title="vendor/arikaim/content-providers/Traits/ContentProvider.php">ContentProvider.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-content-contentproviderinterface.html"><abbr title="vendor/arikaim/interfaces/Content/ContentProviderInterface.php">ContentProviderInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-content-providers-contentselector.html"><abbr title="vendor/arikaim/content-providers/ContentSelector.php">ContentSelector.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-content-providers-type-contenttype.html"><abbr title="vendor/arikaim/content-providers/Type/ContentType.php">ContentType.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-content-providers-contenttypefactory.html"><abbr title="vendor/arikaim/content-providers/ContentTypeFactory.php">ContentTypeFactory.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-content-contenttypeinterface.html"><abbr title="vendor/arikaim/interfaces/Content/ContentTypeInterface.php">ContentTypeInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-content-providers-contenttyperegistry.html"><abbr title="vendor/arikaim/content-providers/ContentTypeRegistry.php">ContentTypeRegistry.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-controlpanel.html"><abbr title="vendor/arikaim/core-app/ControlPanel.php">ControlPanel.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-controlpanelapicontroller.html"><abbr title="vendor/arikaim/controllers/ControlPanelApiController.php">ControlPanelApiController.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-controlpanelapiinterface.html"><abbr title="vendor/arikaim/controllers/ControlPanelApiInterface.php">ControlPanelApiInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-controller.html"><abbr title="vendor/arikaim/controllers/Controller.php">Controller.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-http-cookie.html"><abbr title="vendor/arikaim/http/Cookie.php">Cookie.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-queue-cron.html"><abbr title="vendor/arikaim/queue/Cron.php">Cron.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-queue-croncommand.html"><abbr title="vendor/arikaim/core-app/Commands/Queue/CronCommand.php">CronCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-crud.html"><abbr title="vendor/arikaim/controllers/Traits/Crud.php">Crud.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-csrf.html"><abbr title="vendor/arikaim/access/Csrf.php">Csrf.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-csrf.html"><abbr title="vendor/arikaim/validator/Rule/Csrf.php">Csrf.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-middleware-csrftoken.html"><abbr title="vendor/arikaim/access/Middleware/CsrfToken.php">CsrfToken.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-traits-cssfiles.html"><abbr title="vendor/arikaim/packages/Traits/CssFiles.php">CssFiles.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-utils-curl.html"><abbr title="vendor/arikaim/utils/Curl.php">Curl.php</abbr></a></li>
+                        </ul>
+                                                        <h3>D</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-view-html-component-traits-data.html"><abbr title="vendor/arikaim/view/Html/Component/Traits/Data.php">Data.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-datavalidatorexception.html"><abbr title="vendor/arikaim/validator/DataValidatorException.php">DataValidatorException.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-datecolumn.html"><abbr title="vendor/arikaim/db/Prototypes/Column/DateColumn.php">DateColumn.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-datecreated.html"><abbr title="vendor/arikaim/db/Prototypes/Column/DateCreated.php">DateCreated.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-datecreated.html"><abbr title="vendor/arikaim/db/Traits/DateCreated.php">DateCreated.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-datedeleted.html"><abbr title="vendor/arikaim/db/Prototypes/Column/DateDeleted.php">DateDeleted.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-dateexpired.html"><abbr title="vendor/arikaim/db/Prototypes/Column/DateExpired.php">DateExpired.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-datesearch.html"><abbr title="vendor/arikaim/db/Traits/DateSearch.php">DateSearch.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-utils-datetime.html"><abbr title="vendor/arikaim/utils/DateTime.php">DateTime.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-dateupdated.html"><abbr title="vendor/arikaim/db/Prototypes/Column/DateUpdated.php">DateUpdated.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-dateupdated.html"><abbr title="vendor/arikaim/db/Traits/DateUpdated.php">DateUpdated.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-db.html"><abbr title="vendor/arikaim/db/Db.php">Db.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-logger-handler-dbhandler.html"><abbr title="vendor/arikaim/logger/Handler/DbHandler.php">DbHandler.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-paginator-dbpaginator.html"><abbr title="vendor/arikaim/paginator/DbPaginator.php">DbPaginator.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-dbrule.html"><abbr title="vendor/arikaim/validator/Rule/DbRule.php">DbRule.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-defaultcolumn.html"><abbr title="vendor/arikaim/db/Prototypes/Column/DefaultColumn.php">DefaultColumn.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-defaultmultiuser.html"><abbr title="vendor/arikaim/db/Prototypes/Column/DefaultMultiuser.php">DefaultMultiuser.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-defaulttrait.html"><abbr title="vendor/arikaim/db/Traits/DefaultTrait.php">DefaultTrait.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-delete.html"><abbr title="vendor/arikaim/controllers/Traits/Delete.php">Delete.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-collection-traits-descriptor.html"><abbr title="vendor/arikaim/collection/Traits/Descriptor.php">Descriptor.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-cache-disablecommand.html"><abbr title="vendor/arikaim/core-app/Commands/Cache/DisableCommand.php">DisableCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-drivers-disablecommand.html"><abbr title="vendor/arikaim/core-app/Commands/Drivers/DisableCommand.php">DisableCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-extensions-disablecommand.html"><abbr title="vendor/arikaim/core-app/Commands/Extensions/DisableCommand.php">DisableCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-install-disableinstallcommand.html"><abbr title="vendor/arikaim/core-app/Commands/Install/DisableInstallCommand.php">DisableInstallCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-table-document.html"><abbr title="vendor/arikaim/db/Prototypes/Table/Document.php">Document.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-document-document.html"><abbr title="vendor/arikaim/db/Traits/Document/Document.php">Document.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-table-documentitems.html"><abbr title="vendor/arikaim/db/Prototypes/Table/DocumentItems.php">DocumentItems.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-document-documentitems.html"><abbr title="vendor/arikaim/db/Traits/Document/DocumentItems.php">DocumentItems.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-document-documentnumber.html"><abbr title="vendor/arikaim/db/Traits/Document/DocumentNumber.php">DocumentNumber.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-table-documentpayments.html"><abbr title="vendor/arikaim/db/Prototypes/Table/DocumentPayments.php">DocumentPayments.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-document-documentpayments.html"><abbr title="vendor/arikaim/db/Traits/Document/DocumentPayments.php">DocumentPayments.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-document-documentpaymentsrelation.html"><abbr title="vendor/arikaim/db/Traits/Document/DocumentPaymentsRelation.php">DocumentPaymentsRelation.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-driver-driver.html"><abbr title="vendor/arikaim/driver/Driver.php">Driver.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-driver-traits-driver.html"><abbr title="vendor/arikaim/driver/Traits/Driver.php">Driver.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-cache-drivercommand.html"><abbr title="vendor/arikaim/core-app/Commands/Cache/DriverCommand.php">DriverCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-driver-driverinterface.html"><abbr title="vendor/arikaim/interfaces/Driver/DriverInterface.php">DriverInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-driver-drivermanager.html"><abbr title="vendor/arikaim/driver/DriverManager.php">DriverManager.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-driver-drivermanagerinterface.html"><abbr title="vendor/arikaim/interfaces/Driver/DriverManagerInterface.php">DriverManagerInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-driver-driverregistryinterface.html"><abbr title="vendor/arikaim/interfaces/Driver/DriverRegistryInterface.php">DriverRegistryInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-drivers.html"><abbr title="vendor/arikaim/core/Models/Drivers.php">Drivers.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-drivers.html"><abbr title="vendor/arikaim/core-api/Drivers.php">Drivers.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-traits-drivers.html"><abbr title="vendor/arikaim/packages/Traits/Drivers.php">Drivers.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-schema-driversschema.html"><abbr title="vendor/arikaim/core/Models/Schema/DriversSchema.php">DriversSchema.php</abbr></a></li>
+                        </ul>
+                                                        <h3>E</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-validator-rule-email.html"><abbr title="vendor/arikaim/validator/Rule/Email.php">Email.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-emailcompilerinterface.html"><abbr title="vendor/arikaim/interfaces/EmailCompilerInterface.php">EmailCompilerInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-emailview.html"><abbr title="vendor/arikaim/view/Html/EmailView.php">EmailView.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-view-emailviewinterface.html"><abbr title="vendor/arikaim/interfaces/View/EmailViewInterface.php">EmailViewInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-component-emptycomponent.html"><abbr title="vendor/arikaim/view/Html/Component/EmptyComponent.php">EmptyComponent.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-emptyrow.html"><abbr title="vendor/arikaim/db/Traits/EmptyRow.php">EmptyRow.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-cache-enablecommand.html"><abbr title="vendor/arikaim/core-app/Commands/Cache/EnableCommand.php">EnableCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-drivers-enablecommand.html"><abbr title="vendor/arikaim/core-app/Commands/Drivers/EnableCommand.php">EnableCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-extensions-enablecommand.html"><abbr title="vendor/arikaim/core-app/Commands/Extensions/EnableCommand.php">EnableCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-install-enableinstallcommand.html"><abbr title="vendor/arikaim/core-app/Commands/Install/EnableInstallCommand.php">EnableInstallCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-entitypermissions.html"><abbr title="vendor/arikaim/controllers/Traits/EntityPermissions.php">EntityPermissions.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-permissions-entitypermissions.html"><abbr title="vendor/arikaim/db/Traits/Permissions/EntityPermissions.php">EntityPermissions.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-permissions-entitypermissionsrelation.html"><abbr title="vendor/arikaim/db/Traits/Permissions/EntityPermissionsRelation.php">EntityPermissionsRelation.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-equal.html"><abbr title="vendor/arikaim/validator/Rule/Equal.php">Equal.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-errorcontroller.html"><abbr title="vendor/arikaim/controllers/ErrorController.php">ErrorController.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-framework-errorhandler.html"><abbr title="vendor/arikaim/framework/ErrorHandler.php">ErrorHandler.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-system-error-errorhandlerinterface.html"><abbr title="vendor/arikaim/system/Error/ErrorHandlerInterface.php">ErrorHandlerInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-template-tags-errornode.html"><abbr title="vendor/arikaim/view/Template/Tags/ErrorNode.php">ErrorNode.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-template-tags-errortagparser.html"><abbr title="vendor/arikaim/view/Template/Tags/ErrorTagParser.php">ErrorTagParser.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-base-errors.html"><abbr title="vendor/arikaim/controllers/Traits/Base/Errors.php">Errors.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-system-error-errors.html"><abbr title="vendor/arikaim/system/Error/Errors.php">Errors.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-events-event.html"><abbr title="vendor/arikaim/events/Event.php">Event.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-events-eventdescriptor.html"><abbr title="vendor/arikaim/events/EventDescriptor.php">EventDescriptor.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-events-eventdetailscommand.html"><abbr title="vendor/arikaim/core-app/Commands/Events/EventDetailsCommand.php">EventDetailsCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-events-eventdispatcherinterface.html"><abbr title="vendor/arikaim/interfaces/Events/EventDispatcherInterface.php">EventDispatcherInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-events-eventinterface.html"><abbr title="vendor/arikaim/interfaces/Events/EventInterface.php">EventInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-events-eventlistener.html"><abbr title="vendor/arikaim/events/EventListener.php">EventListener.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-events-eventlistenerinterface.html"><abbr title="vendor/arikaim/interfaces/Events/EventListenerInterface.php">EventListenerInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-events-traits-eventlog.html"><abbr title="vendor/arikaim/events/Traits/EventLog.php">EventLog.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-events-eventloginterface.html"><abbr title="vendor/arikaim/interfaces/Events/EventLogInterface.php">EventLogInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-events-eventregistryinterface.html"><abbr title="vendor/arikaim/interfaces/Events/EventRegistryInterface.php">EventRegistryInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-events-eventsubscriber.html"><abbr title="vendor/arikaim/events/EventSubscriber.php">EventSubscriber.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-events-eventsubscriberinterface.html"><abbr title="vendor/arikaim/interfaces/Events/EventSubscriberInterface.php">EventSubscriberInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-eventsubscribers.html"><abbr title="vendor/arikaim/core/Models/EventSubscribers.php">EventSubscribers.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-schema-eventsubscribersschema.html"><abbr title="vendor/arikaim/core/Models/Schema/EventSubscribersSchema.php">EventSubscribersSchema.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-events.html"><abbr title="vendor/arikaim/core/Models/Events.php">Events.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-events-eventsmanager.html"><abbr title="vendor/arikaim/events/EventsManager.php">EventsManager.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-schema-eventsschema.html"><abbr title="vendor/arikaim/core/Models/Schema/EventsSchema.php">EventsSchema.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-exists.html"><abbr title="vendor/arikaim/validator/Rule/Exists.php">Exists.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-extension-extension.html"><abbr title="vendor/arikaim/core/Extension/Extension.php">Extension.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-extensioninterface.html"><abbr title="vendor/arikaim/interfaces/ExtensionInterface.php">ExtensionInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-extensionpackage.html"><abbr title="vendor/arikaim/packages/ExtensionPackage.php">ExtensionPackage.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-extensionpath.html"><abbr title="vendor/arikaim/validator/Rule/ExtensionPath.php">ExtensionPath.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-extensions.html"><abbr title="vendor/arikaim/core/Models/Extensions.php">Extensions.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-schema-extensionsschema.html"><abbr title="vendor/arikaim/core/Models/Schema/ExtensionsSchema.php">ExtensionsSchema.php</abbr></a></li>
+                        </ul>
+                                                        <h3>F</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-utils-factory.html"><abbr title="vendor/arikaim/utils/Factory.php">Factory.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-fastapicontroller.html"><abbr title="vendor/arikaim/controllers/FastApiController.php">FastApiController.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-collection-feedcollection.html"><abbr title="vendor/arikaim/collection/FeedCollection.php">FeedCollection.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-collection-interfaces-feedsinterface.html"><abbr title="vendor/arikaim/collection/Interfaces/FeedsInterface.php">FeedsInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-paginator-feedspaginator.html"><abbr title="vendor/arikaim/paginator/FeedsPaginator.php">FeedsPaginator.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-content-providers-type-field.html"><abbr title="vendor/arikaim/content-providers/Type/Field.php">Field.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-content-fieldinterface.html"><abbr title="vendor/arikaim/interfaces/Content/FieldInterface.php">FieldInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-utils-file.html"><abbr title="vendor/arikaim/utils/File.php">File.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-file.html"><abbr title="vendor/arikaim/validator/Rule/File.php">File.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-filedownload.html"><abbr title="vendor/arikaim/controllers/Traits/FileDownload.php">FileDownload.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-utils-filetype.html"><abbr title="vendor/arikaim/utils/FileType.php">FileType.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-filetypetrait.html"><abbr title="vendor/arikaim/db/Traits/FileTypeTrait.php">FileTypeTrait.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-fileupload.html"><abbr title="vendor/arikaim/controllers/Traits/FileUpload.php">FileUpload.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-cache-drivers-filesystemcache.html"><abbr title="vendor/arikaim/cache/Drivers/FilesystemCache.php">FilesystemCache.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-filter.html"><abbr title="vendor/arikaim/validator/Filter.php">Filter.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-filterbuilder.html"><abbr title="vendor/arikaim/validator/FilterBuilder.php">FilterBuilder.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-interfaces-filterinterface.html"><abbr title="vendor/arikaim/validator/Interfaces/FilterInterface.php">FilterInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-template-filters.html"><abbr title="vendor/arikaim/view/Template/Filters.php">Filters.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-find.html"><abbr title="vendor/arikaim/db/Traits/Find.php">Find.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-floatnumber.html"><abbr title="vendor/arikaim/validator/Rule/FloatNumber.php">FloatNumber.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-utils-functionarguments.html"><abbr title="vendor/arikaim/utils/FunctionArguments.php">FunctionArguments.php</abbr></a></li>
+                        </ul>
+                                                        <h3>G</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-packages-repository-githubrepository.html"><abbr title="vendor/arikaim/packages/Repository/GitHubRepository.php">GitHubRepository.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-globals.html"><abbr title="vendor/arikaim/core-app/Globals.php">Globals.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-http-guzzleclientadapter.html"><abbr title="vendor/arikaim/http/GuzzleClientAdapter.php">GuzzleClientAdapter.php</abbr></a></li>
+                        </ul>
+                                                        <h3>H</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-core-app-commands-helpcommand.html"><abbr title="vendor/arikaim/core-app/Commands/HelpCommand.php">HelpCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-utils-html.html"><abbr title="vendor/arikaim/utils/Html.php">Html.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-component-htmlcomponent.html"><abbr title="vendor/arikaim/view/Html/Component/HtmlComponent.php">HtmlComponent.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-view-htmlcomponentinterface.html"><abbr title="vendor/arikaim/interfaces/View/HtmlComponentInterface.php">HtmlComponentInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-view-htmlpageinterface.html"><abbr title="vendor/arikaim/interfaces/View/HtmlPageInterface.php">HtmlPageInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-htmltags.html"><abbr title="vendor/arikaim/validator/Rule/HtmlTags.php">HtmlTags.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-http-httpclient.html"><abbr title="vendor/arikaim/http/HttpClient.php">HttpClient.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-http-interfaces-httpclientadapterinterface.html"><abbr title="vendor/arikaim/http/Interfaces/HttpClientAdapterInterface.php">HttpClientAdapterInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-httpclientinterface.html"><abbr title="vendor/arikaim/interfaces/HttpClientInterface.php">HttpClientInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-framework-httpexception.html"><abbr title="vendor/arikaim/framework/HttpException.php">HttpException.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-server-swoole-httpserver.html"><abbr title="vendor/arikaim/server/Swoole/HttpServer.php">HttpServer.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-http-httpstatuscode.html"><abbr title="vendor/arikaim/http/HttpStatusCode.php">HttpStatusCode.php</abbr></a></li>
+                        </ul>
+                                                        <h3>I</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-id.html"><abbr title="vendor/arikaim/db/Prototypes/Column/Id.php">Id.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-schema-import.html"><abbr title="vendor/arikaim/db/Traits/Schema/Import.php">Import.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-importmodelinterface.html"><abbr title="vendor/arikaim/interfaces/ImportModelInterface.php">ImportModelInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-component-traits-includeoption.html"><abbr title="vendor/arikaim/view/Html/Component/Traits/IncludeOption.php">IncludeOption.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-incrementvalue.html"><abbr title="vendor/arikaim/db/Traits/IncrementValue.php">IncrementValue.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-component-traits-indexpage.html"><abbr title="vendor/arikaim/view/Html/Component/Traits/IndexPage.php">IndexPage.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-extensions-infocommand.html"><abbr title="vendor/arikaim/core-app/Commands/Extensions/InfoCommand.php">InfoCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-modules-infocommand.html"><abbr title="vendor/arikaim/core-app/Commands/Modules/InfoCommand.php">InfoCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-session-infocommand.html"><abbr title="vendor/arikaim/core-app/Commands/Session/InfoCommand.php">InfoCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-install.html"><abbr title="vendor/arikaim/core-api/Install.php">Install.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-install.html"><abbr title="vendor/arikaim/core-app/Install.php">Install.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-extensions-installcommand.html"><abbr title="vendor/arikaim/core-app/Commands/Extensions/InstallCommand.php">InstallCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-install-installcommand.html"><abbr title="vendor/arikaim/core-app/Commands/Install/InstallCommand.php">InstallCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-template-installcommand.html"><abbr title="vendor/arikaim/core-app/Commands/Template/InstallCommand.php">InstallCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-install-installcomposercommand.html"><abbr title="vendor/arikaim/core-app/Commands/Install/InstallComposerCommand.php">InstallComposerCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-install-installextensionscommand.html"><abbr title="vendor/arikaim/core-app/Commands/Install/InstallExtensionsCommand.php">InstallExtensionsCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-installpage.html"><abbr title="vendor/arikaim/core-app/InstallPage.php">InstallPage.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-installer-installerplugin.html"><abbr title="vendor/arikaim/installer/InstallerPlugin.php">InstallerPlugin.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-integer.html"><abbr title="vendor/arikaim/validator/Rule/Integer.php">Integer.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-ip.html"><abbr title="vendor/arikaim/validator/Rule/Ip.php">Ip.php</abbr></a></li>
+                        </ul>
+                                                        <h3>J</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-queue-jobs-job.html"><abbr title="vendor/arikaim/queue/Jobs/Job.php">Job.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-queue-traits-jobconfigupdate.html"><abbr title="vendor/arikaim/queue/Traits/JobConfigUpdate.php">JobConfigUpdate.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-queue-jobdetailscommand.html"><abbr title="vendor/arikaim/core-app/Commands/Queue/JobDetailsCommand.php">JobDetailsCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-job-jobinterface.html"><abbr title="vendor/arikaim/interfaces/Job/JobInterface.php">JobInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-queue-traits-joblog.html"><abbr title="vendor/arikaim/queue/Traits/JobLog.php">JobLog.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-job-jobloginterface.html"><abbr title="vendor/arikaim/interfaces/Job/JobLogInterface.php">JobLogInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-queue-traits-jobprogress.html"><abbr title="vendor/arikaim/queue/Traits/JobProgress.php">JobProgress.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-job-jobprogressinterface.html"><abbr title="vendor/arikaim/interfaces/Job/JobProgressInterface.php">JobProgressInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-queue-jobs-jobpropertiesdescriptor.html"><abbr title="vendor/arikaim/queue/Jobs/JobPropertiesDescriptor.php">JobPropertiesDescriptor.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-queue-jobs-jobresult.html"><abbr title="vendor/arikaim/queue/Jobs/JobResult.php">JobResult.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-traits-jobs.html"><abbr title="vendor/arikaim/packages/Traits/Jobs.php">Jobs.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-queue-jobscommand.html"><abbr title="vendor/arikaim/core-app/Commands/Queue/JobsCommand.php">JobsCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-jobsregistry.html"><abbr title="vendor/arikaim/core/Models/JobsRegistry.php">JobsRegistry.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-schema-jobsregistryschema.html"><abbr title="vendor/arikaim/core/Models/Schema/JobsRegistrySchema.php">JobsRegistrySchema.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-component-jscomponent.html"><abbr title="vendor/arikaim/view/Html/Component/JsComponent.php">JsComponent.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-traits-jsfiles.html"><abbr title="vendor/arikaim/packages/Traits/JsFiles.php">JsFiles.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-component-jsoncomponent.html"><abbr title="vendor/arikaim/view/Html/Component/JsonComponent.php">JsonComponent.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-logger-jsonlogsformatter.html"><abbr title="vendor/arikaim/logger/JsonLogsFormatter.php">JsonLogsFormatter.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-paginator-jsonpaginator.html"><abbr title="vendor/arikaim/paginator/JsonPaginator.php">JsonPaginator.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-jwt.html"><abbr title="vendor/arikaim/access/Jwt.php">Jwt.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-provider-jwtauthprovider.html"><abbr title="vendor/arikaim/access/Provider/JwtAuthProvider.php">JwtAuthProvider.php</abbr></a></li>
+                        </ul>
+                                                                                        <h3>L</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-core-models-language.html"><abbr title="vendor/arikaim/core/Models/Language.php">Language.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-language.html"><abbr title="vendor/arikaim/core-api/Language.php">Language.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-language.html"><abbr title="vendor/arikaim/db/Prototypes/Column/Language.php">Language.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-schema-languageschema.html"><abbr title="vendor/arikaim/core/Models/Schema/LanguageSchema.php">LanguageSchema.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-librarypackage.html"><abbr title="vendor/arikaim/packages/LibraryPackage.php">LibraryPackage.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-document-linkeddocumentitems.html"><abbr title="vendor/arikaim/db/Traits/Document/LinkedDocumentItems.php">LinkedDocumentItems.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-drivers-listcommand.html"><abbr title="vendor/arikaim/core-app/Commands/Drivers/ListCommand.php">ListCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-extensions-listcommand.html"><abbr title="vendor/arikaim/core-app/Commands/Extensions/ListCommand.php">ListCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-library-listcommand.html"><abbr title="vendor/arikaim/core-app/Commands/Library/ListCommand.php">ListCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-modules-listcommand.html"><abbr title="vendor/arikaim/core-app/Commands/Modules/ListCommand.php">ListCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-template-listcommand.html"><abbr title="vendor/arikaim/core-app/Commands/Template/ListCommand.php">ListCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-logger-traits-loggable.html"><abbr title="vendor/arikaim/logger/Traits/Loggable.php">Loggable.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-loggableinterface.html"><abbr title="vendor/arikaim/interfaces/LoggableInterface.php">LoggableInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-logger.html"><abbr title="vendor/arikaim/core-api/Logger.php">Logger.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-logger-logger.html"><abbr title="vendor/arikaim/logger/Logger.php">Logger.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-loggerinterface.html"><abbr title="vendor/arikaim/interfaces/LoggerInterface.php">LoggerInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-logger-traits-loggertrait.html"><abbr title="vendor/arikaim/logger/Traits/LoggerTrait.php">LoggerTrait.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-logs.html"><abbr title="vendor/arikaim/core/Models/Logs.php">Logs.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-logger-logsprocessor.html"><abbr title="vendor/arikaim/logger/LogsProcessor.php">LogsProcessor.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-schema-logsschema.html"><abbr title="vendor/arikaim/core/Models/Schema/LogsSchema.php">LogsSchema.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-filter-lowercase.html"><abbr title="vendor/arikaim/validator/Filter/LowerCase.php">LowerCase.php</abbr></a></li>
+                        </ul>
+                                                        <h3>M</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-mail-mail.html"><abbr title="vendor/arikaim/mail/Mail.php">Mail.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-mail-interfaces-mailinterface.html"><abbr title="vendor/arikaim/mail/Interfaces/MailInterface.php">MailInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-mailer.html"><abbr title="vendor/arikaim/core-api/Mailer.php">Mailer.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-mail-mailer.html"><abbr title="vendor/arikaim/mail/Mailer.php">Mailer.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-mail-interfaces-mailerdriverinterface.html"><abbr title="vendor/arikaim/mail/Interfaces/MailerDriverInterface.php">MailerDriverInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-mailerinterface.html"><abbr title="vendor/arikaim/interfaces/MailerInterface.php">MailerInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-template-tags-mdnode.html"><abbr title="vendor/arikaim/view/Template/Tags/MdNode.php">MdNode.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-template-tags-mdtagparser.html"><abbr title="vendor/arikaim/view/Template/Tags/MdTagParser.php">MdTagParser.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-metatags.html"><abbr title="vendor/arikaim/controllers/Traits/MetaTags.php">MetaTags.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-metatags.html"><abbr title="vendor/arikaim/db/Prototypes/Column/MetaTags.php">MetaTags.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-metatags.html"><abbr title="vendor/arikaim/db/Traits/MetaTags.php">MetaTags.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-framework-middleware-middleware.html"><abbr title="vendor/arikaim/framework/Middleware/Middleware.php">Middleware.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-framework-middlewareinterface.html"><abbr title="vendor/arikaim/framework/MiddlewareInterface.php">MiddlewareInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-traits-middlewares.html"><abbr title="vendor/arikaim/packages/Traits/Middlewares.php">Middlewares.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-utils-mobile.html"><abbr title="vendor/arikaim/utils/Mobile.php">Mobile.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-model.html"><abbr title="vendor/arikaim/db/Model.php">Model.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-extension-module.html"><abbr title="vendor/arikaim/core/Extension/Module.php">Module.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-moduleinterface.html"><abbr title="vendor/arikaim/interfaces/ModuleInterface.php">ModuleInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-modulepackage.html"><abbr title="vendor/arikaim/packages/ModulePackage.php">ModulePackage.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-extension-modules.html"><abbr title="vendor/arikaim/core/Extension/Modules.php">Modules.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-modules.html"><abbr title="vendor/arikaim/core/Models/Modules.php">Modules.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-schema-modulesschema.html"><abbr title="vendor/arikaim/core/Models/Schema/ModulesSchema.php">ModulesSchema.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-base-multilanguage.html"><abbr title="vendor/arikaim/controllers/Traits/Base/Multilanguage.php">Multilanguage.php</abbr></a></li>
+                        </ul>
+                                                        <h3>N</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-system-nodejs.html"><abbr title="vendor/arikaim/system/NodeJs.php">NodeJs.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-utils-number.html"><abbr title="vendor/arikaim/utils/Number.php">Number.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-number.html"><abbr title="vendor/arikaim/validator/Rule/Number.php">Number.php</abbr></a></li>
+                        </ul>
+                                                        <h3>O</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-access-provider-oauthprovider.html"><abbr title="vendor/arikaim/access/Provider/OauthProvider.php">OauthProvider.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-optiontype.html"><abbr title="vendor/arikaim/db/OptionType.php">OptionType.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-table-optiontype.html"><abbr title="vendor/arikaim/db/Prototypes/Table/OptionType.php">OptionType.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-options-optiontype.html"><abbr title="vendor/arikaim/db/Traits/Options/OptionType.php">OptionType.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-options-options.html"><abbr title="vendor/arikaim/controllers/Traits/Options/Options.php">Options.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-options.html"><abbr title="vendor/arikaim/core/Models/Options.php">Options.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-options.html"><abbr title="vendor/arikaim/core-api/Options.php">Options.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-orm-options.html"><abbr title="vendor/arikaim/core-api/Orm/Options.php">Options.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-options.html"><abbr title="vendor/arikaim/db/Prototypes/Column/Options.php">Options.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-table-options.html"><abbr title="vendor/arikaim/db/Prototypes/Table/Options.php">Options.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-options-options.html"><abbr title="vendor/arikaim/db/Traits/Options/Options.php">Options.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-options-options.html"><abbr title="vendor/arikaim/options/Options.php">Options.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-component-traits-options.html"><abbr title="vendor/arikaim/view/Html/Component/Traits/Options.php">Options.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-optionsattribute.html"><abbr title="vendor/arikaim/db/Traits/OptionsAttribute.php">OptionsAttribute.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-optionsinterface.html"><abbr title="vendor/arikaim/interfaces/OptionsInterface.php">OptionsInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-table-optionslist.html"><abbr title="vendor/arikaim/db/Prototypes/Table/OptionsList.php">OptionsList.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-options-optionslistdefinition.html"><abbr title="vendor/arikaim/db/Traits/Options/OptionsListDefinition.php">OptionsListDefinition.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-options-optionsrelation.html"><abbr title="vendor/arikaim/db/Traits/Options/OptionsRelation.php">OptionsRelation.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-schema-optionsschema.html"><abbr title="vendor/arikaim/core/Models/Schema/OptionsSchema.php">OptionsSchema.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-optionsstorageinterface.html"><abbr title="vendor/arikaim/interfaces/OptionsStorageInterface.php">OptionsStorageInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-ui-orderby.html"><abbr title="vendor/arikaim/core-api/Ui/OrderBy.php">OrderBy.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-orderby.html"><abbr title="vendor/arikaim/db/OrderBy.php">OrderBy.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-orderby.html"><abbr title="vendor/arikaim/db/Traits/OrderBy.php">OrderBy.php</abbr></a></li>
+                        </ul>
+                                                        <h3>P</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-packages-package.html"><abbr title="vendor/arikaim/packages/Package.php">Package.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-packagefactory.html"><abbr title="vendor/arikaim/packages/PackageFactory.php">PackageFactory.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-packages-packagefactoryinterface.html"><abbr title="vendor/arikaim/interfaces/Packages/PackageFactoryInterface.php">PackageFactoryInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-interfaces-packageinterface.html"><abbr title="vendor/arikaim/packages/Interfaces/PackageInterface.php">PackageInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-packagemanager.html"><abbr title="vendor/arikaim/packages/PackageManager.php">PackageManager.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-packagemanagerfactory.html"><abbr title="vendor/arikaim/packages/PackageManagerFactory.php">PackageManagerFactory.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-packages-packagemanagerfactoryinterface.html"><abbr title="vendor/arikaim/interfaces/Packages/PackageManagerFactoryInterface.php">PackageManagerFactoryInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-packages-packagemanagerinterface.html"><abbr title="vendor/arikaim/interfaces/Packages/PackageManagerInterface.php">PackageManagerInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-packageregistry.html"><abbr title="vendor/arikaim/db/Traits/PackageRegistry.php">PackageRegistry.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-interfaces-packageregistryinterface.html"><abbr title="vendor/arikaim/packages/Interfaces/PackageRegistryInterface.php">PackageRegistryInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-packagevalidator.html"><abbr title="vendor/arikaim/packages/PackageValidator.php">PackageValidator.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-packages.html"><abbr title="vendor/arikaim/core-api/Packages.php">Packages.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-ui-page.html"><abbr title="vendor/arikaim/core-api/Ui/Page.php">Page.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-page.html"><abbr title="vendor/arikaim/view/Html/Page.php">Page.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-base-pageerrors.html"><abbr title="vendor/arikaim/controllers/Traits/Base/PageErrors.php">PageErrors.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-pagehead.html"><abbr title="vendor/arikaim/view/Html/PageHead.php">PageHead.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-ui-paginator.html"><abbr title="vendor/arikaim/core-api/Ui/Paginator.php">Paginator.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-paginator.html"><abbr title="vendor/arikaim/db/Traits/Paginator.php">Paginator.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-paginator-paginator.html"><abbr title="vendor/arikaim/paginator/Paginator.php">Paginator.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-paginator-paginatorinterface.html"><abbr title="vendor/arikaim/paginator/PaginatorInterface.php">PaginatorInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-parentid.html"><abbr title="vendor/arikaim/db/Prototypes/Column/ParentId.php">ParentId.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-traits-password.html"><abbr title="vendor/arikaim/access/Traits/Password.php">Password.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-utils-path.html"><abbr title="vendor/arikaim/utils/Path.php">Path.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-permissionrelations.html"><abbr title="vendor/arikaim/core/Models/PermissionRelations.php">PermissionRelations.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-schema-permissionrelationsschema.html"><abbr title="vendor/arikaim/core/Models/Schema/PermissionRelationsSchema.php">PermissionRelationsSchema.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-permissions.html"><abbr title="vendor/arikaim/core/Models/Permissions.php">Permissions.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-table-permissions.html"><abbr title="vendor/arikaim/db/Prototypes/Table/Permissions.php">Permissions.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-permissions-permissions.html"><abbr title="vendor/arikaim/db/Traits/Permissions/Permissions.php">Permissions.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-interfaces-permissionsinterface.html"><abbr title="vendor/arikaim/access/Interfaces/PermissionsInterface.php">PermissionsInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-schema-permissionsschema.html"><abbr title="vendor/arikaim/core/Models/Schema/PermissionsSchema.php">PermissionsSchema.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-system-traits-phpconfigfile.html"><abbr title="vendor/arikaim/system/Traits/PhpConfigFile.php">PhpConfigFile.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-system-error-phperror.html"><abbr title="vendor/arikaim/system/Error/PhpError.php">PhpError.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-polymorphicrelation.html"><abbr title="vendor/arikaim/db/Prototypes/Column/PolymorphicRelation.php">PolymorphicRelation.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-polymorphicrelations.html"><abbr title="vendor/arikaim/controllers/Traits/PolymorphicRelations.php">PolymorphicRelations.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-table-polymorphicrelations.html"><abbr title="vendor/arikaim/db/Prototypes/Table/PolymorphicRelations.php">PolymorphicRelations.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-polymorphicrelations.html"><abbr title="vendor/arikaim/db/Traits/PolymorphicRelations.php">PolymorphicRelations.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-ui-position.html"><abbr title="vendor/arikaim/core-api/Ui/Position.php">Position.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-position.html"><abbr title="vendor/arikaim/db/Prototypes/Column/Position.php">Position.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-position.html"><abbr title="vendor/arikaim/db/Traits/Position.php">Position.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-postinstallactions.html"><abbr title="vendor/arikaim/core-app/PostInstallActions.php">PostInstallActions.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-cache-drivers-prediscache.html"><abbr title="vendor/arikaim/cache/Drivers/PredisCache.php">PredisCache.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-system-preloader.html"><abbr title="vendor/arikaim/system/Preloader.php">Preloader.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-install-preparecommand.html"><abbr title="vendor/arikaim/core-app/Commands/Install/PrepareCommand.php">PrepareCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-price.html"><abbr title="vendor/arikaim/db/Prototypes/Column/Price.php">Price.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-table-pricelist.html"><abbr title="vendor/arikaim/db/Prototypes/Table/PriceList.php">PriceList.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-price-pricelist.html"><abbr title="vendor/arikaim/db/Traits/Price/PriceList.php">PriceList.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-price-pricerelation.html"><abbr title="vendor/arikaim/db/Traits/Price/PriceRelation.php">PriceRelation.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-system-process.html"><abbr title="vendor/arikaim/system/Process.php">Process.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-collection-properties.html"><abbr title="vendor/arikaim/collection/Properties.php">Properties.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-component-traits-properties.html"><abbr title="vendor/arikaim/view/Html/Component/Traits/Properties.php">Properties.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-collection-propertiesfactory.html"><abbr title="vendor/arikaim/collection/PropertiesFactory.php">PropertiesFactory.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-collection-interfaces-propertiesinterface.html"><abbr title="vendor/arikaim/collection/Interfaces/PropertiesInterface.php">PropertiesInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-collection-property.html"><abbr title="vendor/arikaim/collection/Property.php">Property.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-collection-interfaces-propertyinterface.html"><abbr title="vendor/arikaim/collection/Interfaces/PropertyInterface.php">PropertyInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-provider-publicauthprovider.html"><abbr title="vendor/arikaim/access/Provider/PublicAuthProvider.php">PublicAuthProvider.php</abbr></a></li>
+                        </ul>
+                                                        <h3>Q</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-quantity.html"><abbr title="vendor/arikaim/db/Prototypes/Column/Quantity.php">Quantity.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-queue.html"><abbr title="vendor/arikaim/core/Models/Queue.php">Queue.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-queueinterface.html"><abbr title="vendor/arikaim/interfaces/QueueInterface.php">QueueInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-queue-queuemanager.html"><abbr title="vendor/arikaim/queue/QueueManager.php">QueueManager.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-schema-queueschema.html"><abbr title="vendor/arikaim/core/Models/Schema/QueueSchema.php">QueueSchema.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-job-queuestorageinterface.html"><abbr title="vendor/arikaim/interfaces/Job/QueueStorageInterface.php">QueueStorageInterface.php</abbr></a></li>
+                        </ul>
+                                                        <h3>R</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-queue-traits-recurring.html"><abbr title="vendor/arikaim/queue/Traits/Recurring.php">Recurring.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-queue-jobs-recurringjob.html"><abbr title="vendor/arikaim/queue/Jobs/RecurringJob.php">RecurringJob.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-job-recurringjobinterface.html"><abbr title="vendor/arikaim/interfaces/Job/RecurringJobInterface.php">RecurringJobInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-cache-drivers-rediscache.html"><abbr title="vendor/arikaim/cache/Drivers/RedisCache.php">RedisCache.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-regexp.html"><abbr title="vendor/arikaim/validator/Rule/Regexp.php">Regexp.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-relation.html"><abbr title="vendor/arikaim/db/Prototypes/Column/Relation.php">Relation.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-orm-relations.html"><abbr title="vendor/arikaim/core-api/Orm/Relations.php">Relations.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-table-relations.html"><abbr title="vendor/arikaim/db/Prototypes/Table/Relations.php">Relations.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-relations.html"><abbr title="vendor/arikaim/db/Traits/Relations.php">Relations.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-install-repairinstallcommand.html"><abbr title="vendor/arikaim/core-app/Commands/Install/RepairInstallCommand.php">RepairInstallCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-reportdata.html"><abbr title="vendor/arikaim/db/Traits/ReportData.php">ReportData.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-reports-reportfieldinterface.html"><abbr title="vendor/arikaim/interfaces/Reports/ReportFieldInterface.php">ReportFieldInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-reports-reportinterface.html"><abbr title="vendor/arikaim/interfaces/Reports/ReportInterface.php">ReportInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-repository.html"><abbr title="vendor/arikaim/core-api/Repository.php">Repository.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-repository-repository.html"><abbr title="vendor/arikaim/packages/Repository/Repository.php">Repository.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-interfaces-repositoryinterface.html"><abbr title="vendor/arikaim/packages/Interfaces/RepositoryInterface.php">RepositoryInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-http-request.html"><abbr title="vendor/arikaim/http/Request.php">Request.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-server-swoole-requestconverter.html"><abbr title="vendor/arikaim/server/Swoole/RequestConverter.php">RequestConverter.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-view-requireaccessinterface.html"><abbr title="vendor/arikaim/interfaces/View/RequireAccessInterface.php">RequireAccessInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-access-requirepermissioninterface.html"><abbr title="vendor/arikaim/interfaces/Access/RequirePermissionInterface.php">RequirePermissionInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-server-swoole-responseconverter.html"><abbr title="vendor/arikaim/server/Swoole/ResponseConverter.php">ResponseConverter.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-framework-responseemiter.html"><abbr title="vendor/arikaim/framework/ResponseEmiter.php">ResponseEmiter.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-session-restartcommand.html"><abbr title="vendor/arikaim/core-app/Commands/Session/RestartCommand.php">RestartCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-routes-route.html"><abbr title="vendor/arikaim/routes/Route.php">Route.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-framework-router-routegenerator.html"><abbr title="vendor/arikaim/framework/Router/RouteGenerator.php">RouteGenerator.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-routes-routeparser.html"><abbr title="vendor/arikaim/routes/RouteParser.php">RouteParser.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-routes-routetype.html"><abbr title="vendor/arikaim/routes/RouteType.php">RouteType.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-framework-router-router.html"><abbr title="vendor/arikaim/framework/Router/Router.php">Router.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-framework-router-routerinterface.html"><abbr title="vendor/arikaim/framework/Router/RouterInterface.php">RouterInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-routes.html"><abbr title="vendor/arikaim/core/Models/Routes.php">Routes.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-routes-routes.html"><abbr title="vendor/arikaim/routes/Routes.php">Routes.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-routesinterface.html"><abbr title="vendor/arikaim/interfaces/RoutesInterface.php">RoutesInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-schema-routesschema.html"><abbr title="vendor/arikaim/core/Models/Schema/RoutesSchema.php">RoutesSchema.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-routes-routesstorageinterface.html"><abbr title="vendor/arikaim/routes/RoutesStorageInterface.php">RoutesStorageInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule.html"><abbr title="vendor/arikaim/validator/Rule.php">Rule.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rulebuilder.html"><abbr title="vendor/arikaim/validator/RuleBuilder.php">RuleBuilder.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-interfaces-ruleinterface.html"><abbr title="vendor/arikaim/validator/Interfaces/RuleInterface.php">RuleInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-queue-runjobcommand.html"><abbr title="vendor/arikaim/core-app/Commands/Queue/RunJobCommand.php">RunJobCommand.php</abbr></a></li>
+                        </ul>
+                                                        <h3>S</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-validator-filter-sanitize.html"><abbr title="vendor/arikaim/validator/Filter/Sanitize.php">Sanitize.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-saveenvcommand.html"><abbr title="vendor/arikaim/core-app/Commands/SaveEnvCommand.php">SaveEnvCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-job-savejobconfiginterface.html"><abbr title="vendor/arikaim/interfaces/Job/SaveJobConfigInterface.php">SaveJobConfigInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-queue-traits-scheduled.html"><abbr title="vendor/arikaim/queue/Traits/Scheduled.php">Scheduled.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-queue-jobs-scheduledjob.html"><abbr title="vendor/arikaim/queue/Jobs/ScheduledJob.php">ScheduledJob.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-job-scheduledjobinterface.html"><abbr title="vendor/arikaim/interfaces/Job/ScheduledJobInterface.php">ScheduledJobInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-schema.html"><abbr title="vendor/arikaim/db/Schema.php">Schema.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-ui-search.html"><abbr title="vendor/arikaim/core-api/Ui/Search.php">Search.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-search.html"><abbr title="vendor/arikaim/db/Search.php">Search.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-search.html"><abbr title="vendor/arikaim/db/Traits/Search.php">Search.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-searchcondition.html"><abbr title="vendor/arikaim/db/SearchCondition.php">SearchCondition.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-seed.html"><abbr title="vendor/arikaim/db/Seed.php">Seed.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-server-servererrorhandler.html"><abbr title="vendor/arikaim/server/ServerErrorHandler.php">ServerErrorHandler.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-server-serverinterface.html"><abbr title="vendor/arikaim/server/ServerInterface.php">ServerInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-server-serverrouter.html"><abbr title="vendor/arikaim/server/ServerRouter.php">ServerRouter.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-service-container-service.html"><abbr title="vendor/arikaim/service-container/Service.php">Service.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-service-container-servicecontainer.html"><abbr title="vendor/arikaim/service-container/ServiceContainer.php">ServiceContainer.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-container-exceptions-serviceexistsexception.html"><abbr title="vendor/arikaim/container/Exceptions/ServiceExistsException.php">ServiceExistsException.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-service-container-serviceinterface.html"><abbr title="vendor/arikaim/service-container/ServiceInterface.php">ServiceInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-container-exceptions-servicenotfoundexception.html"><abbr title="vendor/arikaim/container/Exceptions/ServiceNotFoundException.php">ServiceNotFoundException.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-servicepackage.html"><abbr title="vendor/arikaim/packages/ServicePackage.php">ServicePackage.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-service-container-traits-servicetrait.html"><abbr title="vendor/arikaim/service-container/Traits/ServiceTrait.php">ServiceTrait.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-server-swoole-servicesserver.html"><abbr title="vendor/arikaim/server/Swoole/ServicesServer.php">ServicesServer.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-session.html"><abbr title="vendor/arikaim/core-api/Session.php">Session.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-http-session.html"><abbr title="vendor/arikaim/http/Session.php">Session.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-provider-sessionauthprovider.html"><abbr title="vendor/arikaim/access/Provider/SessionAuthProvider.php">SessionAuthProvider.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-paginator-sessionpaginator.html"><abbr title="vendor/arikaim/paginator/SessionPaginator.php">SessionPaginator.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-settings.html"><abbr title="vendor/arikaim/core-api/Settings.php">Settings.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-console-shellcommand.html"><abbr title="vendor/arikaim/console/ShellCommand.php">ShellCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-slug.html"><abbr title="vendor/arikaim/db/Prototypes/Column/Slug.php">Slug.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-slug.html"><abbr title="vendor/arikaim/db/Traits/Slug.php">Slug.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-filter-slug.html"><abbr title="vendor/arikaim/validator/Filter/Slug.php">Slug.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-softdelete.html"><abbr title="vendor/arikaim/controllers/Traits/SoftDelete.php">SoftDelete.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-softdelete.html"><abbr title="vendor/arikaim/db/Traits/SoftDelete.php">SoftDelete.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-utils-staticfacade.html"><abbr title="vendor/arikaim/utils/StaticFacade.php">StaticFacade.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-component-statichtmlcomponent.html"><abbr title="vendor/arikaim/view/Html/Component/StaticHtmlComponent.php">StaticHtmlComponent.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-status.html"><abbr title="vendor/arikaim/controllers/Traits/Status.php">Status.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-status.html"><abbr title="vendor/arikaim/db/Prototypes/Column/Status.php">Status.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-status.html"><abbr title="vendor/arikaim/db/Traits/Status.php">Status.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-storage-storage.html"><abbr title="vendor/arikaim/storage/Storage.php">Storage.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-storage-storagedriverinterface.html"><abbr title="vendor/arikaim/storage/StorageDriverInterface.php">StorageDriverInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-install-storageinitcommand.html"><abbr title="vendor/arikaim/core-app/Commands/Install/StorageInitCommand.php">StorageInitCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-storageinterface.html"><abbr title="vendor/arikaim/interfaces/StorageInterface.php">StorageInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-store.html"><abbr title="vendor/arikaim/core-api/Store.php">Store.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-filter-striptags.html"><abbr title="vendor/arikaim/validator/Filter/StripTags.php">StripTags.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-events-subscriberregistryinterface.html"><abbr title="vendor/arikaim/interfaces/Events/SubscriberRegistryInterface.php">SubscriberRegistryInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-component-svgcomponent.html"><abbr title="vendor/arikaim/view/Html/Component/SvgComponent.php">SvgComponent.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-system-system.html"><abbr title="vendor/arikaim/system/System.php">System.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-systemerrorinterface.html"><abbr title="vendor/arikaim/interfaces/SystemErrorInterface.php">SystemErrorInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-systemroutes.html"><abbr title="vendor/arikaim/core-app/SystemRoutes.php">SystemRoutes.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-systemupdate.html"><abbr title="vendor/arikaim/core-app/SystemUpdate.php">SystemUpdate.php</abbr></a></li>
+                        </ul>
+                                                        <h3>T</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-collection-table-table.html"><abbr title="vendor/arikaim/collection/Table/Table.php">Table.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-tableblueprint.html"><abbr title="vendor/arikaim/db/TableBlueprint.php">TableBlueprint.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-collection-table-tablefactory.html"><abbr title="vendor/arikaim/collection/Table/TableFactory.php">TableFactory.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-tableschemadescriptor.html"><abbr title="vendor/arikaim/db/TableSchemaDescriptor.php">TableSchemaDescriptor.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-system-error-traits-taskerrors.html"><abbr title="vendor/arikaim/system/Error/Traits/TaskErrors.php">TaskErrors.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-taskprogress.html"><abbr title="vendor/arikaim/controllers/Traits/TaskProgress.php">TaskProgress.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-templatepackage.html"><abbr title="vendor/arikaim/packages/TemplatePackage.php">TemplatePackage.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-templatepath.html"><abbr title="vendor/arikaim/validator/Rule/TemplatePath.php">TemplatePath.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-template-tests.html"><abbr title="vendor/arikaim/view/Template/Tests.php">Tests.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-utils-text.html"><abbr title="vendor/arikaim/utils/Text.php">Text.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-filter-text.html"><abbr title="vendor/arikaim/validator/Filter/Text.php">Text.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-text.html"><abbr title="vendor/arikaim/validator/Rule/Text.php">Text.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-traits-themeglobals.html"><abbr title="vendor/arikaim/view/Traits/ThemeGlobals.php">ThemeGlobals.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-traits-themes.html"><abbr title="vendor/arikaim/packages/Traits/Themes.php">Themes.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-utils-timeinterval.html"><abbr title="vendor/arikaim/utils/TimeInterval.php">TimeInterval.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-utils-timeperiod.html"><abbr title="vendor/arikaim/utils/TimePeriod.php">TimePeriod.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-filter-tofloat.html"><abbr title="vendor/arikaim/validator/Filter/ToFloat.php">ToFloat.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-togglevalue.html"><abbr title="vendor/arikaim/db/Traits/ToggleValue.php">ToggleValue.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-provider-tokenauthprovider.html"><abbr title="vendor/arikaim/access/Provider/TokenAuthProvider.php">TokenAuthProvider.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-total.html"><abbr title="vendor/arikaim/db/Prototypes/Column/Total.php">Total.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-table-translations.html"><abbr title="vendor/arikaim/db/Prototypes/Table/Translations.php">Translations.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-translations.html"><abbr title="vendor/arikaim/db/Traits/Translations.php">Translations.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-tree.html"><abbr title="vendor/arikaim/db/Traits/Tree.php">Tree.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-filter-trim.html"><abbr title="vendor/arikaim/validator/Filter/Trim.php">Trim.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-filter-trimspace.html"><abbr title="vendor/arikaim/validator/Filter/TrimSpace.php">TrimSpace.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-twigextension.html"><abbr title="vendor/arikaim/core-app/TwigExtension.php">TwigExtension.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-type.html"><abbr title="vendor/arikaim/db/Prototypes/Column/Type.php">Type.php</abbr></a></li>
+                        </ul>
+                                                        <h3>U</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-controllers-traits-uicomponent.html"><abbr title="vendor/arikaim/controllers/Traits/UiComponent.php">UiComponent.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-traits-uicomponent.html"><abbr title="vendor/arikaim/core-api/Traits/UiComponent.php">UiComponent.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-component-traits-uilibrary.html"><abbr title="vendor/arikaim/view/Html/Component/Traits/UiLibrary.php">UiLibrary.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-app-commands-extensions-uninstallcommand.html"><abbr title="vendor/arikaim/core-app/Commands/Extensions/UnInstallCommand.php">UnInstallCommand.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-unique.html"><abbr title="vendor/arikaim/validator/Rule/Unique.php">Unique.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-updatemodelfield.html"><abbr title="vendor/arikaim/controllers/Traits/UpdateModelField.php">UpdateModelField.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-uploadpackages.html"><abbr title="vendor/arikaim/core-api/UploadPackages.php">UploadPackages.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-server-swoole-uploadedfiles.html"><abbr title="vendor/arikaim/server/Swoole/UploadedFiles.php">UploadedFiles.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-filter-uppercase.html"><abbr title="vendor/arikaim/validator/Filter/UpperCase.php">UpperCase.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-server-swoole-uri.html"><abbr title="vendor/arikaim/server/Swoole/Uri.php">Uri.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-http-url.html"><abbr title="vendor/arikaim/http/Url.php">Url.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-url.html"><abbr title="vendor/arikaim/validator/Rule/Url.php">Url.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-controllers-traits-base-useraccess.html"><abbr title="vendor/arikaim/controllers/Traits/Base/UserAccess.php">UserAccess.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-usergroupmembers.html"><abbr title="vendor/arikaim/core/Models/UserGroupMembers.php">UserGroupMembers.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-schema-usergroupmembersschema.html"><abbr title="vendor/arikaim/core/Models/Schema/UserGroupMembersSchema.php">UserGroupMembersSchema.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-usergroups.html"><abbr title="vendor/arikaim/core/Models/UserGroups.php">UserGroups.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-schema-usergroupsschema.html"><abbr title="vendor/arikaim/core/Models/Schema/UserGroupsSchema.php">UserGroupsSchema.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-userid.html"><abbr title="vendor/arikaim/db/Prototypes/Column/UserId.php">UserId.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-access-interfaces-userproviderinterface.html"><abbr title="vendor/arikaim/access/Interfaces/UserProviderInterface.php">UserProviderInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-userrelation.html"><abbr title="vendor/arikaim/db/Traits/UserRelation.php">UserRelation.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-users.html"><abbr title="vendor/arikaim/core/Models/Users.php">Users.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-api-users.html"><abbr title="vendor/arikaim/core-api/Users.php">Users.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-core-models-schema-usersschema.html"><abbr title="vendor/arikaim/core/Models/Schema/UsersSchema.php">UsersSchema.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-utils-utils.html"><abbr title="vendor/arikaim/utils/Utils.php">Utils.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-prototypes-column-uuid.html"><abbr title="vendor/arikaim/db/Prototypes/Column/Uuid.php">Uuid.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-db-traits-uuid.html"><abbr title="vendor/arikaim/db/Traits/Uuid.php">Uuid.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-utils-uuid.html"><abbr title="vendor/arikaim/utils/Uuid.php">Uuid.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-validator-rule-uuid.html"><abbr title="vendor/arikaim/validator/Rule/Uuid.php">Uuid.php</abbr></a></li>
+                        </ul>
+                                                        <h3>V</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-validator-validator.html"><abbr title="vendor/arikaim/validator/Validator.php">Validator.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-view.html"><abbr title="vendor/arikaim/view/View.php">View.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-traits-viewcomponents.html"><abbr title="vendor/arikaim/packages/Traits/ViewComponents.php">ViewComponents.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-packages-interfaces-viewcomponentsinterface.html"><abbr title="vendor/arikaim/packages/Interfaces/ViewComponentsInterface.php">ViewComponentsInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-view-viewinterface.html"><abbr title="vendor/arikaim/interfaces/View/ViewInterface.php">ViewInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-cache-drivers-voidcache.html"><abbr title="vendor/arikaim/cache/Drivers/VoidCache.php">VoidCache.php</abbr></a></li>
+                        </ul>
+                                                        <h3>W</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-server-websocketappinterface.html"><abbr title="vendor/arikaim/server/WebSocketAppInterface.php">WebSocketAppInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-server-swoole-websocketserver.html"><abbr title="vendor/arikaim/server/Swoole/WebSocketServer.php">WebSocketServer.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-view-html-component-widgetcomponent.html"><abbr title="vendor/arikaim/view/Html/Component/WidgetComponent.php">WidgetComponent.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-workerinterface.html"><abbr title="vendor/arikaim/interfaces/WorkerInterface.php">WorkerInterface.php</abbr></a></li>
+                            <li><a href="files/vendor-arikaim-interfaces-workermanagerinterface.html"><abbr title="vendor/arikaim/interfaces/WorkerManagerInterface.php">WorkerManagerInterface.php</abbr></a></li>
+                        </ul>
+                                                                                                                        <h3>Z</h3>
+            <ul class="phpdocumentor-list">
+                            <li><a href="files/vendor-arikaim-utils-zipfile.html"><abbr title="vendor/arikaim/utils/ZipFile.php">ZipFile.php</abbr></a></li>
+                        </ul>
+                        </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="indices/files.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>

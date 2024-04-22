@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>Arikaim CMS</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Arikaim CMS</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/arikaim.html" class="">Arikaim</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/arikaim-container.html" class="">Container</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/arikaim-core.html" class="">Core</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/arikaim-installer.html" class="">Installer</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Access.html" class="">Access</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Actions.html" class="">Actions</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Cache.html" class="">Cache</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="-active">Application</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/CoreAPI.html" class="">CoreAPI</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/View.html" class="">View</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -package">
+        <h2 class="phpdocumentor-content__title">Application</h2>
+
+        
+<h3 id="toc">
+    Table of Contents
+    <a href="packages/Application.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h3>
+
+
+
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="packages/Application.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Collection-Interfaces-CollectionInterface.html"><abbr title="\Arikaim\Core\Collection\Interfaces\CollectionInterface">CollectionInterface</abbr></a></dt><dd>Collection interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Collection-Interfaces-FeedsInterface.html"><abbr title="\Arikaim\Core\Collection\Interfaces\FeedsInterface">FeedsInterface</abbr></a></dt><dd>Feeds Collection interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Collection-Interfaces-PropertiesInterface.html"><abbr title="\Arikaim\Core\Collection\Interfaces\PropertiesInterface">PropertiesInterface</abbr></a></dt><dd>Properties collection interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Collection-Interfaces-PropertyInterface.html"><abbr title="\Arikaim\Core\Collection\Interfaces\PropertyInterface">PropertyInterface</abbr></a></dt><dd>Property interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Container-ArikaimContainerInterface.html"><abbr title="\Arikaim\Container\ArikaimContainerInterface">ArikaimContainerInterface</abbr></a></dt><dd>Arikaim container interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Controllers-ControlPanelApiInterface.html"><abbr title="\Arikaim\Core\Controllers\ControlPanelApiInterface">ControlPanelApiInterface</abbr></a></dt><dd>Control Panel Api interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Db-Interfaces-BlueprintPrototypeInterface.html"><abbr title="\Arikaim\Core\Db\Interfaces\BlueprintPrototypeInterface">BlueprintPrototypeInterface</abbr></a></dt><dd>Db Column prototype interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Framework-MiddlewareInterface.html"><abbr title="\Arikaim\Core\Framework\MiddlewareInterface">MiddlewareInterface</abbr></a></dt><dd>Middleware interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Framework-Router-RouterInterface.html"><abbr title="\Arikaim\Core\Framework\Router\RouterInterface">RouterInterface</abbr></a></dt><dd>Router interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Http-Interfaces-HttpClientAdapterInterface.html"><abbr title="\Arikaim\Core\Http\Interfaces\HttpClientAdapterInterface">HttpClientAdapterInterface</abbr></a></dt><dd>Http Client Interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Access-AccessInterface.html"><abbr title="\Arikaim\Core\Interfaces\Access\AccessInterface">AccessInterface</abbr></a></dt><dd>Auth interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Access-AuthInterface.html"><abbr title="\Arikaim\Core\Interfaces\Access\AuthInterface">AuthInterface</abbr></a></dt><dd>Auth interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Access-RequirePermissionInterface.html"><abbr title="\Arikaim\Core\Interfaces\Access\RequirePermissionInterface">RequirePermissionInterface</abbr></a></dt><dd>Require Permission interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-CacheInterface.html"><abbr title="\Arikaim\Core\Interfaces\CacheInterface">CacheInterface</abbr></a></dt><dd>Cache interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-ConfigPropertiesInterface.html"><abbr title="\Arikaim\Core\Interfaces\ConfigPropertiesInterface">ConfigPropertiesInterface</abbr></a></dt><dd>Properties config interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Content-ActionInterface.html"><abbr title="\Arikaim\Core\Interfaces\Content\ActionInterface">ActionInterface</abbr></a></dt><dd>Content type action interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Content-ContentItemInterface.html"><abbr title="\Arikaim\Core\Interfaces\Content\ContentItemInterface">ContentItemInterface</abbr></a></dt><dd>Content item interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Content-ContentManagerInterface.html"><abbr title="\Arikaim\Core\Interfaces\Content\ContentManagerInterface">ContentManagerInterface</abbr></a></dt><dd>Content manager interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Content-ContentProviderInterface.html"><abbr title="\Arikaim\Core\Interfaces\Content\ContentProviderInterface">ContentProviderInterface</abbr></a></dt><dd>Content provider interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Content-ContentTypeInterface.html"><abbr title="\Arikaim\Core\Interfaces\Content\ContentTypeInterface">ContentTypeInterface</abbr></a></dt><dd>Content type interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Content-FieldInterface.html"><abbr title="\Arikaim\Core\Interfaces\Content\FieldInterface">FieldInterface</abbr></a></dt><dd>Field interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Driver-DriverInterface.html"><abbr title="\Arikaim\Core\Interfaces\Driver\DriverInterface">DriverInterface</abbr></a></dt><dd>Driver interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Driver-DriverManagerInterface.html"><abbr title="\Arikaim\Core\Interfaces\Driver\DriverManagerInterface">DriverManagerInterface</abbr></a></dt><dd>Driver Manager Interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Driver-DriverRegistryInterface.html"><abbr title="\Arikaim\Core\Interfaces\Driver\DriverRegistryInterface">DriverRegistryInterface</abbr></a></dt><dd>Driver Registry Interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-EmailCompilerInterface.html"><abbr title="\Arikaim\Core\Interfaces\EmailCompilerInterface">EmailCompilerInterface</abbr></a></dt><dd>Compile email html code</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Events-EventDispatcherInterface.html"><abbr title="\Arikaim\Core\Interfaces\Events\EventDispatcherInterface">EventDispatcherInterface</abbr></a></dt><dd>Event Dispatcher Interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Events-EventInterface.html"><abbr title="\Arikaim\Core\Interfaces\Events\EventInterface">EventInterface</abbr></a></dt><dd>Event interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Events-EventListenerInterface.html"><abbr title="\Arikaim\Core\Interfaces\Events\EventListenerInterface">EventListenerInterface</abbr></a></dt><dd>Event listener interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Events-EventLogInterface.html"><abbr title="\Arikaim\Core\Interfaces\Events\EventLogInterface">EventLogInterface</abbr></a></dt><dd>Event log interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Events-EventRegistryInterface.html"><abbr title="\Arikaim\Core\Interfaces\Events\EventRegistryInterface">EventRegistryInterface</abbr></a></dt><dd>Event Registry Interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Events-EventSubscriberInterface.html"><abbr title="\Arikaim\Core\Interfaces\Events\EventSubscriberInterface">EventSubscriberInterface</abbr></a></dt><dd>Event subscriber interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Events-SubscriberRegistryInterface.html"><abbr title="\Arikaim\Core\Interfaces\Events\SubscriberRegistryInterface">SubscriberRegistryInterface</abbr></a></dt><dd>Subscriber Registry Interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-ExtensionInterface.html"><abbr title="\Arikaim\Core\Interfaces\ExtensionInterface">ExtensionInterface</abbr></a></dt><dd>Extension interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-HttpClientInterface.html"><abbr title="\Arikaim\Core\Interfaces\HttpClientInterface">HttpClientInterface</abbr></a></dt><dd>Http Client Interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-ImportModelInterface.html"><abbr title="\Arikaim\Core\Interfaces\ImportModelInterface">ImportModelInterface</abbr></a></dt><dd>Cache interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Job-JobInterface.html"><abbr title="\Arikaim\Core\Interfaces\Job\JobInterface">JobInterface</abbr></a></dt><dd>Job interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Job-JobLogInterface.html"><abbr title="\Arikaim\Core\Interfaces\Job\JobLogInterface">JobLogInterface</abbr></a></dt><dd>Job log interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Job-JobProgressInterface.html"><abbr title="\Arikaim\Core\Interfaces\Job\JobProgressInterface">JobProgressInterface</abbr></a></dt><dd>Job progress interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Job-QueueStorageInterface.html"><abbr title="\Arikaim\Core\Interfaces\Job\QueueStorageInterface">QueueStorageInterface</abbr></a></dt><dd>Job recuring interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Job-RecurringJobInterface.html"><abbr title="\Arikaim\Core\Interfaces\Job\RecurringJobInterface">RecurringJobInterface</abbr></a></dt><dd>Job recurring interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Job-SaveJobConfigInterface.html"><abbr title="\Arikaim\Core\Interfaces\Job\SaveJobConfigInterface">SaveJobConfigInterface</abbr></a></dt><dd>Save job config interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Job-ScheduledJobInterface.html"><abbr title="\Arikaim\Core\Interfaces\Job\ScheduledJobInterface">ScheduledJobInterface</abbr></a></dt><dd>Scheduled job interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-LoggableInterface.html"><abbr title="\Arikaim\Core\Interfaces\LoggableInterface">LoggableInterface</abbr></a></dt><dd>Loggable interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-LoggerInterface.html"><abbr title="\Arikaim\Core\Interfaces\LoggerInterface">LoggerInterface</abbr></a></dt><dd>Logger interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-MailerInterface.html"><abbr title="\Arikaim\Core\Interfaces\MailerInterface">MailerInterface</abbr></a></dt><dd>Mail interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-ModuleInterface.html"><abbr title="\Arikaim\Core\Interfaces\ModuleInterface">ModuleInterface</abbr></a></dt><dd>Module interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-OptionsInterface.html"><abbr title="\Arikaim\Core\Interfaces\OptionsInterface">OptionsInterface</abbr></a></dt><dd>Options interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-OptionsStorageInterface.html"><abbr title="\Arikaim\Core\Interfaces\OptionsStorageInterface">OptionsStorageInterface</abbr></a></dt><dd>Options interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Packages-PackageFactoryInterface.html"><abbr title="\Arikaim\Core\Interfaces\Packages\PackageFactoryInterface">PackageFactoryInterface</abbr></a></dt><dd>Package factory interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Packages-PackageManagerFactoryInterface.html"><abbr title="\Arikaim\Core\Interfaces\Packages\PackageManagerFactoryInterface">PackageManagerFactoryInterface</abbr></a></dt><dd>Package factory interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Packages-PackageManagerInterface.html"><abbr title="\Arikaim\Core\Interfaces\Packages\PackageManagerInterface">PackageManagerInterface</abbr></a></dt><dd>Package manager interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-QueueInterface.html"><abbr title="\Arikaim\Core\Interfaces\QueueInterface">QueueInterface</abbr></a></dt><dd>Queue interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Reports-ReportFieldInterface.html"><abbr title="\Arikaim\Core\Interfaces\Reports\ReportFieldInterface">ReportFieldInterface</abbr></a></dt><dd>Report field interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-Reports-ReportInterface.html"><abbr title="\Arikaim\Core\Interfaces\Reports\ReportInterface">ReportInterface</abbr></a></dt><dd>Report interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-RoutesInterface.html"><abbr title="\Arikaim\Core\Interfaces\RoutesInterface">RoutesInterface</abbr></a></dt><dd>Routes interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-StorageInterface.html"><abbr title="\Arikaim\Core\Interfaces\StorageInterface">StorageInterface</abbr></a></dt><dd>Storage interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-SystemErrorInterface.html"><abbr title="\Arikaim\Core\Interfaces\SystemErrorInterface">SystemErrorInterface</abbr></a></dt><dd>Extension interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-View-ComponentDataInterface.html"><abbr title="\Arikaim\Core\Interfaces\View\ComponentDataInterface">ComponentDataInterface</abbr></a></dt><dd>Extension interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-View-ComponentInterface.html"><abbr title="\Arikaim\Core\Interfaces\View\ComponentInterface">ComponentInterface</abbr></a></dt><dd>View component interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-View-EmailViewInterface.html"><abbr title="\Arikaim\Core\Interfaces\View\EmailViewInterface">EmailViewInterface</abbr></a></dt><dd>Extension interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-View-HtmlComponentInterface.html"><abbr title="\Arikaim\Core\Interfaces\View\HtmlComponentInterface">HtmlComponentInterface</abbr></a></dt><dd>Extension interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-View-HtmlPageInterface.html"><abbr title="\Arikaim\Core\Interfaces\View\HtmlPageInterface">HtmlPageInterface</abbr></a></dt><dd>Extension interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-View-RequireAccessInterface.html"><abbr title="\Arikaim\Core\Interfaces\View\RequireAccessInterface">RequireAccessInterface</abbr></a></dt><dd>Require access interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-View-ViewInterface.html"><abbr title="\Arikaim\Core\Interfaces\View\ViewInterface">ViewInterface</abbr></a></dt><dd>View interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-WorkerInterface.html"><abbr title="\Arikaim\Core\Interfaces\WorkerInterface">WorkerInterface</abbr></a></dt><dd>Queue worker interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Interfaces-WorkerManagerInterface.html"><abbr title="\Arikaim\Core\Interfaces\WorkerManagerInterface">WorkerManagerInterface</abbr></a></dt><dd>Queue worker manager interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Mail-Interfaces-MailerDriverInterface.html"><abbr title="\Arikaim\Core\Mail\Interfaces\MailerDriverInterface">MailerDriverInterface</abbr></a></dt><dd>Mailer driver interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Mail-Interfaces-MailInterface.html"><abbr title="\Arikaim\Core\Mail\Interfaces\MailInterface">MailInterface</abbr></a></dt><dd>Mail interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Packages-Interfaces-PackageInterface.html"><abbr title="\Arikaim\Core\Packages\Interfaces\PackageInterface">PackageInterface</abbr></a></dt><dd>Package interface, all packages type should impelement it.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Packages-Interfaces-PackageRegistryInterface.html"><abbr title="\Arikaim\Core\Packages\Interfaces\PackageRegistryInterface">PackageRegistryInterface</abbr></a></dt><dd>Package Registry Interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Packages-Interfaces-RepositoryInterface.html"><abbr title="\Arikaim\Core\Packages\Interfaces\RepositoryInterface">RepositoryInterface</abbr></a></dt><dd>Repositorydriver interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Packages-Interfaces-ViewComponentsInterface.html"><abbr title="\Arikaim\Core\Packages\Interfaces\ViewComponentsInterface">ViewComponentsInterface</abbr></a></dt><dd>Package view components interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Paginator-PaginatorInterface.html"><abbr title="\Arikaim\Core\Paginator\PaginatorInterface">PaginatorInterface</abbr></a></dt><dd>Paginator interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Routes-RoutesStorageInterface.html"><abbr title="\Arikaim\Core\Routes\RoutesStorageInterface">RoutesStorageInterface</abbr></a></dt><dd>Routes storage interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Server-ServerInterface.html"><abbr title="\Arikaim\Core\Server\ServerInterface">ServerInterface</abbr></a></dt><dd>Server interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Server-WebSocketAppInterface.html"><abbr title="\Arikaim\Core\Server\WebSocketAppInterface">WebSocketAppInterface</abbr></a></dt><dd>Webb socket server application interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Service-ServiceInterface.html"><abbr title="\Arikaim\Core\Service\ServiceInterface">ServiceInterface</abbr></a></dt><dd>Service interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Storage-StorageDriverInterface.html"><abbr title="\Arikaim\Core\Storage\StorageDriverInterface">StorageDriverInterface</abbr></a></dt><dd>Storage driver interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-System-Error-ErrorHandlerInterface.html"><abbr title="\Arikaim\Core\System\Error\ErrorHandlerInterface">ErrorHandlerInterface</abbr></a></dt><dd>Error handler interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Validator-Interfaces-FilterInterface.html"><abbr title="\Arikaim\Core\Validator\Interfaces\FilterInterface">FilterInterface</abbr></a></dt><dd>Variable filter interface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Arikaim-Core-Validator-Interfaces-RuleInterface.html"><abbr title="\Arikaim\Core\Validator\Interfaces\RuleInterface">RuleInterface</abbr></a></dt><dd>Validation rule interface</dd>    </dl>
+
+    <h4 id="toc-classes">
+        Classes
+        <a href="packages/Application.html#toc-classes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Collection-AbstractDescriptor.html"><abbr title="\Arikaim\Core\Collection\AbstractDescriptor">AbstractDescriptor</abbr></a></dt><dd>Object descriptior</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Collection-Arrays.html"><abbr title="\Arikaim\Core\Collection\Arrays">Arrays</abbr></a></dt><dd>Array helpers</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Collection-Collection.html"><abbr title="\Arikaim\Core\Collection\Collection">Collection</abbr></a></dt><dd>Collection base class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Collection-FeedCollection.html"><abbr title="\Arikaim\Core\Collection\FeedCollection">FeedCollection</abbr></a></dt><dd>Feed Collection class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Collection-Properties.html"><abbr title="\Arikaim\Core\Collection\Properties">Properties</abbr></a></dt><dd>Properties collection</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Collection-PropertiesFactory.html"><abbr title="\Arikaim\Core\Collection\PropertiesFactory">PropertiesFactory</abbr></a></dt><dd>Properties factory class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Collection-Property.html"><abbr title="\Arikaim\Core\Collection\Property">Property</abbr></a></dt><dd>Property descriptior</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Collection-Table-Table.html"><abbr title="\Arikaim\Core\Collection\Table\Table">Table</abbr></a></dt><dd>Table class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Collection-Table-TableFactory.html"><abbr title="\Arikaim\Core\Collection\Table\TableFactory">TableFactory</abbr></a></dt><dd>Table factory class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Console-Application.html"><abbr title="\Arikaim\Core\Console\Application">Application</abbr></a></dt><dd>Console application</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Console-ConfigProperties.html"><abbr title="\Arikaim\Core\Console\ConfigProperties">ConfigProperties</abbr></a></dt><dd>Config properties console helper</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Console-ConsoleCommand.html"><abbr title="\Arikaim\Core\Console\ConsoleCommand">ConsoleCommand</abbr></a></dt><dd>Base class for all commands</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Console-ConsoleHelper.html"><abbr title="\Arikaim\Core\Console\ConsoleHelper">ConsoleHelper</abbr></a></dt><dd>Console helper class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Console-ShellCommand.html"><abbr title="\Arikaim\Core\Console\ShellCommand">ShellCommand</abbr></a></dt><dd>Console shell</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Container-Container.html"><abbr title="\Arikaim\Container\Container">Container</abbr></a></dt><dd>Dependency injection container.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Container-Exceptions-ServiceExistsException.html"><abbr title="\Arikaim\Container\Exceptions\ServiceExistsException">ServiceExistsException</abbr></a></dt><dd>Service exists in container exception</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Container-Exceptions-ServiceNotFoundException.html"><abbr title="\Arikaim\Container\Exceptions\ServiceNotFoundException">ServiceNotFoundException</abbr></a></dt><dd>Service not found in container exception</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Content-AbstractContentProvider.html"><abbr title="\Arikaim\Core\Content\AbstractContentProvider">AbstractContentProvider</abbr></a></dt><dd>Abstract content provider class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Content-ContentItem.html"><abbr title="\Arikaim\Core\Content\ContentItem">ContentItem</abbr></a></dt><dd>Content item</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Content-ContentManager.html"><abbr title="\Arikaim\Core\Content\ContentManager">ContentManager</abbr></a></dt><dd>Content providers registry manager</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Content-ContentSelector.html"><abbr title="\Arikaim\Core\Content\ContentSelector">ContentSelector</abbr></a></dt><dd>Content selector</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Content-ContentTypeFactory.html"><abbr title="\Arikaim\Core\Content\ContentTypeFactory">ContentTypeFactory</abbr></a></dt><dd>Content type factory</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Content-ContentTypeRegistry.html"><abbr title="\Arikaim\Core\Content\ContentTypeRegistry">ContentTypeRegistry</abbr></a></dt><dd>Content type registry manager</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Content-Type-Action.html"><abbr title="\Arikaim\Core\Content\Type\Action">Action</abbr></a></dt><dd>Content type action abstract class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Content-Type-ArrayContentType.html"><abbr title="\Arikaim\Core\Content\Type\ArrayContentType">ArrayContentType</abbr></a></dt><dd>Array content type class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Content-Type-ContentType.html"><abbr title="\Arikaim\Core\Content\Type\ContentType">ContentType</abbr></a></dt><dd>Content type abstract class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Content-Type-Field.html"><abbr title="\Arikaim\Core\Content\Type\Field">Field</abbr></a></dt><dd>Content type field</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Controllers-ApiController.html"><abbr title="\Arikaim\Core\Controllers\ApiController">ApiController</abbr></a></dt><dd>Base class for all Api controllers</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Controllers-BaseApiController.html"><abbr title="\Arikaim\Core\Controllers\BaseApiController">BaseApiController</abbr></a></dt><dd>BaseApiController class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Controllers-Controller.html"><abbr title="\Arikaim\Core\Controllers\Controller">Controller</abbr></a></dt><dd>Base class for all Controllers</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Controllers-ControlPanelApiController.html"><abbr title="\Arikaim\Core\Controllers\ControlPanelApiController">ControlPanelApiController</abbr></a></dt><dd>Base class for all Control Panel Api controllers</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Controllers-ErrorController.html"><abbr title="\Arikaim\Core\Controllers\ErrorController">ErrorController</abbr></a></dt><dd>Page error controller</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Controllers-FastApiController.html"><abbr title="\Arikaim\Core\Controllers\FastApiController">FastApiController</abbr></a></dt><dd>FastApiController class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Arikaim.html"><abbr title="\Arikaim\Core\Arikaim">Arikaim</abbr></a></dt><dd>Arikaim core class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Extension-Extension.html"><abbr title="\Arikaim\Core\Extension\Extension">Extension</abbr></a></dt><dd>Base class for all extensions.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Extension-Module.html"><abbr title="\Arikaim\Core\Extension\Module">Module</abbr></a></dt><dd>Module class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Extension-Modules.html"><abbr title="\Arikaim\Core\Extension\Modules">Modules</abbr></a></dt><dd>Modules service locator</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-AccessTokens.html"><abbr title="\Arikaim\Core\Models\AccessTokens">AccessTokens</abbr></a></dt><dd>Access tokens database model</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Drivers.html"><abbr title="\Arikaim\Core\Models\Drivers">Drivers</abbr></a></dt><dd>Drivers registry database model</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Events.html"><abbr title="\Arikaim\Core\Models\Events">Events</abbr></a></dt><dd>Events database model</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-EventSubscribers.html"><abbr title="\Arikaim\Core\Models\EventSubscribers">EventSubscribers</abbr></a></dt><dd>EventSubscribers database model</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Extensions.html"><abbr title="\Arikaim\Core\Models\Extensions">Extensions</abbr></a></dt><dd>Extensions database model</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-JobsRegistry.html"><abbr title="\Arikaim\Core\Models\JobsRegistry">JobsRegistry</abbr></a></dt><dd>Jobs registry database model</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Language.html"><abbr title="\Arikaim\Core\Models\Language">Language</abbr></a></dt><dd>Language database model</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Logs.html"><abbr title="\Arikaim\Core\Models\Logs">Logs</abbr></a></dt><dd>Db handler for monolog</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Modules.html"><abbr title="\Arikaim\Core\Models\Modules">Modules</abbr></a></dt><dd>Modules database model</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Options.html"><abbr title="\Arikaim\Core\Models\Options">Options</abbr></a></dt><dd>Options database model</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-PermissionRelations.html"><abbr title="\Arikaim\Core\Models\PermissionRelations">PermissionRelations</abbr></a></dt><dd>Permissions database model</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Permissions.html"><abbr title="\Arikaim\Core\Models\Permissions">Permissions</abbr></a></dt><dd>Permissions database model</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Queue.html"><abbr title="\Arikaim\Core\Models\Queue">Queue</abbr></a></dt><dd>Queue database model</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Routes.html"><abbr title="\Arikaim\Core\Models\Routes">Routes</abbr></a></dt><dd>Routes database model</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Schema-AccessTokensSchema.html"><abbr title="\Arikaim\Core\Models\Schema\AccessTokensSchema">AccessTokensSchema</abbr></a></dt><dd>Access tokens database table schema definition.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Schema-DriversSchema.html"><abbr title="\Arikaim\Core\Models\Schema\DriversSchema">DriversSchema</abbr></a></dt><dd>Drivers classes registry</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Schema-EventsSchema.html"><abbr title="\Arikaim\Core\Models\Schema\EventsSchema">EventsSchema</abbr></a></dt><dd>Events database table schema definition.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Schema-EventSubscribersSchema.html"><abbr title="\Arikaim\Core\Models\Schema\EventSubscribersSchema">EventSubscribersSchema</abbr></a></dt><dd>EventSubscribers database table schema definition.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Schema-ExtensionsSchema.html"><abbr title="\Arikaim\Core\Models\Schema\ExtensionsSchema">ExtensionsSchema</abbr></a></dt><dd>Extensions database table schema definition.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Schema-JobsRegistrySchema.html"><abbr title="\Arikaim\Core\Models\Schema\JobsRegistrySchema">JobsRegistrySchema</abbr></a></dt><dd>Jobs registry database table schema definition.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Schema-LanguageSchema.html"><abbr title="\Arikaim\Core\Models\Schema\LanguageSchema">LanguageSchema</abbr></a></dt><dd>Language database table schema definition.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Schema-LogsSchema.html"><abbr title="\Arikaim\Core\Models\Schema\LogsSchema">LogsSchema</abbr></a></dt><dd>Logger classes registry</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Schema-ModulesSchema.html"><abbr title="\Arikaim\Core\Models\Schema\ModulesSchema">ModulesSchema</abbr></a></dt><dd>Modules database table schema definition.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Schema-OptionsSchema.html"><abbr title="\Arikaim\Core\Models\Schema\OptionsSchema">OptionsSchema</abbr></a></dt><dd>Options database table schema definition.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Schema-PermissionRelationsSchema.html"><abbr title="\Arikaim\Core\Models\Schema\PermissionRelationsSchema">PermissionRelationsSchema</abbr></a></dt><dd>Permission relations database table schema definition.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Schema-PermissionsSchema.html"><abbr title="\Arikaim\Core\Models\Schema\PermissionsSchema">PermissionsSchema</abbr></a></dt><dd>Permissions database table schema definition.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Schema-QueueSchema.html"><abbr title="\Arikaim\Core\Models\Schema\QueueSchema">QueueSchema</abbr></a></dt><dd>Queue database table schema definition.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Schema-RoutesSchema.html"><abbr title="\Arikaim\Core\Models\Schema\RoutesSchema">RoutesSchema</abbr></a></dt><dd>Routes database table schema definition.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Schema-UserGroupMembersSchema.html"><abbr title="\Arikaim\Core\Models\Schema\UserGroupMembersSchema">UserGroupMembersSchema</abbr></a></dt><dd>User groups details database table schema definition.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Schema-UserGroupsSchema.html"><abbr title="\Arikaim\Core\Models\Schema\UserGroupsSchema">UserGroupsSchema</abbr></a></dt><dd>User groups database table schema definition.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Schema-UsersSchema.html"><abbr title="\Arikaim\Core\Models\Schema\UsersSchema">UsersSchema</abbr></a></dt><dd>Users database table schema definition.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-UserGroupMembers.html"><abbr title="\Arikaim\Core\Models\UserGroupMembers">UserGroupMembers</abbr></a></dt><dd>User groups details database model</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-UserGroups.html"><abbr title="\Arikaim\Core\Models\UserGroups">UserGroups</abbr></a></dt><dd>User groups database model</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Models-Users.html"><abbr title="\Arikaim\Core\Models\Users">Users</abbr></a></dt><dd>Users database model</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-AdminTwigExtension.html"><abbr title="\Arikaim\Core\App\AdminTwigExtension">AdminTwigExtension</abbr></a></dt><dd>Template engine control panel functions, filters and tests (included only in admin poanel).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-AppContainer.html"><abbr title="\Arikaim\Core\App\AppContainer">AppContainer</abbr></a></dt><dd>Create system services</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-ArikaimStore.html"><abbr title="\Arikaim\Core\App\ArikaimStore">ArikaimStore</abbr></a></dt><dd>Arikaim store</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-AdminResetCommand.html"><abbr title="\Arikaim\Core\App\Commands\AdminResetCommand">AdminResetCommand</abbr></a></dt><dd>Reset control panel user command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Cache-ClearCommand.html"><abbr title="\Arikaim\Core\App\Commands\Cache\ClearCommand">ClearCommand</abbr></a></dt><dd>Clear cache command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Cache-DisableCommand.html"><abbr title="\Arikaim\Core\App\Commands\Cache\DisableCommand">DisableCommand</abbr></a></dt><dd>Disable cache command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Cache-DriverCommand.html"><abbr title="\Arikaim\Core\App\Commands\Cache\DriverCommand">DriverCommand</abbr></a></dt><dd>Show cache driver command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Cache-EnableCommand.html"><abbr title="\Arikaim\Core\App\Commands\Cache\EnableCommand">EnableCommand</abbr></a></dt><dd>Enable cache command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-ClearEnvCommand.html"><abbr title="\Arikaim\Core\App\Commands\ClearEnvCommand">ClearEnvCommand</abbr></a></dt><dd>Clear env vars command class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-ClearLogsCommand.html"><abbr title="\Arikaim\Core\App\Commands\ClearLogsCommand">ClearLogsCommand</abbr></a></dt><dd>Clear Logs command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-ComposerCommand.html"><abbr title="\Arikaim\Core\App\Commands\ComposerCommand">ComposerCommand</abbr></a></dt><dd>Composer command class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Drivers-DisableCommand.html"><abbr title="\Arikaim\Core\App\Commands\Drivers\DisableCommand">DisableCommand</abbr></a></dt><dd>Disable driver command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Drivers-EnableCommand.html"><abbr title="\Arikaim\Core\App\Commands\Drivers\EnableCommand">EnableCommand</abbr></a></dt><dd>Enable driver command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Drivers-ListCommand.html"><abbr title="\Arikaim\Core\App\Commands\Drivers\ListCommand">ListCommand</abbr></a></dt><dd>Drivers list command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Events-EventDetailsCommand.html"><abbr title="\Arikaim\Core\App\Commands\Events\EventDetailsCommand">EventDetailsCommand</abbr></a></dt><dd>Event details command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Extensions-DisableCommand.html"><abbr title="\Arikaim\Core\App\Commands\Extensions\DisableCommand">DisableCommand</abbr></a></dt><dd>Disable extension</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Extensions-EnableCommand.html"><abbr title="\Arikaim\Core\App\Commands\Extensions\EnableCommand">EnableCommand</abbr></a></dt><dd>Enable extension command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Extensions-InfoCommand.html"><abbr title="\Arikaim\Core\App\Commands\Extensions\InfoCommand">InfoCommand</abbr></a></dt><dd>Extension info command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Extensions-InstallCommand.html"><abbr title="\Arikaim\Core\App\Commands\Extensions\InstallCommand">InstallCommand</abbr></a></dt><dd>Install extension command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Extensions-ListCommand.html"><abbr title="\Arikaim\Core\App\Commands\Extensions\ListCommand">ListCommand</abbr></a></dt><dd>Extensions list command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Extensions-UnInstallCommand.html"><abbr title="\Arikaim\Core\App\Commands\Extensions\UnInstallCommand">UnInstallCommand</abbr></a></dt><dd>Uninstall extension command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-HelpCommand.html"><abbr title="\Arikaim\Core\App\Commands\HelpCommand">HelpCommand</abbr></a></dt><dd>Help command class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Install-DisableInstallCommand.html"><abbr title="\Arikaim\Core\App\Commands\Install\DisableInstallCommand">DisableInstallCommand</abbr></a></dt><dd>Disable install page command class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Install-EnableInstallCommand.html"><abbr title="\Arikaim\Core\App\Commands\Install\EnableInstallCommand">EnableInstallCommand</abbr></a></dt><dd>Enable install page command class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Install-InstallCommand.html"><abbr title="\Arikaim\Core\App\Commands\Install\InstallCommand">InstallCommand</abbr></a></dt><dd>Install command class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Install-InstallComposerCommand.html"><abbr title="\Arikaim\Core\App\Commands\Install\InstallComposerCommand">InstallComposerCommand</abbr></a></dt><dd>Composer update command class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Install-InstallExtensionsCommand.html"><abbr title="\Arikaim\Core\App\Commands\Install\InstallExtensionsCommand">InstallExtensionsCommand</abbr></a></dt><dd>Install extensions command class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Install-PrepareCommand.html"><abbr title="\Arikaim\Core\App\Commands\Install\PrepareCommand">PrepareCommand</abbr></a></dt><dd>Prepare install command class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Install-RepairInstallCommand.html"><abbr title="\Arikaim\Core\App\Commands\Install\RepairInstallCommand">RepairInstallCommand</abbr></a></dt><dd>Repair (reinstall) command class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Install-StorageInitCommand.html"><abbr title="\Arikaim\Core\App\Commands\Install\StorageInitCommand">StorageInitCommand</abbr></a></dt><dd>Storage init command class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Library-ListCommand.html"><abbr title="\Arikaim\Core\App\Commands\Library\ListCommand">ListCommand</abbr></a></dt><dd>Library list command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Modules-InfoCommand.html"><abbr title="\Arikaim\Core\App\Commands\Modules\InfoCommand">InfoCommand</abbr></a></dt><dd>Module info command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Modules-ListCommand.html"><abbr title="\Arikaim\Core\App\Commands\Modules\ListCommand">ListCommand</abbr></a></dt><dd>Modules list command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Queue-CronCommand.html"><abbr title="\Arikaim\Core\App\Commands\Queue\CronCommand">CronCommand</abbr></a></dt><dd>Process cron jobs</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Queue-JobDetailsCommand.html"><abbr title="\Arikaim\Core\App\Commands\Queue\JobDetailsCommand">JobDetailsCommand</abbr></a></dt><dd>job details command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Queue-JobsCommand.html"><abbr title="\Arikaim\Core\App\Commands\Queue\JobsCommand">JobsCommand</abbr></a></dt><dd>Queue jobs list command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Queue-RunJobCommand.html"><abbr title="\Arikaim\Core\App\Commands\Queue\RunJobCommand">RunJobCommand</abbr></a></dt><dd>Run job command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-SaveEnvCommand.html"><abbr title="\Arikaim\Core\App\Commands\SaveEnvCommand">SaveEnvCommand</abbr></a></dt><dd>Save env vars command class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Session-InfoCommand.html"><abbr title="\Arikaim\Core\App\Commands\Session\InfoCommand">InfoCommand</abbr></a></dt><dd>Session info</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Session-RestartCommand.html"><abbr title="\Arikaim\Core\App\Commands\Session\RestartCommand">RestartCommand</abbr></a></dt><dd>Clear session varibales and start new session</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Template-InstallCommand.html"><abbr title="\Arikaim\Core\App\Commands\Template\InstallCommand">InstallCommand</abbr></a></dt><dd>Install theme command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Commands-Template-ListCommand.html"><abbr title="\Arikaim\Core\App\Commands\Template\ListCommand">ListCommand</abbr></a></dt><dd>Templates list command</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Console.html"><abbr title="\Arikaim\Core\App\Console">Console</abbr></a></dt><dd>Console app</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-ControlPanel.html"><abbr title="\Arikaim\Core\App\ControlPanel">ControlPanel</abbr></a></dt><dd>Page loader controller</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-Install.html"><abbr title="\Arikaim\Core\App\Install">Install</abbr></a></dt><dd>Arikaim install</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-InstallPage.html"><abbr title="\Arikaim\Core\App\InstallPage">InstallPage</abbr></a></dt><dd>Page loader controller</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-PostInstallActions.html"><abbr title="\Arikaim\Core\App\PostInstallActions">PostInstallActions</abbr></a></dt><dd>Post install actions</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-SystemRoutes.html"><abbr title="\Arikaim\Core\App\SystemRoutes">SystemRoutes</abbr></a></dt><dd>Routes</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-SystemUpdate.html"><abbr title="\Arikaim\Core\App\SystemUpdate">SystemUpdate</abbr></a></dt><dd>System update</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-App-TwigExtension.html"><abbr title="\Arikaim\Core\App\TwigExtension">TwigExtension</abbr></a></dt><dd>Template engine functions, filters and tests.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Db.html"><abbr title="\Arikaim\Core\Db\Db">Db</abbr></a></dt><dd>Manage database connections</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Model.html"><abbr title="\Arikaim\Core\Db\Model">Model</abbr></a></dt><dd>Database Model Factory</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-OptionType.html"><abbr title="\Arikaim\Core\Db\OptionType">OptionType</abbr></a></dt><dd>Option type class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-OrderBy.html"><abbr title="\Arikaim\Core\Db\OrderBy">OrderBy</abbr></a></dt><dd>Order by</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-DateColumn.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\DateColumn">DateColumn</abbr></a></dt><dd>DateColumn column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-DateCreated.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\DateCreated">DateCreated</abbr></a></dt><dd>DateCreated column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-DateDeleted.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\DateDeleted">DateDeleted</abbr></a></dt><dd>DateDeleted column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-DateExpired.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\DateExpired">DateExpired</abbr></a></dt><dd>DateExpired column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-DateUpdated.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\DateUpdated">DateUpdated</abbr></a></dt><dd>DateUpdated column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-DefaultColumn.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\DefaultColumn">DefaultColumn</abbr></a></dt><dd>Default column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-DefaultMultiuser.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\DefaultMultiuser">DefaultMultiuser</abbr></a></dt><dd>Default multiuser column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-Id.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\Id">Id</abbr></a></dt><dd>Id column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-Language.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\Language">Language</abbr></a></dt><dd>Language column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-MetaTags.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\MetaTags">MetaTags</abbr></a></dt><dd>MetaTags column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-Options.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\Options">Options</abbr></a></dt><dd>Options column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-ParentId.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\ParentId">ParentId</abbr></a></dt><dd>Parent id relation column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-PolymorphicRelation.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\PolymorphicRelation">PolymorphicRelation</abbr></a></dt><dd>PolymorphicRelation column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-Position.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\Position">Position</abbr></a></dt><dd>Position column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-Price.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\Price">Price</abbr></a></dt><dd>Price column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-Quantity.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\Quantity">Quantity</abbr></a></dt><dd>Quantity column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-Relation.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\Relation">Relation</abbr></a></dt><dd>Relation column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-Slug.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\Slug">Slug</abbr></a></dt><dd>Slug column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-Status.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\Status">Status</abbr></a></dt><dd>Status column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-Total.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\Total">Total</abbr></a></dt><dd>Total column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-Type.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\Type">Type</abbr></a></dt><dd>Type column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-UserId.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\UserId">UserId</abbr></a></dt><dd>Id column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Column-Uuid.html"><abbr title="\Arikaim\Core\Db\Prototypes\Column\Uuid">Uuid</abbr></a></dt><dd>Uuid column prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Table-Document.html"><abbr title="\Arikaim\Core\Db\Prototypes\Table\Document">Document</abbr></a></dt><dd>Document table prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Table-DocumentItems.html"><abbr title="\Arikaim\Core\Db\Prototypes\Table\DocumentItems">DocumentItems</abbr></a></dt><dd>Document items table prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Table-DocumentPayments.html"><abbr title="\Arikaim\Core\Db\Prototypes\Table\DocumentPayments">DocumentPayments</abbr></a></dt><dd>Document payments table prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Table-Options.html"><abbr title="\Arikaim\Core\Db\Prototypes\Table\Options">Options</abbr></a></dt><dd>Options table prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Table-OptionsList.html"><abbr title="\Arikaim\Core\Db\Prototypes\Table\OptionsList">OptionsList</abbr></a></dt><dd>Options list table prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Table-OptionType.html"><abbr title="\Arikaim\Core\Db\Prototypes\Table\OptionType">OptionType</abbr></a></dt><dd>Option type table prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Table-Permissions.html"><abbr title="\Arikaim\Core\Db\Prototypes\Table\Permissions">Permissions</abbr></a></dt><dd>Permissions (Many to Many) table prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Table-PolymorphicRelations.html"><abbr title="\Arikaim\Core\Db\Prototypes\Table\PolymorphicRelations">PolymorphicRelations</abbr></a></dt><dd>PolymorphicRelations (Many to Many) table prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Table-PriceList.html"><abbr title="\Arikaim\Core\Db\Prototypes\Table\PriceList">PriceList</abbr></a></dt><dd>Price list table prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Table-Relations.html"><abbr title="\Arikaim\Core\Db\Prototypes\Table\Relations">Relations</abbr></a></dt><dd>Relations table prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Prototypes-Table-Translations.html"><abbr title="\Arikaim\Core\Db\Prototypes\Table\Translations">Translations</abbr></a></dt><dd>Translations table prototype class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Schema.html"><abbr title="\Arikaim\Core\Db\Schema">Schema</abbr></a></dt><dd>Database schema base class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Search.html"><abbr title="\Arikaim\Core\Db\Search">Search</abbr></a></dt><dd>Database search session helper</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-SearchCondition.html"><abbr title="\Arikaim\Core\Db\SearchCondition">SearchCondition</abbr></a></dt><dd>Search condition</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-Seed.html"><abbr title="\Arikaim\Core\Db\Seed">Seed</abbr></a></dt><dd>Seed query</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-TableBlueprint.html"><abbr title="\Arikaim\Core\Db\TableBlueprint">TableBlueprint</abbr></a></dt><dd>Extended Blueprint with column prototypes</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Db-TableSchemaDescriptor.html"><abbr title="\Arikaim\Core\Db\TableSchemaDescriptor">TableSchemaDescriptor</abbr></a></dt><dd>Table schema properties descriptior</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Driver-Driver.html"><abbr title="\Arikaim\Core\Driver\Driver">Driver</abbr></a></dt><dd>Driver base class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Driver-DriverManager.html"><abbr title="\Arikaim\Core\Driver\DriverManager">DriverManager</abbr></a></dt><dd>Driver manager</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Events-Event.html"><abbr title="\Arikaim\Core\Events\Event">Event</abbr></a></dt><dd>Base event class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Events-EventDescriptor.html"><abbr title="\Arikaim\Core\Events\EventDescriptor">EventDescriptor</abbr></a></dt><dd>Base event descriptor class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Events-EventListener.html"><abbr title="\Arikaim\Core\Events\EventListener">EventListener</abbr></a></dt><dd>Base class for event listener.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Events-EventsManager.html"><abbr title="\Arikaim\Core\Events\EventsManager">EventsManager</abbr></a></dt><dd>Dispatch and manage events and event subscribers.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Events-EventSubscriber.html"><abbr title="\Arikaim\Core\Events\EventSubscriber">EventSubscriber</abbr></a></dt><dd>Base class for event subscribers.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Framework-Application.html"><abbr title="\Arikaim\Core\Framework\Application">Application</abbr></a></dt><dd>Application</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Framework-ErrorHandler.html"><abbr title="\Arikaim\Core\Framework\ErrorHandler">ErrorHandler</abbr></a></dt><dd>Error handler</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Framework-HttpException.html"><abbr title="\Arikaim\Core\Framework\HttpException">HttpException</abbr></a></dt><dd>Http exception class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Framework-Middleware-BodyParsingMiddleware.html"><abbr title="\Arikaim\Core\Framework\Middleware\BodyParsingMiddleware">BodyParsingMiddleware</abbr></a></dt><dd>Request body parsing</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Framework-Middleware-ClientIpMiddleware.html"><abbr title="\Arikaim\Core\Framework\Middleware\ClientIpMiddleware">ClientIpMiddleware</abbr></a></dt><dd>Cient Ip middleware</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Framework-Middleware-Middleware.html"><abbr title="\Arikaim\Core\Framework\Middleware\Middleware">Middleware</abbr></a></dt><dd>Middleware base class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Framework-ResponseEmiter.html"><abbr title="\Arikaim\Core\Framework\ResponseEmiter">ResponseEmiter</abbr></a></dt><dd>Error handler</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Framework-Router-ArikaimRouter.html"><abbr title="\Arikaim\Core\Framework\Router\ArikaimRouter">ArikaimRouter</abbr></a></dt><dd>App router</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Framework-Router-RouteGenerator.html"><abbr title="\Arikaim\Core\Framework\Router\RouteGenerator">RouteGenerator</abbr></a></dt><dd>Route generator class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Framework-Router-Router.html"><abbr title="\Arikaim\Core\Framework\Router\Router">Router</abbr></a></dt><dd>App router</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Http-ApiResponse.html"><abbr title="\Arikaim\Core\Http\ApiResponse">ApiResponse</abbr></a></dt><dd>Api Respnse support JSON format only.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Http-Cookie.html"><abbr title="\Arikaim\Core\Http\Cookie">Cookie</abbr></a></dt><dd>Cookie</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Http-GuzzleClientAdapter.html"><abbr title="\Arikaim\Core\Http\GuzzleClientAdapter">GuzzleClientAdapter</abbr></a></dt><dd>Http client</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Http-HttpClient.html"><abbr title="\Arikaim\Core\Http\HttpClient">HttpClient</abbr></a></dt><dd>Http client</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Http-HttpStatusCode.html"><abbr title="\Arikaim\Core\Http\HttpStatusCode">HttpStatusCode</abbr></a></dt><dd>Http status codes message</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Http-Request.html"><abbr title="\Arikaim\Core\Http\Request">Request</abbr></a></dt><dd>Request helpers</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Http-Session.html"><abbr title="\Arikaim\Core\Http\Session">Session</abbr></a></dt><dd>Session wrapper</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Http-Url.html"><abbr title="\Arikaim\Core\Http\Url">Url</abbr></a></dt><dd>Url helper</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Installer-ArikaimInstaller.html"><abbr title="\Arikaim\Installer\ArikaimInstaller">ArikaimInstaller</abbr></a></dt><dd>Arikaim package installer class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Installer-ComposerEvents.html"><abbr title="\Arikaim\Installer\ComposerEvents">ComposerEvents</abbr></a></dt><dd>Composer events</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Installer-InstallerPlugin.html"><abbr title="\Arikaim\Installer\InstallerPlugin">InstallerPlugin</abbr></a></dt><dd>Installer plugin</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Logger-Handler-DbHandler.html"><abbr title="\Arikaim\Core\Logger\Handler\DbHandler">DbHandler</abbr></a></dt><dd>Db handler for monolog</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Logger-JsonLogsFormatter.html"><abbr title="\Arikaim\Core\Logger\JsonLogsFormatter">JsonLogsFormatter</abbr></a></dt><dd>Json formatter implementation</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Logger-Logger.html"><abbr title="\Arikaim\Core\Logger\Logger">Logger</abbr></a></dt><dd>Logger</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Logger-LogsProcessor.html"><abbr title="\Arikaim\Core\Logger\LogsProcessor">LogsProcessor</abbr></a></dt><dd>Log processor class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Mail-Mail.html"><abbr title="\Arikaim\Core\Mail\Mail">Mail</abbr></a></dt><dd>Mail base class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Mail-Mailer.html"><abbr title="\Arikaim\Core\Mail\Mailer">Mailer</abbr></a></dt><dd>Send emails</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Options-Options.html"><abbr title="\Arikaim\Core\Options\Options">Options</abbr></a></dt><dd>Options base class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Packages-ComponentsLibraryPackage.html"><abbr title="\Arikaim\Core\Packages\ComponentsLibraryPackage">ComponentsLibraryPackage</abbr></a></dt><dd>UI components library package class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Packages-Composer.html"><abbr title="\Arikaim\Core\Packages\Composer">Composer</abbr></a></dt><dd>Composer commands</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Packages-ComposerPackage.html"><abbr title="\Arikaim\Core\Packages\ComposerPackage">ComposerPackage</abbr></a></dt><dd>Composer package base class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Packages-ExtensionPackage.html"><abbr title="\Arikaim\Core\Packages\ExtensionPackage">ExtensionPackage</abbr></a></dt><dd>Extension Package</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Packages-LibraryPackage.html"><abbr title="\Arikaim\Core\Packages\LibraryPackage">LibraryPackage</abbr></a></dt><dd>UI Library Package class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Packages-ModulePackage.html"><abbr title="\Arikaim\Core\Packages\ModulePackage">ModulePackage</abbr></a></dt><dd>Module Package class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Packages-Package.html"><abbr title="\Arikaim\Core\Packages\Package">Package</abbr></a></dt><dd>Package base class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Packages-PackageFactory.html"><abbr title="\Arikaim\Core\Packages\PackageFactory">PackageFactory</abbr></a></dt><dd>Package managers factory class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Packages-PackageManager.html"><abbr title="\Arikaim\Core\Packages\PackageManager">PackageManager</abbr></a></dt><dd>Package managers base class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Packages-PackageManagerFactory.html"><abbr title="\Arikaim\Core\Packages\PackageManagerFactory">PackageManagerFactory</abbr></a></dt><dd>Package managers factory class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Packages-PackageValidator.html"><abbr title="\Arikaim\Core\Packages\PackageValidator">PackageValidator</abbr></a></dt><dd>Package validator class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Packages-Repository-ArikaimRepository.html"><abbr title="\Arikaim\Core\Packages\Repository\ArikaimRepository">ArikaimRepository</abbr></a></dt><dd>Arikaim repository driver class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Packages-Repository-ComposerRepository.html"><abbr title="\Arikaim\Core\Packages\Repository\ComposerRepository">ComposerRepository</abbr></a></dt><dd>Composer repository driver class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Packages-Repository-GitHubRepository.html"><abbr title="\Arikaim\Core\Packages\Repository\GitHubRepository">GitHubRepository</abbr></a></dt><dd>GitHub repository driver class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Packages-Repository-Repository.html"><abbr title="\Arikaim\Core\Packages\Repository\Repository">Repository</abbr></a></dt><dd>Repository driver base class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Packages-ServicePackage.html"><abbr title="\Arikaim\Core\Packages\ServicePackage">ServicePackage</abbr></a></dt><dd>Service package</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Packages-TemplatePackage.html"><abbr title="\Arikaim\Core\Packages\TemplatePackage">TemplatePackage</abbr></a></dt><dd>Template package</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Paginator-ArrayPaginator.html"><abbr title="\Arikaim\Core\Paginator\ArrayPaginator">ArrayPaginator</abbr></a></dt><dd>Paginate array</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Paginator-DbPaginator.html"><abbr title="\Arikaim\Core\Paginator\DbPaginator">DbPaginator</abbr></a></dt><dd>Paginate Illuminate\Database\Eloquent\Builder objects</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Paginator-FeedsPaginator.html"><abbr title="\Arikaim\Core\Paginator\FeedsPaginator">FeedsPaginator</abbr></a></dt><dd>Paginate feed collection with unknow last page.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Paginator-JsonPaginator.html"><abbr title="\Arikaim\Core\Paginator\JsonPaginator">JsonPaginator</abbr></a></dt><dd>Paginate Josn</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Paginator-Paginator.html"><abbr title="\Arikaim\Core\Paginator\Paginator">Paginator</abbr></a></dt><dd>Paginator base class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Paginator-SessionPaginator.html"><abbr title="\Arikaim\Core\Paginator\SessionPaginator">SessionPaginator</abbr></a></dt><dd>Paginator session helper</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Queue-Cron.html"><abbr title="\Arikaim\Core\Queue\Cron">Cron</abbr></a></dt><dd>Cron jobs</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Queue-Jobs-Job.html"><abbr title="\Arikaim\Core\Queue\Jobs\Job">Job</abbr></a></dt><dd>Base class for all jobs</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Queue-Jobs-JobPropertiesDescriptor.html"><abbr title="\Arikaim\Core\Queue\Jobs\JobPropertiesDescriptor">JobPropertiesDescriptor</abbr></a></dt><dd>Job properties descriptior</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Queue-Jobs-JobResult.html"><abbr title="\Arikaim\Core\Queue\Jobs\JobResult">JobResult</abbr></a></dt><dd>Job execution result</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Queue-Jobs-RecurringJob.html"><abbr title="\Arikaim\Core\Queue\Jobs\RecurringJob">RecurringJob</abbr></a></dt><dd>Base class for all Recurring jobs</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Queue-Jobs-ScheduledJob.html"><abbr title="\Arikaim\Core\Queue\Jobs\ScheduledJob">ScheduledJob</abbr></a></dt><dd>Base class for all scheduled jobs</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Queue-QueueManager.html"><abbr title="\Arikaim\Core\Queue\QueueManager">QueueManager</abbr></a></dt><dd>Queue manager</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Routes-Route.html"><abbr title="\Arikaim\Core\Routes\Route">Route</abbr></a></dt><dd>Routes storage</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Routes-RouteParser.html"><abbr title="\Arikaim\Core\Routes\RouteParser">RouteParser</abbr></a></dt><dd>Parses route strings:</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Routes-Routes.html"><abbr title="\Arikaim\Core\Routes\Routes">Routes</abbr></a></dt><dd>Routes storage</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Routes-RouteType.html"><abbr title="\Arikaim\Core\Routes\RouteType">RouteType</abbr></a></dt><dd>Route types</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Server-AbstractServer.html"><abbr title="\Arikaim\Core\Server\AbstractServer">AbstractServer</abbr></a></dt><dd>Abstract server</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Server-ArikaimServerFactory.html"><abbr title="\Arikaim\Core\Server\ArikaimServerFactory">ArikaimServerFactory</abbr></a></dt><dd>Arikaim server factory</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Server-ServerErrorHandler.html"><abbr title="\Arikaim\Core\Server\ServerErrorHandler">ServerErrorHandler</abbr></a></dt><dd>Server error handler</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Server-ServerRouter.html"><abbr title="\Arikaim\Core\Server\ServerRouter">ServerRouter</abbr></a></dt><dd>Server router</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Server-Swoole-HttpServer.html"><abbr title="\Arikaim\Core\Server\Swoole\HttpServer">HttpServer</abbr></a></dt><dd>Http swoole server</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Server-Swoole-RequestConverter.html"><abbr title="\Arikaim\Core\Server\Swoole\RequestConverter">RequestConverter</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Server-Swoole-ResponseConverter.html"><abbr title="\Arikaim\Core\Server\Swoole\ResponseConverter">ResponseConverter</abbr></a></dt><dd>Convert psr response to swoole response</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Server-Swoole-ServicesServer.html"><abbr title="\Arikaim\Core\Server\Swoole\ServicesServer">ServicesServer</abbr></a></dt><dd>Arikaim services swoole server</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Server-Swoole-UploadedFiles.html"><abbr title="\Arikaim\Core\Server\Swoole\UploadedFiles">UploadedFiles</abbr></a></dt><dd>Parse uploaded files</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Server-Swoole-Uri.html"><abbr title="\Arikaim\Core\Server\Swoole\Uri">Uri</abbr></a></dt><dd>Swoole uri parse</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Server-Swoole-WebSocketServer.html"><abbr title="\Arikaim\Core\Server\Swoole\WebSocketServer">WebSocketServer</abbr></a></dt><dd>Arikaim web socket swoole server</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Service-Service.html"><abbr title="\Arikaim\Core\Service\Service">Service</abbr></a></dt><dd>Service base class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Service-ServiceContainer.html"><abbr title="\Arikaim\Core\Service\ServiceContainer">ServiceContainer</abbr></a></dt><dd>Service container</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Storage-Storage.html"><abbr title="\Arikaim\Core\Storage\Storage">Storage</abbr></a></dt><dd>Storage module class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-System-ClassLoader.html"><abbr title="\Arikaim\Core\System\ClassLoader">ClassLoader</abbr></a></dt><dd>Class loader</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-System-Config.html"><abbr title="\Arikaim\Core\System\Config">Config</abbr></a></dt><dd>Config file loader and writer</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-System-Error-ApplicationError.html"><abbr title="\Arikaim\Core\System\Error\ApplicationError">ApplicationError</abbr></a></dt><dd>Application error handler</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-System-Error-Errors.html"><abbr title="\Arikaim\Core\System\Error\Errors">Errors</abbr></a></dt><dd>Errors</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-System-Error-PhpError.html"><abbr title="\Arikaim\Core\System\Error\PhpError">PhpError</abbr></a></dt><dd>Php error base class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-System-NodeJs.html"><abbr title="\Arikaim\Core\System\NodeJs">NodeJs</abbr></a></dt><dd>NodeJs commands</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-System-Preloader.html"><abbr title="\Arikaim\Core\System\Preloader">Preloader</abbr></a></dt><dd>Opcache preloader</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-System-Process.html"><abbr title="\Arikaim\Core\System\Process">Process</abbr></a></dt><dd>System Process</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-System-System.html"><abbr title="\Arikaim\Core\System\System">System</abbr></a></dt><dd>Core system helper class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-ClientIp.html"><abbr title="\Arikaim\Core\Utils\ClientIp">ClientIp</abbr></a></dt><dd>Client Ip</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-Curl.html"><abbr title="\Arikaim\Core\Utils\Curl">Curl</abbr></a></dt><dd>Curl wrapper</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-DateTime.html"><abbr title="\Arikaim\Core\Utils\DateTime">DateTime</abbr></a></dt><dd>DateTime</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-Factory.html"><abbr title="\Arikaim\Core\Utils\Factory">Factory</abbr></a></dt><dd>Factory class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-File.html"><abbr title="\Arikaim\Core\Utils\File">File</abbr></a></dt><dd>File</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-FileType.html"><abbr title="\Arikaim\Core\Utils\FileType">FileType</abbr></a></dt><dd>File type</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-FunctionArguments.html"><abbr title="\Arikaim\Core\Utils\FunctionArguments">FunctionArguments</abbr></a></dt><dd>Function arguments helper</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-Html.html"><abbr title="\Arikaim\Core\Utils\Html">Html</abbr></a></dt><dd>Html builder</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-Mobile.html"><abbr title="\Arikaim\Core\Utils\Mobile">Mobile</abbr></a></dt><dd>Detect browser type (mobile or desktop)</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-Number.html"><abbr title="\Arikaim\Core\Utils\Number">Number</abbr></a></dt><dd>Number helper</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-Path.html"><abbr title="\Arikaim\Core\Utils\Path">Path</abbr></a></dt><dd>All path constants and helpers</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-StaticFacade.html"><abbr title="\Arikaim\Core\Utils\StaticFacade">StaticFacade</abbr></a></dt><dd>Facades abstract class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-Text.html"><abbr title="\Arikaim\Core\Utils\Text">Text</abbr></a></dt><dd>text helpers</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-TimeInterval.html"><abbr title="\Arikaim\Core\Utils\TimeInterval">TimeInterval</abbr></a></dt><dd>Time intervals</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-TimePeriod.html"><abbr title="\Arikaim\Core\Utils\TimePeriod">TimePeriod</abbr></a></dt><dd>Time periods</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-Utils.html"><abbr title="\Arikaim\Core\Utils\Utils">Utils</abbr></a></dt><dd>Utility static functions</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-Uuid.html"><abbr title="\Arikaim\Core\Utils\Uuid">Uuid</abbr></a></dt><dd>Uuid class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Utils-ZipFile.html"><abbr title="\Arikaim\Core\Utils\ZipFile">ZipFile</abbr></a></dt><dd>Zip file helpers</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-DataValidatorException.html"><abbr title="\Arikaim\Core\Validator\DataValidatorException">DataValidatorException</abbr></a></dt><dd>Data validator exception class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Filter-LowerCase.html"><abbr title="\Arikaim\Core\Validator\Filter\LowerCase">LowerCase</abbr></a></dt><dd>LowerCase filter</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Filter-Sanitize.html"><abbr title="\Arikaim\Core\Validator\Filter\Sanitize">Sanitize</abbr></a></dt><dd>Sanitize filter</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Filter-Slug.html"><abbr title="\Arikaim\Core\Validator\Filter\Slug">Slug</abbr></a></dt><dd>Slog filter</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Filter-StripTags.html"><abbr title="\Arikaim\Core\Validator\Filter\StripTags">StripTags</abbr></a></dt><dd>Remove html tags filter</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Filter-Text.html"><abbr title="\Arikaim\Core\Validator\Filter\Text">Text</abbr></a></dt><dd>Text filter</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Filter-ToFloat.html"><abbr title="\Arikaim\Core\Validator\Filter\ToFloat">ToFloat</abbr></a></dt><dd>Convert text to float filter</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Filter-Trim.html"><abbr title="\Arikaim\Core\Validator\Filter\Trim">Trim</abbr></a></dt><dd>Trim filter</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Filter-TrimSpace.html"><abbr title="\Arikaim\Core\Validator\Filter\TrimSpace">TrimSpace</abbr></a></dt><dd>TrimSpace filter</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Filter-UpperCase.html"><abbr title="\Arikaim\Core\Validator\Filter\UpperCase">UpperCase</abbr></a></dt><dd>UpperCase filter</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Filter.html"><abbr title="\Arikaim\Core\Validator\Filter">Filter</abbr></a></dt><dd>Base class for all filters</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-FilterBuilder.html"><abbr title="\Arikaim\Core\Validator\FilterBuilder">FilterBuilder</abbr></a></dt><dd>Filter factory class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-CheckList.html"><abbr title="\Arikaim\Core\Validator\Rule\CheckList">CheckList</abbr></a></dt><dd>Check if value is in list</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-Csrf.html"><abbr title="\Arikaim\Core\Validator\Rule\Csrf">Csrf</abbr></a></dt><dd>Csrf token field rule</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-DbRule.html"><abbr title="\Arikaim\Core\Validator\Rule\DbRule">DbRule</abbr></a></dt><dd>Base class for all Db rules</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-Email.html"><abbr title="\Arikaim\Core\Validator\Rule\Email">Email</abbr></a></dt><dd>Email address validation rule</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-Equal.html"><abbr title="\Arikaim\Core\Validator\Rule\Equal">Equal</abbr></a></dt><dd>Equal validation rule.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-Exists.html"><abbr title="\Arikaim\Core\Validator\Rule\Exists">Exists</abbr></a></dt><dd>Check if value exists in database table</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-ExtensionPath.html"><abbr title="\Arikaim\Core\Validator\Rule\ExtensionPath">ExtensionPath</abbr></a></dt><dd>Extension path rule. Check if extension path exists</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-File.html"><abbr title="\Arikaim\Core\Validator\Rule\File">File</abbr></a></dt><dd>Check if field value is valid file array</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-FloatNumber.html"><abbr title="\Arikaim\Core\Validator\Rule\FloatNumber">FloatNumber</abbr></a></dt><dd>Float number validation rule</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-HtmlTags.html"><abbr title="\Arikaim\Core\Validator\Rule\HtmlTags">HtmlTags</abbr></a></dt><dd>HtmlTags rule</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-Integer.html"><abbr title="\Arikaim\Core\Validator\Rule\Integer">Integer</abbr></a></dt><dd>Integer rule validation</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-Ip.html"><abbr title="\Arikaim\Core\Validator\Rule\Ip">Ip</abbr></a></dt><dd>Ip address validatiion rule.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-Number.html"><abbr title="\Arikaim\Core\Validator\Rule\Number">Number</abbr></a></dt><dd>Number form rule validation</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-Regexp.html"><abbr title="\Arikaim\Core\Validator\Rule\Regexp">Regexp</abbr></a></dt><dd>Regexp validation rule</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-TemplatePath.html"><abbr title="\Arikaim\Core\Validator\Rule\TemplatePath">TemplatePath</abbr></a></dt><dd>Check if template file exist.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-Text.html"><abbr title="\Arikaim\Core\Validator\Rule\Text">Text</abbr></a></dt><dd>Text field rule</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-Unique.html"><abbr title="\Arikaim\Core\Validator\Rule\Unique">Unique</abbr></a></dt><dd>Unique value rule, Check if value in model table not exists</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-Url.html"><abbr title="\Arikaim\Core\Validator\Rule\Url">Url</abbr></a></dt><dd>Url validation rule</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule-Uuid.html"><abbr title="\Arikaim\Core\Validator\Rule\Uuid">Uuid</abbr></a></dt><dd>Uuid validation rule.Check if value is valid uuid.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Rule.html"><abbr title="\Arikaim\Core\Validator\Rule">Rule</abbr></a></dt><dd>Base class for all form validation rules</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-RuleBuilder.html"><abbr title="\Arikaim\Core\Validator\RuleBuilder">RuleBuilder</abbr></a></dt><dd>Rule builder</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arikaim-Core-Validator-Validator.html"><abbr title="\Arikaim\Core\Validator\Validator">Validator</abbr></a></dt><dd>Data validation</dd>    </dl>
+
+    <h4 id="toc-traits">
+        Traits
+        <a href="packages/Application.html#toc-traits" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Collection-Traits-ConfigProperties.html"><abbr title="\Arikaim\Core\Collection\Traits\ConfigProperties">ConfigProperties</abbr></a></dt><dd>Config properties</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Collection-Traits-Descriptor.html"><abbr title="\Arikaim\Core\Collection\Traits\Descriptor">Descriptor</abbr></a></dt><dd>Properties descriptor</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Content-Traits-ContentProvider.html"><abbr title="\Arikaim\Core\Content\Traits\ContentProvider">ContentProvider</abbr></a></dt><dd>Content provider trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-AccessToken.html"><abbr title="\Arikaim\Core\Controllers\Traits\AccessToken">AccessToken</abbr></a></dt><dd>AccessToken trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-ApiPaginator.html"><abbr title="\Arikaim\Core\Controllers\Traits\ApiPaginator">ApiPaginator</abbr></a></dt><dd>Api paginator trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-Base-ApiResponse.html"><abbr title="\Arikaim\Core\Controllers\Traits\Base\ApiResponse">ApiResponse</abbr></a></dt><dd>ApiResponse trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-Base-BaseController.html"><abbr title="\Arikaim\Core\Controllers\Traits\Base\BaseController">BaseController</abbr></a></dt><dd>Controller trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-Base-Errors.html"><abbr title="\Arikaim\Core\Controllers\Traits\Base\Errors">Errors</abbr></a></dt><dd>Errors trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-Base-Multilanguage.html"><abbr title="\Arikaim\Core\Controllers\Traits\Base\Multilanguage">Multilanguage</abbr></a></dt><dd>Multilanguage trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-Base-PageErrors.html"><abbr title="\Arikaim\Core\Controllers\Traits\Base\PageErrors">PageErrors</abbr></a></dt><dd>PageErrors trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-Base-UserAccess.html"><abbr title="\Arikaim\Core\Controllers\Traits\Base\UserAccess">UserAccess</abbr></a></dt><dd>UserAccess trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-Captcha.html"><abbr title="\Arikaim\Core\Controllers\Traits\Captcha">Captcha</abbr></a></dt><dd>Captcha trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-Crud.html"><abbr title="\Arikaim\Core\Controllers\Traits\Crud">Crud</abbr></a></dt><dd>CRUD trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-Delete.html"><abbr title="\Arikaim\Core\Controllers\Traits\Delete">Delete</abbr></a></dt><dd>Delete trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-EntityPermissions.html"><abbr title="\Arikaim\Core\Controllers\Traits\EntityPermissions">EntityPermissions</abbr></a></dt><dd>Entity permissions trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-FileDownload.html"><abbr title="\Arikaim\Core\Controllers\Traits\FileDownload">FileDownload</abbr></a></dt><dd>File download and image view trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-FileUpload.html"><abbr title="\Arikaim\Core\Controllers\Traits\FileUpload">FileUpload</abbr></a></dt><dd>File upload trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-MetaTags.html"><abbr title="\Arikaim\Core\Controllers\Traits\MetaTags">MetaTags</abbr></a></dt><dd>MetaTags trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-Options-Options.html"><abbr title="\Arikaim\Core\Controllers\Traits\Options\Options">Options</abbr></a></dt><dd>Orm options trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-PolymorphicRelations.html"><abbr title="\Arikaim\Core\Controllers\Traits\PolymorphicRelations">PolymorphicRelations</abbr></a></dt><dd>Relations trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-SoftDelete.html"><abbr title="\Arikaim\Core\Controllers\Traits\SoftDelete">SoftDelete</abbr></a></dt><dd>Soft Delete trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-Status.html"><abbr title="\Arikaim\Core\Controllers\Traits\Status">Status</abbr></a></dt><dd>Set status trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-TaskProgress.html"><abbr title="\Arikaim\Core\Controllers\Traits\TaskProgress">TaskProgress</abbr></a></dt><dd>Task progress trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-UiComponent.html"><abbr title="\Arikaim\Core\Controllers\Traits\UiComponent">UiComponent</abbr></a></dt><dd>Ui Component Api controller</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Controllers-Traits-UpdateModelField.html"><abbr title="\Arikaim\Core\Controllers\Traits\UpdateModelField">UpdateModelField</abbr></a></dt><dd>Update model field trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-DateCreated.html"><abbr title="\Arikaim\Core\Db\Traits\DateCreated">DateCreated</abbr></a></dt><dd>Set current time for date created.</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-DateSearch.html"><abbr title="\Arikaim\Core\Db\Traits\DateSearch">DateSearch</abbr></a></dt><dd>Date search query</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-DateUpdated.html"><abbr title="\Arikaim\Core\Db\Traits\DateUpdated">DateUpdated</abbr></a></dt><dd>Set current time for date updated.</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-DefaultTrait.html"><abbr title="\Arikaim\Core\Db\Traits\DefaultTrait">DefaultTrait</abbr></a></dt><dd>Default column trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Document-Document.html"><abbr title="\Arikaim\Core\Db\Traits\Document\Document">Document</abbr></a></dt><dd>Document table trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Document-DocumentItems.html"><abbr title="\Arikaim\Core\Db\Traits\Document\DocumentItems">DocumentItems</abbr></a></dt><dd>Document items table trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Document-DocumentNumber.html"><abbr title="\Arikaim\Core\Db\Traits\Document\DocumentNumber">DocumentNumber</abbr></a></dt><dd>Document number table trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Document-DocumentPayments.html"><abbr title="\Arikaim\Core\Db\Traits\Document\DocumentPayments">DocumentPayments</abbr></a></dt><dd>Document payments table trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Document-DocumentPaymentsRelation.html"><abbr title="\Arikaim\Core\Db\Traits\Document\DocumentPaymentsRelation">DocumentPaymentsRelation</abbr></a></dt><dd>Document payments relation table trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Document-LinkedDocumentItems.html"><abbr title="\Arikaim\Core\Db\Traits\Document\LinkedDocumentItems">LinkedDocumentItems</abbr></a></dt><dd>Linked document items table trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-EmptyRow.html"><abbr title="\Arikaim\Core\Db\Traits\EmptyRow">EmptyRow</abbr></a></dt><dd>Empty row trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-FileTypeTrait.html"><abbr title="\Arikaim\Core\Db\Traits\FileTypeTrait">FileTypeTrait</abbr></a></dt><dd>File type trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Find.html"><abbr title="\Arikaim\Core\Db\Traits\Find">Find</abbr></a></dt><dd>Find model</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-IncrementValue.html"><abbr title="\Arikaim\Core\Db\Traits\IncrementValue">IncrementValue</abbr></a></dt><dd>Increment field value</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-MetaTags.html"><abbr title="\Arikaim\Core\Db\Traits\MetaTags">MetaTags</abbr></a></dt><dd>Page meta tags trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Options-Options.html"><abbr title="\Arikaim\Core\Db\Traits\Options\Options">Options</abbr></a></dt><dd>Options table trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Options-OptionsListDefinition.html"><abbr title="\Arikaim\Core\Db\Traits\Options\OptionsListDefinition">OptionsListDefinition</abbr></a></dt><dd>Options list definition table trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Options-OptionsRelation.html"><abbr title="\Arikaim\Core\Db\Traits\Options\OptionsRelation">OptionsRelation</abbr></a></dt><dd>Options relation table trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Options-OptionType.html"><abbr title="\Arikaim\Core\Db\Traits\Options\OptionType">OptionType</abbr></a></dt><dd>Option type table trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-OptionsAttribute.html"><abbr title="\Arikaim\Core\Db\Traits\OptionsAttribute">OptionsAttribute</abbr></a></dt><dd>Options attribute trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-OrderBy.html"><abbr title="\Arikaim\Core\Db\Traits\OrderBy">OrderBy</abbr></a></dt><dd>Order by column trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-PackageRegistry.html"><abbr title="\Arikaim\Core\Db\Traits\PackageRegistry">PackageRegistry</abbr></a></dt><dd>Package Registry</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Paginator.html"><abbr title="\Arikaim\Core\Db\Traits\Paginator">Paginator</abbr></a></dt><dd>Paginator trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Permissions-EntityPermissions.html"><abbr title="\Arikaim\Core\Db\Traits\Permissions\EntityPermissions">EntityPermissions</abbr></a></dt><dd>Entity permissions</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Permissions-EntityPermissionsRelation.html"><abbr title="\Arikaim\Core\Db\Traits\Permissions\EntityPermissionsRelation">EntityPermissionsRelation</abbr></a></dt><dd>Entity permissions relation</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Permissions-Permissions.html"><abbr title="\Arikaim\Core\Db\Traits\Permissions\Permissions">Permissions</abbr></a></dt><dd>Permissions</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-PolymorphicRelations.html"><abbr title="\Arikaim\Core\Db\Traits\PolymorphicRelations">PolymorphicRelations</abbr></a></dt><dd>Polymorphic Relations (Many To Many) trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Position.html"><abbr title="\Arikaim\Core\Db\Traits\Position">Position</abbr></a></dt><dd>Update position field
+Change default position  attribute in model
+    protected $positionColumnName = &#039;attribute name&#039;;</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Price-PriceList.html"><abbr title="\Arikaim\Core\Db\Traits\Price\PriceList">PriceList</abbr></a></dt><dd>Price list table trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Price-PriceRelation.html"><abbr title="\Arikaim\Core\Db\Traits\Price\PriceRelation">PriceRelation</abbr></a></dt><dd>Price relation table trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Relations.html"><abbr title="\Arikaim\Core\Db\Traits\Relations">Relations</abbr></a></dt><dd>Relations (Many To Many) trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-ReportData.html"><abbr title="\Arikaim\Core\Db\Traits\ReportData">ReportData</abbr></a></dt><dd>Report data trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Schema-Import.html"><abbr title="\Arikaim\Core\Db\Traits\Schema\Import">Import</abbr></a></dt><dd>Import model schema options</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Search.html"><abbr title="\Arikaim\Core\Db\Traits\Search">Search</abbr></a></dt><dd>Search trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Slug.html"><abbr title="\Arikaim\Core\Db\Traits\Slug">Slug</abbr></a></dt><dd>Create slug</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-SoftDelete.html"><abbr title="\Arikaim\Core\Db\Traits\SoftDelete">SoftDelete</abbr></a></dt><dd>Soft delete trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Status.html"><abbr title="\Arikaim\Core\Db\Traits\Status">Status</abbr></a></dt><dd>Update Status field</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-ToggleValue.html"><abbr title="\Arikaim\Core\Db\Traits\ToggleValue">ToggleValue</abbr></a></dt><dd>Update boolean database values (true or false)</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Translations.html"><abbr title="\Arikaim\Core\Db\Traits\Translations">Translations</abbr></a></dt><dd>Translations trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Tree.html"><abbr title="\Arikaim\Core\Db\Traits\Tree">Tree</abbr></a></dt><dd>Manage models with parent - child relations.</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-UserRelation.html"><abbr title="\Arikaim\Core\Db\Traits\UserRelation">UserRelation</abbr></a></dt><dd>User Relation trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Db-Traits-Uuid.html"><abbr title="\Arikaim\Core\Db\Traits\Uuid">Uuid</abbr></a></dt><dd>Update UUID field</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Driver-Traits-Driver.html"><abbr title="\Arikaim\Core\Driver\Traits\Driver">Driver</abbr></a></dt><dd>Driver trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Events-Traits-EventLog.html"><abbr title="\Arikaim\Core\Events\Traits\EventLog">EventLog</abbr></a></dt><dd>Event log</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Logger-Traits-Loggable.html"><abbr title="\Arikaim\Core\Logger\Traits\Loggable">Loggable</abbr></a></dt><dd>Loggable trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Logger-Traits-LoggerTrait.html"><abbr title="\Arikaim\Core\Logger\Traits\LoggerTrait">LoggerTrait</abbr></a></dt><dd>Logger trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Packages-Traits-Actions.html"><abbr title="\Arikaim\Core\Packages\Traits\Actions">Actions</abbr></a></dt><dd>Package actions trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Packages-Traits-ComponentTranslations.html"><abbr title="\Arikaim\Core\Packages\Traits\ComponentTranslations">ComponentTranslations</abbr></a></dt><dd>View component translations trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Packages-Traits-ConsoleCommands.html"><abbr title="\Arikaim\Core\Packages\Traits\ConsoleCommands">ConsoleCommands</abbr></a></dt><dd>Console commands trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Packages-Traits-CssFiles.html"><abbr title="\Arikaim\Core\Packages\Traits\CssFiles">CssFiles</abbr></a></dt><dd>Css files trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Packages-Traits-Drivers.html"><abbr title="\Arikaim\Core\Packages\Traits\Drivers">Drivers</abbr></a></dt><dd>Get package drivers.</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Packages-Traits-Jobs.html"><abbr title="\Arikaim\Core\Packages\Traits\Jobs">Jobs</abbr></a></dt><dd>Package jobs trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Packages-Traits-JsFiles.html"><abbr title="\Arikaim\Core\Packages\Traits\JsFiles">JsFiles</abbr></a></dt><dd>Js files trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Packages-Traits-Middlewares.html"><abbr title="\Arikaim\Core\Packages\Traits\Middlewares">Middlewares</abbr></a></dt><dd>Package middleware trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Packages-Traits-Themes.html"><abbr title="\Arikaim\Core\Packages\Traits\Themes">Themes</abbr></a></dt><dd>Themes trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Packages-Traits-ViewComponents.html"><abbr title="\Arikaim\Core\Packages\Traits\ViewComponents">ViewComponents</abbr></a></dt><dd>View components trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Queue-Traits-JobConfigUpdate.html"><abbr title="\Arikaim\Core\Queue\Traits\JobConfigUpdate">JobConfigUpdate</abbr></a></dt><dd>Job config params update in queue</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Queue-Traits-JobLog.html"><abbr title="\Arikaim\Core\Queue\Traits\JobLog">JobLog</abbr></a></dt><dd>Job log</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Queue-Traits-JobProgress.html"><abbr title="\Arikaim\Core\Queue\Traits\JobProgress">JobProgress</abbr></a></dt><dd>Job progress</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Queue-Traits-Recurring.html"><abbr title="\Arikaim\Core\Queue\Traits\Recurring">Recurring</abbr></a></dt><dd>Recurring job trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Queue-Traits-Scheduled.html"><abbr title="\Arikaim\Core\Queue\Traits\Scheduled">Scheduled</abbr></a></dt><dd>Scheduled job trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-Service-Traits-ServiceTrait.html"><abbr title="\Arikaim\Core\Service\Traits\ServiceTrait">ServiceTrait</abbr></a></dt><dd>Service trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-System-Error-Traits-TaskErrors.html"><abbr title="\Arikaim\Core\System\Error\Traits\TaskErrors">TaskErrors</abbr></a></dt><dd>Task Errors trait</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Arikaim-Core-System-Traits-PhpConfigFile.html"><abbr title="\Arikaim\Core\System\Traits\PhpConfigFile">PhpConfigFile</abbr></a></dt><dd>Php Config file loader and writer</dd>    </dl>
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="packages/Application.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="namespaces/default.html#constant_APP_PATH">APP_PATH</a>
+    <span>
+        &nbsp;= ROOT_PATH . BASE_PATH . DIRECTORY_SEPARATOR . &#039;arikaim&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="namespaces/default.html#constant_APP_PATH">APP_PATH</a>
+    <span>
+        &nbsp;= ROOT_PATH . BASE_PATH . DIRECTORY_SEPARATOR . $path                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="namespaces/default.html#constant_APP_URL">APP_URL</a>
+    <span>
+        &nbsp;= DOMAIN . BASE_PATH . &#039;/arikaim&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="namespaces/default.html#constant_APP_URL">APP_URL</a>
+    <span>
+        &nbsp;= Self::BASE_URL . $path                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="namespaces/default.html#constant_BASE_PATH">BASE_PATH</a>
+    <span>
+        &nbsp;= $config[&#039;environment&#039;][&#039;basePath&#039;] ?? Self::resolveBasePath($_SERVER, DOMAIN)                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="namespaces/default.html#constant_BASE_PATH">BASE_PATH</a>
+    <span>
+        &nbsp;= $basePath                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="namespaces/default.html#constant_CORE_NAMESPACE">CORE_NAMESPACE</a>
+    <span>
+        &nbsp;= &#039;Arikaim\\Core&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="namespaces/default.html#constant_CURRENT_DATE_FORMAT">CURRENT_DATE_FORMAT</a>
+    <span>
+        &nbsp;= $config[&#039;settings&#039;][&#039;dateFormat&#039;] ?? null                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="namespaces/default.html#constant_CURRENT_NUMBER_FORMAT">CURRENT_NUMBER_FORMAT</a>
+    <span>
+        &nbsp;= $config[&#039;settings&#039;][&#039;numberFormat&#039;] ?? null                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="namespaces/default.html#constant_CURRENT_TIME_FORMAT">CURRENT_TIME_FORMAT</a>
+    <span>
+        &nbsp;= $config[&#039;settings&#039;][&#039;timeFormat&#039;] ?? null                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="namespaces/default.html#constant_DOMAIN">DOMAIN</a>
+    <span>
+        &nbsp;= Self::$scheme . &#039;://&#039; . ($config[&#039;environment&#039;][&#039;host&#039;] ?? Self::resolveHost($_SERVER))                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="namespaces/default.html#constant_DOMAIN">DOMAIN</a>
+    <span>
+        &nbsp;= $domain                            </span>
+</dt>
+
+    </dl>
+
+
+
+
+<h4 id="toc-functions">
+    Functions
+    <a href="packages/Application.html#toc-functions" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_createEvent">createEvent()</a>
+    <span>
+                                &nbsp;: <a href="classes/Arikaim-Core-Events-Event.html"><abbr title="\Arikaim\Core\Events\Event">Event</abbr></a>    </span>
+</dt>
+<dd>Create event obj</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_addProfilerPin">addProfilerPin()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Add profile pin</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_getProfilerData">getProfilerData()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get profiler data</dd>
+
+    </dl>
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="packages/Application.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_APP_PATH">
+        APP_PATH
+        <a href="namespaces/default.html#constant_APP_PATH" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="vendor/arikaim/core/Arikaim.php"><a href="files/vendor-arikaim-core-arikaim.html"><abbr title="vendor/arikaim/core/Arikaim.php">Arikaim.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">118</span>
+
+            <a href="packages/Application.html#source-view.118" class="phpdocumentor-element-found-in__source" data-line="118" data-modal="source-view" data-src="files/vendor/arikaim/core/Arikaim.php.txt"></a>
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">APP_PATH</span>
+    = <span class="phpdocumentor-signature__default-value">ROOT_PATH . BASE_PATH . DIRECTORY_SEPARATOR . &#039;arikaim&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_APP_PATH">
+        APP_PATH
+        <a href="namespaces/default.html#constant_APP_PATH" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="vendor/arikaim/utils/Path.php"><a href="files/vendor-arikaim-utils-path.html"><abbr title="vendor/arikaim/utils/Path.php">Path.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">118</span>
+
+            <a href="packages/Application.html#source-view.118" class="phpdocumentor-element-found-in__source" data-line="118" data-modal="source-view" data-src="files/vendor/arikaim/utils/Path.php.txt"></a>
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">APP_PATH</span>
+    = <span class="phpdocumentor-signature__default-value">ROOT_PATH . BASE_PATH . DIRECTORY_SEPARATOR . $path</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_APP_URL">
+        APP_URL
+        <a href="namespaces/default.html#constant_APP_URL" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="vendor/arikaim/core/Arikaim.php"><a href="files/vendor-arikaim-core-arikaim.html"><abbr title="vendor/arikaim/core/Arikaim.php">Arikaim.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">119</span>
+
+            <a href="packages/Application.html#source-view.119" class="phpdocumentor-element-found-in__source" data-line="119" data-modal="source-view" data-src="files/vendor/arikaim/core/Arikaim.php.txt"></a>
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">APP_URL</span>
+    = <span class="phpdocumentor-signature__default-value">DOMAIN . BASE_PATH . &#039;/arikaim&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_APP_URL">
+        APP_URL
+        <a href="namespaces/default.html#constant_APP_URL" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="vendor/arikaim/http/Url.php"><a href="files/vendor-arikaim-http-url.html"><abbr title="vendor/arikaim/http/Url.php">Url.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">197</span>
+
+            <a href="packages/Application.html#source-view.197" class="phpdocumentor-element-found-in__source" data-line="197" data-modal="source-view" data-src="files/vendor/arikaim/http/Url.php.txt"></a>
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">APP_URL</span>
+    = <span class="phpdocumentor-signature__default-value">Self::BASE_URL . $path</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_BASE_PATH">
+        BASE_PATH
+        <a href="namespaces/default.html#constant_BASE_PATH" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="vendor/arikaim/core/Arikaim.php"><a href="files/vendor-arikaim-core-arikaim.html"><abbr title="vendor/arikaim/core/Arikaim.php">Arikaim.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">117</span>
+
+            <a href="packages/Application.html#source-view.117" class="phpdocumentor-element-found-in__source" data-line="117" data-modal="source-view" data-src="files/vendor/arikaim/core/Arikaim.php.txt"></a>
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">BASE_PATH</span>
+    = <span class="phpdocumentor-signature__default-value">$config[&#039;environment&#039;][&#039;basePath&#039;] ?? Self::resolveBasePath($_SERVER, DOMAIN)</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_BASE_PATH">
+        BASE_PATH
+        <a href="namespaces/default.html#constant_BASE_PATH" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="vendor/arikaim/http/Url.php"><a href="files/vendor-arikaim-http-url.html"><abbr title="vendor/arikaim/http/Url.php">Url.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">184</span>
+
+            <a href="packages/Application.html#source-view.184" class="phpdocumentor-element-found-in__source" data-line="184" data-modal="source-view" data-src="files/vendor/arikaim/http/Url.php.txt"></a>
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">BASE_PATH</span>
+    = <span class="phpdocumentor-signature__default-value">$basePath</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CORE_NAMESPACE">
+        CORE_NAMESPACE
+        <a href="namespaces/default.html#constant_CORE_NAMESPACE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="vendor/arikaim/core/Arikaim.php"><a href="files/vendor-arikaim-core-arikaim.html"><abbr title="vendor/arikaim/core/Arikaim.php">Arikaim.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">120</span>
+
+            <a href="packages/Application.html#source-view.120" class="phpdocumentor-element-found-in__source" data-line="120" data-modal="source-view" data-src="files/vendor/arikaim/core/Arikaim.php.txt"></a>
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CORE_NAMESPACE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;Arikaim\\Core&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CURRENT_DATE_FORMAT">
+        CURRENT_DATE_FORMAT
+        <a href="namespaces/default.html#constant_CURRENT_DATE_FORMAT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="vendor/arikaim/core/Arikaim.php"><a href="files/vendor-arikaim-core-arikaim.html"><abbr title="vendor/arikaim/core/Arikaim.php">Arikaim.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">134</span>
+
+            <a href="packages/Application.html#source-view.134" class="phpdocumentor-element-found-in__source" data-line="134" data-modal="source-view" data-src="files/vendor/arikaim/core/Arikaim.php.txt"></a>
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CURRENT_DATE_FORMAT</span>
+    = <span class="phpdocumentor-signature__default-value">$config[&#039;settings&#039;][&#039;dateFormat&#039;] ?? null</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CURRENT_NUMBER_FORMAT">
+        CURRENT_NUMBER_FORMAT
+        <a href="namespaces/default.html#constant_CURRENT_NUMBER_FORMAT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="vendor/arikaim/core/Arikaim.php"><a href="files/vendor-arikaim-core-arikaim.html"><abbr title="vendor/arikaim/core/Arikaim.php">Arikaim.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">133</span>
+
+            <a href="packages/Application.html#source-view.133" class="phpdocumentor-element-found-in__source" data-line="133" data-modal="source-view" data-src="files/vendor/arikaim/core/Arikaim.php.txt"></a>
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CURRENT_NUMBER_FORMAT</span>
+    = <span class="phpdocumentor-signature__default-value">$config[&#039;settings&#039;][&#039;numberFormat&#039;] ?? null</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CURRENT_TIME_FORMAT">
+        CURRENT_TIME_FORMAT
+        <a href="namespaces/default.html#constant_CURRENT_TIME_FORMAT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="vendor/arikaim/core/Arikaim.php"><a href="files/vendor-arikaim-core-arikaim.html"><abbr title="vendor/arikaim/core/Arikaim.php">Arikaim.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">135</span>
+
+            <a href="packages/Application.html#source-view.135" class="phpdocumentor-element-found-in__source" data-line="135" data-modal="source-view" data-src="files/vendor/arikaim/core/Arikaim.php.txt"></a>
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CURRENT_TIME_FORMAT</span>
+    = <span class="phpdocumentor-signature__default-value">$config[&#039;settings&#039;][&#039;timeFormat&#039;] ?? null</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_DOMAIN">
+        DOMAIN
+        <a href="namespaces/default.html#constant_DOMAIN" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="vendor/arikaim/core/Arikaim.php"><a href="files/vendor-arikaim-core-arikaim.html"><abbr title="vendor/arikaim/core/Arikaim.php">Arikaim.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">116</span>
+
+            <a href="packages/Application.html#source-view.116" class="phpdocumentor-element-found-in__source" data-line="116" data-modal="source-view" data-src="files/vendor/arikaim/core/Arikaim.php.txt"></a>
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">DOMAIN</span>
+    = <span class="phpdocumentor-signature__default-value">Self::$scheme . &#039;://&#039; . ($config[&#039;environment&#039;][&#039;host&#039;] ?? Self::resolveHost($_SERVER))</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_DOMAIN">
+        DOMAIN
+        <a href="namespaces/default.html#constant_DOMAIN" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="vendor/arikaim/http/Url.php"><a href="files/vendor-arikaim-http-url.html"><abbr title="vendor/arikaim/http/Url.php">Url.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">180</span>
+
+            <a href="packages/Application.html#source-view.180" class="phpdocumentor-element-found-in__source" data-line="180" data-modal="source-view" data-src="files/vendor/arikaim/http/Url.php.txt"></a>
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">DOMAIN</span>
+    = <span class="phpdocumentor-signature__default-value">$domain</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="packages/Application.html#functions" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_createEvent">
+        createEvent()
+        <a href="namespaces/default.html#function_createEvent" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="vendor/arikaim/core-app/Globals.php"><a href="files/vendor-arikaim-core-app-globals.html"><abbr title="vendor/arikaim/core-app/Globals.php">Globals.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">19</span>
+
+            <a href="packages/Application.html#source-view.19" class="phpdocumentor-element-found-in__source" data-line="19" data-modal="source-view" data-src="files/vendor/arikaim/core-app/Globals.php.txt"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">Create event obj</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">createEvent</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Arikaim-Core-Events-Event.html"><abbr title="\Arikaim\Core\Events\Event">Event</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$params</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Event params</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Arikaim-Core-Events-Event.html"><abbr title="\Arikaim\Core\Events\Event">Event</abbr></a></span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_addProfilerPin">
+        addProfilerPin()
+        <a href="namespaces/default.html#function_addProfilerPin" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="vendor/arikaim/core-app/Globals.php"><a href="files/vendor-arikaim-core-app-globals.html"><abbr title="vendor/arikaim/core-app/Globals.php">Globals.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+            <a href="packages/Application.html#source-view.30" class="phpdocumentor-element-found-in__source" data-line="30" data-modal="source-view" data-src="files/vendor/arikaim/core-app/Globals.php.txt"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">Add profile pin</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">addProfilerPin</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$label</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$label</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_getProfilerData">
+        getProfilerData()
+        <a href="namespaces/default.html#function_getProfilerData" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="vendor/arikaim/core-app/Globals.php"><a href="files/vendor-arikaim-core-app-globals.html"><abbr title="vendor/arikaim/core-app/Globals.php">Globals.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+
+            <a href="packages/Application.html#source-view.43" class="phpdocumentor-element-found-in__source" data-line="43" data-modal="source-view" data-src="files/vendor/arikaim/core-app/Globals.php.txt"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">Get profiler data</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">getProfilerData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+            </section>
+
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
+
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
+
+                    var xhr = new XMLHttpRequest();
+
+                    xhr.open('GET', src, true);
+
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+                            Prism.highlightElement(code);
+                            return;
+                        }
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
+                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
+                    }
+                    modal.classList.add("phpdocumentor-modal__open");
+
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
+                    });
+                });
+            });
+        })();
+    </script>
+
+    </article>
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                            
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                                                    <li><a href="packages/Application.html#toc-interfaces">Interfaces</a></li>
+                                                                <li><a href="packages/Application.html#toc-classes">Classes</a></li>
+                                                                <li><a href="packages/Application.html#toc-traits">Traits</a></li>
+                                                                                    <li><a href="packages/Application.html#toc-constants">Constants</a></li>
+                                                                <li><a href="packages/Application.html#toc-functions">Functions</a></li>
+                                    </ul>
+            </li>
+
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="namespaces/default.html#constant_APP_PATH">APP_PATH</a></li>
+                                                    <li><a href="namespaces/default.html#constant_APP_PATH">APP_PATH</a></li>
+                                                    <li><a href="namespaces/default.html#constant_APP_URL">APP_URL</a></li>
+                                                    <li><a href="namespaces/default.html#constant_APP_URL">APP_URL</a></li>
+                                                    <li><a href="namespaces/default.html#constant_BASE_PATH">BASE_PATH</a></li>
+                                                    <li><a href="namespaces/default.html#constant_BASE_PATH">BASE_PATH</a></li>
+                                                    <li><a href="namespaces/default.html#constant_CORE_NAMESPACE">CORE_NAMESPACE</a></li>
+                                                    <li><a href="namespaces/default.html#constant_CURRENT_DATE_FORMAT">CURRENT_DATE_FORMAT</a></li>
+                                                    <li><a href="namespaces/default.html#constant_CURRENT_NUMBER_FORMAT">CURRENT_NUMBER_FORMAT</a></li>
+                                                    <li><a href="namespaces/default.html#constant_CURRENT_TIME_FORMAT">CURRENT_TIME_FORMAT</a></li>
+                                                    <li><a href="namespaces/default.html#constant_DOMAIN">DOMAIN</a></li>
+                                                    <li><a href="namespaces/default.html#constant_DOMAIN">DOMAIN</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Functions</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="namespaces/default.html#function_addProfilerPin">addProfilerPin()</a></li>
+                                                    <li><a href="namespaces/default.html#function_createEvent">createEvent()</a></li>
+                                                    <li><a href="namespaces/default.html#function_getProfilerData">getProfilerData()</a></li>
+                                            </ul>
+                </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="packages/Application.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>
