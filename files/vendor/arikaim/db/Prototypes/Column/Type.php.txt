@@ -31,4 +31,3 @@ class Type implements BlueprintPrototypeInterface
         $table->index('type');   
     }
 }
-

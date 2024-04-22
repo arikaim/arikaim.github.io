@@ -47,4 +47,3 @@ class TrimSpace extends Filter
         return FILTER_CALLBACK;
     }
 }
-

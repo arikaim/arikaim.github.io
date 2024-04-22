@@ -85,4 +85,3 @@ class CacheTagParser extends AbstractTokenParser
         return 'cache';
     }
 }
-

@@ -48,4 +48,3 @@ class Equal extends Rule
         return FILTER_CALLBACK;
     }
 }
-

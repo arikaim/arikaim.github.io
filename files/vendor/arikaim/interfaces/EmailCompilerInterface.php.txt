@@ -23,4 +23,3 @@ interface EmailCompilerInterface
      */
     public function compile(string $htmlCode, string $cssCode): string;
 }
-

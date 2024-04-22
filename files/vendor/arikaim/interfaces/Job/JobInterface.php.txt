@@ -199,4 +199,3 @@ interface JobInterface
      */
     public function toArray(): array;
 }
-

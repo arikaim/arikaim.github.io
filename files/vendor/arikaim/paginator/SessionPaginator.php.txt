@@ -160,4 +160,3 @@ class SessionPaginator
         Self::setCurrentPage(1,$namespace); 
     }
 }
-

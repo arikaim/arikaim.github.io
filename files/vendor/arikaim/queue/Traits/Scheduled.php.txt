@@ -57,4 +57,3 @@ trait Scheduled
         return $this->setScheduleTime(DateTime::toTimestamp($date));
     }
 }
-

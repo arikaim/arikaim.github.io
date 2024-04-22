@@ -244,4 +244,3 @@ class ArikaimStore
         return Self::LOGIN_API_URL;
     }
 }
-

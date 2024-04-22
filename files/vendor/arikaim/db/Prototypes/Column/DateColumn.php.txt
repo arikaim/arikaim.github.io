@@ -29,4 +29,3 @@ class DateColumn implements BlueprintPrototypeInterface
         $table->index($options[0]);             
     }
 }
-

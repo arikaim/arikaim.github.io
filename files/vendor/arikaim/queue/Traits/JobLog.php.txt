@@ -70,4 +70,3 @@ trait JobLog
         return $this->logContext ?? [];
     }
 }
-

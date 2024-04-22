@@ -91,4 +91,3 @@ interface AccessInterface
      */
     public function addPermission(string $name, ?string $title = null, ?string $description = null, ?string $extension = null): bool;
 }
-

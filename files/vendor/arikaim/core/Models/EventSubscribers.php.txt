@@ -246,4 +246,3 @@ class EventSubscribers extends Model implements SubscriberRegistryInterface
         return (bool)$this->update(['status' => $status]);       
     }
 }
-

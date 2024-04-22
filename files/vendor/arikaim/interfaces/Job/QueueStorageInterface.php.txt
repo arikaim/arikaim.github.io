@@ -102,4 +102,3 @@ interface QueueStorageInterface
      */
     public function getNext(): ?array;
 }
-

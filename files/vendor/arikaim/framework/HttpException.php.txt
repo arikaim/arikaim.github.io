@@ -50,4 +50,3 @@ class HttpException extends Exception
         return $this->httpStatusCode;
     }
 }
-

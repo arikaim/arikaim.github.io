@@ -81,4 +81,3 @@ interface FieldInterface
      */
     public function getValue();
 }
-

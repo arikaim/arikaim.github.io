@@ -95,4 +95,3 @@ trait UserRelation
                 ->orWhereNull($this->userColumnName ?? static::$DEFAULT_USER_COLUMN);
     }
 }
-

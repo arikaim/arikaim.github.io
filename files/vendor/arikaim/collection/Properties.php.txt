@@ -339,4 +339,3 @@ class Properties extends Collection implements CollectionInterface
         return true;
     }
 }
-

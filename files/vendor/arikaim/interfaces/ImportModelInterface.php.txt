@@ -21,4 +21,3 @@ interface ImportModelInterface
      */
     public function getSkipedImportColumns(): array;
 }
-

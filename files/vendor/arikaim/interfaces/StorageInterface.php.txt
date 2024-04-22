@@ -99,4 +99,3 @@ interface StorageInterface
      */
     public function deleteDir(string $path, ?string $fileSystemName = null): bool;
 }
-

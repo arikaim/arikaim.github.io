@@ -75,4 +75,3 @@ class RequestConverter
         return (\is_string($protocol) == true) ? $protocol : '1.1';
     }
 }
-

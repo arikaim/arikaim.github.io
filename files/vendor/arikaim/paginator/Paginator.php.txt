@@ -267,4 +267,3 @@ class Paginator implements PaginatorInterface
         return \max((int)\ceil($this->total / $this->perPage),1);
     }
 }
-

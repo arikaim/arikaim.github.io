@@ -29,4 +29,3 @@ class DateExpired implements BlueprintPrototypeInterface
         $table->index('date_expired');             
     }
 }
-

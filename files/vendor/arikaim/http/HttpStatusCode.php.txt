@@ -79,4 +79,3 @@ class HttpStatusCode {
         return \in_array($code,Self::CODES);
     } 
 }
-

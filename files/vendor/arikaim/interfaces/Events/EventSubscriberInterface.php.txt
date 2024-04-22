@@ -29,4 +29,3 @@ interface EventSubscriberInterface
      */
     public function getSubscribedEvents();
 }
-

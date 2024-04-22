@@ -117,4 +117,3 @@ class Model
         return \is_subclass_of($instance,'Illuminate\\Database\\Eloquent\\Model');
     }
 }
-

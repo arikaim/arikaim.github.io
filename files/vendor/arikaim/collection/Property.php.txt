@@ -596,4 +596,3 @@ class Property implements PropertyInterface
         return $property;
     }   
 }
-

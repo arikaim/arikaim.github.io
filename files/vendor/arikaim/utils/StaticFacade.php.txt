@@ -88,4 +88,3 @@ abstract class StaticFacade
         return Utils::call($instance,$method,$args);
     }
 }
-

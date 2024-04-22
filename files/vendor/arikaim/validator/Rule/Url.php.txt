@@ -39,4 +39,3 @@ class Url extends Rule
         return FILTER_VALIDATE_URL;
     }
 }
-

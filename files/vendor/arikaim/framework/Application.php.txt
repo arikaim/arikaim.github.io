@@ -488,4 +488,3 @@ class Application
         ),true,$response->getStatusCode());
     } 
 }
-

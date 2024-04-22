@@ -36,4 +36,3 @@ class DefaultColumn implements BlueprintPrototypeInterface
         }
     }
 }
-

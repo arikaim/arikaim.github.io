@@ -383,4 +383,3 @@ class EventsManager implements EventDispatcherInterface
         return false;
     }
 }
-

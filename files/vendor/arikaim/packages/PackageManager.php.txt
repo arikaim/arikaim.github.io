@@ -603,4 +603,3 @@ class PackageManager implements PackageManagerInterface
         return Self::ARIKAIM_REPOSITORY;       
     }   
 }
-

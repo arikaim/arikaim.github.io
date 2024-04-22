@@ -32,4 +32,3 @@ class Price implements BlueprintPrototypeInterface
         $table->index($columnName);   
     }
 }
-

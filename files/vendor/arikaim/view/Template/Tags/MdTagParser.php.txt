@@ -82,4 +82,3 @@ class MdTagParser extends AbstractTokenParser
         return 'md';
     }
 }
-

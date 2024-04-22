@@ -60,4 +60,3 @@ class MdNode extends Node implements NodeOutputInterface
             ->write('echo $this->env->getExtension("' . $this->twigExtensionClass . '")->parseMarkdown($content,$context);' . PHP_EOL);
     }
 }
-

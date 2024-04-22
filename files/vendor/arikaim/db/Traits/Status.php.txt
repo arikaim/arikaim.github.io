@@ -220,4 +220,3 @@ trait Status
         return (empty($status) == true) ? 0 : (int)$status;
     }
 }
-

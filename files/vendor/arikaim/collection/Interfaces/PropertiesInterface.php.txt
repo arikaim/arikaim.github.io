@@ -47,4 +47,3 @@ interface PropertiesInterface
      */
     public function setPropertyValue(string $key, $value): bool;
 }
-

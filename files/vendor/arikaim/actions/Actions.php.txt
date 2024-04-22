@@ -176,4 +176,3 @@ class Actions
         return Self::createFromStorage($packageName,$class,$options);
     }
 }
-

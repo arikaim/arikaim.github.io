@@ -75,4 +75,3 @@ class AdminResetCommand extends ConsoleCommand
         return;
     }
 }
-

@@ -37,4 +37,3 @@ class ArrayContentType extends ContentType
         return new ArrayContentType();
     }
 }
-

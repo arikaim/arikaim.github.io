@@ -66,4 +66,3 @@ interface ServiceInterface
      */
     public function setServiceDescription(string $description): void;
 }
-

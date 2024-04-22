@@ -298,4 +298,3 @@ trait EntityPermissions
         return $query->where('relation_type','=','group');
     } 
 }
-

@@ -67,4 +67,3 @@ class InstallCommand extends ConsoleCommand
         $this->showCompleted();
     }
 }
-

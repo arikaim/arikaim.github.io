@@ -122,4 +122,3 @@ class RedisCache implements CacheInterface
         return (array)$this->redis->info(); 
     }
 }
-

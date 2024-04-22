@@ -27,4 +27,3 @@ trait Search
         return DbSearch::apply($this,$namespace);
     }
 }
-

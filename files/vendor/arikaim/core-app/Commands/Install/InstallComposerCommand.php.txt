@@ -44,4 +44,3 @@ class InstallComposerCommand extends ConsoleCommand
         $this->showCompleted();       
     }
 }
-

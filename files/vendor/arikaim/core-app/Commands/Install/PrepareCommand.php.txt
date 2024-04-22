@@ -75,4 +75,3 @@ class PrepareCommand extends ConsoleCommand
         }
     }
 }
-

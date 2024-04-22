@@ -46,4 +46,3 @@ class StripTags extends Filter
         return FILTER_CALLBACK;
     }
 }
-

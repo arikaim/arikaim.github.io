@@ -68,4 +68,3 @@ class Service implements ServiceInterface
         return ($this->container === null) ? false : $this->container->has($name);          
     }
 }
-

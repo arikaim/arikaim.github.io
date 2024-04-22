@@ -118,4 +118,3 @@ class Cookie
         return 'expires=' . $expire->format(\DateTime::COOKIE);
     }
 }
-

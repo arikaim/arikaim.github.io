@@ -36,4 +36,3 @@ trait ToggleValue
         return ($result !== false);
     }
 }
-

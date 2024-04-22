@@ -120,4 +120,3 @@ class ArikaimComponent extends BaseComponent implements HtmlComponentInterface, 
         return true;
     }
 }
-

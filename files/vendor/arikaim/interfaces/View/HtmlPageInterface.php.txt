@@ -96,4 +96,3 @@ interface HtmlPageInterface extends HtmlComponentInterface
      */
     public function getComponentsFiles(): array;
 }
-

@@ -108,4 +108,3 @@ trait PriceRelation
         return ($model != null) ? (float)$model->price : null;
     }
 }
-

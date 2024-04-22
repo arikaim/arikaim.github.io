@@ -104,4 +104,3 @@ class Options extends ControlPanelApiController
         $this->message('options.save');
     }
 }
-

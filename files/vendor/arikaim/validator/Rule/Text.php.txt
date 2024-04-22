@@ -68,4 +68,3 @@ class Text extends Rule
         return FILTER_CALLBACK;
     }
 }
-

@@ -73,4 +73,3 @@ class JobsCommand extends ConsoleCommand
         $this->showCompleted(); 
     }    
 }
-

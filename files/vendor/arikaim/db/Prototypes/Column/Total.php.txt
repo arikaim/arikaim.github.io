@@ -29,4 +29,3 @@ class Total implements BlueprintPrototypeInterface
         $table->decimal($columnName,15,4)->nullable(true);
     }
 }
-

@@ -111,4 +111,3 @@ interface PropertyInterface
     */
     public function isHidden(): bool;
 }
-

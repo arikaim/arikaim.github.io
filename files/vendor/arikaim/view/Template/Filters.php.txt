@@ -106,4 +106,3 @@ class Filters
         return (\is_array($value) == true) ? Html::getAttributes($value) : Html::attr($value,$name ?? '',$default ?? '');
     }
 }
-

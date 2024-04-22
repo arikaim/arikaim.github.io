@@ -283,4 +283,3 @@ class AdminTwigExtension extends AbstractExtension implements GlobalsInterface
         return ($arikaim->get('access')->hasControlPanelAccess() == true) ? new System() : null;
     }
 }
-

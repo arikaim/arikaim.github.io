@@ -66,4 +66,3 @@ trait Captcha
         return $this->captchaErrors;
     } 
 }
-

@@ -192,4 +192,3 @@ trait EntityPermissions
         },'errors.permission.delete');
     }
 }
-

@@ -94,4 +94,3 @@ class Modules
         return ($model == null) ? null : $model->config;
     }
 }
-

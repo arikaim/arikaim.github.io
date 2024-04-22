@@ -48,4 +48,3 @@ interface JobProgressInterface
     */
     public function jobProgressError($param): void;
 }
-

@@ -294,4 +294,3 @@ abstract class ContentType implements ContentTypeInterface
         $this->category = $category;
     }
 }
-

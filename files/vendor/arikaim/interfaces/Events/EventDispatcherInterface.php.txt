@@ -55,4 +55,3 @@ interface EventDispatcherInterface
      */
     public function subscribeCallback(string $eventName, $callback, bool $single = false): void;
 }
-

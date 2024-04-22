@@ -219,4 +219,3 @@ class Options extends Model implements OptionsStorageInterface
         return $this->where('extension','=',$extensioName)->select('key','value')->get();
     }
 }
-

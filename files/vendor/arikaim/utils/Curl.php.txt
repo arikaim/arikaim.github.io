@@ -282,4 +282,3 @@ class Curl
         return $curl;
     }
 }
-

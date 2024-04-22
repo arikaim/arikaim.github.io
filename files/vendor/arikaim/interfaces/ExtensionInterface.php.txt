@@ -49,4 +49,3 @@ interface ExtensionInterface
      */
     public function isPrimary();
 }
-

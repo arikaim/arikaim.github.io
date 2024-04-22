@@ -283,4 +283,3 @@ class Cache implements CacheInterface
         return true;
     }
 }
-

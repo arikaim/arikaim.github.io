@@ -84,4 +84,3 @@ class FastApiController
         $this->response = $response;
     }
 }
-

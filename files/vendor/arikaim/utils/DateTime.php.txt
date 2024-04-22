@@ -490,4 +490,3 @@ class DateTime
             Self::create($date)->format($format ?? Self::getDateFormat());
     }
 }
-

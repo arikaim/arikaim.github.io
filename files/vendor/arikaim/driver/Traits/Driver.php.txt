@@ -305,4 +305,3 @@ trait Driver
         return $this->driverOptions;
     } 
 }
-

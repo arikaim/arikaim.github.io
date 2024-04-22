@@ -240,4 +240,3 @@ class DriverManager implements DriverManagerInterface
         return $this->driverRegistry->setDriverStatus($name,0);
     }
 }
-

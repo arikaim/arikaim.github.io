@@ -31,4 +31,3 @@ interface HtmlComponentInterface extends ComponentInterface
      */
     public function resolve(array $params = []): bool;
 }
-

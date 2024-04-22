@@ -600,4 +600,3 @@ class Storage implements StorageInterface
         return ($relative == true) ? 'public' . DIRECTORY_SEPARATOR : Path::STORAGE_PUBLIC_PATH;
     } 
 }
-

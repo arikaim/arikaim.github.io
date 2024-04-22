@@ -28,4 +28,3 @@ class Id implements BlueprintPrototypeInterface
         $table->bigIncrements('id')->nullable(false);       
     }
 }
-

@@ -64,4 +64,3 @@ abstract class AbstractContentProvider implements ContentProviderInterface
      */
     abstract public function getContent($key, ?string $contentType = null, $keyFields = null): ?array;    
 }
-

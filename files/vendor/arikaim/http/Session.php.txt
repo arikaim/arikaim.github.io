@@ -251,4 +251,3 @@ class Session
         return (bool)\ini_get('session.use_cookies');
     }
 }
-

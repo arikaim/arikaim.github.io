@@ -42,4 +42,3 @@ class Translations implements BlueprintPrototypeInterface
         $table->unique([$options[0],'language']);     
     }
 }
-

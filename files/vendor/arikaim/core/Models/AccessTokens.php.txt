@@ -354,4 +354,3 @@ class AccessTokens extends Model implements UserProviderInterface
         return $this->where('user_id','=',$userId)->get();
     }
 }
-

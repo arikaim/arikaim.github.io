@@ -41,4 +41,3 @@ class FunctionArguments
         return ($type != null && $variableType != $type) ? null : $args[$index];  
     }
 }
-

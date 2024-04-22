@@ -96,4 +96,3 @@ trait TaskProgress
         \sleep($this->progressSleep);         
     }
 }
-

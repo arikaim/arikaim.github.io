@@ -36,4 +36,3 @@ interface MailerInterface
      */
     public function getOptions(): array;
 }
-

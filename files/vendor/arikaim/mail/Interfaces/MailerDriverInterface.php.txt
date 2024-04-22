@@ -28,4 +28,3 @@ interface MailerDriverInterface
      */
     public function getDriverName(): ?string;
 }
-

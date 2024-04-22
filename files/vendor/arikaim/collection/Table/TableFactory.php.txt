@@ -55,4 +55,3 @@ class TableFactory
         return new Table($rows,$header);
     }
 }
-

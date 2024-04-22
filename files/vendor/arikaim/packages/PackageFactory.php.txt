@@ -35,4 +35,3 @@ class PackageFactory implements PackageFactoryInterface
         return new $class($path,$propertes,$registry);
     }
 }
-

@@ -55,4 +55,3 @@ class OptionsSchema extends Schema
         }    
     } 
 }
-

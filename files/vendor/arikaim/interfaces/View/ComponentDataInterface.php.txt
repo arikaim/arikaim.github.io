@@ -23,4 +23,3 @@ interface ComponentDataInterface
      */
     public function getData(array $params = [], $container = null): array;
 }
-

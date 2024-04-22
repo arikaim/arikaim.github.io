@@ -29,4 +29,3 @@ class Uuid implements BlueprintPrototypeInterface
         $table->unique('uuid');             
     }
 }
-

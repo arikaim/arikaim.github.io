@@ -31,4 +31,3 @@ class JsonPaginator extends ArrayPaginator implements PaginatorInterface
         parent::__construct($items,$page,$perPage);       
     }
 }
-

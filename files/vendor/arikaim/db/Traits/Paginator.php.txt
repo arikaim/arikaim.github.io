@@ -27,4 +27,3 @@ trait Paginator
         return SessionPaginator::create($this,$namespace);
     }
 }
-

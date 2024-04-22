@@ -251,4 +251,3 @@ trait PhpConfigFile
         return (bool)File::write($fileName,$content);       
     }
 }
-

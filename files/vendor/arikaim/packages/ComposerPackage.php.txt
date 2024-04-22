@@ -72,4 +72,3 @@ class ComposerPackage extends Package implements PackageInterface
         return (Composer::isInstalled($this->getName()) == false);
     }
 }
-

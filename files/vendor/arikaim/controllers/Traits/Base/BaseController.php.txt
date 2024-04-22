@@ -384,4 +384,3 @@ trait BaseController
         return ($this->has('logger') == true) ? $this->get('logger')->error($message,$context) : false;          
     }
 }
-

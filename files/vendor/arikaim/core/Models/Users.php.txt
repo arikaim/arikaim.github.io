@@ -384,4 +384,3 @@ class Users extends Model implements UserProviderInterface
         return $user;
     }
 }
-

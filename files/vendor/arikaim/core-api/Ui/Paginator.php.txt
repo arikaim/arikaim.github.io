@@ -138,4 +138,3 @@ class Paginator extends FastApiController
             ->field('namespace',$namespace);      
     }
 }
-

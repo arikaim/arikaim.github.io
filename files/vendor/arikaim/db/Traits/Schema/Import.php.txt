@@ -29,4 +29,3 @@ trait Import
         return $this->importSkipColumns ?? [];
     }
 }
-

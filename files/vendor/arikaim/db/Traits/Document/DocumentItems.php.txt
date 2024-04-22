@@ -188,4 +188,3 @@ trait DocumentItems
         return $query;
     }
 }
-

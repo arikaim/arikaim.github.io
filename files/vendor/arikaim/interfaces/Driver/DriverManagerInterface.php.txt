@@ -108,4 +108,3 @@ interface DriverManagerInterface
      */
     public function getList(?string $category = null, ?int $status = null): array;
 }
-

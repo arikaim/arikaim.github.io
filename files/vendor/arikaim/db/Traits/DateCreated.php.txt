@@ -44,4 +44,3 @@ trait DateCreated
         return $this->dateCreatedColumn ?? 'date_created';
     }
 }
-

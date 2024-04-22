@@ -102,4 +102,3 @@ class StaticHtmlComponent extends BaseComponent implements HtmlComponentInterfac
         return true;
     }
 }
-

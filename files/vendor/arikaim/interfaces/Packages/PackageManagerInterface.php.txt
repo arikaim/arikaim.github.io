@@ -120,4 +120,3 @@ interface PackageManagerInterface
     */
     public function getRepository(string $packageName);
 }
-

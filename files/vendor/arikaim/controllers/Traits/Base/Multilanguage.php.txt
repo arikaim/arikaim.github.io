@@ -162,4 +162,3 @@ trait Multilanguage
         return $this->get('config')['settings']['defaultLanguage'] ?? 'en';
     }
 }
-

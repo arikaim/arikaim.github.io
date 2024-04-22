@@ -60,4 +60,3 @@ class JobsRegistrySchema extends Schema
         } 
     }
 }
-

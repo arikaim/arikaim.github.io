@@ -358,4 +358,3 @@ class Url
         return (empty($schema) == true || $schema === false) ? $schema . $url : $url;
     }
 }
-

@@ -222,4 +222,3 @@ trait ViewComponents
         return $items;
     }
 }
-

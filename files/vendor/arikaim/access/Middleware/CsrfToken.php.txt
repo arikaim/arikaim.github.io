@@ -79,4 +79,3 @@ class CsrfToken extends AuthMiddleware implements MiddlewareInterface
         return $token;
     }    
 }
-

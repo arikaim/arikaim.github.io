@@ -51,4 +51,3 @@ interface PermissionsInterface
     */
     public function getUserPermissions($authId);
 }
-

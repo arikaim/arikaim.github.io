@@ -148,4 +148,3 @@ abstract class Action implements ActionInterface
         $this->name = $name;
     }   
 }
-

@@ -107,4 +107,3 @@ class CronCommand extends ConsoleCommand
         return $executed;
     }
 }
-

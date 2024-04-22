@@ -33,4 +33,3 @@ class ArrayPaginator extends Paginator implements PaginatorInterface
         $this->items = $this->sliceItems($items);       
     }
 }
-

@@ -42,4 +42,3 @@ class Logger extends ControlPanelApiController
         $this->setResponse($result,'logs.clear','errors.logs.clear');
     }
 }
-

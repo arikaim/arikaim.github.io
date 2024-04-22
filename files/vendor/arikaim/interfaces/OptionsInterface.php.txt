@@ -97,4 +97,3 @@ interface OptionsInterface
      */
     public function read(string $key, $default = null);
 }
-

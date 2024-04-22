@@ -106,4 +106,3 @@ class AuthMiddleware extends Middleware implements MiddlewareInterface
         return $response->withStatus(401);       
     }    
 }
-

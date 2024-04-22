@@ -128,4 +128,3 @@ interface RoutesStorageInterface
      */
     public function getRouteDetails($id): ?array;
 }
-

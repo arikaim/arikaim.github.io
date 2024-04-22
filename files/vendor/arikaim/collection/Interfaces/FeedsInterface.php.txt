@@ -60,4 +60,3 @@ interface FeedsInterface
      */
     public function getUrl(): string;
 }
-

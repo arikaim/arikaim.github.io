@@ -396,4 +396,3 @@ class Access implements AccessInterface
         return AuthFactory::resolveAuthType($type);
     }
 }   
-

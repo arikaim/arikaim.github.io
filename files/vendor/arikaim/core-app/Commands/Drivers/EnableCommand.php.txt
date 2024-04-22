@@ -61,4 +61,3 @@ class EnableCommand extends ConsoleCommand
         $this->showCompleted();
     }
 }
-

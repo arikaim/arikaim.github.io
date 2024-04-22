@@ -152,4 +152,3 @@ trait PackageRegistry
         return ($model == null) ? null : ($model->primary == 1);                
     }
 }
-

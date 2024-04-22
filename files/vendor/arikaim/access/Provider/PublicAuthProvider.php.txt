@@ -43,4 +43,3 @@ class PublicAuthProvider extends AuthProvider implements AuthProviderInterface
         $this->user = null;
     }
 }
-

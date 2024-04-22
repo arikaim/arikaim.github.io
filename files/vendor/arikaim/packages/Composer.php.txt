@@ -254,4 +254,3 @@ class Composer
         return 'https://packagist.org/packages/' . $vendor . '/' . $package . '.json';
     }
 }
-

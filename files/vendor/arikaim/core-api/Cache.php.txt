@@ -107,4 +107,3 @@ class Cache extends ControlPanelApiController
         $this->setResponse($result,'cache.driver','errors.cache.driver');
     }
 }
-

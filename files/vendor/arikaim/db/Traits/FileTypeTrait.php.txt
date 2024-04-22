@@ -169,4 +169,3 @@ trait FileTypeTrait
         return $this->isFileType('pdf');
     }
 }
-

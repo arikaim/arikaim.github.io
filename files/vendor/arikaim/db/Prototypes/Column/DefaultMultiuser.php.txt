@@ -36,4 +36,3 @@ class DefaultMultiuser implements BlueprintPrototypeInterface
         }
     }
 }
-

@@ -73,4 +73,3 @@ class BaseApiController
         return (\count($this->errors) > 0);         
     }
 }
-

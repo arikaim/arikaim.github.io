@@ -2906,116 +2906,6 @@ Search.appendIndex(
             "summary": "Command\u0020code",
             "url": "classes/Arikaim-Core-Console-ShellCommand.html#method_executeCommand"
         },                {
-            "fqsen": "\\Arikaim\\Container\\ArikaimContainerInterface",
-            "name": "ArikaimContainerInterface",
-            "summary": "Arikaim\u0020container\u0020interface",
-            "url": "classes/Arikaim-Container-ArikaimContainerInterface.html"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\ArikaimContainerInterface\u003A\u003Acall\u0028\u0029",
-            "name": "call",
-            "summary": "Call\u0020service\u0020method",
-            "url": "classes/Arikaim-Container-ArikaimContainerInterface.html#method_call"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Container",
-            "name": "Container",
-            "summary": "Dependency\u0020injection\u0020container.",
-            "url": "classes/Arikaim-Container-Container.html"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Container\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Container\u0020constructor",
-            "url": "classes/Arikaim-Container-Container.html#method___construct"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Container\u003A\u003Aclone\u0028\u0029",
-            "name": "clone",
-            "summary": "Clone\u0020container",
-            "url": "classes/Arikaim-Container-Container.html#method_clone"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Container\u003A\u003AgetItem\u0028\u0029",
-            "name": "getItem",
-            "summary": "Get\u0020container\u0020service",
-            "url": "classes/Arikaim-Container-Container.html#method_getItem"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Container\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "Get\u0020service\u0020from\u0020container",
-            "url": "classes/Arikaim-Container-Container.html#method_get"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Container\u003A\u003Acall\u0028\u0029",
-            "name": "call",
-            "summary": "Call\u0020service\u0020method",
-            "url": "classes/Arikaim-Container-Container.html#method_call"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Container\u003A\u003Ahas\u0028\u0029",
-            "name": "has",
-            "summary": "Check\u0020if\u0020service\u0020exists\u0020in\u0020container\u0020PSR\u002D11\u0020ContainerInterface",
-            "url": "classes/Arikaim-Container-Container.html#method_has"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Container\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "Add\u0020service\u0020to\u0020container",
-            "url": "classes/Arikaim-Container-Container.html#method_add"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Container\u003A\u003Areplace\u0028\u0029",
-            "name": "replace",
-            "summary": "Replace\u0020service\u0020in\u0020container",
-            "url": "classes/Arikaim-Container-Container.html#method_replace"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Container\u003A\u003Aremove\u0028\u0029",
-            "name": "remove",
-            "summary": "Remove\u0020service\u0020from\u0020container",
-            "url": "classes/Arikaim-Container-Container.html#method_remove"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Container\u003A\u003AgetServicesList\u0028\u0029",
-            "name": "getServicesList",
-            "summary": "Get\u0020array\u0020with\u0020all\u0020service\u0020id\u0020in\u0020container",
-            "url": "classes/Arikaim-Container-Container.html#method_getServicesList"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Container\u003A\u003AoffsetExists\u0028\u0029",
-            "name": "offsetExists",
-            "summary": "ArrayAccess\u0020interface\u0020function",
-            "url": "classes/Arikaim-Container-Container.html#method_offsetExists"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Container\u003A\u003AoffsetGet\u0028\u0029",
-            "name": "offsetGet",
-            "summary": "ArrayAccess\u0020interface\u0020function",
-            "url": "classes/Arikaim-Container-Container.html#method_offsetGet"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Container\u003A\u003AoffsetSet\u0028\u0029",
-            "name": "offsetSet",
-            "summary": "ArrayAccess\u0020interface\u0020function",
-            "url": "classes/Arikaim-Container-Container.html#method_offsetSet"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Container\u003A\u003AoffsetUnset\u0028\u0029",
-            "name": "offsetUnset",
-            "summary": "ArrayAccess\u0020interface\u0020function",
-            "url": "classes/Arikaim-Container-Container.html#method_offsetUnset"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Container\u003A\u003A\u0024services",
-            "name": "services",
-            "summary": "Container\u0020items",
-            "url": "classes/Arikaim-Container-Container.html#property_services"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Exceptions\\ServiceExistsException",
-            "name": "ServiceExistsException",
-            "summary": "Service\u0020exists\u0020in\u0020container\u0020exception",
-            "url": "classes/Arikaim-Container-Exceptions-ServiceExistsException.html"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Exceptions\\ServiceExistsException\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Constructor",
-            "url": "classes/Arikaim-Container-Exceptions-ServiceExistsException.html#method___construct"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Exceptions\\ServiceNotFoundException",
-            "name": "ServiceNotFoundException",
-            "summary": "Service\u0020not\u0020found\u0020in\u0020container\u0020exception",
-            "url": "classes/Arikaim-Container-Exceptions-ServiceNotFoundException.html"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Exceptions\\ServiceNotFoundException\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Constructor",
-            "url": "classes/Arikaim-Container-Exceptions-ServiceNotFoundException.html#method___construct"
-        },                {
             "fqsen": "\\Arikaim\\Core\\Content\\AbstractContentProvider",
             "name": "AbstractContentProvider",
             "summary": "Abstract\u0020content\u0020provider\u0020class",
@@ -12985,126 +12875,6 @@ Search.appendIndex(
             "name": "COMPONENTS_URL",
             "summary": "",
             "url": "classes/Arikaim-Core-Http-Url.html#constant_COMPONENTS_URL"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\ArikaimInstaller",
-            "name": "ArikaimInstaller",
-            "summary": "Arikaim\u0020package\u0020installer\u0020class",
-            "url": "classes/Arikaim-Installer-ArikaimInstaller.html"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\ArikaimInstaller\u003A\u003AgetInstallPath\u0028\u0029",
-            "name": "getInstallPath",
-            "summary": "Get\u0020install\u0020path",
-            "url": "classes/Arikaim-Installer-ArikaimInstaller.html#method_getInstallPath"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\ArikaimInstaller\u003A\u003Asupports\u0028\u0029",
-            "name": "supports",
-            "summary": "Return\u0020trye\u0020if\u0020package\u0020type\u0020is\u0020supported",
-            "url": "classes/Arikaim-Installer-ArikaimInstaller.html#method_supports"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\ArikaimInstaller\u003A\u003A\u0024locations",
-            "name": "locations",
-            "summary": "Locations",
-            "url": "classes/Arikaim-Installer-ArikaimInstaller.html#property_locations"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\ComposerEvents",
-            "name": "ComposerEvents",
-            "summary": "Composer\u0020events",
-            "url": "classes/Arikaim-Installer-ComposerEvents.html"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\ComposerEvents\u003A\u003A\u0024onPreUpdate",
-            "name": "onPreUpdate",
-            "summary": "On\u0020pre\u0020update\u0020callback",
-            "url": "classes/Arikaim-Installer-ComposerEvents.html#property_onPreUpdate"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\ComposerEvents\u003A\u003A\u0024onPostUpdate",
-            "name": "onPostUpdate",
-            "summary": "On\u0020post\u0020update\u0020callback",
-            "url": "classes/Arikaim-Installer-ComposerEvents.html#property_onPostUpdate"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\ComposerEvents\u003A\u003AonPackageUpdate\u0028\u0029",
-            "name": "onPackageUpdate",
-            "summary": "Set\u0020on\u0020update\u0020callback",
-            "url": "classes/Arikaim-Installer-ComposerEvents.html#method_onPackageUpdate"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\ComposerEvents\u003A\u003AonPackageInstall\u0028\u0029",
-            "name": "onPackageInstall",
-            "summary": "Set\u0020on\u0020install\u0020callback",
-            "url": "classes/Arikaim-Installer-ComposerEvents.html#method_onPackageInstall"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\ComposerEvents\u003A\u003ApostUpdate\u0028\u0029",
-            "name": "postUpdate",
-            "summary": "Post\u0020post\u0020update\u0020event",
-            "url": "classes/Arikaim-Installer-ComposerEvents.html#method_postUpdate"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\ComposerEvents\u003A\u003ApreUpdate\u0028\u0029",
-            "name": "preUpdate",
-            "summary": "Post\u0020pre\u0020update\u0020event",
-            "url": "classes/Arikaim-Installer-ComposerEvents.html#method_preUpdate"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\ComposerEvents\u003A\u003ApostPackageInstall\u0028\u0029",
-            "name": "postPackageInstall",
-            "summary": "Composer\u0020post\u002Dpackage\u002Dinstall\u0020event",
-            "url": "classes/Arikaim-Installer-ComposerEvents.html#method_postPackageInstall"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\ComposerEvents\u003A\u003ApostPackageUpdate\u0028\u0029",
-            "name": "postPackageUpdate",
-            "summary": "Composer\u0020post\u002Dpackage\u002Dupdate\u0020event",
-            "url": "classes/Arikaim-Installer-ComposerEvents.html#method_postPackageUpdate"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\ComposerEvents\u003A\u003Acallback\u0028\u0029",
-            "name": "callback",
-            "summary": "Callback\u0020helper",
-            "url": "classes/Arikaim-Installer-ComposerEvents.html#method_callback"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\ComposerEvents\u003A\u003AgetPackage\u0028\u0029",
-            "name": "getPackage",
-            "summary": "Returns\u0020the\u0020package\u0020associated\u0020with\u0020\u0024event",
-            "url": "classes/Arikaim-Installer-ComposerEvents.html#method_getPackage"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\ComposerEvents\u003A\u003A\u0024onPackageUpdateCallback",
-            "name": "onPackageUpdateCallback",
-            "summary": "On\u0020package\u0020update\u0020callback",
-            "url": "classes/Arikaim-Installer-ComposerEvents.html#property_onPackageUpdateCallback"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\ComposerEvents\u003A\u003A\u0024onPackageInstallCallback",
-            "name": "onPackageInstallCallback",
-            "summary": "On\u0020package\u0020install\u0020callback",
-            "url": "classes/Arikaim-Installer-ComposerEvents.html#property_onPackageInstallCallback"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\InstallerPlugin",
-            "name": "InstallerPlugin",
-            "summary": "Installer\u0020plugin",
-            "url": "classes/Arikaim-Installer-InstallerPlugin.html"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\InstallerPlugin\u003A\u003Aactivate\u0028\u0029",
-            "name": "activate",
-            "summary": "Activate\u0020plugin",
-            "url": "classes/Arikaim-Installer-InstallerPlugin.html#method_activate"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\InstallerPlugin\u003A\u003Adeactivate\u0028\u0029",
-            "name": "deactivate",
-            "summary": "Deactivate\u0020plugin",
-            "url": "classes/Arikaim-Installer-InstallerPlugin.html#method_deactivate"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\InstallerPlugin\u003A\u003Auninstall\u0028\u0029",
-            "name": "uninstall",
-            "summary": "Uninstall\u0020plugin",
-            "url": "classes/Arikaim-Installer-InstallerPlugin.html#method_uninstall"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\InstallerPlugin\u003A\u003A\u0024composer",
-            "name": "composer",
-            "summary": "Composer\u0020ref",
-            "url": "classes/Arikaim-Installer-InstallerPlugin.html#property_composer"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\InstallerPlugin\u003A\u003A\u0024io",
-            "name": "io",
-            "summary": "io\u0020ref",
-            "url": "classes/Arikaim-Installer-InstallerPlugin.html#property_io"
-        },                {
-            "fqsen": "\\Arikaim\\Installer\\InstallerPlugin\u003A\u003A\u0024installer",
-            "name": "installer",
-            "summary": "Installer\u0020ref",
-            "url": "classes/Arikaim-Installer-InstallerPlugin.html#property_installer"
         },                {
             "fqsen": "\\Arikaim\\Core\\Interfaces\\Access\\AccessInterface",
             "name": "AccessInterface",
@@ -24966,21 +24736,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/arikaim-core-console.html"
         },                {
-            "fqsen": "\\Arikaim\\Container",
-            "name": "Container",
-            "summary": "",
-            "url": "namespaces/arikaim-container.html"
-        },                {
-            "fqsen": "\\Arikaim",
-            "name": "Arikaim",
-            "summary": "",
-            "url": "namespaces/arikaim.html"
-        },                {
-            "fqsen": "\\Arikaim\\Container\\Exceptions",
-            "name": "Exceptions",
-            "summary": "",
-            "url": "namespaces/arikaim-container-exceptions.html"
-        },                {
             "fqsen": "\\Arikaim\\Core\\Content",
             "name": "Content",
             "summary": "",
@@ -25020,6 +24775,11 @@ Search.appendIndex(
             "name": "Core",
             "summary": "",
             "url": "namespaces/arikaim-core.html"
+        },                {
+            "fqsen": "\\Arikaim",
+            "name": "Arikaim",
+            "summary": "",
+            "url": "namespaces/arikaim.html"
         },                {
             "fqsen": "\\Arikaim\\Core\\Extension",
             "name": "Extension",
@@ -25215,11 +24975,6 @@ Search.appendIndex(
             "name": "Interfaces",
             "summary": "",
             "url": "namespaces/arikaim-core-http-interfaces.html"
-        },                {
-            "fqsen": "\\Arikaim\\Installer",
-            "name": "Installer",
-            "summary": "",
-            "url": "namespaces/arikaim-installer.html"
         },                {
             "fqsen": "\\Arikaim\\Core\\Interfaces\\Access",
             "name": "Access",

@@ -205,4 +205,3 @@ class Config extends Collection
         return (bool)\file_exists($this->configDir . $fileName);
     }
 }
-

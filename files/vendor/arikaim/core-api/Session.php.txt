@@ -71,4 +71,3 @@ class SessionApi extends ApiController
         return $this->setResult($sessionInfo)->getResponse();       
     }
 }
-

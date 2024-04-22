@@ -190,4 +190,3 @@ class Path
         return ($add == DIRECTORY_SEPARATOR) ? $path . $add : $path . DIRECTORY_SEPARATOR . $add;      
     } 
 }
-

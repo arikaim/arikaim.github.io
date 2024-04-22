@@ -120,4 +120,3 @@ trait EntityPermissionsRelation
         return ($this->getPublicPermission($entityId) !== false);
     }
 }
-

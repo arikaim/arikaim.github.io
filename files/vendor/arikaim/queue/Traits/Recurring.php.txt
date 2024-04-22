@@ -94,4 +94,3 @@ trait Recurring
         $this->interval = $interval;
     }
 }
-

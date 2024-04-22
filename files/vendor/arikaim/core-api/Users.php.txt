@@ -175,4 +175,3 @@ class Users extends ApiController
         $this->setResponse($result,'update','errors.update'); 
     }
 }
-

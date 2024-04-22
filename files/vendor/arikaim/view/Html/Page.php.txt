@@ -642,4 +642,3 @@ class Page extends BaseComponent implements HtmlPageInterface
         return $this->render($templateName . Self::SYSTEM_ERROR_PAGE,$error,$language);      
     }
 }
-

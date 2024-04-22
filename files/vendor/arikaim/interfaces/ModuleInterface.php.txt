@@ -79,4 +79,3 @@ interface ModuleInterface
      */
     public function getConfig(?string $key = null): ?array;
 }
-

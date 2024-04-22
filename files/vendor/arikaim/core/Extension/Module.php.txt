@@ -205,4 +205,3 @@ class Module implements ModuleInterface
         return $this->config[$key] ?? null;
     }
 }
-

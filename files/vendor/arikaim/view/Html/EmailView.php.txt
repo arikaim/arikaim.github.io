@@ -220,4 +220,3 @@ class EmailView extends BaseComponent implements HtmlComponentInterface, EmailVi
         return \trim($content);
     }    
 }
-

@@ -142,4 +142,3 @@ interface QueueInterface
      */
     public function getJob($id): ?array;
 }
-

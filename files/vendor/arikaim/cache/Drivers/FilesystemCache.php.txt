@@ -177,4 +177,3 @@ class FilesystemCache implements CacheInterface
         return $this->cacheDir . \md5($id) . SELF::FILE_EXTENSION;
     }
 }
-

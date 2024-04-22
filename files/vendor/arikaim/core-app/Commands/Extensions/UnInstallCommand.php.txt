@@ -68,4 +68,3 @@ class UnInstallCommand extends ConsoleCommand
         $this->showCompleted();
     }
 }
-

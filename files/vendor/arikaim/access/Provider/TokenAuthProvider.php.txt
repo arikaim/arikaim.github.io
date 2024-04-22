@@ -96,4 +96,3 @@ class TokenAuthProvider extends AuthProvider implements AuthProviderInterface
         return $token;
     }
 }
-

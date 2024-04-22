@@ -112,4 +112,3 @@ class Relations extends ControlPanelApiController
             ->field('data',$model->toArray());                          
     }
 }
-

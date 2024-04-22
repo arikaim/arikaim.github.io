@@ -53,4 +53,3 @@ class Regexp extends Rule
         return FILTER_CALLBACK;
     }
 }
-

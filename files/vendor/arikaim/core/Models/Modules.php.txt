@@ -109,4 +109,3 @@ class Modules extends Model implements PackageRegistryInterface
         return (empty($this->attributes['config']) == true) ? [] : \json_decode($this->attributes['config'],true);
     }
 }
-

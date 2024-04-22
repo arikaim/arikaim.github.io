@@ -65,4 +65,3 @@ class FloatNumber extends Number
         return FILTER_CALLBACK;
     }
 }
-

@@ -77,4 +77,3 @@ class DisableCommand extends ConsoleCommand
         $this->showCompleted();
     }
 }
-

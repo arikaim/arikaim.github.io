@@ -87,4 +87,3 @@ abstract class EventListener implements EventListenerInterface
         $this->priority = $priority;
     }
 }
-

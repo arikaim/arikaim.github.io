@@ -65,4 +65,3 @@ interface RepositoryInterface
      */
     public function getRepositoryUrl(): string;
 }
-

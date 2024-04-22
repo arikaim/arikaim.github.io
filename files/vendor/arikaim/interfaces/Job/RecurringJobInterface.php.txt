@@ -45,4 +45,3 @@ interface RecurringJobInterface extends JobInterface
      */
     public function isDue(): bool;
 }
-

@@ -179,4 +179,3 @@ trait Position
         return (int)static::query()->max($this->getPositionAttribute());
     }
 }
-

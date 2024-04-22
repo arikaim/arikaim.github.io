@@ -46,4 +46,3 @@ class HelpCommand extends ConsoleCommand
         $this->showCompleted();       
     }
 }
-

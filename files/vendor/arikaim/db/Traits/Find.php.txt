@@ -172,4 +172,3 @@ trait Find
         return \array_key_exists($attr,$this->attributes);
     }
 }
-

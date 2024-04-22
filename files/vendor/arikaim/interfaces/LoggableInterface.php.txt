@@ -44,4 +44,3 @@ interface LoggableInterface
     */
     public function setLogContext(array $context): void;
 }
-

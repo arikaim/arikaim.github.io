@@ -107,4 +107,3 @@ trait FileDownload
         return $this->viewImageHeaders($response,$type,$data);
     }
 }
-

@@ -192,4 +192,3 @@ trait Options
         return ($errors == 0);
     }
 }
-

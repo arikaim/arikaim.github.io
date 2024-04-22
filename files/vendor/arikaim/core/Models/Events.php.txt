@@ -217,4 +217,3 @@ class Events extends Model implements EventRegistryInterface
         return (bool)$model->update(['status' => $status]);
     }
 }
-

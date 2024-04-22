@@ -23,4 +23,3 @@ interface BlueprintPrototypeInterface
      */
     public function build($table, ...$options); 
 }
-

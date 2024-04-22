@@ -44,4 +44,3 @@ class ClearLogsCommand extends ConsoleCommand
         $this->showCompleted();
     }
 }
-

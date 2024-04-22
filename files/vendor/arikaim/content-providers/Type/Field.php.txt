@@ -141,4 +141,3 @@ class Field implements FieldInterface
         return \in_array($type,FieldInterface::TYPES_LIST);
     }
 }
-

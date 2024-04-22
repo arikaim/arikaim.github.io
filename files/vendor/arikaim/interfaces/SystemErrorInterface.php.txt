@@ -26,4 +26,3 @@ interface SystemErrorInterface
      */
     public function getError(string $errorCode, array $params = [], ?string $default = null): ?string;
 }
-

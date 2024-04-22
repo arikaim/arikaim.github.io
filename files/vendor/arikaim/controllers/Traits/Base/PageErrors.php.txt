@@ -52,4 +52,3 @@ trait PageErrors
         return $response->withStatus(400);             
     }
 }
-

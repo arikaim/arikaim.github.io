@@ -37,4 +37,3 @@ class DbPaginator extends Paginator implements PaginatorInterface
         );   
     }   
 }
-

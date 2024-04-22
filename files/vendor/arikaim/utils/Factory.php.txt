@@ -438,4 +438,3 @@ class Factory
         return Self::getSchemaNamespace($extension) . $baseClass;
     }
 }
-

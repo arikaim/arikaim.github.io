@@ -579,4 +579,3 @@ class PageHead extends Collection implements CollectionInterface, \Countable, \A
             (empty($rel) ? '' : ' rel="' . $rel . '" ') . $attr . ' />' . Self::END_OF_LINE;       
     }
 }
-

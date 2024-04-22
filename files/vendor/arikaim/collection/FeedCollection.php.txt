@@ -410,4 +410,3 @@ class FeedCollection extends Collection implements
         return $item;      
     }
 }
-

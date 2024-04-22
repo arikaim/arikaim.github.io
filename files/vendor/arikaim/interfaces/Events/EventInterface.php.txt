@@ -83,4 +83,3 @@ interface EventInterface
      */
     public function toArray(): array;
 }
-

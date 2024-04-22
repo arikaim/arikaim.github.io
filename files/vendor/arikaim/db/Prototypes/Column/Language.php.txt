@@ -31,4 +31,3 @@ class Language implements BlueprintPrototypeInterface
         $table->index('language');   
     }
 }
-

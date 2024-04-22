@@ -58,4 +58,3 @@ class UserGroupMembersSchema extends Schema
         } 
     }
 }
-

@@ -38,4 +38,3 @@ class ToFloat extends Filter
         return FILTER_CALLBACK;
     }
 }
-

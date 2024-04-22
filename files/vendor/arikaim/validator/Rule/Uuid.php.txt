@@ -51,4 +51,3 @@ class Uuid extends Rule
         return FILTER_CALLBACK;
     }
 }
-

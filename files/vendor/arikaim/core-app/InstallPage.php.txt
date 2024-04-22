@@ -44,4 +44,3 @@ class InstallPage extends Controller
         return $this->pageSystemError($response,$data->toArray(),'system'); 
     }
 }
-

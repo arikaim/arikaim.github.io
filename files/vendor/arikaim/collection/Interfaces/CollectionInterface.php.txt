@@ -70,4 +70,3 @@ interface CollectionInterface
      */
     public function set(string $key, $value);
 }
-

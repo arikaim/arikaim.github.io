@@ -84,4 +84,3 @@ class Logs extends Model
         return $query->where('level','=',$level);
     }
 }
-

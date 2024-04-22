@@ -64,4 +64,3 @@ interface ActionInterface
     public function getType(): string;
     
 }
-

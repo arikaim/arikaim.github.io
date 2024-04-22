@@ -22,4 +22,3 @@ interface PackageManagerFactoryInterface
      */
     public function create(string $packageType): ?object;
 }
-

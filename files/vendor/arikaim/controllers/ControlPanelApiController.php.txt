@@ -54,4 +54,3 @@ class ControlPanelApiController extends ApiController implements ControlPanelApi
         throw new Exception('Route controller method not found.',1);
     }
 }
-

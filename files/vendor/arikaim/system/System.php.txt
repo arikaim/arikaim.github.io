@@ -322,4 +322,3 @@ class System
         return (DIRECTORY_SEPARATOR == '\\') ? 'NUL' : '/dev/null';
     }
 }
-

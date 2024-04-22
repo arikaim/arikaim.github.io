@@ -686,4 +686,3 @@ class TwigExtension extends AbstractExtension implements GlobalsInterface
         return $this->markdownParser->text($content);
     }
 }
-

@@ -42,4 +42,3 @@ interface LoggerInterface
     */
     public function info(string $message, array $context = []): bool;
 }
-

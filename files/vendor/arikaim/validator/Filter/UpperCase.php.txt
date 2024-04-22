@@ -47,4 +47,3 @@ class UpperCase extends Filter
         return FILTER_CALLBACK;
     }
 }
-

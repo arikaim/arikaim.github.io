@@ -68,4 +68,3 @@ class Integer extends Number
         return FILTER_CALLBACK; 
     }
 }
-

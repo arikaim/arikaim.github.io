@@ -205,4 +205,3 @@ class FileType
         return Self::isFileType('pdf',$mimeType);
     }
 }
-

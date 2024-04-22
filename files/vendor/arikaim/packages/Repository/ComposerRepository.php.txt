@@ -104,4 +104,3 @@ class ComposerRepository extends Repository implements RepositoryInterface
         return ($installedPackage == null) ? false : true;
     }
 }
-

@@ -63,4 +63,3 @@ class ListCommand extends ConsoleCommand
         $this->showCompleted(); 
     }    
 }
-

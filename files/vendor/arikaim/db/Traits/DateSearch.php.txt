@@ -120,4 +120,3 @@ trait DateSearch
         return $query->where($columnName,'>',$period['start'])->where($columnName,'<',$period['end']);
     }
 }
-

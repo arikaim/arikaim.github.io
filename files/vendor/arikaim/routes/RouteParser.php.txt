@@ -187,4 +187,3 @@ REGEX;
         return (count($routeData) === 1 && \is_string($routeData[0]));
     }
 }
-

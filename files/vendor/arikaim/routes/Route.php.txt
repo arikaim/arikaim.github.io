@@ -168,4 +168,3 @@ class Route
         return $routeCollector;
     }
 }
-

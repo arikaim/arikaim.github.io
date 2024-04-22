@@ -45,4 +45,3 @@ class ClearCommand extends ConsoleCommand
         $this->showCompleted();
     }
 }
-

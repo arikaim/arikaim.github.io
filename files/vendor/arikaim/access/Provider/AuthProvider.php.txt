@@ -175,4 +175,3 @@ abstract class AuthProvider implements AuthProviderInterface
      */
     abstract public function logout(): void;
 }
-

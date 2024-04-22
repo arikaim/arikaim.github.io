@@ -56,4 +56,3 @@ class LogsSchema extends Schema
     {       
     }
 }
-

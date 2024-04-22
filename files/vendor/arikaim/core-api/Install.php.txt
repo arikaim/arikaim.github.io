@@ -326,4 +326,3 @@ class Install extends ApiController
         );                  
     }
 }
-

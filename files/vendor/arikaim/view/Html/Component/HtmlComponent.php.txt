@@ -83,4 +83,3 @@ class HtmlComponent extends BaseComponent implements HtmlComponentInterface
         return true;
     }
 }
-

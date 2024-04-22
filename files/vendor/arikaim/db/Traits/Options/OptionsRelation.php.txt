@@ -77,4 +77,3 @@ trait OptionsRelation
         return ($option == null) ? $default : $option->value;
     }
 }
-

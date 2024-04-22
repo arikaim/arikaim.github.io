@@ -355,4 +355,3 @@ class ExtensionPackage extends Package implements PackageInterface, ViewComponen
         return $this->path . $this->getName() . DIRECTORY_SEPARATOR . 'subscribers' . DIRECTORY_SEPARATOR;
     }
 }
-

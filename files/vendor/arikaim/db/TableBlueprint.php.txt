@@ -164,4 +164,3 @@ class TableBlueprint extends Blueprint
         }        
     }
 }   
-

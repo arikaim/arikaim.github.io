@@ -80,4 +80,3 @@ class ServerErrorHandler
         return $response->withStatus(400);      
     }   
 }
-

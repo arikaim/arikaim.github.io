@@ -44,4 +44,3 @@ interface JobLogInterface
     */
     public function setLogContext(array $context): void;
 }
-

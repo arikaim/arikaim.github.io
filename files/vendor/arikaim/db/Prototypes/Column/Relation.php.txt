@@ -48,4 +48,3 @@ class Relation implements BlueprintPrototypeInterface
         $table->index($options[0]);
     }
 }
-

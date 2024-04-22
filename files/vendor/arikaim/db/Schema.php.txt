@@ -426,4 +426,3 @@ abstract class Schema
         return $result;
     }
 }   
-

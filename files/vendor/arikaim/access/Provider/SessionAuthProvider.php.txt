@@ -122,4 +122,3 @@ class SessionAuthProvider extends AuthProvider implements AuthProviderInterface
         return (int)Session::get('auth.login.attempts',0);  
     }
 }
-

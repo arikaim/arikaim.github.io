@@ -116,4 +116,3 @@ interface RoutesInterface
      */
     public function saveRouteOptions(string $method, string $pattern, $options): bool;
 }
-

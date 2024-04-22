@@ -81,4 +81,3 @@ class CacheNode extends Node
             ->write('echo $cached;');
     }
 }
-

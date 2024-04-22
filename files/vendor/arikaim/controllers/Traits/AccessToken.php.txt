@@ -33,4 +33,3 @@ trait AccessToken
         return (\is_array($accessToken) == true) ? Url::BASE_URL . '/' . $pattern . '/' . $accessToken['token'] : false;
     }
 }
-

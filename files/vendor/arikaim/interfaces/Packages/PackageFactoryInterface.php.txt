@@ -23,4 +23,3 @@ interface PackageFactoryInterface
     */
     public function createPackage(string $packageType, string $name);
 }
-

@@ -15,4 +15,3 @@ namespace Arikaim\Core\Interfaces\Job;
 interface SaveJobConfigInterface
 {   
 }
-

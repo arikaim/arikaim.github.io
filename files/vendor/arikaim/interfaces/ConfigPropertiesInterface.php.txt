@@ -48,4 +48,3 @@ interface ConfigPropertiesInterface
     */
     public function setConfigProperties($properties): void;
 }
-

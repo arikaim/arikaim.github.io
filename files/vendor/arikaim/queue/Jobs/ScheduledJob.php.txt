@@ -22,4 +22,3 @@ abstract class ScheduledJob extends Job implements ScheduledJobInterface, JobInt
 {
     use Scheduled;
 }
-

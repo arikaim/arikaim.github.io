@@ -42,4 +42,3 @@ interface MailInterface
      */
     public function from($email, ?string $name = null): object;
 }
-

@@ -42,4 +42,3 @@ class RestartCommand extends ConsoleCommand
         $this->showCompleted();
     }
 }
-

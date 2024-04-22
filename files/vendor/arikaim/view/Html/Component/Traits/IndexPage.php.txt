@@ -38,4 +38,3 @@ trait IndexPage
         return DIRECTORY_SEPARATOR . $templateName . DIRECTORY_SEPARATOR . $this->getBasePath() . DIRECTORY_SEPARATOR . 'index.html';            
     }
 }
-

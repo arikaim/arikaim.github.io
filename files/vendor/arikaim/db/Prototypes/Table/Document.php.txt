@@ -58,4 +58,3 @@ class Document implements BlueprintPrototypeInterface
         }
     }
 }
-

@@ -110,4 +110,3 @@ class WidgetComponent extends BaseComponent implements HtmlComponentInterface, R
         return true;
     }
 }
-

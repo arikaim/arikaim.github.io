@@ -74,4 +74,3 @@ class JsComponent extends BaseComponent implements HtmlComponentInterface
         return true;
     }
 }
-

@@ -173,4 +173,3 @@ class JwtAuthProvider extends AuthProvider implements AuthProviderInterface
         return ($this->token == null) ? null : $this->token->claims()->get($name);
     }
 }
-

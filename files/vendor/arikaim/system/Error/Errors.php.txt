@@ -153,4 +153,3 @@ class Errors implements SystemErrorInterface
         return '';
     }
 }
-

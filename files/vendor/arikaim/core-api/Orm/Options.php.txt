@@ -53,4 +53,3 @@ class Options extends ControlPanelApiController
         },'errors.options.save');
     }
 }
-

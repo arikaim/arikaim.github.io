@@ -70,4 +70,3 @@ class ExtensionsSchema extends Schema
         }
     }
 }
-

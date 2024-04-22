@@ -31,4 +31,3 @@ class ControlPanel extends Controller
         return $this->pageLoad($request,$response,$data,'system:admin');       
     }
 }
-

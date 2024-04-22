@@ -43,4 +43,3 @@ class PropertiesFactory
         return ($resolveProperties == true) ? new Properties($data) : Self::createFromArray($data);       
     }
 }
-

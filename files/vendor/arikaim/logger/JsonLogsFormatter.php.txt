@@ -44,4 +44,3 @@ class JsonLogsFormatter implements FormatterInterface
         return $records;
     }
 }
-

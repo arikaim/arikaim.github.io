@@ -49,4 +49,3 @@ class EnableInstallCommand extends ConsoleCommand
         $this->showCompleted();  
     }
 }
-

@@ -94,4 +94,3 @@ class Number extends Rule
         return true;
     }
 }
-

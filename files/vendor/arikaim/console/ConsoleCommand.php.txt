@@ -561,4 +561,3 @@ abstract class ConsoleCommand extends Command
     }
 
 }
-

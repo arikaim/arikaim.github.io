@@ -286,4 +286,3 @@ class Mobile
        return (bool)\preg_match(\sprintf("#%s#is",$regex),$this->userAgent,$matches);
     }
 }
-

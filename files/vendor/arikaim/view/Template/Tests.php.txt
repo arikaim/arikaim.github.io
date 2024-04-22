@@ -50,4 +50,3 @@ class Tests
         return Utils::checkVersion($currentVersion,$requiredVersion,'>');  
     }
 }
-

@@ -82,4 +82,3 @@ interface DriverRegistryInterface
      */
     public function getDriversList(?string $category = null, ?int $status = null): array;
 }
-

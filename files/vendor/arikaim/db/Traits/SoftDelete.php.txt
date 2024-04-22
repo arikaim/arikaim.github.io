@@ -141,4 +141,3 @@ trait SoftDelete
         return $query->whereNotNull($this->softDeleteColumnName ?? static::$DEFAULT_SOFT_DELETE_COLUMN);
     }
 }
-

@@ -157,4 +157,3 @@ class Event implements EventInterface
         return isset($this->parameters[$name]);      
     }
 }
-

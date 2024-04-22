@@ -433,4 +433,3 @@ class File
         return \array_diff($items,$skip);
     }
 }
-

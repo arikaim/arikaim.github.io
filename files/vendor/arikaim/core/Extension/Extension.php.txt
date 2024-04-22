@@ -886,4 +886,3 @@ abstract class Extension implements ExtensionInterface
         return $result;
     }
 }
-

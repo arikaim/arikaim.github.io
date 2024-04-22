@@ -204,4 +204,3 @@ class Drivers extends Model implements DriverRegistryInterface
         return ($model != null) ? $model->toArray() : false;
     }
 }
-

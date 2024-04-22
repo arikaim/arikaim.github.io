@@ -103,4 +103,3 @@ abstract class Middleware implements MiddlewareInterface
         return $this->options;
     }
 }
-

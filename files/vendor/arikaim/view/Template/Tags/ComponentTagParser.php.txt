@@ -87,4 +87,3 @@ class ComponentTagParser extends AbstractTokenParser
         return 'component';
     }
 }
-

@@ -325,4 +325,3 @@ class Queue extends Model implements QueueStorageInterface
         return (empty($jobName) == false) ? $query->where('name','=',$jobName) : $query;
     }
 }
-

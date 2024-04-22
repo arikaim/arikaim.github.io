@@ -126,4 +126,3 @@ class LibraryPackage extends Package implements PackageInterface
         return $this->saveConfigFile(Self::LIBRARY_PARAMS_FILE_NAME,$libraryConfig);
     }
 }
-

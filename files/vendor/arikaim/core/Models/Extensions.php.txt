@@ -116,4 +116,3 @@ class Extensions extends Model implements PackageRegistryInterface
         return \json_decode($this->attributes['admin_menu'],true);
     }
 }
-

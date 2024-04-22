@@ -129,4 +129,3 @@ class PhpError
         return ($err > 0) ? \posix_strerror($err) : '';
     }
 }
-

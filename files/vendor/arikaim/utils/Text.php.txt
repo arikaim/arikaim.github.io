@@ -332,4 +332,3 @@ class Text
         return \base64_encode(\hex2bin(\substr(\uniqid(),- $length)));
     }
 }
-

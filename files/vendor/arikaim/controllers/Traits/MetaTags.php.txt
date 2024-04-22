@@ -66,4 +66,3 @@ trait MetaTags
             ->field('uuid',$model->uuid);   
     }
 }
-

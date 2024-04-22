@@ -63,4 +63,3 @@ class ComponentNode extends Node implements NodeOutputInterface
             ->write('echo $this->env->getExtension("' . $this->twigExtensionClass . '")->loadComponent($context,"' . $componentName . '",$context,"' . $type .'");');    
     }
 }
-

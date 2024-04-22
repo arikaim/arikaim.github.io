@@ -88,4 +88,3 @@ interface PackageRegistryInterface
     */
     public function isPrimary(string $name): ?bool;
 }
-

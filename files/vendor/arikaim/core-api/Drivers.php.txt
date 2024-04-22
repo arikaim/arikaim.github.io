@@ -86,4 +86,3 @@ class Drivers extends ControlPanelApiController
         $this->setResponse($result,'drivers.uninstall','errors.drivers.uninstall');    
     }
 }
-

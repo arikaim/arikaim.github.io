@@ -208,4 +208,3 @@ abstract class Rule implements RuleInterface
         return (empty($this->error) == true) ? $this->defaultError : $this->error;
     }
 }
-

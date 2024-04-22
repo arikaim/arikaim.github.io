@@ -52,4 +52,3 @@ trait Drivers
         return $this->path . $this->getName() . DIRECTORY_SEPARATOR . 'drivers' . DIRECTORY_SEPARATOR;
     }
 }
-

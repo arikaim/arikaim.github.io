@@ -58,4 +58,3 @@ interface ContentManagerInterface
      */
     public function hasProvider(string $name): bool;
 }
-

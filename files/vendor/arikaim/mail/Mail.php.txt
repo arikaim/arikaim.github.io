@@ -331,4 +331,3 @@ class Mail implements MailInterface
         return $this->mailer->getErrorMessage();
     }
 }
-

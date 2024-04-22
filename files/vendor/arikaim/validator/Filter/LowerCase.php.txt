@@ -47,4 +47,3 @@ class LowerCase extends Filter
         return FILTER_CALLBACK;
     }
 }
-

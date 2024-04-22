@@ -157,4 +157,3 @@ class GitHubRepository extends Repository implements RepositoryInterface
         return false;
     }   
 }
-

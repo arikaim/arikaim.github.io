@@ -54,4 +54,3 @@ class CheckList extends Rule
         return FILTER_CALLBACK;
     }
 }
-

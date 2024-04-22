@@ -344,4 +344,3 @@ class Logger implements LoggerInterface
         $this->logger = $logger;
     }
 }
-

@@ -34,4 +34,3 @@ class ErrorNode extends Node implements NodeOutputInterface
             
     }
 }
-

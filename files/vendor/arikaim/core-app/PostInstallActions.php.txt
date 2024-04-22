@@ -133,4 +133,3 @@ class PostInstallActions
         return $result;      
     }
 }
-

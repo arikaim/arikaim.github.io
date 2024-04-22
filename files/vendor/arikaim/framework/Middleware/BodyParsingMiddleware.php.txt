@@ -141,4 +141,3 @@ class BodyParsingMiddleware extends Middleware implements MiddlewareInterface
         return (empty($contentType) == false) ? \strtolower( \trim(\explode(';',$contentType)[0]) ) : null;        
     }
 }
-

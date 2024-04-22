@@ -83,4 +83,3 @@ class InfoCommand extends ConsoleCommand
         $this->showCompleted(); 
     }    
 }
-

@@ -151,4 +151,3 @@ trait UiLibrary
         return Text::renderMultiple($params,$vars);       
     }
 }
-

@@ -452,4 +452,3 @@ class Routes implements RoutesInterface
         return $this->adapter->getHomePageRoute();
     }
 }
-

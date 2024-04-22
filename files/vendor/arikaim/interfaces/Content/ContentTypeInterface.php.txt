@@ -87,4 +87,3 @@ interface ContentTypeInterface
      */
     public function getCategory(): ?string;
 }
-

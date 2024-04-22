@@ -70,4 +70,3 @@ trait Loggable
         return $this->logContext ?? [];
     }
 }
-

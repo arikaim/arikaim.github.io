@@ -361,4 +361,3 @@ class PermissionRelations extends Model implements PermissionsInterface
         return ($model->create($item) != null);
     }    
 }
-

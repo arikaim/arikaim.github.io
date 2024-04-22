@@ -22,4 +22,3 @@ interface AuthTokensInterface
     const API_ACCESS_TOKEN   = 2;
     const OAUTH_ACCESS_TOKEN = 3;
 }
-

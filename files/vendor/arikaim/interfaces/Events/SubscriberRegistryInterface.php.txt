@@ -50,4 +50,3 @@ interface SubscriberRegistryInterface
      */
     public function deleteSubscribers(array $filter);
 }
-

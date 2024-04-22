@@ -69,4 +69,3 @@ trait UiComponent
         return $this->load($data['name'],$params,$language,$type);
     }
 }
-

@@ -27,4 +27,3 @@ class ActionPropertiesDescriptor extends AbstractDescriptor
         $this->createCollection('result');
     }
 }
-

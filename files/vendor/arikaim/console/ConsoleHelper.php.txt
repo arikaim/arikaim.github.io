@@ -91,4 +91,3 @@ class ConsoleHelper
         return '<fg=cyan>' . $description . '</>';
     }
 }
-

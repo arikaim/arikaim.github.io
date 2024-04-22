@@ -137,4 +137,3 @@ class Language extends Model
         return 'en';
     }
 }
-

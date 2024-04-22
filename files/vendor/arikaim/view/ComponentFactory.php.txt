@@ -71,4 +71,3 @@ class ComponentFactory
         return $component;
     }
 }
-

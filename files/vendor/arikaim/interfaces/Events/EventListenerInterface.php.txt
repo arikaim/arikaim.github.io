@@ -36,4 +36,3 @@ interface EventListenerInterface
      */
     public function getPriority(): int;    
 }
-

@@ -77,4 +77,3 @@ class ApplicationError implements ErrorHandlerInterface
         return $response->getResponseJson();
     }
 }
-

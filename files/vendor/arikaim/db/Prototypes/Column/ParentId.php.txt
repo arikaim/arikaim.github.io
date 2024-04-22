@@ -33,4 +33,3 @@ class ParentId implements BlueprintPrototypeInterface
         $table->index($columnName);
     }
 }
-

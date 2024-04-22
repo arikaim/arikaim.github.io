@@ -37,4 +37,3 @@ class ClientIpMiddleware extends Middleware implements MiddlewareInterface
         return [$request,$response];
     }   
 }
-

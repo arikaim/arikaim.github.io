@@ -108,4 +108,3 @@ interface DriverInterface
      */
     public function setDriverConfig(array $config): void;
 }
-

@@ -74,4 +74,3 @@ class EventSubscriber implements EventSubscriberInterface
         return $this->subscribedEvents;
     }
 }
-

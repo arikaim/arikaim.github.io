@@ -32,4 +32,3 @@ class Quantity implements BlueprintPrototypeInterface
         $table->index($columnName);   
     }
 }
-

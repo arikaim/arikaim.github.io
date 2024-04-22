@@ -63,4 +63,3 @@ trait UiComponent
         return (empty($headerParams) == false) ? \json_decode($headerParams,true) : [];         
     }
 }
-

@@ -47,4 +47,3 @@ class Trim extends Filter
         return FILTER_CALLBACK;
     }
 }
-

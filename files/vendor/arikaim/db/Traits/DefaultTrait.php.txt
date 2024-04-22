@@ -105,4 +105,3 @@ trait DefaultTrait
         return ($this->getDefault($keyValue) != null);
     }
 }
-

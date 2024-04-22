@@ -103,4 +103,3 @@ trait ReportData
         return $this->reportDataQuery($period,$day,$month,$year)->get()->toArray();       
     }
 }
-

@@ -53,4 +53,3 @@ interface RuleInterface
      */
     public function setDefaultError(string $errorCode): void;
 }
-

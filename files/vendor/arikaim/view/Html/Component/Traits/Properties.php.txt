@@ -105,4 +105,3 @@ trait Properties
         $this->files['properties']['file_name'] = $fileName;          
     }
 }
-

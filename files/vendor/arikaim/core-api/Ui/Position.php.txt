@@ -93,4 +93,3 @@ class Position extends ApiController
         return ($model == null) ? null : $model->findById($data->get('uuid'));      
     }
 }
-

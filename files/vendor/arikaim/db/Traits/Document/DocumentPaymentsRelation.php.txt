@@ -137,4 +137,3 @@ trait DocumentPaymentsRelation
        return (($this->getPaymentsDue() <= 0) && ($this->getTotal() > 0) );
     }
 }
-

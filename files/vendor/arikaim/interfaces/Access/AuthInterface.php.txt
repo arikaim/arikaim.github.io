@@ -93,4 +93,3 @@ interface AuthInterface extends AccessInterface
      */
     public function withProvider($provider, $user = null, $params = []);
 }
-

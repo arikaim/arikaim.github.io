@@ -196,4 +196,3 @@ trait Errors
         return $result;
     }
 }
-

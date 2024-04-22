@@ -81,4 +81,3 @@ class Repository extends ControlPanelApiController
         },'errors.' . $type . '.download');
     }
 }
-

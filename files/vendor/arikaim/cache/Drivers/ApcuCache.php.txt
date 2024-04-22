@@ -102,4 +102,3 @@ class ApcuCache implements CacheInterface
         return ($info === false) ? null : $info;
     }
 }
-

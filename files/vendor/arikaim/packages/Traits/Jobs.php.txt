@@ -61,4 +61,3 @@ trait Jobs
         return $result;
     }
 }
-

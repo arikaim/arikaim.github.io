@@ -30,4 +30,3 @@ class MetaTags implements BlueprintPrototypeInterface
         $table->text('meta_keywords')->nullable(true);                   
     }
 }
-

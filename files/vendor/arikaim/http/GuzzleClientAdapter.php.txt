@@ -57,4 +57,3 @@ class GuzzleClientAdapter implements HttpClientAdapterInterface
         return $response;
     }
 }
-

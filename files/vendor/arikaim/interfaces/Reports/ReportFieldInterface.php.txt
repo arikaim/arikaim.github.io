@@ -51,4 +51,3 @@ interface ReportFieldInterface
      */
     public function getSummaryData(string $period, ?int $day = null, ?int $month = null, ?int $year = null): array;
 }
-

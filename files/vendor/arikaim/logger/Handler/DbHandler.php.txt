@@ -73,4 +73,3 @@ class DbHandler extends AbstractProcessingHandler
         $this->dbModel->create($data);
     }
 }
-

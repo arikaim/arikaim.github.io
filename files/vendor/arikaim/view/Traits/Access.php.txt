@@ -72,4 +72,3 @@ trait Access
         return $this->getService('access')->hasAccessOneFrom(\explode('|',$permission));
     }
 }
-

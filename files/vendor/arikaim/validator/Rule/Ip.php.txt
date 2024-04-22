@@ -39,4 +39,3 @@ class Ip extends Rule
         return FILTER_VALIDATE_IP;
     }
 }
-

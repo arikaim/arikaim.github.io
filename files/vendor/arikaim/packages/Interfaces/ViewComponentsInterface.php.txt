@@ -39,4 +39,3 @@ interface ViewComponentsInterface
      */
     public function getPages(?string $parent = null): array;
 }
-

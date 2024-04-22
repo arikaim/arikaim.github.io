@@ -269,4 +269,3 @@ interface ComponentInterface
      */
     public function getBasePath(): string;    
 }
-

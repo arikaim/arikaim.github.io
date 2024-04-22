@@ -86,4 +86,3 @@ interface OptionsStorageInterface
      */
     public function getExtensionOptions(string $extensioName);
 }
-

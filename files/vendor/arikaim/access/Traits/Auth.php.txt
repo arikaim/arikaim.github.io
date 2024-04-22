@@ -35,4 +35,3 @@ trait Auth
         return $this->{$this->getAuthIdName()};
     }
 }
-

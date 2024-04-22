@@ -50,4 +50,3 @@ interface WebSocketAppInterface
      */
     public function onDisconnect($server, $data): void;
 }
-

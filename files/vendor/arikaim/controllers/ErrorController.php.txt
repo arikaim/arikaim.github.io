@@ -38,4 +38,3 @@ class ErrorController extends Controller
         return $this->pageNotFound($response,$data->toArray());    
     }
 }
-

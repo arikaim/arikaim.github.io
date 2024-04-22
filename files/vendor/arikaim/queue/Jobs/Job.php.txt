@@ -448,4 +448,3 @@ abstract class Job implements JobInterface, RecurringJobInterface, ScheduledJobI
         return $this->queue;
     }
 }
-

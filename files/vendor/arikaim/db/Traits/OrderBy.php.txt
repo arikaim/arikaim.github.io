@@ -38,4 +38,3 @@ trait OrderBy
         return $query->orderByRaw('RAND()');
     }
 }
-

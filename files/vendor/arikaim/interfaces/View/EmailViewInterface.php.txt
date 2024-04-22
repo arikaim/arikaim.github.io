@@ -33,4 +33,3 @@ interface EmailViewInterface extends HtmlComponentInterface
      */
     public function getSubject(): string;
 }
-

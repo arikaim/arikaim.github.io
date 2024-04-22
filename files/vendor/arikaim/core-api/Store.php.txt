@@ -100,4 +100,3 @@ class Store extends ControlPanelApiController
         return $this->getResponse();
     }    
 }
-

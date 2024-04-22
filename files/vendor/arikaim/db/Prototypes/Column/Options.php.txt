@@ -30,4 +30,3 @@ class Options implements BlueprintPrototypeInterface
         $table->text($columnName)->nullable(true);                   
     }
 }
-

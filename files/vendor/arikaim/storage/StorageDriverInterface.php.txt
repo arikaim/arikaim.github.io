@@ -45,4 +45,3 @@ interface StorageDriverInterface
      */
     public function getRootPath(): ?string;
 }
-

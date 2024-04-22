@@ -50,4 +50,3 @@ class ErrorTagParser extends AbstractTokenParser
         return 'error';
     }
 }
-

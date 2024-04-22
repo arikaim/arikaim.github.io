@@ -29,4 +29,3 @@ class DateCreated implements BlueprintPrototypeInterface
         $table->index('date_created');             
     }
 }
-

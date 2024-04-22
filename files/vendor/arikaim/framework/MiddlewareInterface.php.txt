@@ -26,4 +26,3 @@ interface MiddlewareInterface
      */
     public function process(ServerRequestInterface $request, ResponseInterface $response): array; 
 }
-

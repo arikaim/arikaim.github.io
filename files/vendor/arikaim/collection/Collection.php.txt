@@ -595,4 +595,3 @@ class Collection implements CollectionInterface, \Countable, \ArrayAccess, Itera
         return $this->data;
     }
 }
-

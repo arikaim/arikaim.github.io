@@ -48,4 +48,3 @@ class ClearEnvCommand extends ConsoleCommand
         $this->showCompleted();  
     }
 }
-

@@ -67,4 +67,3 @@ abstract class Filter implements FilterInterface
         return ($result == false) ? $value : $result;
     }
 }
-

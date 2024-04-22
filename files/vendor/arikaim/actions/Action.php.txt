@@ -324,4 +324,3 @@ abstract class Action implements ActionInterface
         return $this->description;
     }
 }
-

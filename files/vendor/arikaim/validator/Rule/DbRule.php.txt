@@ -47,4 +47,3 @@ class DbRule extends Rule
         return FILTER_CALLBACK;
     }
 }
-

@@ -125,4 +125,3 @@ trait UserAccess
         return $this->get('access')->getId();
     }
 }
-

@@ -182,4 +182,3 @@ class TimeInterval
         return (\substr($text,0,1) == 'P');   
     }
 }
-

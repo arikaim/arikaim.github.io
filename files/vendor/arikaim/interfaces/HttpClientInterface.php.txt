@@ -124,4 +124,3 @@ interface HttpClientInterface
     */
     public function connect($uri, array $options = []);
 }
-

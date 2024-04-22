@@ -66,4 +66,3 @@ interface EventRegistryInterface
      */
     public function setEventsStatus(array $filter, int $status): bool;
 }
-

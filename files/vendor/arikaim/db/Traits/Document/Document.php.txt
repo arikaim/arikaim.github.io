@@ -216,4 +216,3 @@ trait Document
         return $this->getTotal();
     }
 }
-

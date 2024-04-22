@@ -29,4 +29,3 @@ class DateUpdated implements BlueprintPrototypeInterface
         $table->index('date_updated');             
     }
 }
-

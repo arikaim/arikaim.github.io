@@ -28,4 +28,3 @@ trait JobConfigUpdate
         return $arikaim->get('queue')->updateJobParam($this->getId(),$key,$value);
     }
 }
-

@@ -60,4 +60,3 @@ class File extends Rule
         return FILTER_CALLBACK;
     }
 }
-

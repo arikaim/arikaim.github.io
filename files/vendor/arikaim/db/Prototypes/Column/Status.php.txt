@@ -31,4 +31,3 @@ class Status implements BlueprintPrototypeInterface
         $table->index('status');   
     }
 }
-

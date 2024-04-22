@@ -55,4 +55,3 @@ trait ThemeGlobals
         return true;
     }
 }
-

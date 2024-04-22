@@ -50,4 +50,3 @@ class Slug extends Filter
         return FILTER_CALLBACK;
     }
 }
-

@@ -35,4 +35,3 @@ class Slug implements BlueprintPrototypeInterface
         $table->index('slug');     
     }
 }
-

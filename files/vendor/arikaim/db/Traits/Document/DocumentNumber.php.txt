@@ -131,4 +131,3 @@ trait DocumentNumber
         return $this->printDocumentNumber($this->getNextDocumentNumber(),$prefix);
     } 
 }
-

@@ -243,4 +243,3 @@ class ModulePackage extends Package implements PackageInterface
         return $this->path . $this->getName() . DIRECTORY_SEPARATOR . 'console' . DIRECTORY_SEPARATOR;
     }
 }
-

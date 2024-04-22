@@ -82,4 +82,3 @@ class SvgComponent extends BaseComponent implements HtmlComponentInterface
         return true;
     }
 }
-
